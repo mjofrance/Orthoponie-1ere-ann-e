@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM sur le cycle cellulaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h1>BIO-CELL-2-VIE-et-MORT-de-la-CELLULE</h1>
+        <form id="qcm-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Quelles sont les deux phases principales du cycle cellulaire ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Interphase et Mitose</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Prophase et Métaphase</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) G1 et S</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Cytocinèse et Caryocinèse</div>
+                </div>
+                <div class="explanation" id="explanation1">
+                    <div class="result">Bonne réponse : a) Interphase et Mitose</div>
+                    <p>Le cycle cellulaire est divisé en interphase, où la cellule se prépare à se diviser, et en mitose, où la cellule se divise effectivement.</p>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Quelle phase du cycle cellulaire est caractérisée par la réplication de l'ADN ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) G1</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) S</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) G2</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Mitose</div>
+                </div>
+                <div class="explanation" id="explanation2">
+                    <div class="result">Bonne réponse : b) S</div>
+                    <p>La phase S est celle où la réplication de l'ADN a lieu, préparant la cellule pour la division.</p>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Quel est le rôle de la protéine p53 ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Elle permet la réplication de l'ADN.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Elle contrôle l'intégrité de l'ADN.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Elle induit la mitose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Elle provoque la nécrose.</div>
+                </div>
+                <div class="explanation" id="explanation3">
+                    <div class="result">Bonne réponse : b) Elle contrôle l'intégrité de l'ADN.</div>
+                    <p>La protéine p53 est connue comme le "gardien du génome" car elle vérifie l'intégrité de l'ADN et peut induire l'arrêt du cycle cellulaire ou l'apoptose en cas de dommages à l'ADN.</p>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Qu'est-ce que l'apoptose ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Une mort cellulaire accidentelle.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Une mort cellulaire programmée.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Une phase du cycle cellulaire.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Un mécanisme de réparation de l'ADN.</div>
+                </div>
+                <div class="explanation" id="explanation4">
+                    <div class="result">Bonne réponse : b) Une mort cellulaire programmée.</div>
+                    <p>L'apoptose est un processus de mort cellulaire programmée qui est essentiel pour le développement et le maintien de l'homéostasie dans les organismes multicellulaires.</p>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Quelle est la fonction principale de l'autophagie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Provoquer la mort cellulaire.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Dégrader le contenu cellulaire pour le recycler.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Induire la mitose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Réparer l'ADN.</div>
+                </div>
+                <div class="explanation" id="explanation5">
+                    <div class="result">Bonne réponse : b) Dégrader le contenu cellulaire pour le recycler.</div>
+                    <p>L'autophagie est un processus de dégradation du contenu cellulaire pour recycler les composants et maintenir la santé cellulaire.</p>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. Quelle est la différence entre la nécrose et l'apoptose ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) La nécrose est une mort cellulaire programmée, l'apoptose est accidentelle.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) La nécrose est une mort cellulaire accidentelle, l'apoptose est programmée.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) La nécrose et l'apoptose sont des phases du cycle cellulaire.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) La nécrose et l'apoptose sont des mécanismes de réparation de l'ADN.</div>
+                </div>
+                <div class="explanation" id="explanation6">
+                    <div class="result">Bonne réponse : b) La nécrose est une mort cellulaire accidentelle, l'apoptose est programmée.</div>
+                    <p>La nécrose est une mort cellulaire accidentelle souvent causée par des facteurs externes, tandis que l'apoptose est un processus de mort cellulaire programmée et contrôlée.</p>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. Qu'est-ce que la sénescence cellulaire ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Un arrêt irréversible du cycle cellulaire.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Une phase de la mitose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Un mécanisme de réparation de l'ADN.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Une maladie génétique.</div>
+                </div>
+                <div class="explanation" id="explanation7">
+                    <div class="result">Bonne réponse : a) Un arrêt irréversible du cycle cellulaire.</div>
+                    <p>La sénescence cellulaire est un état où la cellule cesse de se diviser de manière irréversible, souvent en raison de dommages à l'ADN ou du raccourcissement des télomères.</p>
+                </div>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. Quelles sont les étapes de l'autophagie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Formation d'un phagophore, développement du phagophore, fusion avec un lysosome, dégradation des constituants.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Condensation de la chromatine, rupture de l'enveloppe nucléaire, formation de corps apoptotiques.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Réplication de l'ADN, synthèse des histones, duplication des centrioles.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Condensation des chromosomes, fragmentation de l'enveloppe nucléaire, formation du fuseau mitotique.</div>
+                </div>
+                <div class="explanation" id="explanation8">
+                    <div class="result">Bonne réponse : a) Formation d'un phagophore, développement du phagophore, fusion avec un lysosome, dégradation des constituants.</div>
+                    <p>L'autophagie implique la formation d'un phagophore qui enveloppe le contenu cellulaire, fusionne avec un lysosome pour former un autophagosome, et dégrade les constituants.</p>
+                </div>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. Quel est le rôle des caspases dans l'apoptose ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Elles provoquent la nécrose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Elles participent aux événements protéolytiques dans une cellule en apoptose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Elles induisent la mitose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Elles réparent l'ADN.</div>
+                </div>
+                <div class="explanation" id="explanation9">
+                    <div class="result">Bonne réponse : b) Elles participent aux événements protéolytiques dans une cellule en apoptose.</div>
+                    <p>Les caspases sont des protéases qui jouent un rôle clé dans l'exécution de l'apoptose en clivant des protéines cellulaires importantes.</p>
+                </div>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. Qu'est-ce que le MPF (Maturation Promoting Factor) ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Un facteur qui induit la mitose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Un facteur qui provoque la nécrose.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Un facteur qui répare l'ADN.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Un facteur qui induit la sénescence cellulaire.</div>
+                </div>
+                <div class="explanation" id="explanation10">
+                    <div class="result">Bonne réponse : a) Un facteur qui induit la mitose.</div>
+                    <p>Le MPF (Maturation Promoting Factor) est un complexe protéique qui joue un rôle crucial dans l'initiation de la mitose.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            // Réinitialiser les couleurs des options de la même question
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+
+            // Vérifier si la réponse est correcte
+            const isCorrect = element.textContent.startsWith(correctAnswer + ")");
+
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+
+            // Afficher l'explication correspondante
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            const explanationId = `explanation${questionNumber}`;
+            const explanation = document.getElementById(explanationId);
+
+            // Masquer toutes les explications de la même question
+            const allExplanations = element.parentElement.parentElement.querySelectorAll('.explanation');
+            allExplanations.forEach(exp => {
+                exp.style.display = 'none';
+            });
+
+            // Afficher l'explication de cette question
+            explanation.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
