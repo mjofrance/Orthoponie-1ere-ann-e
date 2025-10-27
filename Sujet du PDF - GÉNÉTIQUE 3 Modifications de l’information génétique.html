@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM - Génétique 3 : Modifications de l’information génétique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM - Génétique 3 : Modifications de l’information génétique</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Quelle est la définition d'une mutation ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Une modification volontaire de la séquence d'ARN</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Une modification accidentelle de la séquence de l'ADN</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Une modification de la structure des chromosomes visible au microscope</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Une modification de la séquence des protéines</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : b) Une modification accidentelle de la séquence de l'ADN</div>
+                <p>Les mutations sont des phénomènes spontanés, rares et aléatoires qui touchent la séquence de l'ADN. Elles ne sont pas visibles sur un caryotype.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Quels sont les trois types principaux de mutations ponctuelles ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Translocation, inversion, duplication</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Substitution, délétion, translocation</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) Substitution, délétion, insertion</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) Inversion, duplication, aneuploïdie</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : c) Substitution, délétion, insertion</div>
+                <p>Ces trois types de mutations modifient directement la séquence nucléotidique de l'ADN.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Quelle est la conséquence d'une mutation silencieuse ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'a')">a) Elle ne modifie pas la séquence de la protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">b) Elle entraîne l'apparition d'un codon stop</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">c) Elle modifie la fonction de la protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">d) Elle provoque la mort de la cellule</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : a) Elle ne modifie pas la séquence de la protéine</div>
+                <p>Une mutation silencieuse n'affecte pas la séquence de la protéine grâce à la redondance du code génétique.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Qu'est-ce qu'une mutation faux-sens ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Une mutation qui n'a aucun effet sur la protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Une mutation qui modifie la séquence de la protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Une mutation qui introduit un codon stop</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Une mutation qui affecte uniquement les séquences régulatrices</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : b) Une mutation qui modifie la séquence de la protéine</div>
+                <p>Une mutation faux-sens remplace un acide aminé par un autre dans la protéine, ce qui peut altérer sa fonction.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Quelle est la conséquence d'une mutation non-sens ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Elle est toujours silencieuse</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Elle modifie un acide aminé dans la protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) Elle entraîne l'apparition d'un codon stop et une protéine tronquée</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) Elle n'a aucun effet sur le phénotype</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : c) Elle entraîne l'apparition d'un codon stop et une protéine tronquée</div>
+                <p>Une mutation non-sens crée un codon stop prématuré, ce qui conduit à une protéine incomplète et souvent non fonctionnelle.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. Quelles sont les conséquences possibles des délétions et insertions sur la protéine ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'd')">a) Elles n'ont jamais d'effet</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">b) Elles modifient uniquement un acide aminé</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">c) Elles entraînent toujours une protéine fonctionnelle</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">d) Elles provoquent des mutations décalantes et modifient toute la séquence après la mutation</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : d) Elles provoquent des mutations décalantes et modifient toute la séquence après la mutation</div>
+                <p>Les délétions et insertions décalent le cadre de lecture, ce qui modifie toute la séquence en aval de la mutation.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Quelle est la différence entre une mutation somatique et une mutation germinale ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) La mutation somatique est transmissible à la descendance</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) La mutation germinale est transmissible à la descendance</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Les deux types de mutations sont toujours mortelles</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Les mutations somatiques affectent les gamètes</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : b) La mutation germinale est transmissible à la descendance</div>
+                <p>Les mutations germinales touchent les cellules à l'origine des gamètes et peuvent être transmises, contrairement aux mutations somatiques.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Qu'est-ce qu'une aneuploïdie ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Une modification de la séquence de l'ADN</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Une duplication d'un gène</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) Un nombre anormal de chromosomes (en plus ou en moins)</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) Une inversion chromosomique</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : c) Un nombre anormal de chromosomes (en plus ou en moins)</div>
+                <p>L'aneuploïdie correspond à la présence d'un chromosome en trop (trisomie) ou en moins (monosomie).</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Quelle est la cause principale des aberrations du nombre de chromosomes ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Une mutation ponctuelle</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Une non-disjonction des chromosomes ou chromatides pendant la méiose</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Une translocation robertsonienne</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Une délétion</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : b) Une non-disjonction des chromosomes ou chromatides pendant la méiose</div>
+                <p>La non-disjonction pendant la méiose conduit à des gamètes avec un nombre anormal de chromosomes.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Qu'est-ce qu'une translocation robertsonienne ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Une perte d'un fragment de chromosome</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Un échange de fragments entre chromosomes homologues</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) La fixation d'un chromosome entier sur un autre chromosome</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) Une duplication d'un segment chromosomique</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : c) La fixation d'un chromosome entier sur un autre chromosome</div>
+                <p>La translocation robertsonienne implique la fusion de deux chromosomes acrocentriques au niveau de leur centromère.</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Quelles molécules sont impliquées dans les systèmes de réparation de l'ADN ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'a')">a) Des enzymes</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">b) Des lipides</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">c) Des glucides</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">d) Des acides aminés</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : a) Des enzymes</div>
+                <p>Les enzymes, comme les hélicases et les nucléases, jouent un rôle clé dans la réparation des lésions de l'ADN.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Quel est l'objectif principal de la thérapie génique ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'd')">a) Modifier la séquence de tous les gènes</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">b) Créer de nouvelles protéines</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">c) Supprimer tous les chromosomes anormaux</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">d) Remplacer un gène défectueux par un gène fonctionnel</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : d) Remplacer un gène défectueux par un gène fonctionnel</div>
+                <p>La thérapie génique vise à corriger ou compenser un gène muté responsable d'une maladie.</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Qu'est-ce qu'un agent mutagène ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'a')">a) Un agent physique ou chimique qui augmente la fréquence des mutations</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">b) Un type de protéine</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">c) Un chromosome supplémentaire</div>
+                <div class="option" onclick="checkAnswer(this, 'a')">d) Un type de cellule</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : a) Un agent physique ou chimique qui augmente la fréquence des mutations</div>
+                <p>Les agents mutagènes, comme les UV ou certains produits chimiques, endommagent l'ADN et favorisent les mutations.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Quelle maladie est associée à une délétion sur le chromosome 5 ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Syndrome de Down</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Syndrome du cri du chat</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Syndrome de Turner</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Syndrome de Klinefelter</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : b) Syndrome du cri du chat</div>
+                <p>Le syndrome du cri du chat est causé par une délétion sur le bras court du chromosome 5.</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Vrai ou Faux : Toutes les anomalies de structure des chromosomes ont des conséquences sur le phénotype.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : b) Faux</div>
+                <p>Les anomalies équilibrées (comme certaines translocations) n'ont pas de conséquence phénotypique si tout le matériel génétique est présent.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            // Réinitialiser les couleurs des options de la même question
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+
+            // Vérifier si la réponse est correcte
+            const isCorrect = element.textContent.startsWith(correctAnswer + ")");
+
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+
+            // Afficher l'explication correspondante
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            const explanationId = `explanation${questionNumber}`;
+            const explanation = document.getElementById(explanationId);
+
+            // Masquer toutes les explications de la même question
+            const allExplanations = element.parentElement.parentElement.querySelectorAll('.explanation');
+            allExplanations.forEach(exp => {
+                exp.style.display = 'none';
+            });
+
+            // Afficher l'explication de cette question
+            explanation.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
