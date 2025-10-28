@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM - Généralités sur les cellules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIO-CELL-1 - Généralités sur les cellules</h1>
+        <form id="qcm-form">
+
+            <!-- Question 1 - Choix multiples -->
+            <div class="question">
+                <h3>1. Selon la théorie cellulaire, quelles propositions sont correctes ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Tous les êtres vivants sont constitués d'une ou plusieurs cellules.</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Toute cellule provient d'une autre cellule par division cellulaire.</div>
+                    <div class="option" onclick="toggleSelection(this)">c) La cellule est une entité autonome capable de réaliser toutes les fonctions nécessaires à la vie d'un organisme pluricellulaire.</div>
+                    <div class="option" onclick="toggleSelection(this)">d) La cellule renferme l'information génétique sous forme d'ARN.</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(1, ['a', 'b'])">Valider</button>
+                <div class="explanation" id="explanation1">
+                    <div class="result">Bonne(s) réponse(s) : a) et b)</div>
+                    <p>La théorie cellulaire stipule que tous les êtres vivants sont composés de cellules, et que chaque cellule provient d'une autre cellule par division. L'information génétique est contenue dans l'ADN, et non dans l'ARN. La cellule est autonome pour ses propres fonctions, mais pas pour celles d'un organisme pluricellulaire entier.</p>
+                </div>
+            </div>
+
+            <!-- Question 2 - Choix unique -->
+            <div class="question">
+                <h3>2. Quels sont les trois domaines dans lesquels on classe les cellules vivantes actuelles ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Eucaryotes, Eubactéries, Archéobactéries</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Procaryotes, Eucaryotes, Virus</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Animaux, Végétaux, Champignons</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Protistes, Bactéries, Archées</div>
+                </div>
+                <div class="explanation" id="explanation2">
+                    <div class="result">Bonne réponse : a) Eucaryotes, Eubactéries, Archéobactéries</div>
+                    <p>Les cellules vivantes actuelles sont classées en trois domaines : Eucaryotes, Eubactéries et Archéobactéries. Les virus ne sont pas considérés comme des cellules.</p>
+                </div>
+            </div>
+
+            <!-- Question 3 - Choix multiples -->
+            <div class="question">
+                <h3>3. Quelles caractéristiques distinguent les cellules eucaryotes des cellules procaryotes ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Présence d'un noyau</div>
+                    <div class="option" onclick="toggleSelection(this)">b) ADN linéaire associé aux histones</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Absence d'organites limités par une membrane</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Présence d'une paroi cellulaire</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(3, ['a', 'b'])">Valider</button>
+                <div class="explanation" id="explanation3">
+                    <div class="result">Bonne(s) réponse(s) : a) et b)</div>
+                    <p>Les cellules eucaryotes ont un noyau qui contient l'ADN linéaire associé aux histones, ainsi que des organites limités par une membrane. Les cellules procaryotes n'ont pas de noyau et leur ADN est circulaire et nu.</p>
+                </div>
+            </div>
+
+            <!-- Question 4 - Choix unique -->
+            <div class="question">
+                <h3>4. Quelle est la particularité de LUCA ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) C'est une cellule eucaryote.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) C'est une cellule procaryote anaérobie apparue il y a 4 milliards d'années.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) C'est une cellule capable de photosynthèse.</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) C'est une cellule multicellulaire.</div>
+                </div>
+                <div class="explanation" id="explanation4">
+                    <div class="result">Bonne réponse : b) C'est une cellule procaryote anaérobie apparue il y a 4 milliards d'années.</div>
+                    <p>LUCA (Last Universal Common Ancestor) est une cellule hypothétique procaryote et anaérobie, apparue il y a environ 4 milliards d'années.</p>
+                </div>
+            </div>
+
+            <!-- Question 5 - Choix multiples -->
+            <div class="question">
+                <h3>5. Quels organites sont présents dans les cellules eucaryotes ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Ribosomes</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Mitochondries</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Mésosome</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Appareil de Golgi</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(5, ['a', 'b', 'd'])">Valider</button>
+                <div class="explanation" id="explanation5">
+                    <div class="result">Bonne(s) réponse(s) : a), b) et d)</div>
+                    <p>Les cellules eucaryotes contiennent des ribosomes, des mitochondries et un appareil de Golgi. Le mésosome est une structure présente dans certaines cellules procaryotes.</p>
+                </div>
+            </div>
+
+            <!-- Question 6 - Choix unique -->
+            <div class="question">
+                <h3>6. Quelle théorie explique l'origine des mitochondries et des chloroplastes ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Théorie de l'évolution</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Théorie de la génération spontanée</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Théorie endosymbiotique</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Théorie cellulaire</div>
+                </div>
+                <div class="explanation" id="explanation6">
+                    <div class="result">Bonne réponse : c) Théorie endosymbiotique</div>
+                    <p>La théorie endosymbiotique propose que les mitochondries et les chloroplastes sont d'anciennes cellules procaryotes internalisées par endocytose dans des cellules eucaryotes.</p>
+                </div>
+            </div>
+
+            <!-- Question 7 - Choix multiples -->
+            <div class="question">
+                <h3>7. Quels arguments soutiennent la théorie endosymbiotique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Présence d'une double membrane</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Présence d'un génome fonctionnel de type procaryote dans ces organites</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Division par scissiparité similaire à celle des procaryotes</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Toutes les réponses ci-dessus</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(7, ['a', 'b', 'c', 'd'])">Valider</button>
+                <div class="explanation" id="explanation7">
+                    <div class="result">Bonne réponse : d) Toutes les réponses ci-dessus</div>
+                    <p>Les mitochondries et les chloroplastes ont une double membrane, un génome de type procaryote, et se divisent par scissiparité, ce qui soutient la théorie endosymbiotique.</p>
+                </div>
+            </div>
+
+            <!-- Question 8 - Choix unique -->
+            <div class="question">
+                <h3>8. Quels types de microscopes permettent d'observer l'ultrastructure des cellules ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'd')">a) Microscope optique</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">b) Microscope électronique à transmission (MET)</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">c) Microscope électronique à balayage (MEB)</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">d) b) et c)</div>
+                </div>
+                <div class="explanation" id="explanation8">
+                    <div class="result">Bonne réponse : d) b) et c)</div>
+                    <p>Le microscope électronique à transmission (MET) permet d'observer l'intérieur des cellules, tandis que le microscope électronique à balayage (MEB) permet d'observer la surface des cellules avec une grande résolution.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        // Vérifie la réponse pour les questions à choix unique
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if (option.textContent.startsWith(correctAnswer + ")")) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        // Valide les réponses pour les questions à choix multiples
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
