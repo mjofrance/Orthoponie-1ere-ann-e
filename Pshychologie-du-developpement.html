@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM - Psychologie Cognitive et du Développement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1a252f;
+        }
+        .home-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+
+        <h1>QCM - Psychologie Cognitive et du Développement</h1>
+        <form id="qcm-form">
+
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Qui est le précurseur du comportementalisme connu pour l'expérience du "Petit Albert" ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Ivan Pavlov</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) B.F. Skinner</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) J.B. Watson</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Sigmund Freud</div>
+                </div>
+                <div class="explanation" id="explanation1">
+                    <div class="result">Bonne réponse : c) J.B. Watson</div>
+                    <p>J.B. Watson est connu pour son expérience sur le conditionnement de la peur chez le "Petit Albert", qui a marqué le début du comportementalisme.</p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Quel est le rôle des cellules ciliées externes dans l'audition ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Détecter les vibrations</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Amplifier les vibrations détectées par les cellules ciliées internes</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Transmettre les impulsions électriques au cerveau</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Produire de la cérumen</div>
+                </div>
+                <div class="explanation" id="explanation2">
+                    <div class="result">Bonne réponse : b) Amplifier les vibrations détectées par les cellules ciliées internes</div>
+                    <p>Les cellules ciliées externes amplifient les vibrations pour améliorer la sensibilité de l'oreille.</p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Quels sont les deux paramètres fondamentaux du conditionnement classique selon Pavlov ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) La répétition</div>
+                    <div class="option" onclick="toggleSelection(this)">b) La contiguïté temporelle</div>
+                    <div class="option" onclick="toggleSelection(this)">c) La motivation</div>
+                    <div class="option" onclick="toggleSelection(this)">d) L'intensité du stimulus</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(3, ['a', 'b'])">Valider</button>
+                <div class="explanation" id="explanation3">
+                    <div class="result">Bonne(s) réponse(s) : a) et b)</div>
+                    <p>Pavlov a identifié la répétition et la contiguïté temporelle comme les paramètres clés du conditionnement classique.</p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Quelle est la différence entre un stimulus inconditionnel (SI) et un stimulus conditionnel (SC) ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Le SI déclenche une réponse inconditionnelle, tandis que le SC déclenche une réponse conditionnelle après apprentissage.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Le SI est toujours un son, tandis que le SC est toujours une lumière.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Le SI et le SC sont interchangeables.</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Le SC est toujours présent dès la naissance.</div>
+                </div>
+                <div class="explanation" id="explanation4">
+                    <div class="result">Bonne réponse : a) Le SI déclenche une réponse inconditionnelle, tandis que le SC déclenche une réponse conditionnelle après apprentissage.</div>
+                    <p>Le stimulus inconditionnel (SI) provoque une réponse innée, tandis que le stimulus conditionnel (SC) nécessite un apprentissage pour déclencher une réponse.</p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Quels types de récepteurs cutanés sont sensibles aux changements de température et à la douleur ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Les corpuscules de Pacini</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Les terminaisons nerveuses libres</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Les corpuscules de Meissner</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Les disques de Merkel</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(5, ['b'])">Valider</button>
+                <div class="explanation" id="explanation5">
+                    <div class="result">Bonne réponse : b) Les terminaisons nerveuses libres</div>
+                    <p>Les terminaisons nerveuses libres sont particulièrement sensibles aux changements de température et à la douleur.</p>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. Quel est le rôle du cortex préfrontal dans la gestion des phobies ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Il déclenche la réaction de peur.</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Il amplifie les réactions émotionnelles.</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Il régule les réactions automatiques de peur.</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Il est responsable de la production de salive.</div>
+                </div>
+                <div class="explanation" id="explanation6">
+                    <div class="result">Bonne réponse : c) Il régule les réactions automatiques de peur.</div>
+                    <p>Le cortex préfrontal agit comme un régulateur des réactions de peur, en intégrant des informations pour adapter les réponses.</p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. Quels sont les symptômes de l'akinétopsie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à reconnaître les couleurs</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Incapacité à percevoir le mouvement des objets</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre les sons</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(7, ['b'])">Valider</button>
+                <div class="explanation" id="explanation7">
+                    <div class="result">Bonne réponse : b) Incapacité à percevoir le mouvement des objets</div>
+                    <p>L'akinétopsie est un trouble rare où les patients ne perçoivent pas le mouvement des objets, bien qu'ils puissent les voir.</p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. Quel est le principe de base de la désensibilisation systématique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Confrontation progressive à des situations anxiogènes</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Évitement total des situations anxiogènes</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Utilisation exclusive de médicaments</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Ignorer complètement les peurs du patient</div>
+                </div>
+                <div class="explanation" id="explanation8">
+                    <div class="result">Bonne réponse : a) Confrontation progressive à des situations anxiogènes</div>
+                    <p>La désensibilisation systématique repose sur une exposition graduelle et contrôlée aux stimuli anxiogènes pour réduire la peur.</p>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. Qu'est-ce que la prosopagnosie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Incapacité à reconnaître les objets</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Incapacité à reconnaître les visages familiers</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Incapacité à entendre les sons</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Incapacité à sentir les odeurs</div>
+                </div>
+                <div class="explanation" id="explanation9">
+                    <div class="result">Bonne réponse : b) Incapacité à reconnaître les visages familiers</div>
+                    <p>La prosopagnosie est un trouble spécifique de la reconnaissance des visages, même ceux des proches.</p>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. Quels sont les trois types de cônes dans la rétine humaine ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Rouge</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Vert</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Bleu</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Jaune</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(10, ['a', 'b', 'c'])">Valider</button>
+                <div class="explanation" id="explanation10">
+                    <div class="result">Bonne(s) réponse(s) : a), b) et c)</div>
+                    <p>Les cônes de la rétine humaine sont sensibles aux longueurs d'onde correspondant au rouge, vert, et bleu.</p>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <h3>11. Quel est le rôle des saccades oculaires ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Maintenir les yeux fermés</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Empêcher toute vision</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Permettre une exploration visuelle rapide</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Produire des larmes</div>
+                </div>
+                <div class="explanation" id="explanation11">
+                    <div class="result">Bonne réponse : c) Permettre une exploration visuelle rapide</div>
+                    <p>Les saccades oculaires sont des mouvements rapides des yeux qui permettent de déplacer rapidement le regard vers différents points d'intérêt.</p>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <h3>12. Quels sont les effets d'une lésion de la voie dorsale ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Ataxie optique</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Agnosie visuelle</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les couleurs</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(12, ['a'])">Valider</button>
+                <div class="explanation" id="explanation12">
+                    <div class="result">Bonne réponse : a) Ataxie optique</div>
+                    <p>Une lésion de la voie dorsale entraîne une ataxie optique, où les patients ne peuvent pas saisir des objets malgré une reconnaissance visuelle intacte.</p>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <h3>13. Quel est le principe de l'habituation ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Augmentation de la réponse à un stimulus répété</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Diminution de la réponse à un stimulus répété</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Ignorer complètement le stimulus</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Réaction uniquement aux nouveaux stimuli</div>
+                </div>
+                <div class="explanation" id="explanation13">
+                    <div class="result">Bonne réponse : b) Diminution de la réponse à un stimulus répété</div>
+                    <p>L'habituation est un processus d'apprentissage où la réponse à un stimulus diminue après une exposition répétée.</p>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <h3>14. Quels sont les symptômes de l'agoraphobie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Peur des espaces ouverts</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Peur des espaces fermés</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Peur des foules</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Peur des animaux</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(14, ['a', 'b', 'c'])">Valider</button>
+                <div class="explanation" id="explanation14">
+                    <div class="result">Bonne(s) réponse(s) : a), b) et c)</div>
+                    <p>L'agoraphobie se caractérise par la peur des espaces ouverts, fermés, et des foules, où une attaque de panique pourrait survenir.</p>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <h3>15. Quel est le rôle du gyrus fusiforme dans la reconnaissance des visages ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Il est essentiel pour la reconnaissance des visages</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Il est responsable de la perception des couleurs</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Il contrôle les mouvements oculaires</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Il régule la mémoire à long terme</div>
+                </div>
+                <div class="explanation" id="explanation15">
+                    <div class="result">Bonne réponse : a) Il est essentiel pour la reconnaissance des visages</div>
+                    <p>Le gyrus fusiforme, ou FFA (Fusiform Face Area), joue un rôle clé dans la reconnaissance des visages.</p>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <h3>16. Quels sont les effets d'une lésion de V1 sur la vision ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Vision aveugle</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Cécité totale</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Perte de la vision des couleurs</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Perte de la vision nocturne</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(16, ['a'])">Valider</button>
+                <div class="explanation" id="explanation16">
+                    <div class="result">Bonne réponse : a) Vision aveugle</div>
+                    <p>Une lésion de V1 peut entraîner une vision aveugle, où les patients ont une perception inconsciente des stimuli visuels dans leur champ aveugle.</p>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <h3>17. Qu'est-ce que la neuroplasticité ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) La capacité du cerveau à se réparer après une blessure</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) La capacité du cerveau à ignorer les stimuli</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) La capacité du cerveau à se modifier et s'adapter</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) La capacité du cerveau à stocker des souvenirs</div>
+                </div>
+                <div class="explanation" id="explanation17">
+                    <div class="result">Bonne réponse : c) La capacité du cerveau à se modifier et s'adapter</div>
+                    <p>La neuroplasticité désigne la capacité du cerveau à changer et à s'adapter tout au long de la vie, en réponse à l'expérience.</p>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <h3>18. Quels sont les types de phobies spécifiques mentionnés dans le document ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Type animal</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Type environnement naturel</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Type situationnel</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Type social</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(18, ['a', 'b', 'c'])">Valider</button>
+                <div class="explanation" id="explanation18">
+                    <div class="result">Bonne(s) réponse(s) : a), b) et c)</div>
+                    <p>Les phobies spécifiques incluent les types animal, environnement naturel, et situationnel.</p>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <h3>19. Qu'est-ce que l'amusie ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'd')">a) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">b) Incapacité à percevoir les couleurs</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">c) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">d) Incapacité à identifier les mélodies et les rythmes</div>
+                </div>
+                <div class="explanation" id="explanation19">
+                    <div class="result">Bonne réponse : d) Incapacité à identifier les mélodies et les rythmes</div>
+                    <p>L'amusie est un trouble qui affecte la capacité à reconnaître ou produire de la musique.</p>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <h3>20. Quels sont les effets d'une exposition prolongée à des sons de 130 décibels ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Détérioration définitive de la cochlée</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Amélioration de l'audition</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune conséquence</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Augmentation de la sensibilité auditive</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(20, ['a'])">Valider</button>
+                <div class="explanation" id="explanation20">
+                    <div class="result">Bonne réponse : a) Détérioration définitive de la cochlée</div>
+                    <p>Une exposition prolongée à des sons de 130 décibels peut causer des dommages irréversibles à la cochlée.</p>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="question">
+                <h3>21. Quel est le rôle des cellules ganglionnaires dans la rétine ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Transmettre les signaux visuels au cerveau</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Détecter les couleurs</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Produire de la vitamine A</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Réguler la pression intraoculaire</div>
+                </div>
+                <div class="explanation" id="explanation21">
+                    <div class="result">Bonne réponse : a) Transmettre les signaux visuels au cerveau</div>
+                    <p>Les cellules ganglionnaires transmettent les signaux visuels des photorécepteurs au cerveau via le nerf optique.</p>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question">
+                <h3>22. Quels sont les effets d'une lésion bilatérale de V5 ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Incapacité à reconnaître les couleurs</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(22, ['a'])">Valider</button>
+                <div class="explanation" id="explanation22">
+                    <div class="result">Bonne réponse : a) Incapacité à percevoir le mouvement</div>
+                    <p>Une lésion bilatérale de V5 entraîne une akinétopsie, où les patients ne perçoivent plus le mouvement des objets.</p>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="question">
+                <h3>23. Qu'est-ce que la constance des couleurs ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) La capacité à voir toutes les couleurs</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) La perception stable des couleurs malgré les variations d'éclairage</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) La capacité à mélanger les couleurs</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) La capacité à voir en noir et blanc</div>
+                </div>
+                <div class="explanation" id="explanation23">
+                    <div class="result">Bonne réponse : b) La perception stable des couleurs malgré les variations d'éclairage</div>
+                    <p>La constance des couleurs permet de percevoir les couleurs de manière stable, indépendamment des changements de lumière.</p>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question">
+                <h3>24. Quels sont les effets d'une lésion du cortex somatosensoriel primaire ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Asomatognosie</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Agnosie visuelle</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Akinétopsie</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Amusie</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(24, ['a'])">Valider</button>
+                <div class="explanation" id="explanation24">
+                    <div class="result">Bonne réponse : a) Asomatognosie</div>
+                    <p>Une lésion du cortex somatosensoriel primaire peut entraîner une asomatognosie, où les patients ne reconnaissent pas certaines parties de leur corps.</p>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question">
+                <h3>25. Qu'est-ce que la phobie sociale ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Peur des animaux</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Peur des espaces ouverts</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Peur excessive d'agir en société</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Peur des hauteurs</div>
+                </div>
+                <div class="explanation" id="explanation25">
+                    <div class="result">Bonne réponse : c) Peur excessive d'agir en société</div>
+                    <p>La phobie sociale est une peur intense et persistante des situations sociales, où la personne craint d'être jugée ou humiliée.</p>
+                </div>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question">
+                <h3>26. Quels sont les effets d'une exposition en réalité virtuelle pour traiter les phobies ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Réduction de l'anxiété</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation de la peur</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune efficacité</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Amélioration de la mémoire</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(26, ['a'])">Valider</button>
+                <div class="explanation" id="explanation26">
+                    <div class="result">Bonne réponse : a) Réduction de l'anxiété</div>
+                    <p>L'exposition en réalité virtuelle permet une confrontation progressive et contrôlée aux stimuli phobogènes, réduisant ainsi l'anxiété.</p>
+                </div>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question">
+                <h3>27. Qu'est-ce que l'extinction dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Augmentation de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Diminution progressive de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Disparition immédiate de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Transformation du stimulus conditionnel en stimulus inconditionnel</div>
+                </div>
+                <div class="explanation" id="explanation27">
+                    <div class="result">Bonne réponse : b) Diminution progressive de la réponse conditionnelle</div>
+                    <p>L'extinction est le processus par lequel la réponse conditionnelle diminue progressivement lorsque le stimulus conditionnel est présenté sans le stimulus inconditionnel.</p>
+                </div>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="question">
+                <h3>28. Quels sont les effets d'une lésion de l'amygdale cérébrale ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à ressentir la peur</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation de la peur</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(28, ['a'])">Valider</button>
+                <div class="explanation" id="explanation28">
+                    <div class="result">Bonne réponse : a) Incapacité à ressentir la peur</div>
+                    <p>L'amygdale cérébrale joue un rôle central dans le traitement de la peur. Une lésion peut entraîner une incapacité à ressentir ou exprimer la peur.</p>
+                </div>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question">
+                <h3>29. Qu'est-ce que la généralisation dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Une réponse conditionnelle déclenchée par des stimuli similaires au stimulus conditionnel original</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Une réponse inconditionnelle déclenchée par un stimulus neutre</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Une extinction de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Une augmentation de la réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation29">
+                    <div class="result">Bonne réponse : a) Une réponse conditionnelle déclenchée par des stimuli similaires au stimulus conditionnel original</div>
+                    <p>La généralisation se produit lorsque des stimuli similaires au stimulus conditionnel original déclenchent également la réponse conditionnelle.</p>
+                </div>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question">
+                <h3>30. Quels sont les effets d'une exposition intéroceptive ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Réduction de la peur des sensations physiques</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation de la peur des sensations physiques</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification des sensations physiques</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Amélioration de la mémoire</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(30, ['a'])">Valider</button>
+                <div class="explanation" id="explanation30">
+                    <div class="result">Bonne réponse : a) Réduction de la peur des sensations physiques</div>
+                    <p>L'exposition intéroceptive vise à réduire la peur des sensations physiques en exposant progressivement le patient à ces sensations.</p>
+                </div>
+            </div>
+
+            <!-- Question 31 -->
+            <div class="question">
+                <h3>31. Qu'est-ce que le stimulus discriminatif dans le conditionnement opérant ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Un stimulus qui déclenche une réponse inconditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Un stimulus qui ne produit aucune réponse</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Un stimulus qui signale la disponibilité d'un renforcement</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Un stimulus qui provoque une punition</div>
+                </div>
+                <div class="explanation" id="explanation31">
+                    <div class="result">Bonne réponse : c) Un stimulus qui signale la disponibilité d'un renforcement</div>
+                    <p>Le stimulus discriminatif indique qu'une réponse spécifique sera renforcée en sa présence.</p>
+                </div>
+            </div>
+
+            <!-- Question 32 -->
+            <div class="question">
+                <h3>32. Quels sont les effets d'un renforcement positif ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Augmentation de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Diminution de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression du comportement</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(32, ['a'])">Valider</button>
+                <div class="explanation" id="explanation32">
+                    <div class="result">Bonne réponse : a) Augmentation de la fréquence du comportement</div>
+                    <p>Un renforcement positif augmente la probabilité qu'un comportement se reproduise en ajoutant un stimulus agréable.</p>
+                </div>
+            </div>
+
+            <!-- Question 33 -->
+            <div class="question">
+                <h3>33. Qu'est-ce que la punition négative ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'd')">a) Ajout d'un stimulus désagréable</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">b) Ajout d'un stimulus agréable</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">c) Retrait d'un stimulus désagréable</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">d) Retrait d'un stimulus agréable</div>
+                </div>
+                <div class="explanation" id="explanation33">
+                    <div class="result">Bonne réponse : d) Retrait d'un stimulus agréable</div>
+                    <p>La punition négative réduit la probabilité qu'un comportement se reproduise en retirant un stimulus agréable.</p>
+                </div>
+            </div>
+
+            <!-- Question 34 -->
+            <div class="question">
+                <h3>34. Quels sont les effets d'une punition positive ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Augmentation de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Diminution de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression immédiate du comportement</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(34, ['b'])">Valider</button>
+                <div class="explanation" id="explanation34">
+                    <div class="result">Bonne réponse : b) Diminution de la fréquence du comportement</div>
+                    <p>Une punition positive réduit la probabilité qu'un comportement se reproduise en ajoutant un stimulus désagréable.</p>
+                </div>
+            </div>
+
+            <!-- Question 35 -->
+            <div class="question">
+                <h3>35. Qu'est-ce que le modelage (shaping) dans le conditionnement opérant ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Renforcer progressivement des comportements de plus en plus proches du comportement cible</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Punir immédiatement tout comportement indésirable</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Ignorer tous les comportements</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Utiliser uniquement des renforcements négatifs</div>
+                </div>
+                <div class="explanation" id="explanation35">
+                    <div class="result">Bonne réponse : a) Renforcer progressivement des comportements de plus en plus proches du comportement cible</div>
+                    <p>Le modelage consiste à renforcer successivement des approximations du comportement désiré jusqu'à ce que le comportement cible soit atteint.</p>
+                </div>
+            </div>
+
+            <!-- Question 36 -->
+            <div class="question">
+                <h3>36. Quels sont les effets d'un renforcement négatif ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Augmentation de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Diminution de la fréquence du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification du comportement</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression immédiate du comportement</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(36, ['a'])">Valider</button>
+                <div class="explanation" id="explanation36">
+                    <div class="result">Bonne réponse : a) Augmentation de la fréquence du comportement</div>
+                    <p>Un renforcement négatif augmente la probabilité qu'un comportement se reproduise en retirant un stimulus désagréable.</p>
+                </div>
+            </div>
+
+            <!-- Question 37 -->
+            <div class="question">
+                <h3>37. Qu'est-ce que la récupération spontanée dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Une augmentation immédiate de la réponse conditionnelle après l'extinction</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Une réapparition de la réponse conditionnelle après une période de repos</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Une disparition définitive de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Une transformation de la réponse conditionnelle en réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation37">
+                    <div class="result">Bonne réponse : b) Une réapparition de la réponse conditionnelle après une période de repos</div>
+                    <p>La récupération spontanée est la réapparition d'une réponse conditionnelle après une période de repos suivant l'extinction.</p>
+                </div>
+            </div>
+
+            <!-- Question 38 -->
+            <div class="question">
+                <h3>38. Quels sont les effets d'une lésion du colliculus supérieur ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à localiser les stimuli visuels</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre les sons</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(38, ['c'])">Valider</button>
+                <div class="explanation" id="explanation38">
+                    <div class="result">Bonne réponse : c) Incapacité à localiser les stimuli visuels</div>
+                    <p>Le colliculus supérieur joue un rôle dans la localisation des stimuli visuels et la coordination des mouvements oculaires.</p>
+                </div>
+            </div>
+
+            <!-- Question 39 -->
+            <div class="question">
+                <h3>39. Qu'est-ce que la discrimination dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Une réponse conditionnelle déclenchée par tous les stimuli</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Une extinction de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Une réponse conditionnelle déclenchée uniquement par un stimulus spécifique</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Une augmentation de la réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation39">
+                    <div class="result">Bonne réponse : c) Une réponse conditionnelle déclenchée uniquement par un stimulus spécifique</div>
+                    <p>La discrimination est la capacité à répondre uniquement à un stimulus conditionnel spécifique et non à des stimuli similaires.</p>
+                </div>
+            </div>
+
+            <!-- Question 40 -->
+            <div class="question">
+                <h3>40. Quels sont les effets d'une exposition situationnelle ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Réduction de l'anxiété face à des situations réelles</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation de l'anxiété face à des situations réelles</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification de l'anxiété</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression immédiate de toutes les peurs</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(40, ['a'])">Valider</button>
+                <div class="explanation" id="explanation40">
+                    <div class="result">Bonne réponse : a) Réduction de l'anxiété face à des situations réelles</div>
+                    <p>L'exposition situationnelle vise à réduire l'anxiété en confrontant progressivement le patient à des situations réelles anxiogènes.</p>
+                </div>
+            </div>
+
+            <!-- Question 41 -->
+            <div class="question">
+                <h3>41. Qu'est-ce que l'inhibition dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'd')">a) Une augmentation de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">b) Une transformation de la réponse conditionnelle en réponse inconditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">c) Une extinction immédiate de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'd')">d) Un processus qui bloque la réponse conditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation41">
+                    <div class="result">Bonne réponse : d) Un processus qui bloque la réponse conditionnelle</div>
+                    <p>L'inhibition est un processus actif qui bloque ou réduit la réponse conditionnelle, souvent observé lors de l'extinction.</p>
+                </div>
+            </div>
+
+            <!-- Question 42 -->
+            <div class="question">
+                <h3>42. Quels sont les effets d'une lésion de la voie ventrale ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Agnosie visuelle</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Ataxie optique</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à reconnaître les couleurs</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(42, ['a'])">Valider</button>
+                <div class="explanation" id="explanation42">
+                    <div class="result">Bonne réponse : a) Agnosie visuelle</div>
+                    <p>Une lésion de la voie ventrale peut entraîner une agnosie visuelle, où les patients ne peuvent pas reconnaître les objets malgré une vision intacte.</p>
+                </div>
+            </div>
+
+            <!-- Question 43 -->
+            <div class="question">
+                <h3>43. Qu'est-ce que la sensibilisation dans le conditionnement ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'a')">a) Une augmentation de la réponse à un stimulus après une exposition répétée</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">b) Une diminution de la réponse à un stimulus après une exposition répétée</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">c) Une extinction de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'a')">d) Une transformation de la réponse conditionnelle en réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation43">
+                    <div class="result">Bonne réponse : a) Une augmentation de la réponse à un stimulus après une exposition répétée</div>
+                    <p>La sensibilisation est l'augmentation de la réponse à un stimulus après une exposition répétée ou intense.</p>
+                </div>
+            </div>
+
+            <!-- Question 44 -->
+            <div class="question">
+                <h3>44. Quels sont les effets d'une exposition en imagination ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Réduction de l'anxiété face à des situations imaginaires</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation de l'anxiété face à des situations imaginaires</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification de l'anxiété</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression immédiate de toutes les peurs</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(44, ['a'])">Valider</button>
+                <div class="explanation" id="explanation44">
+                    <div class="result">Bonne réponse : a) Réduction de l'anxiété face à des situations imaginaires</div>
+                    <p>L'exposition en imagination vise à réduire l'anxiété en confrontant le patient à des situations anxiogènes dans son imagination.</p>
+                </div>
+            </div>
+
+            <!-- Question 45 -->
+            <div class="question">
+                <h3>45. Qu'est-ce que la réinstallation dans le conditionnement classique ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'c')">a) Une extinction définitive de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">b) Une transformation de la réponse conditionnelle en réponse inconditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">c) Un rétablissement plus rapide de la réponse conditionnelle après une extinction</div>
+                    <div class="option" onclick="checkAnswer(this, 'c')">d) Une augmentation immédiate de la réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation45">
+                    <div class="result">Bonne réponse : c) Un rétablissement plus rapide de la réponse conditionnelle après une extinction</div>
+                    <p>La réinstallation est le processus par lequel la réponse conditionnelle est rétablie plus rapidement après une extinction lorsque le stimulus inconditionnel est à nouveau présenté.</p>
+                </div>
+            </div>
+
+            <!-- Question 46 -->
+            <div class="question">
+                <h3>46. Quels sont les effets d'une lésion du cortex auditif ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à reconnaître les sons</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à voir les couleurs</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(46, ['a'])">Valider</button>
+                <div class="explanation" id="explanation46">
+                    <div class="result">Bonne réponse : a) Incapacité à reconnaître les sons</div>
+                    <p>Une lésion du cortex auditif peut entraîner une incapacité à reconnaître ou interpréter les sons, bien que la perception auditive de base puisse rester intacte.</p>
+                </div>
+            </div>
+
+            <!-- Question 47 -->
+            <div class="question">
+                <h3>47. Qu'est-ce que la perception subliminale ?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, 'b')">a) Une perception consciente des stimuli</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">b) Une perception inconsciente des stimuli</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">c) Une extinction de la réponse conditionnelle</div>
+                    <div class="option" onclick="checkAnswer(this, 'b')">d) Une augmentation de la réponse inconditionnelle</div>
+                </div>
+                <div class="explanation" id="explanation47">
+                    <div class="result">Bonne réponse : b) Une perception inconsciente des stimuli</div>
+                    <p>La perception subliminale désigne la perception de stimuli en dessous du seuil de conscience, qui peuvent néanmoins influencer le comportement.</p>
+                </div>
+            </div>
+
+            <!-- Question 48 -->
+            <div class="question">
+                <h3>48. Quels sont les effets d'une lésion de l'aire V4 ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Incapacité à reconnaître les couleurs</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Incapacité à percevoir le mouvement</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Incapacité à reconnaître les visages</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Incapacité à entendre les sons</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(48, ['a'])">Valider</button>
+                <div class="explanation" id="explanation48">
+                    <div class="result">Bonne réponse : a) Incapacité à reconnaître les couleurs</div>
+                    <p>Une lésion de l'aire V4 peut entraîner une achromatopsie cérébrale, où les patients ne peuvent pas distinguer les couleurs.</p>
+                </div>
+            </div>
+
+							
+			<!-- Question 49 -->
+			<div class="question">
+				<h3>49. Qu'est-ce que la désensibilisation systématique ?</h3>
+				<div class="options">
+					<div class="option" onclick="checkAnswer(this, 'a')">a) Une confrontation progressive à des situations anxiogènes</div>
+					<div class="option" onclick="checkAnswer(this, 'a')">b) Une extinction immédiate de la réponse conditionnelle</div>
+					<div class="option" onclick="checkAnswer(this, 'a')">c) Une augmentation de la réponse inconditionnelle</div>
+					<div class="option" onclick="checkAnswer(this, 'a')">d) Une transformation de la réponse conditionnelle en réponse inconditionnelle</div>
+				</div>
+				<div class="explanation" id="explanation49">
+					<div class="result">Bonne réponse : a) Une confrontation progressive à des situations anxiogènes</div>
+					<p>
+						La désensibilisation systématique est une technique de thérapie comportementale utilisée pour réduire ou éliminer
+						les réactions de peur ou d'anxiété. Elle repose sur le principe de la confrontation progressive et contrôlée
+						à des stimuli anxiogènes, tout en associant ces stimuli à un état de relaxation.
+					</p>
+					<p>
+						Cette méthode se déroule généralement en trois étapes :
+					</p>
+					<ol>
+						<li><strong>Apprentissage de la relaxation</strong> : Le patient apprend des techniques pour se détendre profondément.</li>
+						<li><strong>Hiérarchisation des peurs</strong> : Une liste de situations anxiogènes est établie, classées par ordre croissant d'intensité.</li>
+						<li><strong>Confrontation progressive</strong> : Le patient est exposé graduellement aux situations anxiogènes, en commençant par celles qui provoquent le moins d'anxiété, tout en utilisant les techniques de relaxation pour gérer son stress.</li>
+					</ol>
+					<p>
+						L'objectif est de remplacer la réponse d'anxiété par une réponse de relaxation, grâce à un processus d'habituation.
+					</p>
+				</div>
+			</div>
+
+
+
+				
+            <!-- Question 50 -->
+            <div class="question">
+                <h3>50. Quels sont les effets d'une thérapie cognitivo-comportementale (TCC) sur les phobies ?</h3>
+                <div class="options">
+                    <div class="option" onclick="toggleSelection(this)">a) Réduction des symptômes phobiques</div>
+                    <div class="option" onclick="toggleSelection(this)">b) Augmentation des symptômes phobiques</div>
+                    <div class="option" onclick="toggleSelection(this)">c) Aucune modification des symptômes</div>
+                    <div class="option" onclick="toggleSelection(this)">d) Suppression immédiate de toutes les peurs</div>
+                </div>
+                <button type="button" onclick="validateMultipleAnswer(50, ['a'])">Valider</button>
+                <div class="explanation" id="explanation50">
+                    <div class="result">Bonne réponse : a) Réduction des symptômes phobiques</div>
+                    <p>Les thérapies cognitivo-comportementales (TCC) sont efficaces pour réduire les symptômes phobiques en modifiant les pensées et comportements associés aux peurs.</p>
+                </div>
+            </div>
+        </form>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        // Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        // Vérifie la réponse pour les questions à choix unique
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if (option.textContent.startsWith(correctAnswer + ")")) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        // Valide les réponses pour les questions à choix multiples
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
