@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La membrane plasmique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #e9e9e9;
+        }
+        .option.selected {
+            background-color: #d4edda;
+        }
+        .option.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+        .option.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+        }
+        .result {
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM : La membrane plasmique</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. La membrane plasmique est principalement composée de :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) 60% de protéines, 30% de lipides, 10% de glucides</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) 50% de protéines, 40% de lipides, 10% de glucides</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) 40% de protéines, 50% de lipides, 10% de glucides</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) 30% de protéines, 60% de lipides, 10% de glucides</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : b) 50% de protéines, 40% de lipides, 10% de glucides</div>
+                <p>La membrane plasmique est composée de 50% de protéines, 40% de lipides, et 10% de glucides.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Quels sont les trois principaux rôles des membranes biologiques ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Constituer des barrières contrôlant la composition des cellules</div>
+                <div class="option" onclick="toggleSelection(this)">b) Constituer des surfaces d’échanges</div>
+                <div class="option" onclick="toggleSelection(this)">c) Constituer des interfaces mécaniques entre compartiments</div>
+                <div class="option" onclick="toggleSelection(this)">d) Produire de l’énergie pour la cellule</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['a', 'b', 'c'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne(s) réponse(s) : a), b), et c)</div>
+                <p>Les membranes biologiques jouent ces trois rôles principaux.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. La bicouche lipidique est composée principalement de :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Glycolipides</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Phospholipides</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Cholestérol</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Acides aminés</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : b) Phospholipides</div>
+                <p>Les phospholipides forment la structure principale de la bicouche lipidique.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Les phospholipides sont des molécules :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Hydrophiles uniquement</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Hydrophobes uniquement</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) Amphiphiles</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) Ioniques</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : c) Amphiphiles</div>
+                <p>Les phospholipides ont une tête hydrophile et une queue hydrophobe, ce qui les rend amphiphiles.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Le cholestérol dans la membrane plasmique :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'c')">a) Augmente la fluidité de la membrane</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">b) Diminue la rigidité de la membrane</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">c) Augmente la rigidité de la membrane et diminue sa perméabilité</div>
+                <div class="option" onclick="checkAnswer(this, 'c')">d) N’a aucun effet sur la membrane</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : c) Augmente la rigidité de la membrane et diminue sa perméabilité</div>
+                <p>Le cholestérol augmente la rigidité et diminue la perméabilité de la membrane plasmique.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. Citez deux types de protéines membranaires et leur fonction respective.</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation6').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Exemple de réponse :</div>
+                <p>Les protéines transmembranaires permettent le transport de substances à travers la membrane. Les protéines réceptrices fixent des molécules informatives comme les hormones.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Parmi les fonctions suivantes, lesquelles sont assurées par les protéines membranaires ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Transport de substances</div>
+                <div class="option" onclick="toggleSelection(this)">b) Catalyse de réactions chimiques</div>
+                <div class="option" onclick="toggleSelection(this)">c) Reconnaissance intercellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">d) Production d’ATP</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['a', 'b', 'c'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne(s) réponse(s) : a), b), et c)</div>
+                <p>Les protéines membranaires assurent ces fonctions, mais ne produisent pas d'ATP.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. L’osmose est définie comme :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Le transport actif de l’eau</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) La diffusion de l’eau à travers une membrane semi-perméable</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Le transport de molécules hydrophobes</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) La synthèse de protéines</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : b) La diffusion de l’eau à travers une membrane semi-perméable</div>
+                <p>L’osmose est la diffusion de l’eau à travers une membrane semi-perméable.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Dans une solution hypotonique, une cellule subit :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">a) Une plasmolyse</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">b) Une hémolyse</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">c) Une division cellulaire</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">d) Une augmentation de sa rigidité</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : b) Une hémolyse</div>
+                <p>Dans une solution hypotonique, l’eau entre massivement dans la cellule, provoquant son gonflement et son éclatement (hémolyse).</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Qu’est-ce que le transport actif ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation10').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Exemple de réponse :</div>
+                <p>Le transport actif est le mouvement de molécules à travers une membrane contre leur gradient de concentration, nécessitant de l’énergie.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+        // Vérifie la réponse pour les questions à choix unique
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if (option.textContent.startsWith(correctAnswer + ")")) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+        // Valide les réponses pour les questions à choix multiples
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
