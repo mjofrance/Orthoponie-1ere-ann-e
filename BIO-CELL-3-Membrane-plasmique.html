@@ -389,6 +389,23 @@
             });
             document.getElementById(`explanation${questionNumber}`).style.display = "block";
         }
+		
+		
+		function checkAnswer(element, correctAnswer) {
+		const options = element.parentElement.querySelectorAll('.option');
+		options.forEach(option => {
+			option.classList.remove('correct', 'incorrect');
+			if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+				(correctAnswer === 'faux' && option.textContent === 'Faux')) {
+				option.classList.add('correct');
+			} else if (option === element) {
+				option.classList.add('incorrect');
+			}
+		});
+		const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+		document.getElementById(`explanation${questionNumber}`).style.display = "block";
+		}
+		
     </script>
 </body>
 </html>
