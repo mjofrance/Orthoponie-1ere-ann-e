@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QROC : Histoire et connaissance de la profession d'orthophoniste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="home-link">Retour à l'accueil</a>
+        <h1>QROC : Histoire et connaissance de la profession d'orthophoniste</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Qui est l'abbé de l'Épée et quel est son rôle dans l'histoire de l'orthophonie ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : L'abbé de l'Épée est un précurseur de l'éducation des enfants sourds au XVIIIe siècle.</div>
+                <p>Il a mis au point des méthodes d'éducation, notamment la dactylologie, pour faciliter la communication des enfants sourds.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Quel médecin a travaillé sur la rééducation de Victor de l'Aveyron ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : Docteur Jean Itard</div>
+                <p>Jean Itard a mené les premières expériences de rééducation du langage auprès de Victor de l'Aveyron en 1795.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. En quelle année le mot "orthophonie" est-il apparu pour la première fois ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : 1829</div>
+                <p>Le mot "orthophonie" est apparu en 1829 avec le Dr Colombat et l'Institut Orthophonique de Paris.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Qui est Suzanne Borel-Maisonny et quel rôle a-t-elle joué dans l'histoire de l'orthophonie ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : Suzanne Borel-Maisonny était une phonéticienne et grammairienne.</div>
+                <p>Elle a contribué à la structuration de l'orthophonie en France et a ouvert le premier service de rééducation des troubles de la parole à l'hôpital Saint-Vincent-de-Paul à Paris.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Quels sont les trois stades de la prévention définis par l'OMS, appliqués à l'orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation5').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : Primaire, secondaire, tertiaire</div>
+                <p>
+                    <ul>
+                        <li>Primaire : empêcher l'apparition de cas nouveaux (ex : campagnes d'information).</li>
+                        <li>Secondaire : dépistage précoce des troubles.</li>
+                        <li>Tertiaire : actions thérapeutiques de rééducation et de réinsertion.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. En quelle année la formation initiale en orthophonie est-elle passée à cinq ans ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation6').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : 2013</div>
+                <p>La formation initiale en orthophonie est reconnue au grade de Master depuis 2013.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Quels sont les principaux troubles pris en charge par les orthophonistes ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation7').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : Troubles du langage oral et écrit, de la voix, de la déglutition, de la communication, et des fonctions oro-myo-faciales.</div>
+                <p>Les orthophonistes interviennent également dans la prise en charge des troubles cognitifs liés à la phonation, à la parole, et à la cognition mathématique.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Qu'est-ce que l'Acte Médical Orthophonique (AMO) et en quelle année a-t-il été créé ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation8').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : L'AMO est une lettre clé créée en 1969 pour intégrer les actes d'orthophonie à la NGAP.</div>
+                <p>Cela a permis aux orthophonistes de facturer leurs actes et d'être remboursés par l'Assurance Maladie.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Quels sont les différents modes d'exercice de la profession d'orthophoniste ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation9').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : Libéral, salarié hospitalier, autres postes salariés (IME, CAMSP, etc.).</div>
+                <p>Les orthophonistes peuvent exercer en cabinet libéral, en milieu hospitalier, ou dans des structures spécialisées comme les IME, CAMSP, ou CMPP.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Quels sont les objectifs du bilan orthophonique ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation10').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : Déterminer la nature des troubles et l'opportunité d'une rééducation.</div>
+                <p>Le bilan orthophonique permet de poser un diagnostic orthophonique et de proposer une prise en charge adaptée.</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Quels sont les trois types de diplômes délivrés par l'Enseignement Supérieur et cosignés par la Santé ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation11').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : Médecine, Odontologie, Pharmacie, Maïeutique, Audioprothèse, Orthophonie, Orthoptiste.</div>
+                <p>Ces diplômes permettent l'exercice professionnel dans le domaine de la santé.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Quels sont les principaux domaines d'intervention de l'orthophoniste selon la loi de 2016 ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation12').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : Prévention, bilan orthophonique, traitement des troubles de la communication, du langage, de la cognition mathématique, de la parole, de la voix et des fonctions oro-myo-faciales.</div>
+                <p>L'orthophoniste contribue au développement et au maintien de l'autonomie et de la qualité de vie du patient.</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Qu'est-ce que la Nomenclature Générale des Actes Professionnels (NGAP) ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation13').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : La NGAP est une liste des actes professionnels remboursables par l'Assurance Maladie.</div>
+                <p>Elle permet de coder et de facturer les actes réalisés par les professionnels de santé, dont les orthophonistes.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Quels sont les objectifs de la prévention primaire en orthophonie ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation14').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : Empêcher l'apparition de cas nouveaux.</div>
+                <p>Cela inclut les campagnes d'information, de vaccination, et la formation des professionnels de la petite enfance.</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Quels sont les objectifs de la prévention secondaire en orthophonie ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation15').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : Dépistage précoce des troubles.</div>
+                <p>Cela permet de diminuer la prévalence d'une maladie et de réduire sa durée d'évolution.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Quels sont les objectifs de la prévention tertiaire en orthophonie ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation16').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : Rééducation, remédiation et réinsertion familiale, sociale et culturelle.</div>
+                <p>Cela vise à diminuer la prévalence des incapacités chroniques ou des récidives.</p>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Quels sont les principaux outils utilisés par Suzanne Borel-Maisonny pour la rééducation ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation17').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : Audiogrammes phonétiques et orthodiagrammes des voyelles et des consonnes.</div>
+                <p>Ces outils ont permis de développer les guide-langues pour la rééducation des troubles articulatoires.</p>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Quels sont les principaux lieux d'exercice des orthophonistes ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation18').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : Cabinet libéral, IME, IEM, SESSAD, CAMSP, CMP, CMPP, SSEFIS, CH, EHPAD, CRTLA, CRA.</div>
+                <p>Les orthophonistes peuvent exercer dans divers contextes, en fonction des besoins des patients.</p>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Quels sont les principaux troubles de la voix pris en charge par les orthophonistes ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation19').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : Bégaiement, dysphonie, troubles de la déglutition, et troubles oro-myo-faciaux.</div>
+                <p>Les orthophonistes interviennent également dans la rééducation des troubles de la parole et du langage.</p>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. Quels sont les principaux objectifs de la formation en orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation20').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : Acquérir des compétences en évaluation, diagnostic, rééducation, prévention, et recherche.</div>
+                <p>La formation vise à préparer les futurs orthophonistes à exercer de manière autonome et responsable.</p>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. Quels sont les principaux tests développés par Suzanne Borel-Maisonny ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation21').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : Test non verbal pour enfants de 15 mois à 6 ans, test d'aptitude pour enfants de 6 à 12 ans, test de langage pour jeunes enfants de 2 à 6 ans.</div>
+                <p>Ces tests ont permis d'évaluer les compétences langagières et cognitives des enfants.</p>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <h3>22. Quels sont les principaux enjeux de la réforme des études en orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation22').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : Uniformisation des études sur 5 ans et reconnaissance au grade de Master.</div>
+                <p>La réforme vise à améliorer la qualité de la formation et à répondre aux besoins de la profession.</p>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <h3>23. Quels sont les principaux acteurs de la structuration de la profession d'orthophoniste ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation23').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : Suzanne Borel-Maisonny, Dr Veau, Dr Tarneaud, Dr Recamier, Dr Simon, Julian de Ajuriaguerra.</div>
+                <p>Ces acteurs ont contribué à la reconnaissance et à la structuration de la profession.</p>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <h3>24. Quels sont les principaux objectifs de la charte éthique de l'orthophoniste ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation24').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : Respecter la dignité et l'autonomie du patient, maintenir un niveau de compétence professionnelle, et respecter le secret professionnel.</div>
+                <p>La charte éthique vise à garantir une pratique professionnelle responsable et respectueuse.</p>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <h3>25. Quels sont les principaux outils utilisés pour la prévention en orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation25').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : Affiches, flyers, sites internet, actions de prévention (ex : "1 bébé, 1 livre").</div>
+                <p>Ces outils visent à informer le public et les professionnels sur le développement du langage et les troubles associés.</p>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+            <h3>26. Quels sont les principaux troubles de l'oralité pris en charge par les orthophonistes ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation26').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : Troubles de la déglutition, troubles oro-myo-faciaux, et troubles de l'alimentation.</div>
+                <p>Les orthophonistes interviennent pour évaluer et rééduquer ces troubles.</p>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+            <h3>27. Quels sont les principaux objectifs de l'éducation thérapeutique du patient (ETP) en orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation27').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : Aider le patient à mieux comprendre sa pathologie et à acquérir des compétences pour mieux gérer son trouble.</div>
+                <p>L'ETP vise à améliorer la qualité de vie et l'autonomie du patient.</p>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+            <h3>28. Quels sont les principaux acteurs de la formation en orthophonie ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation28').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : Universités, centres de formation, FNO, UNADREO, et professionnels expérimentés.</div>
+                <p>Ces acteurs contribuent à la formation initiale et continue des orthophonistes.</p>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+            <h3>29. Quels sont les principaux défis de la profession d'orthophoniste aujourd'hui ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation29').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : Reconnaissance de la profession, adaptation aux évolutions technologiques, et prise en charge des troubles émergents.</div>
+                <p>Les orthophonistes doivent également faire face à des enjeux de prévention et de recherche.</p>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+            <h3>30. Quels sont les principaux outils utilisés pour le dépistage des troubles du langage ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation30').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Réponse : Tests de dépistage, observations cliniques, et collaboration avec les médecins de PMI ou de ville.</div>
+                <p>Ces outils permettent d'identifier précocement les troubles et d'orienter vers un bilan orthophonique si nécessaire.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
