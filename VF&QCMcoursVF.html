@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Biologie cellulaire (Mitose, Membrane, Noyau, Système endomembranaire)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM : Biologie cellulaire</h1>
+
+        <!-- QCM 1 -->
+        <div class="question">
+            <h3>1. La mitose comporte quatre phases : anaphase, prophase, métaphase et télophase :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">A : Cette affirmation est inexacte car il manque l’étape d’interphase</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">B : Cette affirmation est exacte mais l’ordre n’est pas correct</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">C : Cette affirmation est exacte et l’ordre est correct</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">D : Cette affirmation est inexacte car il manque deux stades</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'ordre correct est : prophase, métaphase, anaphase, télophase.</p>
+            </div>
+        </div>
+
+        <!-- QCM 2 -->
+        <div class="question">
+            <h3>2. Dans les conditions de déroulement normal, l'anaphase de mitose :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'b')">A : est caractérisée par la migration des chromosomes vers l’équateur de la cellule.</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">B : est caractérisée par la migration de chromatides aux deux pôles opposés de la cellule.</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">C : est caractérisée par la mise en place d’une plaque équatoriale</div>
+                <div class="option" onclick="checkAnswer(this, 'b')">D : est la phase terminale du processus de division d’une cellule somatique.</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'anaphase est la phase où les chromatides migrent vers les pôles opposés.</p>
+            </div>
+        </div>
+
+        <!-- QCM 3 -->
+        <div class="question">
+            <h3>3. La prophase :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A : est la dernière phase de la mitose</div>
+                <div class="option" onclick="toggleSelection(this)">B : est une phase de séparation des chromosomes en deux lots identiques</div>
+                <div class="option" onclick="toggleSelection(this)">C : est la première phase de la mitose</div>
+                <div class="option" onclick="toggleSelection(this)">D : est la phase d’élaboration du fuseau de division</div>
+                <div class="option" onclick="toggleSelection(this)">E : est la phase au cours de laquelle l’enveloppe nucléaire disparaît (prométaphase)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['c', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne(s) réponse(s) : C, D, E</div>
+                <p>La prophase est la première phase de la mitose, avec élaboration du fuseau et disparition de l'enveloppe nucléaire en prométaphase.</p>
+            </div>
+        </div>
+
+        <!-- QCM 4 -->
+        <div class="question">
+            <h3>4. L'anaphase :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A : est la phase au cours de laquelle se forment les asters</div>
+                <div class="option" onclick="toggleSelection(this)">B : est la phase de migration des chromatides vers les pôles</div>
+                <div class="option" onclick="toggleSelection(this)">C : est la phase de séparation des cellules filles</div>
+                <div class="option" onclick="toggleSelection(this)">D : est une phase au cours de laquelle les chromosomes ont deux chromatides</div>
+                <div class="option" onclick="toggleSelection(this)">E : est une phase au cours de laquelle les chromosomes n'ont qu'une seule chromatide</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['b', 'e'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne(s) réponse(s) : B, E</div>
+                <p>L'anaphase est la phase de migration des chromatides vers les pôles, et les chromosomes n'ont alors qu'une seule chromatide.</p>
+            </div>
+        </div>
+
+        <!-- QCM 5 -->
+        <div class="question">
+            <h3>5. Au cours de la mitose :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A : l'information génétique est répartie de façon identique entre les cellules filles.</div>
+                <div class="option" onclick="toggleSelection(this)">B : l'information génétique est répartie de façon inégale entre les cellules filles</div>
+                <div class="option" onclick="toggleSelection(this)">C : le nombre de chromosomes des cellules filles est égal à celui de la cellule mère</div>
+                <div class="option" onclick="toggleSelection(this)">D : le nombre de chromosomes des cellules filles devient la moitié de celui de la cellule mère</div>
+                <div class="option" onclick="toggleSelection(this)">E : il y a distribution inégale des chromosomes entre les cellules filles</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['a', 'c'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne(s) réponse(s) : A, C</div>
+                <p>La mitose permet une répartition identique de l'information génétique et le nombre de chromosomes reste le même.</p>
+            </div>
+        </div>
+
+        <!-- QCM 6 -->
+        <div class="question">
+            <h3>6. Associez les propositions a à d à chacun des évènements 1 à 8 :</h3>
+            <p>1- Les microtubules polaires apparaissent</p>
+            <p>2- Les chromosomes migrent aux pôles</p>
+            <p>3- Les centromères se divisent</p>
+            <p>4- Les centrioles migrent vers les pôles</p>
+            <p>5- Les chromosomes atteignent les pôles</p>
+            <p>6- Les phases G1, S et G2 se font</p>
+            <p>7- L'enveloppe nucléaire et le nucléole disparaissent</p>
+            <p>8- La réplication de l'ADN (chromosomes) se fait</p>
+            <textarea rows="8" placeholder="Exemple : 1-d, 2-a, 3-a, 4-d, 5-e, 6-b, 7-d, 8-b"></textarea>
+            <button type="button" onclick="document.getElementById('explanation6').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse :</div>
+                <p>1-d, 2-a, 3-a, 4-d, 5-e, 6-b, 7-d, 8-b</p>
+            </div>
+        </div>
+
+        <!-- QCM 7 -->
+        <div class="question">
+            <h3>7. Associez à chaque état des chromosomes dans la cellule une phase du cycle cellulaire :</h3>
+            <p>1- Chromosome visible en microscopie optique, formé de deux chromatides</p>
+            <p>2- Chromosome non visible en microscopie optique et formé en certains endroits seulement de deux chromatides</p>
+            <p>3- Chromosome monochromatidien visible en microscopie optique</p>
+            <p>4- Chromosome monochromatidien non visible en microscopie optique</p>
+            <textarea rows="4" placeholder="Exemple : 1-a, 2-c, 3-d, 4-b"></textarea>
+            <button type="button" onclick="document.getElementById('explanation7').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse :</div>
+                <p>1-a, 2-c, 3-d, 4-b</p>
+            </div>
+        </div>
+
+        <!-- QCM 8 -->
+        <div class="question">
+            <h3>8. Indiquez l’ordre chronologique des évènements de mitose désignés par les lettres a à f :</h3>
+            <p>a) condensation progressive de la chromatine.</p>
+            <p>b) migration des centrosomes aux pôles du fuseau de division et de la formation du fuseau.</p>
+            <p>c) positionnement des centromères au niveau de l’équateur de la cellule</p>
+            <p>d) clivage des centromères et ascension polaire des chromosomes fils.</p>
+            <p>e) apparition des enveloppes nucléaires.</p>
+            <p>f) séparation des cytoplasmes par un anneau protéique contractile au niveau du plan équatorial du fuseau de division.</p>
+            <textarea rows="2" placeholder="Exemple : a-b-c-d-e-f"></textarea>
+            <button type="button" onclick="document.getElementById('explanation8').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse :</div>
+                <p>a-b-c-d-e-f (ou b-a-c-d-e-f)</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 1 -->
+        <div class="question">
+            <h3>9. La mitose permet d'obtenir à partir d'une cellule mère diploïde 2 cellules filles diploïdes génétiquement différentes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Les cellules filles sont génétiquement identiques.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 2 -->
+        <div class="question">
+            <h3>10. Au stade métaphase de la mitose, les chromatides sœurs des chromosomes dupliqués sont rattachés aux microtubules polaires via leurs kinétochores.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 3 -->
+        <div class="question">
+            <h3>11. Quand les cellules passent en G0, elles sortent définitivement du cycle cellulaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le passage en G0 peut être temporaire.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 4 -->
+        <div class="question">
+            <h3>12. Les mécanismes de surveillance (checkpoint) peuvent empêcher le passage d'une phase du cycle cellulaire à la suivante.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 5 -->
+        <div class="question">
+            <h3>13. Les cyclines/Cdk sont les protéines impliquées dans les checkpoints.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Dans les checkpoints, on trouve MPF, RCP, etc.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 6 -->
+        <div class="question">
+            <h3>14. Le point de contrôle RCP bloque la transition S/G2 si l'ADN est lésé.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le RCP bloque la transition G2/M.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 7 -->
+        <div class="question">
+            <h3>15. La protéine p53 permet d'arrêter le cycle cellulaire en bloquant une cycline si l'ADN est endommagé.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 8 -->
+        <div class="question">
+            <h3>16. La sénescence est une des formes de mort cellulaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La cellule est toujours vivante en sénescence.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 9 -->
+        <div class="question">
+            <h3>17. La mort d'une cellule entraine toujours une réaction inflammatoire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : Faux</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 10 -->
+        <div class="question">
+            <h3>18. Il existe 3 types de morts cellulaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Il existe principalement la nécrose et l'apoptose.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 11 -->
+        <div class="question">
+            <h3>19. La membrane plasmique est une structure figée dans sa composition et son architecture.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La membrane plasmique est dynamique.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 12 -->
+        <div class="question">
+            <h3>20. Les phospholipides la constituant possèdent une tête hydrophile et une queue hydrophobe.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 13 -->
+        <div class="question">
+            <h3>21. Les glucides formant le glycocalyx sont situés sur la face externe de la membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 14 -->
+        <div class="question">
+            <h3>22. Les seuls lipides entrant dans sa composition sont les phospholipides.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Il y a aussi le cholestérol et d'autres lipides.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 15 -->
+        <div class="question">
+            <h3>23. Les transports passifs se font dans le sens du gradient de concentration.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 16 -->
+        <div class="question">
+            <h3>24. Dans le phénomène d'osmose, l'eau se déplace du milieu le moins concentré vers le milieu le plus concentré.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 17 -->
+        <div class="question">
+            <h3>25. Tous les transports membranaires nécessitent l'intervention de protéines.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La diffusion simple ne nécessite pas de protéines.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 18 -->
+        <div class="question">
+            <h3>26. Les transports cytotiques se font sans déformation de la membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Les transports cytotiques impliquent une déformation de la membrane.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 19 -->
+        <div class="question">
+            <h3>27. Dans le transport actif, l'énergie est toujours fournie par l'hydrolyse de l'ATP.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>L'énergie peut aussi provenir d'un co-transport.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 20 -->
+        <div class="question">
+            <h3>28. La phagocytose est un mécanisme d'exocytose.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La phagocytose est un mécanisme d'endocytose.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 21 -->
+        <div class="question">
+            <h3>29. Le REL est impliqué dans la synthèse des protéines.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le REL est impliqué dans la synthèse des lipides.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 22 -->
+        <div class="question">
+            <h3>30. Toutes les membranes de la cellule sont constituées par les mêmes composés biochimiques dans les mêmes proportions.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Les proportions varient selon les membranes.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 23 -->
+        <div class="question">
+            <h3>31. Tous les éléments du système endomembranaire communiquent entre eux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 24 -->
+        <div class="question">
+            <h3>32. La communication entre les différents compartiments du système endomembranaire se fait grâce à des tubules les reliant.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : Vrai</div>
+                <p>Certains communiquent aussi par des vésicules.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 25 -->
+        <div class="question">
+            <h3>33. Les protéines destinées à s'insérer dans la membrane de l'appareil de Golgi sont synthétisées au niveau du REG.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 26 -->
+        <div class="question">
+            <h3>34. Les enzymes utilisées pour copier l’ADN (ADN ou ARN polymérases) sont produites au niveau du REG.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Elles sont synthétisées dans le cytoplasme.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 27 -->
+        <div class="question">
+            <h3>35. Les membranes du système endoplasmique contiennent plus de cholestérol que la membrane plasmique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Elles en contiennent moins.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 28 -->
+        <div class="question">
+            <h3>36. Le peptide signal est une séquence de la protéine lui permettant de se fixer au translocon.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le peptide signal est reconnu par la SRP.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 29 -->
+        <div class="question">
+            <h3>37. Le peptide signal est reconnu par la SRP, une protéine fixée à la membrane du REG.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La SRP est libre dans le cytoplasme.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 30 -->
+        <div class="question">
+            <h3>38. Dans le cas de protéine transmembranaire, le peptide signal n’est pas coupé ce qui permet à la protéine de rester fixée dans la membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le peptide signal est toujours coupé.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 31 -->
+        <div class="question">
+            <h3>39. Le dictyosome est l’ensemble des appareils de Golgi de la cellule.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>C'est l'inverse : l'appareil de Golgi est l’ensemble des dictyosomes.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 32 -->
+        <div class="question">
+            <h3>40. Le stockage du calcium se fait dans l’appareil de Golgi.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation40">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le stockage du calcium se fait dans le REL.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 33 -->
+        <div class="question">
+            <h3>41. La face Cis du dictyosome est située du côté de la membrane plasmique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation41">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La face Cis est du côté du noyau.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 34 -->
+        <div class="question">
+            <h3>42. L’appareil de Golgi intervient dans la modification des lipides et des protéines après leur synthèse.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation42">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 35 -->
+        <div class="question">
+            <h3>43. Les lysosomes contiennent des hydrolases basiques.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation43">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Ils contiennent des hydrolases acides.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 36 -->
+        <div class="question">
+            <h3>44. Les vésicules de transport se forment par bourgeonnement de la membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation44">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 37 -->
+        <div class="question">
+            <h3>45. Le transport antérograde est aussi appelé centrifuge est la voie de l’endocytose.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation45">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>C'est la voie de l'exocytose.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 38 -->
+        <div class="question">
+            <h3>46. Le noyau est un organite caractéristique de toutes les cellules eucaryotes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation46">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Certaines cellules eucaryotes n'ont pas de noyau (ex : globules rouges matures).</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 39 -->
+        <div class="question">
+            <h3>47. Le noyau contient tout l’ADN de la cellule.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation47">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>L'ADN mitochondrial est en dehors du noyau.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 40 -->
+        <div class="question">
+            <h3>48. Le noyau contient tout l’ARN de la cellule.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation48">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>L'ARN est aussi présent dans le cytoplasme.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 41 -->
+        <div class="question">
+            <h3>49. Le noyau est entouré d’une enveloppe en continuité avec le système endomembranaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation49">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 42 -->
+        <div class="question">
+            <h3>50. Les membranes nucléaires interne et externe se rejoignent au niveau des pores nucléaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation50">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 43 -->
+        <div class="question">
+            <h3>51. Chaque membrane est une bicouche lipidique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation51">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 44 -->
+        <div class="question">
+            <h3>52. La membrane nucléaire interne est en continuité avec la membrane du réticulum endoplasmique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation52">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>C'est la membrane nucléaire externe qui est en continuité avec le réticulum endoplasmique.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 45 -->
+        <div class="question">
+            <h3>53. La lamina nucléaire fait partie des éléments du nucléoplasme.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation53">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 46 -->
+        <div class="question">
+            <h3>54. La lamina est une couche lipidique associée à la membrane interne.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation54">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>La lamina est composée de protéines.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 47 -->
+        <div class="question">
+            <h3>55. Le nucléole est une structure nucléaire protégée par une membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation55">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le nucléole n'est pas entouré d'une membrane.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 48 -->
+        <div class="question">
+            <h3>56. Le nucléole est le siège de la synthèse des ARNm.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation56">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le nucléole est le siège de la synthèse des ARNr.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 49 -->
+        <div class="question">
+            <h3>57. Le transport à travers l’enveloppe nucléaire est unidirectionnel.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation57">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Le transport est bidirectionnel.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 50 -->
+        <div class="question">
+            <h3>58. Le pore nucléaire est composé de 4 anneaux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation58">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Il est composé de 3 anneaux.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 51 -->
+        <div class="question">
+            <h3>59. Parmi les transports nucléo-cytoplasmiques on trouve l’importation d’acides nucléiques.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation59">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>On trouve l'importation de protéines et l'exportation d'acides nucléiques.</p>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 52 -->
+        <div class="question">
+            <h3>60. L’hétérochromatine se trouve surtout en périphérie du noyau.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation60">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 53 -->
+        <div class="question">
+            <h3>61. Le transport des protéines du noyau vers le cytoplasme nécessite une séquence signal NES.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation61">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 54 -->
+        <div class="question">
+            <h3>62. La séquence NLS est reconnue par les importines.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation62">
+                <div class="result">Bonne réponse : Vrai</div>
+            </div>
+        </div>
+
+        <!-- Vrai/Faux 55 -->
+        <div class="question">
+            <h3>63. La grande sous unité ribosomique contient uniquement l’ARNr 5,8S, 28S, 5S.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation63">
+                <div class="result">Bonne réponse : Faux</div>
+                <p>Elle contient aussi des protéines.</p>
+            </div>
+        </div>
+
+        <!-- QCM 64 -->
+        <div class="question">
+            <h3>64. Le noyau des cellules eucaryotes renferme le support de l’information génétique :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'd')">a. L’ADN monocaténaire circulaire fragmenté en chromosomes</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">b. L’ARN monocaténaire fragmenté sous forme de chromosomes</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">c. L’ADN bicaténaire circulaire fragmenté sous forme de chromosomes</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">d. L’ADN bicaténaire fragmenté sous forme de chromosomes</div>
+                <div class="option" onclick="checkAnswer(this, 'd')">e. La chromatine</div>
+            </div>
+            <div class="explanation" id="explanation64">
+                <div class="result">Bonne réponse : D, E</div>
+                <p>L'ADN est bicaténaire, fragmenté en chromosomes, et forme la chromatine.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux') ||
+                    option.textContent.startsWith(correctAnswer.toUpperCase() + " :")) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber.trim()}`).style.display = "block";
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
