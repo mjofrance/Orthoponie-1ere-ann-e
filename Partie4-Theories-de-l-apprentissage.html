@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>QCM : Théories de l'apprentissage</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ margin: 0;
+ padding: 20px;
+ background-color: #f4f4f9;
+ color: #333;
+ }
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ background: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ h1 {
+ text-align: center;
+ color: #2c3e50;
+ }
+ .question {
+ background: #f9f9f9;
+ border-radius: 5px;
+ padding: 15px;
+ margin-bottom: 20px;
+ border: 1px solid #ddd;
+ }
+ .question h3 {
+ margin-top: 0;
+ }
+ .options {
+ margin-top: 10px;
+ }
+ .option {
+ background: #e9e9e9;
+ padding: 10px;
+ margin: 5px 0;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background 0.3s;
+ }
+ .option:hover {
+ background: #d4edda;
+ }
+ .option.selected {
+ font-weight: bold;
+ background: #e0e0e0;
+ }
+ .option.correct {
+ background: #d4edda;
+ color: #155724;
+ border: 1px solid #c3e6cb;
+ }
+ .option.incorrect {
+ background: #f8d7da;
+ color: #721c24;
+ border: 1px solid #f5c6cb;
+ }
+ .explanation {
+ margin-top: 10px;
+ padding: 10px;
+ background: #e2e3f1;
+ border-radius: 5px;
+ display: none;
+ }
+ .result {
+ font-weight: bold;
+ margin-bottom: 5px;
+ }
+ button {
+ margin-top: 10px;
+ padding: 8px 15px;
+ background: #2c3e50;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+ textarea {
+ width: 100%;
+ padding: 8px;
+ margin-top: 5px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .schema {
+ text-align: center;
+ margin: 10px 0;
+ font-weight: bold;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+ <h1>QCM : Théories de l'apprentissage</h1>
+
+ <!-- Question 1 - Réponse Unique -->
+ <div class="question">
+ <h3>1. Quel est le rôle de l'individu dans l'apprentissage selon Watson ?</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'b')">a) Actif</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">b) Passif</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">c) Créatif</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">d) Réflexif</div>
+ </div>
+ <div class="explanation" id="explanation1">
+ <div class="result">Bonne réponse : b) Passif</div>
+ <p>Watson propose un modèle où l'individu a un rôle passif par rapport à l'environnement.</p>
+ </div>
+ </div>
+
+ <!-- Question 2 - Choix multiple -->
+ <div class="question">
+ <h3>2. Quels concepts Guthrie rejette-t-il ? (Choix multiples)</h3>
+ <div class="options">
+ <div class="option" onclick="toggleSelection(this)">a) L'importance de la satisfaction du besoin</div>
+ <div class="option" onclick="toggleSelection(this)">b) L'importance de la répétition</div>
+ <div class="option" onclick="toggleSelection(this)">c) L'apprentissage par essai-erreur</div>
+ <div class="option" onclick="toggleSelection(this)">d) L'importance du renforcement</div>
+ </div>
+ <button type="button" onclick="validateMultipleAnswer(2, ['a', 'b', 'c', 'd'])">Valider</button>
+ <div class="explanation" id="explanation2">
+ <div class="result">Bonne(s) réponse(s) : a), b), c), et d)</div>
+ <p>Guthrie rejette tous ces concepts et considère que l'apprentissage est régi par la loi de la contiguïté.</p>
+ </div>
+ </div>
+
+ <!-- Question 3 - Vrai ou Faux -->
+ <div class="question">
+ <h3>3. Selon Skinner, le renforcement est défini comme un événement qui augmente la probabilité d'apparition d'un comportement.</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+ </div>
+ <div class="explanation" id="explanation3">
+ <div class="result">Bonne réponse : Vrai</div>
+ <p>Skinner définit le renforcement comme un événement qui augmente la probabilité d'apparition d'un comportement.</p>
+ </div>
+ </div>
+
+ <!-- Question 4 - Champs libre -->
+ <div class="question">
+ <h3>4. Expliquez brièvement ce qu'est l'apprentissage latent selon Tolman.</h3>
+ <textarea rows="3"></textarea>
+ <button type="button" onclick="document.getElementById('explanation4').style.display = 'block'">Valider</button>
+ <div class="explanation" id="explanation4">
+ <div class="result">Exemple de réponse :</div>
+ <p>L'apprentissage latent est un apprentissage qui se réalise en dehors de toute incitation explicite à apprendre.</p>
+ </div>
+ </div>
+
+ <!-- Question 5 - Schéma -->
+ <div class="question">
+ <h3>5. Quel schéma représente le modèle S-O-R de Hull ?</h3>
+ <div class="schema">
+ <p>Stimulus → Organisme → Réponse</p>
+ </div>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'a')">a) Stimulus → Organisme → Réponse</div>
+ <div class="option" onclick="checkAnswer(this, 'a')">b) Stimulus → Réponse</div>
+ <div class="option" onclick="checkAnswer(this, 'a')">c) Organisme → Stimulus → Réponse</div>
+ </div>
+ <div class="explanation" id="explanation5">
+ <div class="result">Bonne réponse : a) Stimulus → Organisme → Réponse</div>
+ <p>Hull propose le schéma S-O-R : Stimulus - Organisme - Réponse.</p>
+ </div>
+ </div>
+
+ <!-- Question 6 - QROC -->
+ <div class="question">
+ <h3>6. Qu'est-ce que l'insight selon Köhler ?</h3>
+ <textarea rows="3"></textarea>
+ <button type="button" onclick="document.getElementById('explanation6').style.display = 'block'">Valider</button>
+ <div class="explanation" id="explanation6">
+ <div class="result">Exemple de réponse :</div>
+ <p>L'insight est la découverte soudaine de la solution à un problème, impliquant des capacités de mémorisation sous une forme abstraite.</p>
+ </div>
+ </div>
+
+ <!-- Question 7 - Vrai ou Faux -->
+ <div class="question">
+ <h3>7. Le besoin de curiosité est un besoin homéostasique selon Hull.</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+ <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+ </div>
+ <div class="explanation" id="explanation7">
+ <div class="result">Bonne réponse : Faux</div>
+ <p>Le besoin de curiosité va au-delà du modèle S-O-R de Hull.</p>
+ </div>
+ </div>
+
+ <!-- Question 8 - Réponse Unique -->
+ <div class="question">
+ <h3>8. Quel est le principe de la loi de l'effet de Thorndike ?</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'c')">a) La répétition renforce le lien S-R</div>
+ <div class="option" onclick="checkAnswer(this, 'c')">b) La contiguïté temporelle est essentielle</div>
+ <div class="option" onclick="checkAnswer(this, 'c')">c) Un état satisfaisant augmente la force de la connexion S-R</div>
+ <div class="option" onclick="checkAnswer(this, 'c')">d) L'apprentissage est latent</div>
+ </div>
+ <div class="explanation" id="explanation8">
+ <div class="result">Bonne réponse : c) Un état satisfaisant augmente la force de la connexion S-R</div>
+ <p>Thorndike a formulé la loi de l'effet : un état satisfaisant augmente la force de la connexion S-R.</p>
+ </div>
+ </div>
+
+ <!-- Question 9 - Choix multiple -->
+ <div class="question">
+ <h3>9. Quels sont les éléments clés du conditionnement classique selon Watson ? (Choix multiples)</h3>
+ <div class="options">
+ <div class="option" onclick="toggleSelection(this)">a) Stimulus neutre</div>
+ <div class="option" onclick="toggleSelection(this)">b) Stimulus inconditionnel</div>
+ <div class="option" onclick="toggleSelection(this)">c) Réponse conditionnelle</div>
+ <div class="option" onclick="toggleSelection(this)">d) Renforcement positif</div>
+ </div>
+ <button type="button" onclick="validateMultipleAnswer(9, ['a', 'b', 'c'])">Valider</button>
+ <div class="explanation" id="explanation9">
+ <div class="result">Bonne(s) réponse(s) : a), b), et c)</div>
+ <p>Le conditionnement classique implique un stimulus neutre, un stimulus inconditionnel, et une réponse conditionnelle.</p>
+ </div>
+ </div>
+
+ <!-- Question 10 - Vrai ou Faux -->
+ <div class="question">
+ <h3>10. Tolman affirme que les rats peuvent développer des cartes mentales.</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+ </div>
+ <div class="explanation" id="explanation10">
+ <div class="result">Bonne réponse : Vrai</div>
+ <p>Tolman a démontré que les rats peuvent développer des cartes mentales basiques.</p>
+ </div>
+ </div>
+
+ <!-- Question 11 - Champs libre -->
+ <div class="question">
+ <h3>11. Décrivez brièvement l'expérience du "Petit Albert" de Watson et Rayner.</h3>
+ <textarea rows="3"></textarea>
+ <button type="button" onclick="document.getElementById('explanation11').style.display = 'block'">Valider</button>
+ <div class="explanation" id="explanation11">
+ <div class="result">Exemple de réponse :</div>
+ <p>Watson et Rayner ont conditionné la peur chez un enfant en associant un rat (stimulus neutre) à un bruit fort (stimulus inconditionnel).</p>
+ </div>
+ </div>
+
+ <!-- Question 12 - Réponse Unique -->
+ <div class="question">
+ <h3>12. Quel est le rôle du renforcement selon Hull ?</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'b')">a) Augmenter la satisfaction</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">b) Réduire le besoin</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">c) Créer une contiguïté</div>
+ <div class="option" onclick="checkAnswer(this, 'b')">d) Stimuler la curiosité</div>
+ </div>
+ <div class="explanation" id="explanation12">
+ <div class="result">Bonne réponse : b) Réduire le besoin</div>
+ <p>Hull associe le renforcement à la réduction du besoin.</p>
+ </div>
+ </div>
+
+ <!-- Question 13 - Vrai ou Faux -->
+ <div class="question">
+ <h3>13. Skinner considère que le libre arbitre est une illusion.</h3>
+ <div class="options">
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+ <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+ </div>
+ <div class="explanation" id="explanation13">
+ <div class="result">Bonne réponse : Vrai</div>
+ <p>Skinner affirme que l'homme est entièrement façonné par les renforcements de son environnement.</p>
+ </div>
+ </div>
+
+ <!-- Question 14 - QROC -->
+ <div class="question">
+ <h3>14. Qu'est-ce que la loi de la contiguïté selon Guthrie ?</h3>
+ <textarea rows="3"></textarea>
+ <button type="button" onclick="document.getElementById('explanation14').style.display = 'block'">Valider</button>
+ <div class="explanation" id="explanation14">
+ <div class="result">Exemple de réponse :</div>
+ <p>La loi de la contiguïté stipule que l'apprentissage résulte de l'association entre un comportement et les stimuli présents au même moment.</p>
+ </div>
+ </div>
+
+ <!-- Question 15 - Choix multiple -->
+ <div class="question">
+ <h3>15. Quels sont les types de motivations selon Hull ? (Choix multiples)</h3>
+ <div class="options">
+ <div class="option" onclick="toggleSelection(this)">a) Primaire</div>
+ <div class="option" onclick="toggleSelection(this)">b) Secondaire</div>
+ <div class="option" onclick="toggleSelection(this)">c) Cognitive</div>
+ <div class="option" onclick="toggleSelection(this)">d) Sociale</div>
+ </div>
+ <button type="button" onclick="validateMultipleAnswer(15, ['a', 'b'])">Valider</button>
+ <div class="explanation" id="explanation15">
+ <div class="result">Bonne(s) réponse(s) : a) et b)</div>
+ <p>Hull distingue les motivations primaires (besoins organiques) et secondaires.</p>
+ </div>
+ </div>
+
+ </div>
+
+ <script>
+ function toggleSelection(element) {
+ element.classList.toggle("selected");
+ }
+
+ function checkAnswer(element, correctAnswer) {
+ const options = element.parentElement.querySelectorAll('.option');
+ options.forEach(option => {
+ option.classList.remove('correct', 'incorrect');
+ if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+ (correctAnswer === 'faux' && option.textContent === 'Faux') ||
+ option.textContent.startsWith(correctAnswer + ")")) {
+ option.classList.add('correct');
+ } else if (option === element) {
+ option.classList.add('incorrect');
+ }
+ });
+ const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+ document.getElementById(`explanation${questionNumber}`).style.display = "block";
+ }
+
+ function validateMultipleAnswer(questionNumber, correctAnswers) {
+ const questionElement = event.target.parentElement;
+ const options = questionElement.querySelectorAll('.option');
+ options.forEach(option => {
+ const optionText = option.textContent.charAt(0);
+ if (correctAnswers.includes(optionText)) {
+ option.classList.add("correct");
+ } else if (option.classList.contains("selected")) {
+ option.classList.add("incorrect");
+ }
+ option.classList.remove("selected");
+ });
+ document.getElementById(`explanation${questionNumber}`).style.display = "block";
+ }
+ </script>
+</body>
+</html>
