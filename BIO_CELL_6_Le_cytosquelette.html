@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM BIO CELL 6: Le Cytosquelette</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f9;
+color: #333;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #2c3e50;
+}
+.question {
+background: #f9f9f9;
+border-radius: 5px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+}
+.question h3 {
+margin-top: 0;
+}
+.options {
+margin-top: 10px;
+}
+.option {
+background: #e9e9e9;
+padding: 10px;
+margin: 5px 0;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+.option:hover {
+background: #d4edda;
+}
+.option.selected {
+font-weight: bold;
+background: #e0e0e0;
+}
+.option.correct {
+background: #d4edda;
+color: #155724;
+border: 1px solid #c3e6cb;
+}
+.option.incorrect {
+background: #f8d7da;
+color: #721c24;
+border: 1px solid #f5c6cb;
+}
+.explanation {
+margin-top: 10px;
+padding: 10px;
+background: #e2e3f1;
+border-radius: 5px;
+display: none;
+}
+.result {
+font-weight: bold;
+margin-bottom: 5px;
+}
+button {
+margin-top: 10px;
+padding: 8px 15px;
+background: #2c3e50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+textarea {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+.diagram-qcm {
+max-width: 100%;
+height: auto;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+display: block;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+<h1>QCM BIO CELL 6: Le Cytosquelette</h1>
+
+<div class="question">
+<h3>1. Quels sont les trois principaux éléments protéiques qui constituent le cytosquelette ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 1)">a) Les chromosomes, les ribosomes et les mitochondries.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">b) Les microfilaments, les filaments épais et les filaments fins.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">c) Les microtubules, les microfilaments d'actine et les filaments intermédiaires.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">d) Les microfilaments d'actine, les myosines et les dynéines.</div>
+</div>
+<div class="explanation" id="explanation1">
+<div class="result">Bonne réponse : c) Les microtubules, les microfilaments d'actine et les filaments intermédiaires.</div>
+<p>Le cytosquelette est composé de trois catégories d'éléments filamenteux de nature protéique, classées selon leur morphologie et leur composition chimique : les microtubules (25 nm), les filaments intermédiaires (10 nm) et les microfilaments d'actine (8 nm). </p>
+</div>
+</div>
+
+<div class="question">
+<h3>2. Quelle est la principale fonction des filaments intermédiaires (FI) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 2)">a) Assurer la résistance mécanique de la cellule et des tissus.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 2)">b) Permettre le transport des organites et des vésicules.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 2)">c) Coordonner la division cellulaire et la cytodiérèse.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 2)">d) Générer le mouvement de déplacement des cellules par reptation.</div>
+</div>
+<div class="explanation" id="explanation2">
+<div class="result">Bonne réponse : a) Assurer la résistance mécanique de la cellule et des tissus.</div>
+<p>Les filaments intermédiaires sont des structures très résistantes, jouant un rôle structural fondamental dans le maintien de l'architecture cellulaire et tissulaire, en résistant aux contraintes mécaniques.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>3. Vrai ou Faux : Les microfilaments d'actine sont des structures dynamiques qui se polymérisent en présence de GTP.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 3)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 3)">Faux</div>
+</div>
+<div class="explanation" id="explanation3">
+<div class="result">Bonne réponse : Faux</div>
+<p>Les microfilaments d'actine sont des structures dynamiques, mais ils se polymérisent en présence d'**ATP**, de $Ca^{2+}$ et de $Mg^{2+}$ (l'hydrolyse de l'ATP en ADP+Pi par l'actine F provoque le désassemblage des filaments). L'assemblage des microtubules, quant à lui, dépend du GTP. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>4. Quel type de protéine de pontage est responsable de la formation de faisceaux contractiles de microfilaments d'actine ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 4)">a) La fimbrine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">b) La filamine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">c) L'α-actinine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">d) La spectrine.</div>
+</div>
+<div class="explanation" id="explanation4">
+<div class="result">Bonne réponse : c) L'α-actinine.</div>
+<p>L'α-actinine permet la formation de faisceaux contractiles, par exemple dans les ceintures d'adhérence, l'anneau contractile lors de la mitose, et les cellules musculaires. La fimbrine forme des faisceaux parallèles (serrés), et la filamine forme des réseaux de MF. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>5. Les microtubules prennent naissance à partir d'une structure appelée MTOC. Comment se nomme ce centre organisateur dans les cellules animales ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 5)">a) Le centrosome.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">b) Le céntriole.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">c) Le corpuscule basal.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">d) La lamine nucléaire.</div>
+</div>
+<div class="explanation" id="explanation5">
+<div class="result">Bonne réponse : a) Le centrosome.</div>
+<p>Le site de nucléation des microtubules est appelé MTOC (Centre Organisateur de Microtubules), localisé près du noyau, et nommé **centrosome** dans les cellules animales. Le centrosome est constitué de deux centrioles perpendiculaires entourés d'une matrice péri-centriolaire. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>6. Vrai ou Faux : L'hétérodimère de tubuline, l'unité de base des microtubules, est constitué d'une tubuline $\alpha$ et d'une tubuline $\gamma$.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 6)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 6)">Faux</div>
+</div>
+<div class="explanation" id="explanation6">
+<div class="result">Bonne réponse : Faux</div>
+<p>L'unité de base est l'**hétérodimère** de tubuline, formé par l'association d'une tubuline $\alpha$ et d'une tubuline $\beta$. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>7. Parmi les rôles suivants, lesquels sont assurés par le cytosquelette ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) Maintien de la morphologie et déformation de la cellule.</div>
+<div class="option" onclick="toggleSelection(this)">b) Mouvement des organites et vésicules intracellulaires.</div>
+<div class="option" onclick="toggleSelection(this)">c) Synthèse de l'ADN et de l'ARN.</div>
+<div class="option" onclick="toggleSelection(this)">d) Coordonner la division cellulaire (mitose et cytodiérèse).</div>
+<div class="option" onclick="toggleSelection(this)">e) Participer à l'établissement de jonctions intercellulaires.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(7, ['a', 'b', 'd', 'e'])">Valider</button>
+<div class="explanation" id="explanation7">
+<div class="result">Bonne(s) réponse(s) : a), b), d), et e)</div>
+<p>Le cytosquelette a de multiples rôles, incluant le maintien de la forme, le mouvement (cellulaire, organites), la contraction musculaire, la division cellulaire et la participation aux jonctions cellulaires.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>8. Comment se nomme le phénomène d'alternance entre l'état de croissance et l'état de désassemblage rapide des microtubules au pôle (+) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 8)">a) L'hydrolyse du GTP.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 8)">b) La nucléation.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 8)">c) L'instabilité dynamique.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 8)">d) Le glissement des protofilaments.</div>
+</div>
+<div class="explanation" id="explanation8">
+<div class="result">Bonne réponse : c) L'instabilité dynamique.</div>
+<p>L'**instabilité dynamique** est l'alternance entre l'état de croissance (polymérisation) stabilisé par la coiffe GTP au pôle (+) et l'état de catastrophe (désassemblage rapide) dû à l'hydrolyse du GTP. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>9. Les filaments intermédiaires sont constitués de monomères variés. Quel est le monomère principal des FI dans les cellules épithéliales ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 9)">a) La desmine.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 9)">b) La kératine.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 9)">c) La vimentine.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 9)">d) La lamine.</div>
+</div>
+<div class="explanation" id="explanation9">
+<div class="result">Bonne réponse : b) La kératine.</div>
+<p>Les filaments intermédiaires sont une famille hétérogène de protéines. Dans les cellules épithéliales, ce sont les **kératines** (ou cytokératines). La desmine se trouve dans les cellules musculaires, la vimentine dans le tissu conjonctif et la lamine forme la lamina nucléaire. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>10. Quelle protéine motrice associée aux microtubules assure le transport rétrograde (vers l'extrémité -) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 10)">a) La dynéine.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 10)">b) La kinésine.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 10)">c) La myosine.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 10)">d) L'actine.</div>
+</div>
+<div class="explanation" id="explanation10">
+<div class="result">Bonne réponse : a) La dynéine.</div>
+<p>Les protéines motrices se déplacent dans un seul sens le long des microtubules : les **dynéines** se déplacent vers l'extrémité négative (-) (transport rétrograde), et les kinésines vers l'extrémité positive (+) (transport antérograde). </p>
+</div>
+</div>
+
+<div class="question">
+<h3>11. Quel est l'effet de la protéine thymosine sur la polymérisation des microfilaments d'actine ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'd', 11)">a) Elle favorise la polymérisation en accélérant l'échange ADP-ATP.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 11)">b) Elle coupe les filaments en se fixant aux extrémités plus.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 11)">c) Elle permet la nucléation latérale de nouveaux filaments.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 11)">d) Elle inhibe la polymérisation en empêchant l'échange ADP-ATP.</div>
+</div>
+<div class="explanation" id="explanation11">
+<div class="result">Bonne réponse : d) Elle inhibe la polymérisation en empêchant l'échange ADP-ATP.</div>
+<p>La thymosine est une protéine de séquestration qui se lie aux monomères d'actine G et inhibe la polymérisation en bloquant l'échange de l'ADP pour l'ATP, maintenant ainsi l'actine sous forme de monomère libre.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>12. Quel est l'arrangement typique des microtubules dans l'axonème des cils et des flagelles ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 12)">a) 9 triplets de microtubules en anneau.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">b) 9 doublets de microtubules en anneau autour d'une paire centrale (9+2).</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">c) 13 protofilaments formant un tube creux.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">d) Un assemblage aléatoire d'hétérodimères de tubuline.</div>
+</div>
+<div class="explanation" id="explanation12">
+<div class="result">Bonne réponse : b) 9 doublets de microtubules en anneau autour d'une paire centrale (9+2).</div>
+<p>L'axonème, partie centrale des cils et flagelles, est caractérisé par un arrangement de **9 doublets** de microtubules externes disposés en anneau autour d'une **paire centrale** de microtubules (le motif "9+2"). </p>
+</div>
+</div>
+
+<div class="question">
+<h3>13. La nucléation des microfilaments d'actine consiste en la formation d'un :</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 13)">a) Monomère d'actine F.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">b) Hétérodimère d'actine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">c) Trimère d'actine G lié à l'ATP.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">d) Filament en hélice.</div>
+</div>
+<div class="explanation" id="explanation13">
+<div class="result">Bonne réponse : c) Trimère d'actine G lié à l'ATP.</div>
+<p>La **nucléation** est la première étape de la polymérisation des microfilaments d'actine et correspond à la formation d'un **trimère** d'actine G liée à l'ATP, appelé "noyau". </p>
+</div>
+</div>
+
+<div class="question">
+<h3>14. Quel type de microtubules compose le fuseau mitotique pendant la division cellulaire ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) Microtubules astraux (ou de l'aster).</div>
+<div class="option" onclick="toggleSelection(this)">b) Microtubules centriolaires.</div>
+<div class="option" onclick="toggleSelection(this)">c) Microtubules polaires.</div>
+<div class="option" onclick="toggleSelection(this)">d) Microtubules kinétochoriens.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(14, ['a', 'c', 'd'])">Valider</button>
+<div class="explanation" id="explanation14">
+<div class="result">Bonne(s) réponse(s) : a), c), et d)</div>
+<p>Le fuseau mitotique est composé de trois types de microtubules : les **astraux** (ou de l'aster), les **polaires** (qui se chevauchent au milieu) et les **kinétochoriens** (qui se fixent aux chromosomes au niveau du kinétochore). </p>
+</div>
+</div>
+
+<div class="question">
+<h3>15. Vrai ou Faux : La lamine nucléaire, qui tapisse et renforce l'enveloppe nucléaire, est composée de microtubules.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 15)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 15)">Faux</div>
+</div>
+<div class="explanation" id="explanation15">
+<div class="result">Bonne réponse : Faux</div>
+<p>La lamina nucléaire est composée de **filaments intermédiaires** (FI) de type V, dont le monomère est la **lamine**. </p>
+</div>
+</div>
+
+<div class="question">
+<h3>16. Comment la protéine Tau assure-t-elle la stabilisation des microtubules dans l'axone des neurones ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 16)">a) En se fixant aux dendrites pour empêcher la dépolarisation.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 16)">b) En s'associant à l'extrémité moins pour empêcher la dépolymérisation.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 16)">c) En se fixant transversalement aux microtubules.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 16)">d) En hydrolysant le GTP à l'extrémité plus.</div>
+</div>
+<div class="explanation" id="explanation16">
+<div class="result">Bonne réponse : c) En se fixant transversalement aux microtubules.</div>
+<p>La protéine Tau est une protéine stabilisatrice qui se fixe transversalement aux microtubules. Elle est essentielle pour l'organisation spatiale et le transport intracellulaire dans les neurones. L'hyperphosphorylation de Tau est impliquée dans la maladie d'Alzheimer (Tautopathie).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>17. Parmi les structures suivantes, laquelle est principalement soutenue par des faisceaux parallèles de microfilaments d'actine reliés par la Fimbrine et la Villine ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 17)">a) Les microvillosités.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">b) Le fuseau mitotique.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">c) La lamina nucléaire.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">d) Le cortex d'actine sous-membranaire.</div>
+</div>
+<div class="explanation" id="explanation17">
+<div class="result">Bonne réponse : a) Les microvillosités.</div>
+<p>Les microvillosités (comme celles des entérocytes) sont des prolongements de la membrane plasmique dont la partie centrale est constituée de microfilaments d'actine organisés en faisceaux parallèles, maintenus par des ponts de protéines comme la Fimbrine et la Villine. </p>
+</div>
+</div>
+
+<script>
+// Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+function toggleSelection(element) {
+    element.classList.toggle("selected");
+}
+
+// Vérifie la réponse pour les questions à choix unique
+function checkAnswer(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        // Vérifie si la réponse commence par la lettre correcte
+        if (option.textContent.startsWith(correctAnswer + ")")) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Valide les réponses pour les questions à choix multiples
+function validateMultipleAnswer(questionNumber, correctAnswers) {
+    const questionElement = event.target.parentElement;
+    const options = questionElement.querySelectorAll('.option');
+    options.forEach(option => {
+        const optionText = option.textContent.charAt(0);
+        const isCorrect = correctAnswers.includes(optionText);
+        const isSelected = option.classList.contains("selected");
+
+        if (isCorrect) {
+            option.classList.add("correct");
+        } else if (isSelected) {
+            option.classList.add("incorrect");
+        }
+        option.classList.remove("selected");
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Vérifie la réponse pour les questions Vrai ou Faux
+function checkTrueFalse(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        const isTrue = option.textContent === 'Vrai';
+        const isFalse = option.textContent === 'Faux';
+        
+        if ((correctAnswer === 'vrai' && isTrue) || (correctAnswer === 'faux' && isFalse)) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+</script>
+<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+</div>
+</body>
+</html>
