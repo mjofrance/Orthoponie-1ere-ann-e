@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD1 Biologie Cellulaire - Révisions</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f7f7f7; 
+            padding: 20px; 
+        }
+
+        .qcm-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+        }
+        .diagram-qcm {
+            max-width: 850px;
+
+        }
+        .header-link {
+            color: #7b1fa2; 
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #4a4a4a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .question-box {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .question-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .answer-container { 
+            margin-top: 10px; 
+        }
+        
+        .answer { 
+            padding: 8px; 
+            border-radius: 4px; 
+            display: none; /* Rendu invisible par défaut */
+            font-size: 15px;
+            line-height: 1.5;
+            color: #000;
+        }
+        
+        .show-answer-btn { 
+            background-color: #2c3e50; 
+            color: white; 
+            border: none; 
+            padding: 6px 12px; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            font-size: 0.85em; 
+            margin-top: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .show-answer-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .table-container { 
+            margin: 15px 0; 
+            overflow-x: auto; 
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 15px; 
+        }
+        
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+            font-size: 15px;
+        }
+        
+        th { 
+            background-color: #f2f2f2; 
+            color: #555;
+            font-weight: bold;
+        }
+
+        .context-note {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.previousElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                button.textContent = 'Afficher la réponse';
+            } else {
+                answer.style.display = 'block';
+                button.textContent = 'Masquer la réponse';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="qcm-container">
+	    <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+
+        <h1>TD1 Biologie Cellulaire - Généralités sur la cellule Membrane plasmique Système endomembranaire Noyau interphasique</h1>
+
+        <h2>Exercice 1 :</h2>
+        <img src="biocell_TD1_membrane_plasmique.png" alt="Schéman" class="diagram-qcm">
+
+        <div class="question-box">
+            <div class="question-text">1) Que représente le schéma ci-dessus ?</div>
+            <div class="answer-container">
+                <div class="answer">La membrane plasmique</div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <div class="question-text">2) À quelles légendes correspondent l'intérieur et l'extérieur de la cellule ? </div>
+            <div class="answer-container">
+                <div class="answer">1. Extérieur (glucides toujours du côté extérieur de la membrane)<br> 2. Intérieur</div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <div class="question-text">3) À quoi correspond la légende 3 ?</div>
+            <div class="answer-container">
+                <div class="answer">La bicouche lipidique</div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <div class="question-text">4) Faites correspondre les numéros aux légendes placées dans le tableau - <p>
+			- extérieur de la cellule<br>
+			- protéine intrinsèque (à un passage<br>
+			- protéine intrinsèque (à trois passages)<br>
+			- intérieur de la cellule phospholipide<br>
+			- glycolipide<br>
+			- feuillet lipidique externe feuillet lipidique interne<br>
+			- protéine extrinsèque externe bicouche lipidique<br>
+			- hélice alpha hydrophobe<br>
+			- domaine globulaire intracellulaire glycoprotéine intrinsèque<br>
+			- domaine globulaire extracellulaire<br> -  motifs glycosidiques<br>
+			- protéine extrinsèque à ancre lipidique
+			</div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numéro</th>
+                            <th>Légende</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td><div class="answer-container"><div class="answer">extérieur de la cellule</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>2</td><td><div class="answer-container"><div class="answer">intérieur de la cellule</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>3</td><td><div class="answer-container"><div class="answer">bicouche lipidique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>4</td><td><div class="answer-container"><div class="answer">feuillet lipidique externe</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>5</td><td><div class="answer-container"><div class="answer">feuillet lipidique interne</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>6</td><td><div class="answer-container"><div class="answer">protéine intrinsèque (à un passage)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>7</td><td><div class="answer-container"><div class="answer">glycoprotéine intrinsèque</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>8</td><td><div class="answer-container"><div class="answer">protéine intrinsèque (à trois passages)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>9</td><td><div class="answer-container"><div class="answer">protéine extrinsèque à ancre lipidique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>10</td><td><div class="answer-container"><div class="answer">protéine extrinsèque externe</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>11</td><td><div class="answer-container"><div class="answer">phospholipide</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>12</td><td><div class="answer-container"><div class="answer">glycolipide</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>13</td><td><div class="answer-container"><div class="answer">hélice alpha hydrophobe</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>14</td><td><div class="answer-container"><div class="answer">domaine globulaire intracellulaire</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>15</td><td><div class="answer-container"><div class="answer">domaine globulaire extracellulaire</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>16</td><td><div class="answer-container"><div class="answer">motifs glycosidiques</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>Exercice 2 : Donnez le nom correspondant à la définition ou répondez à la question</h2>
+		<div class="question-box"><div class="question-text">1- Théorie sur l'origine des mitochondries :</div><div class="answer-container"><div class="answer">Théorie endosymbiotique ou endosymbiose : symbiose à l'intérieur.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">2- Quels sont les 3 constituants de la membrane plasmique ?</div><div class="answer-container"><div class="answer">Protéines / lipides / glucides</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">3- Rôle du cholestérol dans la membrane plasmique :</div><div class="answer-container"><div class="answer">Augmente la rigidité de la membrane et diminue sa perméabilité</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">4- Comment appelle-t-on la structure formée par les glucides de la membrane ?</div><div class="answer-container"><div class="answer">glycocalyx = manteau cellulaire</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">5- Nom du mécanisme de diffusion de l'eau à travers la membrane plasmique :</div><div class="answer-container"><div class="answer">osmose</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">6- Nom du franchissement direct de la membrane plasmique sans intervention de protéines :</div><div class="answer-container"><div class="answer">transports passifs à diffusion simple (petite molécule qui traverse dans le sens du gradient de concentration)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">7- Deux types de protéines permettant le transport passif de molécules à travers la membrane :</div><div class="answer-container"><div class="answer">perméases et canaux protéiques (ou canaux ioniques)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">8- Protéines assurant le transport actif à travers la membrane :</div><div class="answer-container"><div class="answer">ATPases (ou pompes ATP-dépendantes)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">9- Mécanisme permettant aux macromolécules de traverser la membrane :</div><div class="answer-container"><div class="answer">transport cytotique (endocytose ou exocytose)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+
+        <h2>Exercice 3 : Vrai ou Faux</h2>
+
+        <div class="question-box"><div class="question-text">1- La tête des phospholipides de la membrane est située vers l'intérieur de la membrane plasmique.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">2- La membrane plasmique est constituée de 50% de lipides et de 40% des protéines.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">3- La membrane plasmique est une barrière hydrophile, sélective et perméable.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">4- La membrane plasmique est une structure figée.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">5- Les transports passifs à travers la membrane plasmique se font dans le sens du gradient de concentration.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">6- Les lipides membranaires sont des molécules amphipatiques composées d'une tête hydrophobe et d'une queue hydrophile.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">7- Suivant leur localisation on peut décrire uniquement les protéines membranaires extrinsèques et les protéines périphériques.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">8- Dans la diffusion simple, le transport suit le gradient de concentration, c'est à dire du plus concentré vers le moins concentré.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">9- Les transports perméatifs se font sans déformation de la membrane.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">10- L'osmose est la diffusion de l'eau du milieu le plus concentré en électrolytes vers celui le moins concentré.</div><div class="answer-container"><div class="answer">FAUX (l'eau passe toujours du milieu moins concentré vers le milieu plus concentré, pour arriver à l'équilibre)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">11- Tous les transports de molécules à travers la membrane plasmique nécessitent de l'énergie.</div><div class="answer-container"><div class="answer">FAUX</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">12- Le symport est un mode de transport actif à travers la membrane.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        
+        <h2>Exercice 4 : Absorption du Glucose</h2>
+
+        <p class="context-note">La figure ci-dessous représente les structures cellulaires impliquées dans l’absorption du glucose au niveau des cellules épithéliales de l’intestin. <br>
+Le glucose présent dans la cavité intestinale pénètre dans les entérocytes par leur face apicale et ressort des cellules par leur face basale pour gagner le milieu interstitiel et le sang. Tout le glucose présent dans l’intestin finit par être absorbé.<br>
+Les transports membranaires situés sur la face apicale sont différents de ceux situés sur la basale. Cette dernière contient environ 150 000 transporteurs B, absents sur la face apicale des entérocytes.<br><br>
+Le tableau suivant montre les concentrations normales de Na+, du K+ et du glucose à l’intérieur de l’entérocyte et dans le liquide interstitiel.</p>
+
+
+        <div class="table-container">
+            <table>
+                <thead><tr><th></th><th>Dans les entérocytes</th><th>Dans le sang et le liquide interstitiel</th></tr></thead>
+                <tbody>
+                    <tr><td>Na+</td><td>12 mM</td><td>148 mM</td></tr>
+                    <tr><td>K+</td><td>140 mM</td><td>4 mM</td></tr>
+                    <tr><td>Glucose</td><td>6 mM</td><td>0,008 mM</td></tr>
+                </tbody>
+            </table>
+								<img src="liquide_interstitiel_et_sang.png" alt="Schéman" class="diagram-qcm">
+        </div>
+
+        <div class="question-box"><div class="question-text">1) Quelle est la nature (lipidique, glucidique, protéique ou autre) des structures A, B et C ?</div><div class="answer-container"><div class="answer">Nature protéique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box">
+            <div class="question-text">2) Quel est le nom de ces 3 structures ?</div>
+            <div class="answer-container">
+                <div class="answer">
+                    A. Co-transport, plus spécifiquement du symport puisque les 2 transports se font dans le même sens<br>
+                    B. ATPase ou pompe ATP dépendante : transport actif du milieu le moins concentré vers le plus concentré<br>
+                    C. Canal / transport passif : du milieu plus concentré vers le milieu moins concentré
+                </div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+        <div class="question-box"><div class="question-text">3) Pourquoi le glucose se dirige-t-il de l'intérieur de la cellule vers le sang et non l'inverse ?</div><div class="answer-container"><div class="answer">Le milieu entérocytes est plus concentré que le sang. Donc pour suivre le gradient de concentration, sans aide, le glucose va sortir des entérocytes pour aller dans le sang en passant par les canaux.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">4) Le gradient de concentration en sodium entre l'intérieur de la cellule et le sang changerait-il si la structure B cessait de fonctionner ? Si oui, comment et pourquoi ?</div><div class="answer-container"><div class="answer">Oui, la concentration en sodium augmenterait dans les entérocytes. Car le Sodium ne pourrait plus sortir (plus de transport actif, et il continuerait à pénétrer la cellule par le À)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">5) Si la structure B cessait de fonctionner, le glucose ne pourrait plus passer de la lumière de l'intestin au sang. Pourquoi ?</div><div class="answer-container"><div class="answer">La concentration en NA+ à l’intérieur de la cellule augmente. Il n’y aurait plus de gradient de concentration entre l’intestin et la cellule (équilibre), donc la structure À ne pourrait plus fonctionner. Si la structure A ne peut plus fonctionner (il n’y a plus d’entrée de Na+ dans la cellule), alors le Glucose resterait dans l’intestin (il ne pourrait pas entrer par Co-transport avec Na+ qui reste dans l’intestin).</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+
+        <h2>Exercice 5 : Donnez le nom correspondant à la définition ou répondez à la question</h2>
+
+        <div class="question-box"><div class="question-text">1- Définition du système endomembranaire (SEM) :</div><div class="answer-container"><div class="answer">ensemble des compartiments intracellulaires limités par une membrane.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">2- Structures cellulaires faisant partie du SEM :</div><div class="answer-container"><div class="answer">Réticulum endoplasmique (granuleux et lisse), Golgi, Enveloppe nucléaire, endosomes, lysosomes, vésicules</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">3- Rôle du REG ? :</div><div class="answer-container"><div class="answer">synthèse des protéines</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">4- Rôle du REL ? :</div><div class="answer-container"><div class="answer">Synthèse des lipides</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">5- Transformation des protéines lors de leur maturation dans le REG :</div><div class="answer-container"><div class="answer">Glycosylation (addition chaîne glucidique) et acquisition de la structure tridimensionnelle (ou conformation spatiale)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">6- Nom du passage de la protéine en cours de synthèse à travers la membrane du REG :</div><div class="answer-container"><div class="answer">Translocation co-traductionnelle</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">7- Rôles de l'appareil de Golgi :</div><div class="answer-container"><div class="answer">maturation des protéines = modifications post-traductionelle des protéines et tri des protéines pour l’adressage dans les autres compartiments</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">8- Contenu des lysosomes :</div><div class="answer-container"><div class="answer">enzymes de dégradation (hydrolase)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">9- Rôle des lysosomes :</div><div class="answer-container"><div class="answer">dégradation de substrats endogènes ou exogènes (<< appareil digestif de la cellule >>)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box">
+            <div class="question-text">10- Étapes du transport vésiculaire antérograde :</div>
+            <div class="answer-container">
+                <div class="answer">
+                    Transport du corps cellulaire vers l’extrémité de l’axone = voie sécrétoire (permet d’apporter les choses produits au niveau du corps cellulaire vers l’extrémité).<br>
+                    1. Synthèse : REG (réticulum endoplasmique granuleux) <br>
+                    2. Appareil de Golgi<br>
+                    3. Transports par vésicules<br>
+                    4. Fusion avec la membrane<br>
+                    5. Exocytose du contenu des molécules
+                </div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="question-text">11- Quels sont les interactions de la lamina nucléaire ?</div>
+            <div class="answer-container">
+                <div class="answer">
+                    Elle interagit avec :<br>
+                    - les pores situés au niveau de l'enveloppe nucléaire,<br>
+                    - la chromatine,<br>
+                    - les protéines transmembranaires
+                </div>
+                <button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button>
+            </div>
+        </div>
+        <div class="question-box"><div class="question-text">12- Par quel mécanisme l'enveloppe nucléaire disparait en début de division ?</div><div class="answer-container"><div class="answer">La phosphorylation des lamines composant la lamina entraine la désorganisation de la lamina et de l’enveloppe nucléaire (et ce qui permet de continuer d’avancer dans le cycle). Cette phosphorylation est provoquée par les cycline/cdk. Cela intervient au moment de la prophase (plus particulièrement pendant la prométaphase)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">13- Nom de la protéine de la membrane nucléaire externe la reliant au cytosquelette :</div><div class="answer-container"><div class="answer">la Nesprine</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">14- Rôle et composition du complexe LINC de l'enveloppe nucléaire :</div><div class="answer-container"><div class="answer">Nesprine + protéine SUN</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">15- Chaîne de 20 à 30 acides aminés à l'extrémité N-terminale qui destine la protéine synthétisée à un certain organite de la cellule :</div><div class="answer-container"><div class="answer">le peptide signal (qui permet l'adressage)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">16- Petite masse d'hétérochromatine située contre l'enveloppe nucléaire et contenant un chromosome X inactivé :</div><div class="answer-container"><div class="answer">le corpuscule de Barr</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">17- Composition de la grosse sous-unité des ribosomes :</div><div class="answer-container"><div class="answer">composition des sous unités des ribosomes : protéines + ARN ribosomique. Grosse sous unité = 60S. Pour la grosse unité, ARN 5S, 5,8S et 28S + protéines.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">18- Nom de la laminopathie résultant de la mutation de la lamine A :</div><div class="answer-container"><div class="answer">la progéria (vieillissement accéléré des cellules)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+
+        <h2>Exercice 6 : Vrai ou Faux</h2>
+
+        <div class="question-box"><div class="question-text">1- Les organites du SEM assurent la production, le stockage, l'exportation de molécules biologiques et la dégradation des substances pouvant avoir des effets nocifs.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">2- Le RE est en continuité avec l'enveloppe nucléaire.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">3- Les membranes du réticulum endoplasmique ont une composition moléculaire identique à celle de la membrane plasmique.</div><div class="answer-container"><div class="answer">FAUX (Similaire mais pas identique : moins de cholestérol et plus de protéines)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">4- L'appareil de Golgi est situé à proximité de la membrane plasmique.</div><div class="answer-container"><div class="answer">FAUX (Il est à proximité du noyau)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">5- L'appareil de Golgi comporte une face *trans* du côté nucléaire et une face *cis* du côté de la membrane plasmique.</div><div class="answer-container"><div class="answer">FAUX (C'est le contraire)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">6- L'enveloppe nucléaire est continue.</div><div class="answer-container"><div class="answer">FAUX (Il y a des pores nucléaires)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">7- La membrane nucléaire externe est en continuité avec le REG.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">8- Les macromolécules traversent les pores nucléaires passivement par le canal central.</div><div class="answer-container"><div class="answer">FAUX (Elles traversent activement, avec intervention de l'ATP)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">9- Les ribosomes se forment dans le nucléole.</div><div class="answer-container"><div class="answer">FAUX (Les sous-unités ribosomales se forment dans le nucléole, mais les ribosomes se forment dans le cytoplasme pendant la traduction)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">10- L'hétérochromatine contient de l'ADN transcrit.</div><div class="answer-container"><div class="answer">FAUX (ADN non transcrit/inactif car hyper condensé)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">11- L'hétérochromatine est majoritaire et située principalement en périphérie du noyau.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">12- L'ARNr 5S est produit dans le nucléole.</div><div class="answer-container"><div class="answer">FAUX (C'est le seul qui n'est pas produit dans le nucléole)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">13- Une mutation du gène de la lamine A entraine une désorganisation de l'euchromatine.</div><div class="answer-container"><div class="answer">FAUX (Désorganisation de l'hétérochromatine)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">14- La protéine Ran est impliquée dans le transport à travers l'enveloppe nucléaire.</div><div class="answer-container"><div class="answer">VRAI</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+        <div class="question-box"><div class="question-text">15- La forme RanGTP est active et majoritaire dans le cytoplasme.</div><div class="answer-container"><div class="answer">FAUX (RanGTP est active mais majoritaire dans le noyau)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+
+        <h2>Exercice 7 : Le Noyau</h2>
+
+        <p class="context-note">Ci-dessous une photo d'un noyau.</p>
+        <img src="biocell_TD1_noyau.png" alt="Schéman" class="diagram-qcm">
+        <div class="question-box">
+            <div class="question-text">1) Indiquez les légendes correspondant aux numéros</div>
+        </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numéro</th>
+                            <th>Légende</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td><div class="answer-container"><div class="answer">Cytoplasme - Réticulum endoplasmique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>2</td><td><div class="answer-container"><div class="answer">Enveloppe nucléaire (double bicouche lipidique)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>3</td><td><div class="answer-container"><div class="answer">Euchromatine (chromatine décondensée, et active niveau transcriptionnelle)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>4</td><td><div class="answer-container"><div class="answer">Nucléole</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>5</td><td><div class="answer-container"><div class="answer">Hétérochromatine (chromatine hyper condensée inactive)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>6</td><td><div class="answer-container"><div class="answer">Nucléoplasme</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>7</td><td><div class="answer-container"><div class="answer">Pore nucléaire</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+			
+			
+        <div class="question-box"><div class="question-text">2) Quelle est le type de microscope ayant permis cette observation ?</div><div class="answer-container"><div class="answer">MET (microscope électronique à transmission)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></div>
+
+        <h2>Exercice 8 : Microscopie</h2>
+        <div class="question-box">
+            <div class="question-text">1) Indiquez pour chacun des microscopes ci-dessous leur utilisation<p>
+			A - Visualisation d'objets vivants sans marquage préalable<br>
+			B - Visualisation de substances marquées par un fluorochrome<br>
+			C - Visualisation des membranes et de la structure des compartiments subcellulaires<br>
+			D - Visualisation de la surface d'un échantillon			
+			</div>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Technique</th><th>Correspondance</th></tr></thead>
+                    <tbody>
+                        <tr><td>1. Microscope optique</td><td><div class="answer-container"><div class="answer">B</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></tr>
+                        <tr><td>2. Microscope à fluorescence</td><td><div class="answer-container"><div class="answer">D</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>3. Microscope électronique à transmission (MET)</td><td><div class="answer-container"><div class="answer">A</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                        <tr><td>4. Microscope électronique à balayage (MEB)</td><td><div class="answer-container"><div class="answer">C</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <div class="question-text">2) Faites correspondre les images au microscope ayant permis de les obtenir</div>
+            <img src="biocell_TD1_objet1.png" alt="Schéma" class="diagram-qcm">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Objet</th>
+                            <th>Image A</th>
+                            <th>Image B</th>
+                            <th>Image C</th>
+                            <th>Image D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Objet 1 : globules blancs</td>
+                            <td><div class="answer-container"><div class="answer">Microscopie à fluorescence</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">Microscope optique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MEB</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MET</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+			<img src="biocell_TD1_objet2.png" alt="Schéma" class="diagram-qcm">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Objet</th>
+                            <th>Image A</th>
+                            <th>Image B</th>
+                            <th>Image C</th>
+                            <th>Image D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Objet 2 : bactéries (bacilles)</td>
+                            <td><div class="answer-container"><div class="answer">Microscope optique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MEB</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MET</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">Microscopie à fluorescence</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+			<img src="biocell_TD1_objet3.png" alt="Schéma" class="diagram-qcm">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Objet</th>
+                            <th>Image A</th>
+                            <th>Image B</th>
+                            <th>Image C</th>
+                            <th>Image D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Objet 3 : chromosomes</td>
+                            <td><div class="answer-container"><div class="answer">Microscope optique</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MEB</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">MET</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                            <td><div class="answer-container"><div class="answer">Microscopie à fluorescence</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Afficher la réponse</button></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	    <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+</body>
+</html>
