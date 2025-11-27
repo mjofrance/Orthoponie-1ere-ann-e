@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM BIO CELL 5: Le Noyau Interphasique</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f9;
+color: #333;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #2c3e50;
+}
+.question {
+background: #f9f9f9;
+border-radius: 5px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+}
+.question h3 {
+margin-top: 0;
+}
+.options {
+margin-top: 10px;
+}
+.option {
+background: #e9e9e9;
+padding: 10px;
+margin: 5px 0;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+.option:hover {
+background: #d4edda;
+}
+.option.selected {
+font-weight: bold;
+background: #e0e0e0;
+}
+.option.correct {
+background: #d4edda;
+color: #155724;
+border: 1px solid #c3e6cb;
+}
+.option.incorrect {
+background: #f8d7da;
+color: #721c24;
+border: 1px solid #f5c6cb;
+}
+.explanation {
+margin-top: 10px;
+padding: 10px;
+background: #e2e3f1;
+border-radius: 5px;
+display: none;
+}
+.result {
+font-weight: bold;
+margin-bottom: 5px;
+}
+button {
+margin-top: 10px;
+padding: 8px 15px;
+background: #2c3e50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+textarea {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+.diagram-qcm {
+max-width: 100%;
+height: auto;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+display: block;
+}
+.image-placeholder {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="#" class="home-link">Retour à l'accueil</a>
+<h1>QCM BIO CELL 5: Le Noyau Interphasique et l'Enveloppe Nucléaire</h1>
+
+<div class="question">
+<h3>1. Quels sont les principaux constituants du Noyau Interphasique ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'd', 1)">a) Le nucléoplasme, la membrane plasmique, les mitochondries et la chromatine.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 1)">b) Une enveloppe nucléaire, le nucléoplasme, le nucléole et le réticulum endoplasmique.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 1)">c) Une seule membrane, des pores nucléaires, du cytosol et de l'ADN décondensé.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 1)">d) Une enveloppe nucléaire, le nucléoplasme, la chromatine et un ou plusieurs nucléoles.</div>
+</div>
+<div class="explanation" id="explanation1">
+<div class="result">Bonne réponse : d) Une enveloppe nucléaire, le nucléoplasme, la chromatine et un ou plusieurs nucléoles.</div>
+<p>Le noyau interphasique est délimité par l'enveloppe nucléaire, contient le nucléoplasme, l'information génétique sous forme de chromatine et un ou plusieurs nucléoles.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>2. Que traduit un rapport nucléocytoplasmique (Vn/Vc) élevé ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 2)">a) Une cellule peu active (hypoactive) avec une chromatine très condensée.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 2)">b) Une cellule active (hyperactive) et un noyau de petit volume.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 2)">c) Une activité cellulaire intense, associée à un noyau volumineux et une chromatine peu condensée.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 2)">d) Un changement de forme du noyau vers un état polylobé.</div>
+</div>
+<div class="explanation" id="explanation2">
+<div class="result">Bonne réponse : c) Une activité cellulaire intense, associée à un noyau volumineux et une chromatine peu condensée.</div>
+<p>Le rapport nucléocytoplasmique Vn/Vc (volume du noyau sur volume du cytoplasme) est d'autant plus élevé que l'activité cellulaire est intense. Ceci se traduit par un noyau volumineux et une chromatine peu condensée (euchromatine).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>3. Quelle affirmation est exacte concernant la Membrane Nucléaire Externe (MNE) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 3)">a) Elle est tapissée à l'intérieur par la lamina nucléaire.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 3)">b) Elle sépare l'espace périnucléaire du nucléoplasme.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 3)">c) Elle est en continuité avec le Réticulum Endoplasmique Rugueux (REG) et porte des ribosomes sur sa face cytosolique.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 3)">d) Elle est interrompue par la lamina nucléaire.</div>
+</div>
+<div class="explanation" id="explanation3">
+<div class="result">Bonne réponse : c) Elle est en continuité avec le Réticulum Endoplasmique Rugueux (REG) et porte des ribosomes sur sa face cytosolique.</div>
+<p>L'enveloppe nucléaire résulte d'une différenciation locale du RE et la MNE (Membrane Nucléaire Externe) est en continuité avec le REG, portant des ribosomes sur sa face cytosolique.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>4. Quel est le rôle principal de la lamina nucléaire ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 4)">a) Assurer la synthèse des précurseurs ribosomiques ($45S$).</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">b) Réguler l'importation des protéines à signal NES.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">c) Fournir un support structural au noyau et participer à l'organisation de la chromatine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 4)">d) Former un lien direct entre les ARN messagers (ARNm) et les ribosomes.</div>
+</div>
+<div class="explanation" id="explanation4">
+<div class="result">Bonne réponse : c) Fournir un support structural au noyau et participer à l'organisation de la chromatine.</div>
+<p>La lamina nucléaire, composée des lamines, donne une rigidité et une forme au noyau, et participe à l'organisation tridimensionnelle de la chromatine, influençant l'expression des gènes.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>5. Une mutation dans les gènes codant pour les lamines peut entraîner...</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 5)">a) Le syndrome de Hutchinson-Gilford (progéria).</div>
+<div class="option" onclick="checkAnswer(this, 'a', 5)">b) La maladie d'Alzheimer.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 5)">c) Une accumulation anormale de glycogène dans le foie.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 5)">d) Une incapacité totale de la cellule à se diviser.</div>
+</div>
+<div class="explanation" id="explanation5">
+<div class="result">Bonne réponse : a) Le syndrome de Hutchinson-Gilford (progéria).</div>
+<p>Les mutations dans les gènes des lamines entraînent des laminopathies, dont le syndrome de Hutchinson-Gilford (progéria), caractérisé par un vieillissement prématuré et une déformation du noyau.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>6. Le Complexe LINC (LInker of Nucleoskeleton and Cytoskeleton) permet d'ancrer le noyau au cytosquelette. Quelles protéines transmembranaires le constituent et assurent ce lien ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 6)">a) Importines et Exportines.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 6)">b) Lamines A et Lamines B.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 6)">c) Nesprines (dans la MNE) et Protéines SUN (dans la MNI).</div>
+<div class="option" onclick="checkAnswer(this, 'c', 6)">d) RanGTP et RanGDP.</div>
+</div>
+<div class="explanation" id="explanation6">
+<div class="result">Bonne réponse : c) Nesprines (dans la MNE) et Protéines SUN (dans la MNI).</div>
+<p>Le complexe LINC est formé par les protéines **Nesprines** (dans la Membrane Nucléaire Externe) et les protéines **SUN** (dans la Membrane Nucléaire Interne), créant un lien physique entre le cytosquelette et la lamina nucléaire.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>7. Le complexe du pore nucléaire est structuré autour d'une symétrie. Quelle est cette symétrie ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 7)">a) Quaternaire (4 sous-unités).</div>
+<div class="option" onclick="checkAnswer(this, 'b', 7)">b) Octamérique (8 sous-unités).</div>
+<div class="option" onclick="checkAnswer(this, 'b', 7)">c) Hexagonale (6 sous-unités).</div>
+<div class="option" onclick="checkAnswer(this, 'b', 7)">d) Décagonale (10 sous-unités).</div>
+</div>
+<div class="explanation" id="explanation7">
+<div class="result">Bonne réponse : b) Octamérique (8 sous-unités).</div>
+<p>Le pore nucléaire est formé de deux anneaux (cytosolique et nucléoplasmique) composés de 8 sous-unités protéiques chacun (octamérique).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>8. Les échanges à travers le pore nucléaire s'effectuent via le canal central et les canaux latéraux. Lequel de ces mécanismes est vrai ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 8)">a) Le canal central permet le transport actif de macromolécules (PM > $40 \\text{ kDa}$).</div>
+<div class="option" onclick="checkAnswer(this, 'a', 8)">b) Le canal central permet la diffusion passive de petites molécules (PM < $40 \\text{ kDa}$).</div>
+<div class="option" onclick="checkAnswer(this, 'a', 8)">c) Les canaux latéraux permettent le transport actif des protéines par des transporteurs.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 8)">d) Le transport est strictement unidirectionnel.</div>
+</div>
+<div class="explanation" id="explanation8">
+<div class="result">Bonne réponse : a) Le canal central permet le transport actif de macromolécules (PM > $40 \\text{ kDa}$).</div>
+<p>Le transport des macromolécules (PM > $40 \\text{ kDa}$) se fait par transport actif (consommation d'ATP) via le transporteur central. Les petites molécules ($<40 \\text{ kDa}$) utilisent la diffusion passive via les canaux latéraux.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>9. L'importation des protéines dans le noyau est initiée par quel signal et quel transporteur ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 9)">a) Signal NES / Exportine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">b) Signal NES / Importine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">c) Signal NLS / Importine.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">d) Signal NLS / Exportine.</div>
+</div>
+<div class="explanation" id="explanation9">
+<div class="result">Bonne réponse : c) Signal NLS / Importine.</div>
+<p>La protéine à importer porte une séquence signal **NLS** (Nuclear Localization Signal) qui se lie à l'**Importine** dans le cytoplasme pour former le complexe d'importation.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>10. Quel est le rôle de la protéine RanGTP lors du cycle d'importation dans le nucléoplasme ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 10)">a) Elle lie le complexe (protéine/NLS/importine) pour le faire passer à travers le pore.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 10)">b) Elle se lie à l'importine pour provoquer la dissociation du complexe et la libération de la protéine.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 10)">c) Elle est hydrolysée en RanGDP par la GTPase Activating Protein (GAP) dans le noyau.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 10)">d) Elle se lie au complexe (protéine/NES/exportine) pour le stabiliser en vue de l'exportation.</div>
+</div>
+<div class="explanation" id="explanation10">
+<div class="result">Bonne réponse : b) Elle se lie à l'importine pour provoquer la dissociation du complexe et la libération de la protéine.</div>
+<p>Dans le noyau, RanGTP se lie à l'importine, ce qui entraîne la dissociation du complexe et la libération de la protéine importée (cargo). RanGTP est prédominant dans le noyau.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>11. Parmi les molécules suivantes, lesquelles sont exportées du nucléoplasme vers le cytoplasme ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) L'ADN.</div>
+<div class="option" onclick="toggleSelection(this)">b) Les sous-unités ribosomiques.</div>
+<div class="option" onclick="toggleSelection(this)">c) Les ARNm (ARN messagers).</div>
+<div class="option" onclick="toggleSelection(this)">d) Les protéines Histones.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(11, ['b', 'c'])">Valider</button>
+<div class="explanation" id="explanation11">
+<div class="result">Bonne(s) réponse(s) : b) et c)</div>
+<p>Les ARN messagers (ARNm) et les sous-unités ribosomiques sont des produits de la transcription et de l'assemblage nucléaire, exportés vers le cytoplasme pour la traduction. L'ADN et les protéines Histones sont importés pour la réplication et la transcription.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>12. Vrai ou Faux : L'euchromatine est condensée, se trouve surtout en périphérie du noyau et est inactive sur le plan transcriptionnel.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 12)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 12)">Faux</div>
+</div>
+<div class="explanation" id="explanation12">
+<div class="result">Bonne réponse : Faux</div>
+<p>Cette description correspond à l'**hétérochromatine**. L'**euchromatine** est au contraire décondensée (diffuse), répartie dans le nucléoplasme et active sur le plan transcriptionnel.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>13. L'hétérochromatine facultative se distingue de l'hétérochromatine constitutive par le fait qu'elle est :</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 13)">a) Localisée uniquement autour du nucléole.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">b) Inactive de façon irréversible (exemple : centromère).</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">c) Susceptible d'être transformée en euchromatine et donc active sur le plan transcriptionnel.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 13)">d) Présente uniquement sous forme de Corpuscule de Barr.</div>
+</div>
+<div class="explanation" id="explanation13">
+<div class="result">Bonne réponse : c) Susceptible d'être transformée en euchromatine et donc active sur le plan transcriptionnel.</div>
+<p>L'hétérochromatine facultative peut se transformer en euchromatine (de façon réversible). L'hétérochromatine constitutive est inactive de façon irréversible.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>14. Le nucléole est le siège de quel processus majeur ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'd', 14)">a) La réplication de l'ADN.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 14)">b) La traduction des protéines.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 14)">c) La synthèse des ARNm.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 14)">d) La synthèse des ARNr et l'assemblage des sous-unités ribosomales.</div>
+</div>
+<div class="explanation" id="explanation14">
+<div class="result">Bonne réponse : d) La synthèse des ARNr et l'assemblage des sous-unités ribosomales.</div>
+<p>Le nucléole est la zone de synthèse des ARNr ($5,8S, 18S, 28S$) et de leur assemblage avec des protéines ribosomales importées pour former les sous-unités ribosomales (grande et petite).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>15. Quel composant du nucléole est le lieu de stockage des pré-ribosomes ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 15)">a) Les Centres Fibrillaires (NOR).</div>
+<div class="option" onclick="checkAnswer(this, 'c', 15)">b) Le Composant Fibrillaire Dense.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 15)">c) Le Composant Granulaire.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 15)">d) Le Nucléoplasme.</div>
+</div>
+<div class="explanation" id="explanation15">
+<div class="result">Bonne réponse : c) Le Composant Granulaire.</div>
+<p>Le nucléole est organisé en trois régions : les **Centres fibrillaires** (ADN NOR), le **Composant fibrillaire dense** (transcription ARNr), et le **Composant granulaire** (zone de stockage des pré-ribosomes).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>16. Vrai ou Faux : Les ribosomes complets (80S) sont assemblés dans le nucléole.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 16)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 16)">Faux</div>
+</div>
+<div class="explanation" id="explanation16">
+<div class="result">Bonne réponse : Faux</div>
+<p>Le nucléole est le lieu de production et d'assemblage des **sous-unités** ribosomales (40S et 60S), qui sont ensuite transportées séparément dans le cytoplasme. L'assemblage du ribosome complet (80S) ne se produit que dans le cytoplasme lors de la traduction.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>17. La disparition de l'enveloppe nucléaire (EN) en prophase de mitose est induite par :</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 17)">a) La phosphorylation des lamines et des nucléoporines par les kinases ($Cdk$).</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">b) La déphosphorylation des lamines par des phosphatases.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">c) L'action des protéines RanGDP dans le cytoplasme.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 17)">d) La fusion des fragments d'enveloppe nucléaire.</div>
+</div>
+<div class="explanation" id="explanation17">
+<div class="result">Bonne réponse : a) La phosphorylation des lamines et des nucléoporines par les kinases ($Cdk$).</div>
+<p>Le désassemblage de l'EN débute par la phosphorylation des lamines, pores nucléaires et autres protéines par des **kinases dépendantes des cyclines (Cdk)**, entraînant la dépolymérisation de la lamina et la dissociation de l'EN.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>18. La reformation de l'enveloppe nucléaire à la télophase est permise par : (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) La déphosphorylation des lamines.</div>
+<div class="option" onclick="toggleSelection(this)">b) La repolymérisation de la lamina.</div>
+<div class="option" onclick="toggleSelection(this)">c) La liaison des lamines aux chromosomes (site de fixation).</div>
+<div class="option" onclick="toggleSelection(this)">d) La phosphorylation des lamines.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(18, ['a', 'b', 'c'])">Valider</button>
+<div class="explanation" id="explanation18">
+<div class="result">Bonne(s) réponse(s) : a), b), et c)</div>
+<p>En fin de mitose (télophase), la **déphosphorylation des lamines** permet la **repolymérisation de la lamina** qui se lie aux chromosomes. Les vésicules d'EN fusionnent ensuite pour reformer l'enveloppe autour des chromosomes.</p>
+</div>
+</div>
+
+
+<script>
+// Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+function toggleSelection(element) {
+    element.classList.toggle("selected");
+}
+
+// Vérifie la réponse pour les questions à choix unique
+function checkAnswer(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        // Vérifie si la réponse commence par la lettre correcte
+        if (option.textContent.startsWith(correctAnswer + ")")) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Valide les réponses pour les questions à choix multiples
+function validateMultipleAnswer(questionNumber, correctAnswers) {
+    const questionElement = event.target.parentElement;
+    const options = questionElement.querySelectorAll('.option');
+    let allCorrect = true;
+    
+    options.forEach(option => {
+        const optionText = option.textContent.charAt(0);
+        const isSelected = option.classList.contains("selected");
+        const isCorrectOption = correctAnswers.includes(optionText);
+
+        if (isCorrectOption) {
+            option.classList.add("correct");
+        } 
+        
+        if (isSelected && !isCorrectOption) {
+             option.classList.add("incorrect");
+             allCorrect = false;
+        } else if (!isSelected && isCorrectOption) {
+            allCorrect = false; // Manque une bonne réponse
+        }
+        
+        option.classList.remove("selected");
+    });
+    
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Vérifie la réponse pour les questions Vrai ou Faux
+function checkTrueFalse(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        const isTrue = option.textContent === 'Vrai';
+        const isFalse = option.textContent === 'Faux';
+
+        if ((correctAnswer === 'vrai' && isTrue) || (correctAnswer === 'faux' && isFalse)) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+</script>
+<a href="#" class="home-link">Retour à l'accueil</a>
+</div>
+</body>
+</html>
