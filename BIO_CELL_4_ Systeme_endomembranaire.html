@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM BIO CELL 4: Le Système Endomembranaire</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f9;
+color: #333;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #2c3e50;
+}
+.question {
+background: #f9f9f9;
+border-radius: 5px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+}
+.question h3 {
+margin-top: 0;
+}
+.options {
+margin-top: 10px;
+}
+.option {
+background: #e9e9e9;
+padding: 10px;
+margin: 5px 0;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+.option:hover {
+background: #d4edda;
+}
+.option.selected {
+font-weight: bold;
+background: #e0e0e0;
+}
+.option.correct {
+background: #d4edda;
+color: #155724;
+border: 1px solid #c3e6cb;
+}
+.option.incorrect {
+background: #f8d7da;
+color: #721c24;
+border: 1px solid #f5c6cb;
+}
+.explanation {
+margin-top: 10px;
+padding: 10px;
+background: #e2e3f1;
+border-radius: 5px;
+display: none;
+}
+.result {
+font-weight: bold;
+margin-bottom: 5px;
+}
+button {
+margin-top: 10px;
+padding: 8px 15px;
+background: #2c3e50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+textarea {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+.diagram-qcm {
+max-width: 100%;
+height: auto;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+display: block;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+<h1>QCM : Le Système Endomembranaire</h1>
+
+<div class="question">
+<h3>1. Quel est l'ensemble des compartiments intracellulaires limités par une membrane qui constitue le Système Endomembranaire (SEM) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 1)">a) Le Réticulum Endoplasmique (RE) et l'Appareil de Golgi uniquement.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">b) Le RE, l'Appareil de Golgi, les Mitochondries et les Peroxysomes.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">c) Le RE (avec l'Enveloppe nucléaire), l'Appareil de Golgi, les Endosomes et les Lysosomes, ainsi que toutes les vésicules de communication.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 1)">d) La Membrane plasmique, le Noyau et les Ribosomes.</div>
+</div>
+<div class="explanation" id="explanation1">
+<div class="result">Bonne réponse : c) Le RE (avec l'Enveloppe nucléaire), l'Appareil de Golgi, les Endosomes et les Lysosomes, ainsi que toutes les vésicules de communication.</div>
+<p>Le Système Endomembranaire (SEM) est l'ensemble des compartiments intracellulaires limités par une membrane, incluant le Réticulum endoplasmique (RE) et l'Enveloppe nucléaire, l'Appareil de Golgi, les Endosomes et les Lysosomes, ainsi que toutes les vésicules permettant la communication entre ces compartiments et avec la membrane plasmique.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>2. Quelles fonctions le Système Endomembranaire (SEM) assure-t-il dans la cellule ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) La synthèse de l'ADN.</div>
+<div class="option" onclick="toggleSelection(this)">b) La synthèse de protéines et de lipides.</div>
+<div class="option" onclick="toggleSelection(this)">c) L'assemblage correct de macromolécules synthétisées.</div>
+<div class="option" onclick="toggleSelection(this)">d) Le tri et le transport des macromolécules vers leur site d'action.</div>
+<div class="option" onclick="toggleSelection(this)">e) La dégradation de substances potentiellement nocives.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(2, ['b', 'c', 'd', 'e'])">Valider</button>
+<div class="explanation" id="explanation2">
+<div class="result">Bonne(s) réponse(s) : b), c), d), et e)</div>
+<p>Le SEM assure la synthèse des protéines et des lipides, leur assemblage correct, leur tri et transport vers leur site cellulaire d'action, ainsi que la dégradation de substances pouvant avoir des effets nocifs.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>3. Quelle est la principale différence structurale entre le Réticulum Endoplasmique Granulaire (REG) et le Réticulum Endoplasmique Lisse (REL) ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'd', 3)">a) Le REG est constitué de tubules alors que le REL est constitué de saccules.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 3)">b) Le REL est en continuité avec l'enveloppe nucléaire, pas le REG.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 3)">c) Le REG est plus petit que le REL.</div>
+<div class="option" onclick="checkAnswer(this, 'd', 3)">d) Le REG possède des ribosomes attachés sur sa face cytosolique, contrairement au REL.</div>
+</div>
+<div class="explanation" id="explanation3">
+<div class="result">Bonne réponse : d) Le REG possède des ribosomes attachés sur sa face cytosolique, contrairement au REL.</div>
+<p>Le REG (rugueux) est formé de saccules recouverts de ribosomes sur leur face cytosolique, d'où son aspect granulaire. Le REL est formé de zones tubulaires sans ribosomes.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>4. Vrai ou Faux : Le Réticulum Endoplasmique Lisse (REL) est majoritaire dans les cellules produisant beaucoup de protéines.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 4)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 4)">Faux</div>
+</div>
+<div class="explanation" id="explanation4">
+<div class="result">Bonne réponse : Faux</div>
+<p>Le Réticulum Endoplasmique Granulaire (REG/RER), avec ses ribosomes, est majoritaire dans les cellules produisant beaucoup de protéines. Le REL est plutôt abondant dans les cellules produisant beaucoup de lipides.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>5. Par quel mécanisme la Protéine de reconnaissance du signal (SRP) arrête-t-elle momentanément la traduction d'une protéine destinée au REG ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 5)">a) En dégradant l'ARNm dans le cytosol.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">b) En se fixant à la fois sur le peptide signal (extrémité N-terminale) de la protéine naissante et sur le ribosome.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">c) En empêchant le ribosome de se fixer à l'ARNm.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 5)">d) En déconnectant l'ARNm du ribosome.</div>
+</div>
+<div class="explanation" id="explanation5">
+<div class="result">Bonne réponse : b) En se fixant à la fois sur le peptide signal (extrémité N-terminale) de la protéine naissante et sur le ribosome.</div>
+<p>Le peptide signal d'une protéine destinée au REG est reconnu par la SRP, une protéine présente dans le cytoplasme. La fixation de la SRP sur le peptide signal et le ribosome provoque un blocage momentané de la traduction.</p>
+<img src="Diagramme+SRP+et+Ribosome+sur+RE.png" alt="Schéma du mécanisme de reconnaissance du peptide signal par la SRP et arrêt de la traduction" class="diagram-qcm">
+</div>
+</div>
+
+<div class="question">
+<h3>6. Vrai ou Faux : La face *trans* de l'Appareil de Golgi est orientée du côté du Noyau.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 6)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 6)">Faux</div>
+</div>
+<div class="explanation" id="explanation6">
+<div class="result">Bonne réponse : Faux</div>
+<p>La face *cis* ou convexe de l'Appareil de Golgi (Réseau cis-golgien) est orientée du côté nucléaire (face au noyau). La face *trans* ou concave (Réseau trans-golgien) est orientée du côté du cytosol/membrane plasmique.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>7. Selon le "Contrôle qualité" du REG, quel est le sort d'une protéine présentant un défaut de repliement ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 7)">a) Elle est réexportée vers le cytosol pour être dégradée dans les protéasomes.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 7)">b) Elle reste dans le REG pour un nouveau cycle de repliement.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 7)">c) Elle est envoyée immédiatement vers les lysosomes pour dégradation.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 7)">d) Elle est envoyée vers l'appareil de Golgi, mais marquée comme incorrecte.</div>
+</div>
+<div class="explanation" id="explanation7">
+<div class="result">Bonne réponse : a) Elle est réexportée vers le cytosol pour être dégradée dans les protéasomes.</div>
+<p>Toutes les protéines présentant un défaut de synthèse ou de repliement sont réexportées vers le cytosol pour y être détruites par les protéasomes (Contrôle négatif).</p>
+</div>
+</div>
+
+<div class="question">
+<h3>8. Quelles sont les principales modifications post-traductionnelles des protéines qui ont lieu dans l'Appareil de Golgi ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) La phosphorylation.</div>
+<div class="option" onclick="toggleSelection(this)">b) La sulfatation.</div>
+<div class="option" onclick="toggleSelection(this)">c) L'assemblage des sous-unités des ribosomes.</div>
+<div class="option" onclick="toggleSelection(this)">d) La glycosylation (ajout de sucre).</div>
+<div class="option" onclick="toggleSelection(this)">e) Les coupures protéolytiques (clivage des précurseurs).</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(8, ['a', 'b', 'd', 'e'])">Valider</button>
+<div class="explanation" id="explanation8">
+<div class="result">Bonne(s) réponse(s) : a), b), d), et e)</div>
+<p>L'Appareil de Golgi réalise diverses modifications post-traductionnelles, dont la glycosylation, la phosphorylation, la sulfatation, et les coupures protéolytiques.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>9. Quelle est la fonction principale des Lysosomes ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 9)">a) La synthèse d'hormones stéroïdes.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">b) La détoxification des drogues.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">c) La dégradation de substrats endogènes (autophagie) et exogènes (hétérophagie).</div>
+<div class="option" onclick="checkAnswer(this, 'c', 9)">d) Le stockage du calcium.</div>
+</div>
+<div class="explanation" id="explanation9">
+<div class="result">Bonne réponse : c) La dégradation de substrats endogènes (autophagie) et exogènes (hétérophagie).</div>
+<p>Les lysosomes sont les "appareils digestifs de la cellule". Leur fonction principale est la dégradation (hétérophagie et autophagie) de substrats endogènes et exogènes grâce à leurs hydrolases acides.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>10. Vrai ou Faux : Les vésicules de transport COPII assurent le transport rétrograde du Golgi vers le Réticulum Endoplasmique (RE).</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 10)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 10)">Faux</div>
+</div>
+<div class="explanation" id="explanation10">
+<div class="result">Bonne réponse : Faux</div>
+<p>Les vésicules de transport **COPII** assurent le transport **antérograde** (centrifuge) du Réticulum Endoplasmique Granulaire (REG) vers le Golgi. C'est la **COPI** qui assure le transport rétrograde (centripète) des citernes du Golgi vers le REG.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>11. Quel type d'hydrolases les lysosomes contiennent-ils et à quel pH ces enzymes ont-elles une activité optimale ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'c', 11)">a) Hydrolases basiques, pH optimal à 7,2.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 11)">b) Hydrolases neutres, pH optimal à 7,0.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 11)">c) Hydrolases acides, pH optimal à 4,5-5,0.</div>
+<div class="option" onclick="checkAnswer(this, 'c', 11)">d) Protéases et lipases, pH optimal à 6,5.</div>
+</div>
+<div class="explanation" id="explanation11">
+<div class="result">Bonne réponse : c) Hydrolases acides, pH optimal à 4,5-5,0.</div>
+<p>Les lysosomes contiennent des hydrolases acides (protéases, nucléases, lipases, etc.) dont l'activité optimale est à un pH acide (environ 4,5), maintenu grâce à des pompes à protons dans leur membrane.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>12. Dans le cas d'une protéine soluble destinée à la lumière du RE (protéine intraluminale), que devient son peptide signal après translocation ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'b', 12)">a) Il reste ancré dans le translocon, servant de point de fixation.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">b) Il est clivé par une signal peptidase et la protéine est libérée dans la lumière du RE.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">c) Il se replie pour devenir une partie intégrale de la protéine mature.</div>
+<div class="option" onclick="checkAnswer(this, 'b', 12)">d) Il est réexporté vers le cytosol pour être dégradé.</div>
+</div>
+<div class="explanation" id="explanation12">
+<div class="result">Bonne réponse : b) Il est clivé par une signal peptidase et la protéine est libérée dans la lumière du RE.</div>
+<p>Pour les protéines solubles (destinées à la lumière du RE), le peptide signal est clivé par une signal peptidase intra-membranaire, libérant la protéine dans la lumière du RE.</p>
+<img src="Diagramme+Clivage+Peptide+Signal.png" alt="Schéma du clivage du peptide signal pour une protéine soluble" class="diagram-qcm">
+</div>
+</div>
+
+<div class="question">
+<h3>13. Vrai ou Faux : Le transport antérograde (ou centrifuge) est aussi appelé la voie de l'endocytose.</h3>
+<div class="options">
+<div class="option" onclick="checkTrueFalse(this, 'faux', 13)">Vrai</div>
+<div class="option" onclick="checkTrueFalse(this, 'faux', 13)">Faux</div>
+</div>
+<div class="explanation" id="explanation13">
+<div class="result">Bonne réponse : Faux</div>
+<p>Le transport **antérograde** (ou centrifuge : qui fuit le centre) est la voie **synthétique et sécrétoire** (REG → Golgi → lysosomes/membrane plasmique) ou la voie de l'**exocytose**. La voie de l'**endocytose** est un flux centripète ou rétrograde.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>14. Dans la voie de la sécrétion contrôlée (régulée), quel facteur est nécessaire pour déclencher l'exocytose des vésicules de sécrétion ?</h3>
+<div class="options">
+<div class="option" onclick="checkAnswer(this, 'a', 14)">a) Un signal extracellulaire (ex. hormone ou neurotransmetteur).</div>
+<div class="option" onclick="checkAnswer(this, 'a', 14)">b) La présence de nouvelles protéines à sécréter dans l'Appareil de Golgi.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 14)">c) La concentration en calcium dans le REL.</div>
+<div class="option" onclick="checkAnswer(this, 'a', 14)">d) La fusion membranaire non régulée.</div>
+</div>
+<div class="explanation" id="explanation14">
+<div class="result">Bonne réponse : a) Un signal extracellulaire (ex. hormone ou neurotransmetteur).</div>
+<p>L'exocytose régulée (ou contrôlée) ne se produit que dans des cellules spécialisées (exocrine ou endocrine) et nécessite un signal extracellulaire (comme une hormone) pour déclencher le processus.</p>
+</div>
+</div>
+
+<div class="question">
+<h3>15. Quel rôle(s) est/sont spécifiquement associé(s) au Réticulum Endoplasmique Lisse (REL) ? (Plusieurs réponses possibles)</h3>
+<div class="options">
+<div class="option" onclick="toggleSelection(this)">a) La synthèse de protéines pour l'exportation.</div>
+<div class="option" onclick="toggleSelection(this)">b) La biosynthèse des lipides (cholestérol, hormones stéroïdes, phospholipides).</div>
+<div class="option" onclick="toggleSelection(this)">c) Le stockage du calcium.</div>
+<div class="option" onclick="toggleSelection(this)">d) La détoxification grâce au cytochrome p450.</div>
+</div>
+<button type="button" onclick="validateMultipleAnswer(15, ['b', 'c', 'd'])">Valider</button>
+<div class="explanation" id="explanation15">
+<div class="result">Bonne(s) réponse(s) : b), c), et d)</div>
+<p>Le REL est spécialisé dans la biosynthèse des lipides, le stockage du calcium (très important dans les cellules musculaires) et la détoxification (grâce notamment au cytochrome p450).</p>
+</div>
+</div>
+
+
+<script>
+// Sélectionne ou désélectionne une réponse pour les questions à choix multiples
+function toggleSelection(element) {
+    element.classList.toggle("selected");
+}
+
+// Vérifie la réponse pour les questions à choix unique
+function checkAnswer(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        // Vérifie si la réponse commence par la lettre correcte
+        if (option.textContent.startsWith(correctAnswer + ")")) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Valide les réponses pour les questions à choix multiples
+function validateMultipleAnswer(questionNumber, correctAnswers) {
+    const questionElement = event.target.parentElement;
+    const options = questionElement.querySelectorAll('.option');
+    options.forEach(option => {
+        const optionText = option.textContent.charAt(0);
+        if (correctAnswers.includes(optionText)) {
+            if (option.classList.contains("selected")) {
+                option.classList.add("correct");
+            } else {
+                option.classList.add("correct"); // Afficher la bonne réponse même si non sélectionnée
+            }
+        } else if (option.classList.contains("selected")) {
+            option.classList.add("incorrect");
+        }
+        option.classList.remove("selected");
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+
+// Vérifie la réponse pour les questions Vrai ou Faux
+function checkTrueFalse(element, correctAnswer, questionNumber) {
+    const options = element.parentElement.querySelectorAll('.option');
+    options.forEach(option => {
+        option.classList.remove('correct', 'incorrect');
+        const isTrue = option.textContent === 'Vrai';
+        const isFalse = option.textContent === 'Faux';
+
+        if ((correctAnswer === 'vrai' && isTrue) || (correctAnswer === 'faux' && isFalse)) {
+            option.classList.add('correct');
+        } else if (option === element) {
+            option.classList.add('incorrect');
+        }
+    });
+    document.getElementById(`explanation${questionNumber}`).style.display = "block";
+}
+</script>
+		<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+</div>
+</body>
+</html>
