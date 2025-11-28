@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Biologie Cellulaire - TD2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Biologie Cellulaire - TD2</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Lequel des éléments suivants est entouré de deux bicouches de phospholipides ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. les ribosomes</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. les vésicules</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. le cytoplasme</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. le nucléoplasme</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : D. le nucléoplasme</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Lequel des éléments suivants ne fait pas partie du système endomembranaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'A')">A. Mitochondrie</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">B. Appareil Golgi</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">C. Réticulum endoplasmique</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">D. Lysosome</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : A. Mitochondrie</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Le processus par lequel une cellule engloutit une particule étrangère est connu sous le nom de :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Endosymbiose</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Phagocytose</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Hydrolyse</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Exocytose</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B. Phagocytose</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Laquelle des séquences suivantes répertorie correctement dans l'ordre les étapes impliquées dans l'incorporation d'une molécule protéique au sein d'une cellule ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Synthèse de la protéine sur le ribosome ; modification de l'appareil de Golgi ; conditionnement dans le réticulum endoplasmique ; marquage dans la vésicule</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. Synthèse de la protéine sur le lysosome ; marquage dans le Golgi ; conditionnement dans la vésicule ; distribution dans le réticulum endoplasmique</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. Synthèse de la protéine sur le ribosome ; modification du réticulum endoplasmique : marquage dans le Golgi ; distribution via la vésicule</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. Synthèse de la protéine sur le lysosome ; conditionnement dans la vésicule ; distribution via le Golgi ; marquage dans le réticulum endoplasmique</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C. Synthèse de la protéine sur le ribosome ; modification du réticulum endoplasmique : marquage dans le Golgi ; distribution via la vésicule</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Une cellule diploïde possède $\qquad$ le nombre de chromosomes d'une cellule haploïde.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. un quart</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. moitié</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. deux fois</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. quatre fois</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : C. deux fois</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. Les copies identiques de la chromatine maintenues ensemble par la cohésine au centromère sont appelées :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. histones.</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. nucléosomes.</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. chromatine.</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. des chromatides sœurs.</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : D. des chromatides sœurs.</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. A quel stade du cycle cellulaire les chromosomes sont-ils dupliqués ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Phase G1</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Phase S</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. prophase</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. prométaphase</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. Phase S</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Lequel des événements suivants ne se produit pas à certaines étapes de l'interphase ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. duplication de l'ADN</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. duplication d'organites</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. augmentation de la taille des cellules</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. séparation des chromatides sœurs</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : D. séparation des chromatides sœurs</div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Les fuseaux mitotiques proviennent de quelle structure cellulaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. centromère</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. centrosome</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. kinétochore</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. enveloppe nucléaire</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B. centrosome</div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. La fixation des fibres du fuseau mitotique aux kinétochores est une caractéristique de quel stade de la mitose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. prophase</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. prométaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. métaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. anaphase</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. prométaphase</div>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. La décondensation des chromosomes et la formation d'une nouvelle enveloppe nucléaire sont caractéristiques de quel stade de la mitose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. prométaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. métaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. anaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. télophase</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : D. télophase</div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. La séparation des chromatides sœurs est une caractéristique de quel stade de la mitose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. prométaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. métaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. anaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. télophase</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : C. anaphase</div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Les chromosomes deviennent visibles au microscope optique à quel stade de la mitose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'A')">A. prophase</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">B. prométaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">C. métaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">D. anaphase</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A. prophase</div>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Quelle est la principale condition préalable au passage au point de contrôle RCP ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. la cellule a atteint une taille suffisante</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. un stock adéquat de nucléotides</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. réplication précise et complète de l'ADN</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. fixation appropriée des fibres du fuseau mitotique aux kinétochores</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : C. réplication précise et complète de l'ADN</div>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Si le point de contrôle MCP n'est pas franchi, quel stade de la mitose sera bloqué ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. prophase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. prométaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. métaphase</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. anaphase</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : D. anaphase</div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. De nombreuses protéines régulatrices négatives du cycle cellulaire (= non régulation du cycle) ont été découvertes dans quel type de cellules ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. gamètes</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. cellules dans G0</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. cellules cancéreuses</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. cellules souches</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : C. cellules cancéreuses</div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. L'eau se déplace par osmose :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Grâce à des pompes spécifiques</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. d'une zone à forte concentration d'autres solutés vers une zone plus faible</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. d'une zone à faible concentration en solutés à une zone à plus forte concentration</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. d'une zone à faible concentration d'eau à une zone à concentration plus élevée</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : C. d'une zone à faible concentration en solutés à une zone à plus forte concentration</div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. La principale force motrice du mouvement de diffusion est :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. La température</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. La taille des particules</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. Le gradient de concentration</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. La surface de la membrane</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : C. Le gradient de concentration</div>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Qu'arrive-t-il à la membrane d'une vésicule après une exocytose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Elle quitte la cellule.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. elle est démontée par la cellule.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. elle fusionne avec la membrane plasmique et en fait partie.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. Elle est utilisée à nouveau lors d'un autre événement d'exocytose.</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : C. elle fusionne avec la membrane plasmique et en fait partie.</div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. Quel mécanisme de transport peut amener des cellules entières dans une cellule ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. pinocytose</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. phagocytose</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. facilité de transport</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. transport actif principal</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B. phagocytose</div>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. En quoi l'endocytose médiée par les récepteurs diffère-t-elle de la phagocytose ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Elle ne transporte que de petites quantités de liquide.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. Cela n'implique pas le pincement de la membrane.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. Elle n'apporte qu'une substance spécifiquement ciblée.</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. Elle apporte des substances dans la cellule, tandis que la phagocytose élimine les substances.</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : C. Elle n'apporte qu'une substance spécifiquement ciblée.</div>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <h3>22. Le cytosquelette est :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Un réseau protéique présent uniquement dans les cellules animales</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Une structure dynamique du cytoplasme</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Un ensemble de lipides membranaires</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Une structure rigide et stable</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : B. Une structure dynamique du cytoplasme</div>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <h3>23. Le cytosquelette permet :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'D')">A. Le maintien de la morphologie cellulaire</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">B. La contraction musculaire</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">C. La division cellulaire</div>
+                <div class="option" onclick="checkAnswer(this, 'D')">D. Toutes les réponses précédentes</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : D. Toutes les réponses précédentes</div>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <h3>24. Les trois grands types de filaments du cytosquelette sont :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Actine, collagène, tubuline</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Microtubules, filaments intermédiaires, microfilaments d'actine</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Microvillosités, cils, flagelles</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Kératine, actine, myosine</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : B. Microtubules, filaments intermédiaires, microfilaments d'actine</div>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <h3>25. L'actine F est :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Un monomère d'actine</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Un polymère d'actine en forme d'hélice</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Un dimère d'actine</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Une protéine de stabilisation des MF</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : B. Un polymère d'actine en forme d'hélice</div>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+            <h3>26. La polymérisation de l'actine nécessite :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Du GTP</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. Du NADH</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. De l'ATP, Ca2+ et Mg2+</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. Rien, elle est spontanée</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : C. De l'ATP, Ca2+ et Mg2+</div>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+            <h3>27. Une protéine favorisant la nucléation de l'actine est :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. La profiline</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. La thymosine</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. Le complexe ARP2/3</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. La desmine</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : C. Le complexe ARP2/3</div>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+            <h3>28. La thymosine :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Favorise l'échange ADP → ATP</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Inhibe la polymérisation</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Stabilise les filaments</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Forme des faisceaux parallèles</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : B. Inhibe la polymérisation</div>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+            <h3>29. Les microvillosités contiennent :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Des microtubules</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Des faisceaux parallèles de MF reliés par la fimbrine</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Des filaments intermédiaires</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Des tubulines</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B. Des faisceaux parallèles de MF reliés par la fimbrine</div>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+            <h3>30. Les filaments intermédiaires :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Sont les mêmes dans toutes les cellules</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. S'assemblent spontanément sans ATP</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Nécessitent GTP pour s'assembler</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Sont composés exclusivement de kératine</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : B. S'assemblent spontanément sans ATP</div>
+            </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question">
+            <h3>31. La lamina nucléaire est constituée de :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Microtubules</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. Filaments intermédiaires de lamines</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Actine F</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Dynéines</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : B. Filaments intermédiaires de lamines</div>
+            </div>
+        </div>
+
+        <!-- Question 32 -->
+        <div class="question">
+            <h3>32. Les dimères de FI s'associent entre eux pour former :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'C')">A. Des protofilaments</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">B. Des hétérodimères</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">C. Des protofilaments puis un filament</div>
+                <div class="option" onclick="checkAnswer(this, 'C')">D. Des trimères</div>
+            </div>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : C. Des protofilaments puis un filament</div>
+            </div>
+        </div>
+
+        <!-- Question 33 -->
+        <div class="question">
+            <h3>33. Les FI sont particulièrement importants pour :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. Le transport vésiculaire</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. La résistance mécanique</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. La polymérisation ATP-dépendante</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. L'assemblage du fuseau mitotique</div>
+            </div>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : B. La résistance mécanique</div>
+            </div>
+        </div>
+
+        <!-- Question 34 -->
+        <div class="question">
+            <h3>34. Les microtubules sont constitués de :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'A')">A. 13 protofilaments de tubuline</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">B. 9 doublets</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">C. 8 tétramères</div>
+                <div class="option" onclick="checkAnswer(this, 'A')">D. 3 filaments en hélice</div>
+            </div>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : A. 13 protofilaments de tubuline</div>
+            </div>
+        </div>
+
+        <!-- Question 35 -->
+        <div class="question">
+            <h3>35. L'extrémité + d'un microtubule correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'B')">A. La tubuline α</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">B. La tubuline β</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">C. Une absence de polymérisation</div>
+                <div class="option" onclick="checkAnswer(this, 'B')">D. Une région sans hydrolyse de GTP</div>
+            </div>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : B. La tubuline β</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if (option.textContent.startsWith(correctAnswer)) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

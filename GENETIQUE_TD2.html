@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Génétique - TD2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+		.diagram-qcm {
+            max-width: 750px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	    <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Génétique - TD2</h1>
+
+        <!-- Exercice 1 - Question 1 -->
+        <div class="question">
+            <h3>1. L'ordre des clichés est :</h3>
+		À = Anaphase 1ère division<br>
+		B = télophase 1ère division ou prophase 2ème division <br>
+		C = Métaphase 1ère division <br>
+		D = anaphase 2ème division <br>
+		E =prophase 1ère division <br>
+		F = métaphase 2ème division
+
+					<img src="genetiqueTD2.png" alt="Schéman" class="diagram-qcm">
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- C-E-A-B-D-F</div>
+                <div class="option" onclick="toggleSelection(this)">B- E-C-A-B-F-D</div>
+                <div class="option" onclick="toggleSelection(this)">C- E-C-A-B-D-F</div>
+                <div class="option" onclick="toggleSelection(this)">D- C-E-A-B-D-F</div>
+                <div class="option" onclick="toggleSelection(this)">E- Aucune réponse correcte</div>
+            </div>
+             <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+           <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C->    E-C-A-B-D-F</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 2 -->
+        <div class="question">
+            <h3>2. Ces clichés représentent une méiose ; mécanisme constitué de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 2 divisions: une division équationnelle suivie d'une division réductionnelle.</div>
+                <div class="option" onclick="toggleSelection(this)">B- 2 divisions : une division réductionnelle suivie d'une division équationnelle.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 2 divisions permettant le passage de l'haploïdie à la diploïdie.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 2 divisions permettant de diviser par 4 le nombre de chromosomes.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1 division réductionnelle précédée d'1 division équationnelle.</div>
+            </div>
+             <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+           <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B- 2 divisions : une division réductionnelle suivie d'une division équationnelle.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 3 -->
+        <div class="question">
+            <h3>3. Le cliché D représente :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La séparation des chromatides lors de la 1ère division</div>
+                <div class="option" onclick="toggleSelection(this)">B- La séparation des chromatides lors de la 2nde division</div>
+                <div class="option" onclick="toggleSelection(this)">C- La séparation des chromosomes homologues lors de la 1ère division</div>
+                <div class="option" onclick="toggleSelection(this)">D- La séparation des chromosomes homologues lors de la 2nde division</div>
+                <div class="option" onclick="toggleSelection(this)">E- Le clivage des centromères pour chaque paire d'homologues</div>
+            </div>
+             <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+           <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B- La séparation des chromatides lors de la 2nde division</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 4 -->
+        <div class="question">
+            <h3>4. La méiose peut avoir lieu dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Les glandes sexuelles mâles et femelles des organismes diploïdes.</div>
+                <div class="option" onclick="toggleSelection(this)">B- N'importe quelle cellule somatique d'un diplonte (organisme diploïdE-.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Certaines cellules du pancréas du criquet</div>
+                <div class="option" onclick="toggleSelection(this)">D- Les cellules somatiques des glandes sexuelles mâles du criquet</div>
+                <div class="option" onclick="toggleSelection(this)">E- Dans les cellules intestinales du criquet.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : A- Les glandes sexuelles mâles et femelles des organismes diploïdes.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 5 -->
+        <div class="question">
+            <h3>5. Un individu présentant un phénotype dominant (G) peut être homo- ou hétérozygote. Afin de le déterminer, on pratique un croisement test avec un parent récessif (g) de race pure.</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Si l'individu testé est homozygote, on obtient en F1 100% de (G).</div>
+                <div class="option" onclick="toggleSelection(this)">B- Si l'individu testé est homozygote, on obtient en F1 100% de (g).</div>
+                <div class="option" onclick="toggleSelection(this)">C- Si l'individu testé est hétérozygote, on obtient en F1 50% de (g) et 50% de (G).</div>
+                <div class="option" onclick="toggleSelection(this)">D- Si l'individu testé est hétérozygote, on obtient en F1 25% de (g) et 75% de (G).</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne(s) réponse(s) : A, C</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 6 -->
+        <div class="question">
+            <h3>6. Si l'on effectue un croisement hypothétique entre deux individus de races pures ne différant que par un seul caractère, la F1 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- a un phénotype homogène.</div>
+                <div class="option" onclick="toggleSelection(this)">B- comporte 50% d'individus au génotype dominant.</div>
+                <div class="option" onclick="toggleSelection(this)">C- est hétérozygote pour ce caractère.</div>
+                <div class="option" onclick="toggleSelection(this)">D- comporte 25% d'individus au phénotype dominant, et 75% au phénotype récessif.</div>
+                <div class="option" onclick="toggleSelection(this)">E- comporte 75% d'individus au phénotype dominant, et 25% au phénotype récessif.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne(s) réponse(s) : A, C</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 7 -->
+        <div class="question">
+            <h3>7. Dans le cas d'un gène situé sur le chromosome X, une mère possédant l'allèle dominant à l'état hétérozygote, le transmet statistiquement à:</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 25% de ses fils et 75% de ses filles.</div>
+                <div class="option" onclick="toggleSelection(this)">B- 50% de ses fils et 50% de ses filles.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 75% de ses fils et 25% de ses filles.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 100% de ses fils.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 100% de ses filles</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B- 50% de ses fils et 50% de ses filles.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 8 -->
+        <div class="question">
+            <h3>8. Dans le cas de dihybridisme avec des gènes liés (liaison absoluE-, on réalise le croisement d'un hybride F1 de génotype AB//ab avec un individu de race pure double récessif. On observera dans la descendance :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 100% de phénotype dominant</div>
+                <div class="option" onclick="toggleSelection(this)">B- 50% de phénotype dominant et 50% de phénotype récessif</div>
+                <div class="option" onclick="toggleSelection(this)">C- 4 phénotypes différents mais tous dans des proportions de 25%</div>
+                <div class="option" onclick="toggleSelection(this)">D- 4 phénotypes différents dans des proportions différentes</div>
+                <div class="option" onclick="toggleSelection(this)">E- 4 phénotypes différents dans des proportions de 9/16 - 3/16 - 3/16 - 1/16</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B- 50% de phénotype dominant et 50% de phénotype récessif</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 9 -->
+        <div class="question">
+            <h3>9. D'après les résultats du 1er croisement, la femelle est de génotype :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- (L//L ; G//G)</div>
+                <div class="option" onclick="toggleSelection(this)">B- (L//G ; G//L)</div>
+                <div class="option" onclick="toggleSelection(this)">C- (L//vg ; G//B-</div>
+                <div class="option" onclick="toggleSelection(this)">D- (L G//L G)</div>
+                <div class="option" onclick="toggleSelection(this)">E- (L G//vg B-</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['E'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : E- (L G//vg B-</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 10 -->
+        <div class="question">
+            <h3>10. D'après les résultats du 1er croisement, le mâle est de génotype :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- (vg//vg ; b//B-</div>
+                <div class="option" onclick="toggleSelection(this)">B- (vg//b ; vg//B-</div>
+                <div class="option" onclick="toggleSelection(this)">C- (vg b//vg B-</div>
+                <div class="option" onclick="toggleSelection(this)">D- (vg b//L G)</div>
+                <div class="option" onclick="toggleSelection(this)">E- (L//vg ; G//B-</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : A- (vg//vg ; b//B-</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 11 -->
+        <div class="question">
+            <h3>11. D'après les résultats du 2ème croisement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La femelle et le mâle sont homozygotes.</div>
+                <div class="option" onclick="toggleSelection(this)">B- La femelle et le mâle sont hétérozygotes.</div>
+                <div class="option" onclick="toggleSelection(this)">C- La femelle est homozygote et le mâle est hétérozygote.</div>
+                <div class="option" onclick="toggleSelection(this)">D- La femelle est hétérozygote et le mâle est homozygote.</div>
+                <div class="option" onclick="toggleSelection(this)">E- On peut en déduire que les gènes sont indépendants.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : A- La femelle et le mâle sont homozygotes.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 12 -->
+        <div class="question">
+            <h3>12. De la comparaison des deux croisements, on peut déduire que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Les descendants [L; b] et [vg; G] sont absents du 2ème croisement car ils ne sont pas viables.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Le brassage interchromosomique s'effectue aussi bien chez les mâles que chez les femelles drosophiles.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Le brassage interchromosomique s'effectue seulement chez les femelles drosophiles.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Le brassage intrachromosomique s'effectue aussi bien chez les mâles que chez les femelles drosophiles.</div>
+                <div class="option" onclick="toggleSelection(this)">E- Le brassage intrachromosomique s'effectue seulement chez les femelles drosophiles.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['E'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : E- Le brassage intrachromosomique s'effectue seulement chez les femelles drosophiles.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 13 -->
+        <div class="question">
+            <h3>13. Le brassage interchromosomique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- produit 2^n types de cellules haploïdes</div>
+                <div class="option" onclick="toggleSelection(this)">B- concerne les cellules somatiques</div>
+                <div class="option" onclick="toggleSelection(this)">C- conduit à la formation de chromatides contenant de nouvelles associations alléliques</div>
+                <div class="option" onclick="toggleSelection(this)">D- se fait en prophase de première division méiotique</div>
+                <div class="option" onclick="toggleSelection(this)">E- intervient à chaque méiose durant l'anaphase I</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A- produit 2^n types de cellules haploïdes</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 14 -->
+        <div class="question">
+            <h3>14. Quelle est la proposition inexacte :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- la fécondation rétablit l'haploïdie caractéristique de l'espèce</div>
+                <div class="option" onclick="toggleSelection(this)">B- la méiose assure la formation des gamètes</div>
+                <div class="option" onclick="toggleSelection(this)">C- la fécondation permet l'union de deux gamètes</div>
+                <div class="option" onclick="toggleSelection(this)">D- la méiose est faite de deux divisions successives</div>
+                <div class="option" onclick="toggleSelection(this)">E- la fécondation et la méiose assurent la stabilité du caryotype de l'espèce</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : A- la fécondation rétablit l'haploïdie caractéristique de l'espèce</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 15 -->
+        <div class="question">
+            <h3>15. Le croisement test ou test cross :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- consiste uniquement à croiser deux individus aux génotypes différents pour analyser leur descendance</div>
+                <div class="option" onclick="toggleSelection(this)">B- donne une descendance avec les proportions phénotypiques 1/4, 1/4, 1/4, 1/4 quand les deux gènes considérés sont indépendants</div>
+                <div class="option" onclick="toggleSelection(this)">C- révèle la dominance ou la récessivité des allèles</div>
+                <div class="option" onclick="toggleSelection(this)">D- est utilisé en génétique humaine</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B- donne une descendance avec les proportions phénotypiques 1/4, 1/4, 1/4, 1/4 quand les deux gènes considérés sont indépendants</div>
+            </div>
+        </div>
+
+        <!-- Exercice 1 - Question 16 -->
+        <div class="question">
+            <h3>16. Chez la tomate, la hauteur des plantes dépend d'une paire d'allèles (D, D- ; les plantes de grande taille sont porteuses de l'allèle dominant D. D'autre part, la pilosité des tiges dépend d'une paire d'allèles (H, h) ; l'allèle dominant H provoque la formation de tiges velues.</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Les gènes étudiés sont situés sur deux paires de chromosomes homologues différentes</div>
+                <div class="option" onclick="toggleSelection(this)">B- Les hybrides F1 obtenus sont obligatoirement issus du croisement de deux parents de lignée pure de génotypes respectifs (D//D ; H//H) et (d//d ; h//h)</div>
+                <div class="option" onclick="toggleSelection(this)">C- Les hybrides obtenus sont obligatoirement issus du croisement de deux parents de lignée pure de génotypes respectifs (D//D ; h//h) et (d//d ; H//H)</div>
+                <div class="option" onclick="toggleSelection(this)">D- Si on croise des tomates naines et nues entre elles, les graines obtenues présenteront toutes le génotype suivant (d//h)</div>
+                <div class="option" onclick="toggleSelection(this)">E- Aucun des descendants issus du croisement test n'est double homozygote</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : A</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 - Question 1 -->
+        <div class="question">
+            <h3>Exercice 2 - Question 1 : Quelle ou quelles population(s) peut (peuvent) correspondre à une lignée pure ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 1300 insectes aux ailes longues et au corps de couleur ébène</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 1300 insectes aux ailes longues et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1300 insectes répartis en deux catégories, 975 aux ailes longues et au corps gris et 325 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1310 insectes aux ailes vestigiales et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'E'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne(s) réponse(s) : A, E</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 - Question 2 -->
+        <div class="question">
+            <h3>Exercice 2 - Question 2 : Quelle ou quelles population(s) peut (peuvent) correspondre à une génération F1 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 1300 insectes aux ailes longues et au corps de couleur ébène</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 1300 insectes aux ailes longues et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1300 insectes répartis en deux catégories, 975 aux ailes longues et au corps gris et 325 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1310 insectes aux ailes vestigiales et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : C- 1300 insectes aux ailes longues et au corps gris.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 - Question 3 -->
+        <div class="question">
+            <h3>Exercice 2 - Question 3 : Quelle ou quelles population(s) peut (peuvent) correspondre à une génération issue d'un croisement test ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 1300 insectes aux ailes longues et au corps de couleur ébène</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 1300 insectes aux ailes longues et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1300 insectes répartis en deux catégories, 975 aux ailes longues et au corps gris et 325 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1310 insectes aux ailes vestigiales et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['F'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 - Question 4 -->
+        <div class="question">
+            <h3>Exercice 2 - Question 4 : Quelle ou quelles population(s) peut (peuvent) correspondre à une génération F2 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 1300 insectes aux ailes longues et au corps de couleur ébène</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 1300 insectes aux ailes longues et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1300 insectes répartis en deux catégories, 975 aux ailes longues et au corps gris et 325 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1310 insectes aux ailes vestigiales et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 - Question 5 -->
+        <div class="question">
+            <h3>Exercice 2 - Question 5 : Quelle ou quelles population(s) montre(nt) que les gènes considérés sont indépendants ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 1300 insectes aux ailes longues et au corps de couleur ébène</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1299 insectes répartis en quatre catégories, 730 aux ailes longues et au corps gris, 245 aux ailes longues et au corps ébène, 243 aux ailes vestigiales et au corps gris, et 81 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">C- 1300 insectes aux ailes longues et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1300 insectes répartis en deux catégories, 975 aux ailes longues et au corps gris et 325 aux ailes vestigiales et au corps ébène.</div>
+                <div class="option" onclick="toggleSelection(this)">E- 1310 insectes aux ailes vestigiales et au corps gris.</div>
+                <div class="option" onclick="toggleSelection(this)">F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['F'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : F- 1300 insectes répartis en quatre catégories, 325 aux ailes longues et au corps gris, 330 aux ailes longues et au corps ébène, 323 aux ailes vestigiales et au corps gris, et 322 aux ailes vestigiales et au corps ébène.</div>
+            </div>
+        </div>
+
+        <!-- Exercice 3 - Question 1 -->
+        <div class="question">
+            <h3>Exercice 3 </h3>
+			On croise un taureau sans corne avec trois vaches :<br>
+			- la vache 1, qui a des cornes, donne un veau à cornes<br>
+			- la vache 2, qui a des cornes, donne un veau sans cornes <br>
+			- la vache 3, qui n’a pas de corne, donne un veau à cornes.<p>
+            <h3>Exercice 3 - Question 1 : Quel est le caractère dominant / récessif ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation22').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse attendue :</div>
+                <p>Allèle dominant = sans cornes (SC)<br>Allèle récessif = avec cornes (AC)</p>
+            </div>
+        </div>
+
+        <!-- Exercice 3 - Question 2 -->
+        <div class="question">
+            <h3>Exercice 3 - Question 2 : Quel est le génotype de chacun des géniteurs ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation23').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse attendue :</div>
+                <p>Taureau: (SC//aC-<br>
+                Vache 1: ac//ac - Veau 1: ac//ac<br>
+                Vache 2: ac//ac - Veau 2: SC//ac<br>
+                Vache 3: SC//ac - Veau 3: ac//ac</p>
+            </div>
+        </div>
+
+        <!-- Exercice 3 - Question 3 -->
+        <div class="question">
+            <h3>Exercice 3 - Question 3 : Quel doit être le phénotype de deux parents pour qu'ils puissent avoir comme descendants que des rouans avec cornes ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation24').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse attendue :</div>
+                <p>P1 : (B//B ; ac//aC- = [B, ac]<br>
+                P2 : (R//R ; ac//aC- = [R, ac]<br>
+                F1 : 100% (B//R ; ac//aC-</p>
+            </div>
+        </div>
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

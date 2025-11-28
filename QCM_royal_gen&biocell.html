@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Génétique et Biocellulaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .diagram-qcm {
+            max-width: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+		<h1>QCM : Génétique et Biocellulaire</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>Arbre généalogique d’une famille dont certains individus souffrent d’une maladie génétique. La fréquence des hétérozygotes dans la population générale est de 1/100.</h3>
+			<img src="QCMroyalbiocell&genn_arbre_genealogique.jpg" alt="Arbre généalogique" class="diagram-qcm">
+            <h3>1. D'après l'arbre généalogique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'allèle responsable de la maladie est dominant car la fréquence de cette maladie est importante.</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'allèle responsable de la maladie est récessif car les parents II-2 et II-3 sont sains.</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'individu II-2 est sain, donc l'allèle responsable de la maladie ne peut pas être porté par Y.</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'allèle responsable de la maladie est porté par un autosome.</div>
+                <div class="option" onclick="toggleSelection(this)">E. L'allèle responsable de la maladie est porté par le chromosome X.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne(s) réponse(s) : B, C, D</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Toujours d'après l'arbre généalogique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La probabilité que le foetus IV-1 soit malade est de 1/4.</div>
+                <div class="option" onclick="toggleSelection(this)">B. La probabilité que le foetus IV-1 soit malade est de 1/600.</div>
+                <div class="option" onclick="toggleSelection(this)">C. La probabilité que le foetus IV-1 soit malade est de 1/1600.</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le foetus sera sain quel que soit son sexe.</div>
+                <div class="option" onclick="toggleSelection(this)">E. Il n'y a aucun moyen de savoir si le foetus sera atteint.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B', 'E'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne(s) réponse(s) : B, E</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. On étudie la nature des gamètes des individus II-2 et II-3 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. II-2 produit 50 % de gamètes porteurs de l'allèle morbide et 50 % de gamètes sains.</div>
+                <div class="option" onclick="toggleSelection(this)">B. II-3 produit 100% de gamètes sains.</div>
+                <div class="option" onclick="toggleSelection(this)">C. II-2 produit 100% de gamètes sains.</div>
+                <div class="option" onclick="toggleSelection(this)">D. II-2 produit 50 % de X sain et 50 % de Y.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne(s) réponse(s) : A, D</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Dans le cas d'une maladie récessive liée au chromosome X :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les pères des filles malades sont malades</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les mères des filles malades sont malades</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fils malades ont obligatoirement une mère malade</div>
+                <div class="option" onclick="toggleSelection(this)">D. Tous les fils d'une mère malade sont malades.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne(s) réponse(s) : A, D</div>
+            </div>
+        </div>
+
+        <!-- Question 5 --> 
+        <div class="question">
+            <h3>5. On croise des Drosophiles de lignée pure aux [ailes longues et aux yeux rouge] avec des Drosophiles de lignée pure aux [ailes vestigiales et yeux marron]. 
+			<br>En F1 on obtient 100 drosophiles à [ailes longues et yeux rouges].
+			<br>Le croisement test entre des femelles F1 et des mâles double récessifs donne : 629 individus [ailes longues et yeux rouges]; 633 individus [ailes vestigiales et yeux marron]; 152 individus [ailes vestigiales et yeux rouge] et 168 individus [ailes longues et yeux marrons].</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le mâle et la femelle ont produit des gamètes recombinés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il y a eu un brassage intrachromosomique lors de la prophase I chez les femelles de F1.</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il y a eu un brassage intrachromosomique lors de l'anaphase I chez les femelles de F1.</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ce croisement est un cas de monohybridisme.</div>
+                <div class="option" onclick="toggleSelection(this)">E. Les deux gènes étudiés sont indépendants.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne(s) réponse(s) : B</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. On réalise deux croisements chez des poulets d'Andalousie et on indique leur résultat : des coqs blancs croisés avec des poules noires (tous parents de lignée pure) donnent 100% de poulets bleus, des poules bleues issues du 1er croisement sont croisées avec des coqs blancs (de lignée pure) et on obtient 50 % de poulet bleus et 50 % de poulets blancs. <br>On précise que ces caractères ne sont pas liés au sexe.</h3>
+			<h3>L'étude de ces résultats permet de déduire que les poulets bleus :</h3>
+			<div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. sont homozygotes récessifs</div>
+                <div class="option" onclick="toggleSelection(this)">B. sont hétérozygotes avec l'allèle « blanc » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">C. sont hétérozygotes avec l'allèle « noir » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">D. ont un phénotype apparu par recombinaison d'allèles</div>
+                <div class="option" onclick="toggleSelection(this)">E. ont un phénotype expliqué par de la codominance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['E'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne(s) réponse(s) : E</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. D'après les données et les résultats on peut affirmer que les poulets blancs :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. sont logiquement homozygotes</div>
+                <div class="option" onclick="toggleSelection(this)">B. sont hétérozygotes avec l'allèle « blanc » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">C. sont hétérozygotes avec l'allèle « noir » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">D. ont un phénotype apparu par recombinaison d'allèles</div>
+                <div class="option" onclick="toggleSelection(this)">E. ont un phénotype expliqué par de la codominance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne(s) réponse(s) : A</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Le croisement de poules bleues avec des coqs bleus doit donner normalement:</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 75 % de poulets bleus</div>
+                <div class="option" onclick="toggleSelection(this)">B. 50 % de poulets blancs</div>
+                <div class="option" onclick="toggleSelection(this)">C. 25 % de poulets noirs</div>
+                <div class="option" onclick="toggleSelection(this)">D. 100 % de poulets bleus</div>
+                <div class="option" onclick="toggleSelection(this)">E. 3 phénotypes différents dont deux à pourcentage égal.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne(s) réponse(s) : C, E</div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Concernant les organites :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les lysosomes jouent un rôle dans la synthèse des lipides.</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les ribosomes sont limités par une membrane</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le centrosome est le centre organisateur des microfilaments</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'appareil de Golgi joue un rôle dans le stockage de calcium</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne(s) réponse(s) : D</div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Concernant les cellules :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toute cellule provient d'une autre cellule par division cellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. La cellule est l'unité structurale et fonctionnelle du vivant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Chez tous les eucaryotes, l'ADN est associé à des histones</div>
+                <div class="option" onclick="toggleSelection(this)">D. Certains organites comme les lysosomes se sont formés par endosymbiose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne(s) réponse(s) : A, B, C</div>
+            </div>
+        </div>
+
+        <!-- Question 11 --> 
+        <div class="question">
+            <h3>11. Concernant le schéma ci-dessous :</h3>
+            <img src="QCMroyalbiocell&genn_q11.jpg" alt="Q11" class="diagram-qcm">
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La légende 4 correspond au feuillet interne</div>
+                <div class="option" onclick="toggleSelection(this)">B. La légende 9 désigne des phospholipides</div>
+                <div class="option" onclick="toggleSelection(this)">C. La légende 11 désigne un glycolipide</div>
+                <div class="option" onclick="toggleSelection(this)">D. La légende 8 est une protéine intrinsèque</div>
+                <div class="option" onclick="toggleSelection(this)">E. La légende 5 désigne la partie hydrophile de la membrane</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne(s) réponse(s) : B, D</div>
+            </div>
+        </div>
+
+        <!-- Question 12 --> 
+        <div class="question">
+            <h3>12. À propos des transports membranaires :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Tous les transports membranaires nécessitent l'intervention de protéines.</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les transports actifs se font contre le gradient de concentration</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les transports perméatifs comprennent l'endocytose et l'exocytose.</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les canaux sont des pores ouverts simultanément des deux côtés.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne(s) réponse(s) : B, D</div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Chez les Eucaryotes, la membrane plasmique comporte :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des glucides formant le glycocalyx et situés sur la face interne de la membrane</div>
+                <div class="option" onclick="toggleSelection(this)">B. Deux feuillets lipidiques de composition moléculaire symétrique.</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des transporteurs et des canaux ioniques.</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des protéines qui sont uniquement transmembranaires.</div>
+                <div class="option" onclick="toggleSelection(this)">E. Des protéines fixées à la membrane par un ancrage lipidique</div>
+                <div class="option" onclick="toggleSelection(this)">F. Des molécules de cholestérol influençant la fluidité membranaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['C', 'E', 'F'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne(s) réponse(s) : C, E, F</div>
+            </div>
+        </div>
+
+        <!-- Question 14 --> 
+        <div class="question">
+            <h3>14. Concernant le système endomembranaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'appareil de Golgi intervient dans la maturation des protéines</div>
+                <div class="option" onclick="toggleSelection(this)">B. La translocation des protéines dans le réticulum endoplasmique est posttraductionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le réticulum endoplasmique granuleux intervient dans la synthèse des protéines de la membrane plasmique</div>
+                <div class="option" onclick="toggleSelection(this)">D. La membrane du réticulum endoplasmique contient plus de cholestérol que la membrane plasmique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne(s) réponse(s) : A, C</div>
+            </div>
+        </div>
+
+        <!-- Question 15 --> 
+        <div class="question">
+            <h3>15. Concernant le noyau :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les pores permettent uniquement la diffusion passive de petites molécules</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'enveloppe nucléaire est une différenciation locale de l'appareil de Golgi</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le noyau est présent durant tout le cycle cellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le nucléole est le lieu de synthèse des ARNt</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne(s) réponse(s) : A</div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. À propos du cytosquelette :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il est responsable du transport de certains organites cellulaires.</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les microtubules présentent une structure polarisée</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les microfilaments constituent la charpente des cils et des flagelles</div>
+                <div class="option" onclick="toggleSelection(this)">D. La lamina nucléaire est constituée de protéines de type filaments intermédiaires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne(s) réponse(s) : A, B, D</div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. À propos des mitochondries :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elles sont localisées dans les zones de forte consommation d'énergie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elles interagissent avec le réticulum endoplasmique au niveau de zones appelées MAM</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elles contiennent des ribosomes</div>
+                <div class="option" onclick="toggleSelection(this)">D. La concentration en protons H+ dans l'espace intermembranaire est inférieure à celle de la matrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne(s) réponse(s) : A, B, C</div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. À propos des mitochondries :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La première étape de la respiration cellulaire a lieu dans le cytoplasme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lors du cycle de Krebs, il y a formation de CO2</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'ATP synthase est située dans la membrane interne entre les crêtes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elles contiennent les gènes codant toutes les protéines dont elles ont besoin pour fonctionner</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Concernant le cycle cellulaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toutes les divisions cellulaires sont des reproductions conformes</div>
+                <div class="option" onclick="toggleSelection(this)">B. En prophase, il y a deux centrosomes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Au stade métaphase, les chromosomes sont bichromatidiens</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lors de l'anaphase, il y a séparation des chromosomes homologues</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne(s) réponse(s) : B, C</div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. Concernant le cycle cellulaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les Cdk sont des kinases activées de façon cyclique</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'enveloppe nucléaire disparaît en prométaphase de mitose</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le point de contrôle MCP intervient en anaphase mitose</div>
+                <div class="option" onclick="toggleSelection(this)">D. La transition G1/S ne peut avoir lieu que si l'ADN est correctement répliqué</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. Concernant la mort cellulaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Lors de l'apoptose, il y a condensation de la chromatine</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'apoptose est une mort cellulaire programmée</div>
+                <div class="option" onclick="toggleSelection(this)">C. La nécrose provoque une réaction inflammatoire</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'apoptose peut être due au raccourcissement des télomères</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne(s) réponse(s) : A, B, C, D</div>
+            </div>
+        </div>
+    <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+	</div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
