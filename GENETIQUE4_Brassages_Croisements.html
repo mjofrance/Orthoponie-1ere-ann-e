@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Génétique - Brassages et Croisements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .diagram-qcm {
+            max-width: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM : Génétique - Brassages et Croisements</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Le cycle biologique des organismes à reproduction sexuée alterne entre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Phase haploïde et phase diploïde</div>
+                <div class="option" onclick="toggleSelection(this)">B- Phase mitotique et phase méiotique</div>
+                <div class="option" onclick="toggleSelection(this)">C- Phase de multiplication et phase de différenciation</div>
+                <div class="option" onclick="toggleSelection(this)">D- Phase de fécondation et phase de mitose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : A- Phase haploïde et phase diploïde</div>
+                <p><strong>Explication :</strong> Le cycle biologique des organismes à reproduction sexuée alterne entre une phase haploïde (n chromosomes) et une phase diploïde (2n chromosomes). La phase haploïde correspond aux gamètes, tandis que la phase diploïde correspond aux cellules somatiques et au zygote.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. La méiose produit :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 2 cellules diploïdes</div>
+                <div class="option" onclick="toggleSelection(this)">B- 4 cellules haploïdes</div>
+                <div class="option" onclick="toggleSelection(this)">C- 2 cellules haploïdes</div>
+                <div class="option" onclick="toggleSelection(this)">D- 4 cellules diploïdes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B- 4 cellules haploïdes</div>
+                <p><strong>Explication :</strong> La méiose est un processus de division cellulaire qui réduit de moitié le nombre de chromosomes. Elle produit 4 cellules filles haploïdes (n chromosomes) à partir d'une cellule mère diploïde (2n chromosomes).</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Le brassage intrachromosomique a lieu lors de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La prophase de la première division de méiose</div>
+                <div class="option" onclick="toggleSelection(this)">B- L'anaphase de la première division de méiose</div>
+                <div class="option" onclick="toggleSelection(this)">C- La métaphase de la deuxième division de méiose</div>
+                <div class="option" onclick="toggleSelection(this)">D- La télophase de la deuxième division de méiose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : A- La prophase de la première division de méiose</div>
+                <p><strong>Explication :</strong> Le brassage intrachromosomique, ou crossing-over, se produit pendant la prophase de la première division de méiose. C'est à ce moment que les chromosomes homologues s'apparient et échangent des segments de chromatides.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Le brassage interchromosomique est dû à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La séparation aléatoire des chromosomes homologues</div>
+                <div class="option" onclick="toggleSelection(this)">B- L'échange de portions de chromatides</div>
+                <div class="option" onclick="toggleSelection(this)">C- La duplication des chromosomes</div>
+                <div class="option" onclick="toggleSelection(this)">D- La condensation des chromosomes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : A- La séparation aléatoire des chromosomes homologues</div>
+                <p><strong>Explication :</strong> Le brassage interchromosomique est le résultat de la répartition aléatoire des chromosomes homologues lors de l'anaphase de la première division de méiose. Cela crée une diversité génétique entre les gamètes.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Le crossing-over :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Crée de nouvelles combinaisons alléliques sur un même chromosome</div>
+                <div class="option" onclick="toggleSelection(this)">B- Sépare les chromosomes homologues</div>
+                <div class="option" onclick="toggleSelection(this)">C- A lieu pendant la mitose</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est spécifique aux cellules somatiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : A- Crée de nouvelles combinaisons alléliques sur un même chromosome</div>
+                <p><strong>Explication :</strong> Le crossing-over est un échange de segments entre chromatides de chromosomes homologues. Il se produit pendant la prophase de la première division de méiose et crée de nouvelles combinaisons d'allèles sur les chromosomes.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. La première loi de Mendel stipule que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Les hybrides de première génération sont homogènes</div>
+                <div class="option" onclick="toggleSelection(this)">B- Les allèles se séparent de manière aléatoire</div>
+                <div class="option" onclick="toggleSelection(this)">C- Les gènes sont liés</div>
+                <div class="option" onclick="toggleSelection(this)">D- Les caractères se mélangent</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : A- Les hybrides de première génération sont homogènes</div>
+                <p><strong>Explication :</strong> La première loi de Mendel, ou loi d'uniformité des hybrides, stipule que le croisement de deux individus de lignée pure donne une première génération (F1) homogène, où tous les individus expriment le caractère dominant.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Un croisement test permet de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Déterminer le génotype d'un individu</div>
+                <div class="option" onclick="toggleSelection(this)">B- Créer une nouvelle espèce</div>
+                <div class="option" onclick="toggleSelection(this)">C- Modifier le phénotype d'un individu</div>
+                <div class="option" onclick="toggleSelection(this)">D- Augmenter le nombre de chromosomes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : A- Déterminer le génotype d'un individu</div>
+                <p><strong>Explication :</strong> Un croisement test consiste à croiser un individu de phénotype dominant avec un individu homozygote récessif. Cela permet de déterminer si l'individu de phénotype dominant est homozygote ou hétérozygote.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Dans un croisement monohybride, la F2 présente des proportions phénotypiques de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 3:1</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1:2:1</div>
+                <div class="option" onclick="toggleSelection(this)">C- 9:3:3:1</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1:1</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : A- 3:1</div>
+                <p><strong>Explication :</strong> Dans un croisement monohybride, la deuxième génération (F2) présente des proportions phénotypiques de 3 individus avec le caractère dominant pour 1 individu avec le caractère récessif.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Dans un croisement dihybride avec des gènes indépendants, la F2 présente des proportions phénotypiques de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- 9:3:3:1</div>
+                <div class="option" onclick="toggleSelection(this)">B- 1:2:1</div>
+                <div class="option" onclick="toggleSelection(this)">C- 3:1</div>
+                <div class="option" onclick="toggleSelection(this)">D- 1:1:1:1</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : A- 9:3:3:1</div>
+                <p><strong>Explication :</strong> Dans un croisement dihybride avec des gènes indépendants, la F2 présente 4 phénotypes dans les proportions 9:3:3:1, reflétant toutes les combinaisons possibles des allèles des deux gènes.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. La fécondation :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Rétablit la diploïdie</div>
+                <div class="option" onclick="toggleSelection(this)">B- Réduit le nombre de chromosomes</div>
+                <div class="option" onclick="toggleSelection(this)">C- Est un processus mitotique</div>
+                <div class="option" onclick="toggleSelection(this)">D- A lieu avant la méiose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : A- Rétablit la diploïdie</div>
+                <p><strong>Explication :</strong> La fécondation est la fusion de deux gamètes haploïdes (n chromosomes) pour former un zygote diploïde (2n chromosomes), rétablissant ainsi la diploïdie.</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Les gènes liés :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sont portés par le même chromosome</div>
+                <div class="option" onclick="toggleSelection(this)">B- Se séparent toujours lors de la méiose</div>
+                <div class="option" onclick="toggleSelection(this)">C- Sont toujours récessifs</div>
+                <div class="option" onclick="toggleSelection(this)">D- Ne subissent jamais de crossing-over</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : A- Sont portés par le même chromosome</div>
+                <p><strong>Explication :</strong> Les gènes liés sont situés sur le même chromosome et ont tendance à être transmis ensemble, sauf en cas de crossing-over.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Un individu hétérozygote pour un gène est noté :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- (A//a)</div>
+                <div class="option" onclick="toggleSelection(this)">B- (A//A)</div>
+                <div class="option" onclick="toggleSelection(this)">C- (a//a)</div>
+                <div class="option" onclick="toggleSelection(this)">D- (A/a)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : A- (A//a)</div>
+                <p><strong>Explication :</strong> Un individu hétérozygote possède deux allèles différents pour un gène donné, notés (A//a).</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. La dominance incomplète se manifeste par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Un phénotype intermédiaire</div>
+                <div class="option" onclick="toggleSelection(this)">B- Un phénotype dominant</div>
+                <div class="option" onclick="toggleSelection(this)">C- Un phénotype récessif</div>
+                <div class="option" onclick="toggleSelection(this)">D- L'absence de phénotype</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A- Un phénotype intermédiaire</div>
+                <p><strong>Explication :</strong> Dans le cas de dominance incomplète, le phénotype de l'hétérozygote est intermédiaire entre ceux des deux homozygotes.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Le génotype d'un gamète s'écrit :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- (A/)</div>
+                <div class="option" onclick="toggleSelection(this)">B- (A//A)</div>
+                <div class="option" onclick="toggleSelection(this)">C- [A]</div>
+                <div class="option" onclick="toggleSelection(this)">D- (A//a)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : A- (A/)</div>
+                <p><strong>Explication :</strong> Un gamète est haploïde et ne possède qu'un seul allèle pour chaque gène, noté (A/).</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Le caryotype d'une espèce est maintenu stable grâce à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La méiose et la fécondation</div>
+                <div class="option" onclick="toggleSelection(this)">B- La mitose uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C- La duplication des chromosomes</div>
+                <div class="option" onclick="toggleSelection(this)">D- La mutation génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : A- La méiose et la fécondation</div>
+                <p><strong>Explication :</strong> La méiose réduit le nombre de chromosomes de moitié, et la fécondation le rétablit, assurant ainsi la stabilité du caryotype d'une génération à l'autre.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Le brassage génétique lors de la méiose est dû à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Le brassage intrachromosomique et interchromosomique</div>
+                <div class="option" onclick="toggleSelection(this)">B- La mitose</div>
+                <div class="option" onclick="toggleSelection(this)">C- La fécondation</div>
+                <div class="option" onclick="toggleSelection(this)">D- La duplication de l'ADN</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : A- Le brassage intrachromosomique et interchromosomique</div>
+                <p><strong>Explication :</strong> Le brassage génétique lors de la méiose est le résultat du brassage intrachromosomique (crossing-over) et du brassage interchromosomique (répartition aléatoire des chromosomes homologues).</p>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Un allèle récessif est représenté par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Une lettre minuscule</div>
+                <div class="option" onclick="toggleSelection(this)">B- Une lettre majuscule</div>
+                <div class="option" onclick="toggleSelection(this)">C- Un chiffre</div>
+                <div class="option" onclick="toggleSelection(this)">D- Un symbole</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : A- Une lettre minuscule</div>
+                <p><strong>Explication :</strong> Par convention, un allèle récessif est représenté par une lettre minuscule, tandis qu'un allèle dominant est représenté par une lettre majuscule.</p>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. La méiose est un processus :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Réductionnel</div>
+                <div class="option" onclick="toggleSelection(this)">B- Multiplicatif</div>
+                <div class="option" onclick="toggleSelection(this)">C- Additif</div>
+                <div class="option" onclick="toggleSelection(this)">D- Conservatif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : A- Réductionnel</div>
+                <p><strong>Explication :</strong> La méiose est un processus réductionnel car elle réduit le nombre de chromosomes de moitié, passant de 2n à n.</p>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Le phénotype d'un individu est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- L'ensemble des caractères observables</div>
+                <div class="option" onclick="toggleSelection(this)">B- Le génotype</div>
+                <div class="option" onclick="toggleSelection(this)">C- Le caryotype</div>
+                <div class="option" onclick="toggleSelection(this)">D- Le génome</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : A- L'ensemble des caractères observables</div>
+                <p><strong>Explication :</strong> Le phénotype correspond à l'ensemble des caractères observables d'un individu, résultant de l'expression de son génotype et de l'influence de l'environnement.</p>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. La diversité génétique est créée par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La méiose et la fécondation</div>
+                <div class="option" onclick="toggleSelection(this)">B- La mitose uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C- La duplication de l'ADN</div>
+                <div class="option" onclick="toggleSelection(this)">D- La mutation uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : A- La méiose et la fécondation</div>
+                <p><strong>Explication :</strong> La diversité génétique est principalement créée par la méiose (brassage génétique) et la fécondation (combinaison aléatoire des gamètes).</p>
+            </div>
+        </div>
+		<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

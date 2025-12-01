@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Génétique humaine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .diagram-qcm {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM : Génétique humaine</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Une maladie génétique est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Une infection bactérienne</div>
+                <div class="option" onclick="toggleSelection(this)">B- Un dysfonctionnement d'un ou plusieurs gènes</div>
+                <div class="option" onclick="toggleSelection(this)">C- Un accident</div>
+                <div class="option" onclick="toggleSelection(this)">D- Un empoisonnement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B- Un dysfonctionnement d'un ou plusieurs gènes</div>
+                <p>Une maladie génétique est causée par un dysfonctionnement d'un ou plusieurs gènes, contrairement aux maladies acquises qui résultent de causes extérieures.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Une maladie monogénique est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Un seul gène</div>
+                <div class="option" onclick="toggleSelection(this)">B- Plusieurs gènes</div>
+                <div class="option" onclick="toggleSelection(this)">C- Un facteur environnemental</div>
+                <div class="option" onclick="toggleSelection(this)">D- Une infection virale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : A- Un seul gène</div>
+                <p>Une maladie monogénique est causée par le dysfonctionnement d'un seul gène.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Une maladie héréditaire est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Toujours génétique</div>
+                <div class="option" onclick="toggleSelection(this)">B- Transmise par les gamètes des parents aux enfants</div>
+                <div class="option" onclick="toggleSelection(this)">C- Toujours acquise</div>
+                <div class="option" onclick="toggleSelection(this)">D- Toujours multifactorielle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B- Transmise par les gamètes des parents aux enfants</div>
+                <p>Une maladie héréditaire est transmise par les gamètes des parents aux enfants, mais elle n'est pas forcément génétique (ex. : certaines maladies infectieuses peuvent être transmises de la mère à l'enfant).</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. La mucoviscidose est un exemple de maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Multifactorielle</div>
+                <div class="option" onclick="toggleSelection(this)">B- Mendélienne non hétérogène</div>
+                <div class="option" onclick="toggleSelection(this)">C- Acquise</div>
+                <div class="option" onclick="toggleSelection(this)">D- Liée à l'âge</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : B- Mendélienne non hétérogène</div>
+                <p>La mucoviscidose est une maladie mendélienne non hétérogènes, car le gène impliqué est le même chez tous les patients.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Les maladies mendéliennes peuvent être :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomiques ou gonosomiques</div>
+                <div class="option" onclick="toggleSelection(this)">B- Uniquement dominantes</div>
+                <div class="option" onclick="toggleSelection(this)">C- Uniquement récessives</div>
+                <div class="option" onclick="toggleSelection(this)">D- Toujours bénignes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : A- Autosomiques ou gonosomiques</div>
+                <p>Les maladies mendéliennes peuvent être autosomiques ou gonosomiques, dominantes ou récessives.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. L'hypertension artérielle (HTA) est un exemple de maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Mendélienne</div>
+                <div class="option" onclick="toggleSelection(this)">B- Multifactorielle</div>
+                <div class="option" onclick="toggleSelection(this)">C- Monogénique</div>
+                <div class="option" onclick="toggleSelection(this)">D- Congénitale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B- Multifactorielle</div>
+                <p>L'HTA dépend à la fois de plusieurs gènes et de facteurs environnementaux.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Un arbre généalogique permet de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Établir le mode de transmission d'un gène</div>
+                <div class="option" onclick="toggleSelection(this)">B- Guérir une maladie génétique</div>
+                <div class="option" onclick="toggleSelection(this)">C- Modifier l'ADN</div>
+                <div class="option" onclick="toggleSelection(this)">D- Créer des croisements expérimentaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : A- Établir le mode de transmission d'un gène</div>
+                <p>Un arbre généalogique permet de suivre la transmission d'un caractère ou d'une maladie héréditaire au sein d'une famille.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Dans un arbre généalogique, un carré noir représente :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Une femme saine</div>
+                <div class="option" onclick="toggleSelection(this)">B- Un homme atteint</div>
+                <div class="option" onclick="toggleSelection(this)">C- Une femme atteinte</div>
+                <div class="option" onclick="toggleSelection(this)">D- Un homme sain</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B- Un homme atteint</div>
+                <p>Un carré noir représente un homme atteint dans un arbre généalogique.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. La phénylcétonurie est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">B- Autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">C- Gonosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">D- Gonosomale récessive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B- Autosomale récessive</div>
+                <p>La phénylcétonurie est une maladie autosomale récessive.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. La chorée de Huntington est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">B- Autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">C- Gonosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">D- Gonosomale récessive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : A- Autosomale dominante</div>
+                <p>La chorée de Huntington est une maladie autosomale dominante.</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. La myopathie de Duchenne est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">B- Gonosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">C- Autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">D- Gonosomale dominante</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B- Gonosomale récessive</div>
+                <p>La myopathie de Duchenne est une maladie gonosomale récessive liée au chromosome X.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Le rachitisme vitamino-dépendant est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">B- Gonosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">C- Autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">D- Gonosomale récessive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : B- Gonosomale dominante</div>
+                <p>Le rachitisme vitamino-dépendant est une maladie dominante liée au chromosome X.</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Une maladie à pénétrance incomplète peut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sauter une génération</div>
+                <div class="option" onclick="toggleSelection(this)">B- Toucher uniquement les hommes</div>
+                <div class="option" onclick="toggleSelection(this)">C- Être guérie par un régime alimentaire</div>
+                <div class="option" onclick="toggleSelection(this)">D- Être toujours bénigne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A- Sauter une génération</div>
+                <p>Dans une maladie à pénétrance incomplète, le gène peut ne pas s'exprimer chez certains porteurs, donnant l'impression de sauter une génération.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. L'expressivité variable signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Tous les porteurs d'une mutation ont les mêmes symptômes</div>
+                <div class="option" onclick="toggleSelection(this)">B- Les symptômes peuvent varier en nature et en gravité</div>
+                <div class="option" onclick="toggleSelection(this)">C- La maladie est toujours mortelle</div>
+                <div class="option" onclick="toggleSelection(this)">D- La maladie ne touche que les femmes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B- Les symptômes peuvent varier en nature et en gravité</div>
+                <p>L'expressivité variable signifie que les symptômes peuvent varier en nature et en gravité chez les porteurs de la même mutation.</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Une néomutation est une mutation :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Toujours présente chez les parents</div>
+                <div class="option" onclick="toggleSelection(this)">B- Apparue chez un individu sans antécédent familial</div>
+                <div class="option" onclick="toggleSelection(this)">C- Toujours bénigne</div>
+                <div class="option" onclick="toggleSelection(this)">D- Transmise uniquement par la mère</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B- Apparue chez un individu sans antécédent familial</div>
+                <p>Une néomutation est une mutation apparue chez un individu alors qu'aucun de ses parents ne la possède.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. La neurofibromatose est un exemple de maladie avec :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Pénétrance complète</div>
+                <div class="option" onclick="toggleSelection(this)">B- Expressivité variable</div>
+                <div class="option" onclick="toggleSelection(this)">C- Transmission autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">D- Transmission gonosomale dominante</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B- Expressivité variable</div>
+                <p>La neurofibromatose présente une expressivité variable, avec des symptômes différents selon les individus.</p>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Le syndrome de Gardner est dû à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Une néomutation</div>
+                <div class="option" onclick="toggleSelection(this)">B- Une infection virale</div>
+                <div class="option" onclick="toggleSelection(this)">C- Un régime alimentaire</div>
+                <div class="option" onclick="toggleSelection(this)">D- Un accident</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : A- Une néomutation</div>
+                <p>Le syndrome de Gardner est souvent dû à une néomutation.</p>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Dans une maladie autosomale récessive, les parents d'un enfant malade sont généralement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Malades</div>
+                <div class="option" onclick="toggleSelection(this)">B- Porteurs sains</div>
+                <div class="option" onclick="toggleSelection(this)">C- Non porteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D- Hétérozygotes pour un autre gène</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B- Porteurs sains</div>
+                <p>Dans une maladie autosomale récessive, les parents d'un enfant malade sont généralement porteurs sains.</p>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Le daltonisme est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Autosomale dominante</div>
+                <div class="option" onclick="toggleSelection(this)">B- Gonosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">C- Autosomale récessive</div>
+                <div class="option" onclick="toggleSelection(this)">D- Gonosomale dominante</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B- Gonosomale récessive</div>
+                <p>Le daltonisme est une maladie gonosomale récessive liée au chromosome X.</p>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. Une maladie multifactorielle est déterminée par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Un seul gène</div>
+                <div class="option" onclick="toggleSelection(this)">B- Plusieurs gènes et des facteurs environnementaux</div>
+                <div class="option" onclick="toggleSelection(this)">C- Uniquement des facteurs environnementaux</div>
+                <div class="option" onclick="toggleSelection(this)">D- Uniquement des gènes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B- Plusieurs gènes et des facteurs environnementaux</div>
+                <p>Une maladie multifactorielle est déterminée par plusieurs gènes et des facteurs environnementaux.</p>
+            </div>
+        </div>
+		<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            let allCorrect = true;
+
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                    allCorrect = false;
+                }
+                option.classList.remove("selected");
+            });
+
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

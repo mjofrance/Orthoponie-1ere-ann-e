@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La mitochondrie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d4edda;
+        }
+        .option.selected {
+            font-weight: bold;
+            background: #e0e0e0;
+        }
+        .option.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .option.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e3f1;
+            border-radius: 5px;
+            display: none;
+        }
+        .result {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM : La mitochondrie</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Les mitochondries sont présentes dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Toutes les cellules, procaryotes et eucaryotes.</div>
+                <div class="option" onclick="toggleSelection(this)">B- La majorité des cellules eucaryotes.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Uniquement les cellules animales.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Uniquement les cellules végétales.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B- La majorité des cellules eucaryotes.</div>
+                <p>Les mitochondries sont présentes dans la majorité des cellules eucaryotes, mais pas dans les cellules procaryotes ni dans certaines cellules eucaryotes comme les hématies.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. La fonction principale des mitochondries est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- La synthèse des protéines.</div>
+                <div class="option" onclick="toggleSelection(this)">B- La production d'énergie sous forme d'ATP.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Le stockage des lipides.</div>
+                <div class="option" onclick="toggleSelection(this)">D- La digestion des nutriments.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B- La production d'énergie sous forme d'ATP.</div>
+                <p>Les mitochondries convertissent l'énergie issue du catabolisme des glucides et des lipides en ATP par phosphorylation oxydative.</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. L'ADN mitochondrial :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est linéaire et associé à des histones.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Code pour toutes les protéines mitochondriales.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Est circulaire et nu.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est transmis par le père.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : C- Est circulaire et nu.</div>
+                <p>L'ADN mitochondrial est circulaire, non lié à des histones, et d'origine maternelle.</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Les crêtes mitochondriales sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Des replis de la membrane externe.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Des replis de la membrane interne.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Des structures indépendantes de la mitochondrie.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Des inclusions de la matrice.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : B- Des replis de la membrane interne.</div>
+                <p>Les crêtes sont des replis de la membrane interne, augmentant la surface disponible pour la chaîne respiratoire.</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. La membrane externe de la mitochondrie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est très sélective.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Contient des porines (VDAC).</div>
+                <div class="option" onclick="toggleSelection(this)">C- Est riche en cardiolipines.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est imperméable aux ions.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B- Contient des porines (VDAC).</div>
+                <p>La membrane externe contient des porines qui permettent le passage de molécules de petit poids moléculaire.</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. La membrane interne de la mitochondrie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est pauvre en protéines.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Contient des cardiolipines.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Est perméable à toutes les molécules.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Ne contient pas de complexes protéiques.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B- Contient des cardiolipines.</div>
+                <p>La membrane interne est riche en protéines et contient des cardiolipines, qui jouent un rôle dans son imperméabilité.</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. La chaîne respiratoire est localisée :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Dans la matrice.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Dans l'espace intermembranaire.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Dans les crêtes de la membrane interne.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Dans la membrane externe.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : C- Dans les crêtes de la membrane interne.</div>
+                <p>Les complexes de la chaîne respiratoire sont situés dans les crêtes de la membrane interne.</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. L'ATP synthase :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est un complexe de la membrane externe.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Utilise le gradient de protons pour produire de l'ATP.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Est active uniquement en absence d'oxygène.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est codée uniquement par l'ADN mitochondrial.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B- Utilise le gradient de protons pour produire de l'ATP.</div>
+                <p>L'ATP synthase utilise l'énergie du gradient de protons pour phosphoryler l'ADP en ATP.</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Le NADH et le FADH2 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sont produits dans le cytosol.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Fournissent des électrons à la chaîne respiratoire.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Sont des lipides.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Sont des acides nucléiques.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B- Fournissent des électrons à la chaîne respiratoire.</div>
+                <p>Le NADH et le FADH2 sont des coenzymes réduits qui transfèrent des électrons à la chaîne respiratoire.</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. La première étape de la respiration cellulaire a lieu :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Dans la matrice mitochondriale.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Dans le cytosol.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Dans l'espace intermembranaire.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Dans le noyau.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B- Dans le cytosol.</div>
+                <p>La glycolyse, première étape de la respiration cellulaire, se déroule dans le cytosol.</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Les mitochondries se multiplient par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Division binaire, indépendamment du cycle cellulaire.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Mitose.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Méiose.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Endocytose.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : A- Division binaire, indépendamment du cycle cellulaire.</div>
+                <p>Les mitochondries se multiplient par fission et fusion, indépendamment de la division cellulaire.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Les protéines mitochondriales sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Toutes codées par l'ADN mitochondrial.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Importées depuis le cytosol.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Synthétisées uniquement dans la matrice.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Exclusivement des enzymes.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : B- Importées depuis le cytosol.</div>
+                <p>La majorité des protéines mitochondriales sont codées par le noyau, synthétisées dans le cytosol et importées dans la mitochondrie.</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Les complexes TOM et TIM :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sont des complexes de la chaîne respiratoire.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Permettent l'import des protéines dans la mitochondrie.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Sont des canaux ioniques.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Sont situés dans la matrice.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B- Permettent l'import des protéines dans la mitochondrie.</div>
+                <p>TOM et TIM sont des translocases qui permettent l'import des protéines à travers les membranes mitochondriales.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. La fusion des mitochondries :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est indépendante de l'hydrolyse du GTP.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Implique les mitofusines et OPA1.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Se produit uniquement pendant la mitose.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est un processus irréversible.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B- Implique les mitofusines et OPA1.</div>
+                <p>La fusion des mitochondries implique les protéines mitofusines (membrane externe) et OPA1 (membrane interne).</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. La thermogénèse mitochondriale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est due à l'ATP synthase.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Implique des agents découplants comme UCP1.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Augmente la production d'ATP.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Se produit dans toutes les cellules.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B- Implique des agents découplants comme UCP1.</div>
+                <p>La thermogénèse est due à des agents découplants comme UCP1, qui dissipent le gradient de protons en chaleur.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Le calcium mitochondrial :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Est stocké uniquement dans la matrice.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Active certaines enzymes comme l'ATP synthase.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Entre passivement dans la mitochondrie.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Est exporté vers le réticulum endoplasmique.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B- Active certaines enzymes comme l'ATP synthase.</div>
+                <p>Le calcium active plusieurs enzymes mitochondriales, dont l'ATP synthase.</p>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Les MAM (Mitochondria-Associated Membrane) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sont des zones de contact entre mitochondries et réticulum endoplasmique.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Jouent un rôle dans le transport des lipides et du calcium.</div>
+                <div class="option" onclick="toggleSelection(this)">C- Sont absentes des cellules eucaryotes.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Sont des structures permanentes.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne(s) réponse(s) : A, B- Sont des zones de contact entre mitochondries et réticulum endoplasmique. Jouent un rôle dans le transport des lipides et du calcium.</div>
+                <p>Les MAM sont des zones dynamiques de contact entre mitochondries et RE, impliquées dans le transport des lipides et du calcium.</p>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Les maladies mitochondriales :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Sont toujours d'origine génétique nucléaire.</div>
+                <div class="option" onclick="toggleSelection(this)">B- Peuvent être causées par des mutations de l'ADN mitochondrial.</div>
+                <div class="option" onclick="toggleSelection(this)">C- N'affectent que le muscle cardiaque.</div>
+                <div class="option" onclick="toggleSelection(this)">D- Sont toujours mortelles.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B- Peuvent être causées par des mutations de l'ADN mitochondrial.</div>
+                <p>Les maladies mitochondriales peuvent être causées par des mutations de l'ADN mitochondrial ou nucléaire, et affectent divers tissus.</p>
+            </div>
+        </div>
+		<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
