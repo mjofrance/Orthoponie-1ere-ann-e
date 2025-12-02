@@ -16,12 +16,6 @@
         <!-- Exercice 1 - Question 1 -->
         <div class="question">
             <h3>1. L'ordre des clichés est :</h3>
-		À = Anaphase 1ère division<br>
-		B = télophase 1ère division ou prophase 2ème division <br>
-		C = Métaphase 1ère division <br>
-		D = anaphase 2ème division <br>
-		E =prophase 1ère division <br>
-		F = métaphase 2ème division
 
 					<img src="genetiqueTD2.png" alt="Schéman" class="diagram-qcm">
             <div class="options">
@@ -31,9 +25,15 @@
                 <div class="option" onclick="toggleSelection(this)">D- C-E-A-B-D-F</div>
                 <div class="option" onclick="toggleSelection(this)">E- Aucune réponse correcte</div>
             </div>
-             <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+             <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
            <div class="explanation" id="explanation1">
-                <div class="result">Bonne réponse : C->    E-C-A-B-D-F</div>
+                <div class="result">Bonne réponse : B-> E-C-A-B-F-D <br>
+				À = Anaphase 1ère division<br>
+		B = télophase 1ère division ou prophase 2ème division <br>
+		C = Métaphase 1ère division <br>
+		D = anaphase 2ème division <br>
+		E =prophase 1ère division <br>
+		F = métaphase 2ème division</div>
             </div>
         </div>
 
@@ -63,9 +63,9 @@
                 <div class="option" onclick="toggleSelection(this)">D- La séparation des chromosomes homologues lors de la 2nde division</div>
                 <div class="option" onclick="toggleSelection(this)">E- Le clivage des centromères pour chaque paire d'homologues</div>
             </div>
-             <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+             <button type="button" onclick="validateMultipleAnswer(3, ['B', 'E'])">Valider</button>
            <div class="explanation" id="explanation3">
-                <div class="result">Bonne réponse : B- La séparation des chromatides lors de la 2nde division</div>
+                <div class="result">Bonne réponse : B- La séparation des chromatides lors de la 2nde division et E- Le clivage des centromères pour chaque paire d'homologues</div>
             </div>
         </div>
 
@@ -150,7 +150,15 @@
 
         <!-- Exercice 1 - Question 9 -->
         <div class="question">
-            <h3>9. D'après les résultats du 1er croisement, la femelle est de génotype :</h3>
+            
+			<h3>L’énoncé suivant concerne les questions de 9 à 12 :</h3>
+Considérons deux gènes : taille des ailes et couleur du corps comprenant chacun deux allèles (en majuscule les allèles dominants et en minuscule les allèles récessifs) :<br>
+L = ailes longues et vg = ailes vestigiales<br>
+G = corps gris et b = corps brun<br><br>
+Croisement 1 : femelle [L ; G] x mâle [vg ; b] → 415 [L ; G] 88 [L ; b] 92 [vg ; G] 405 [vg ; b]<br>
+Croisement 2 : femelle [vg ; b] x mâle [L ; G] → 502 [L ; G] 498 [vg ; b]<p>
+			
+			<h3>9. D'après les résultats du 1er croisement, la femelle est de génotype :</h3>
             <div class="options">
                 <div class="option" onclick="toggleSelection(this)">A- (L//L ; G//G)</div>
                 <div class="option" onclick="toggleSelection(this)">B- (L//G ; G//L)</div>
@@ -168,15 +176,15 @@
         <div class="question">
             <h3>10. D'après les résultats du 1er croisement, le mâle est de génotype :</h3>
             <div class="options">
-                <div class="option" onclick="toggleSelection(this)">A- (vg//vg ; b//B-</div>
-                <div class="option" onclick="toggleSelection(this)">B- (vg//b ; vg//B-</div>
-                <div class="option" onclick="toggleSelection(this)">C- (vg b//vg B-</div>
-                <div class="option" onclick="toggleSelection(this)">D- (vg b//L G)</div>
-                <div class="option" onclick="toggleSelection(this)">E- (L//vg ; G//B-</div>
+                <div class="option" onclick="toggleSelection(this)">A- (vg//vg ; b//b)</div>
+                <div class="option" onclick="toggleSelection(this)">B- (vg// b ; vg //b)</div>
+                <div class="option" onclick="toggleSelection(this)">C- (vg b//vg b)</div>
+                <div class="option" onclick="toggleSelection(this)">D- ((vg b //L G)</div>
+                <div class="option" onclick="toggleSelection(this)">E- ((L// vg ; G// b)</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(10, ['A'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
             <div class="explanation" id="explanation10">
-                <div class="result">Bonne réponse : A- (vg//vg ; b//B-</div>
+                <div class="result">Bonne réponse : C- (vg b//vg b)</div>
             </div>
         </div>
 
@@ -190,9 +198,9 @@
                 <div class="option" onclick="toggleSelection(this)">D- La femelle est hétérozygote et le mâle est homozygote.</div>
                 <div class="option" onclick="toggleSelection(this)">E- On peut en déduire que les gènes sont indépendants.</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(11, ['A'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(11, ['C'])">Valider</button>
             <div class="explanation" id="explanation11">
-                <div class="result">Bonne réponse : A- La femelle et le mâle sont homozygotes.</div>
+                <div class="result">Bonne réponse : C- La femelle est homozygote et le mâle est hétérozygote.</div>
             </div>
         </div>
 
@@ -206,9 +214,9 @@
                 <div class="option" onclick="toggleSelection(this)">D- Le brassage intrachromosomique s'effectue aussi bien chez les mâles que chez les femelles drosophiles.</div>
                 <div class="option" onclick="toggleSelection(this)">E- Le brassage intrachromosomique s'effectue seulement chez les femelles drosophiles.</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(12, ['E'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'E'])">Valider</button>
             <div class="explanation" id="explanation12">
-                <div class="result">Bonne réponse : E- Le brassage intrachromosomique s'effectue seulement chez les femelles drosophiles.</div>
+                <div class="result">Bonne réponse : B- Le brassage interchromosomique s'effectue aussi bien chez les mâles que chez les femelles drosophiles. et E- Le brassage intrachromosomique s'effectue seulement chez les femelles drosophiles.</div>
             </div>
         </div>
 
@@ -222,9 +230,9 @@
                 <div class="option" onclick="toggleSelection(this)">D- se fait en prophase de première division méiotique</div>
                 <div class="option" onclick="toggleSelection(this)">E- intervient à chaque méiose durant l'anaphase I</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(13, ['A'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(13, ['E'])">Valider</button>
             <div class="explanation" id="explanation13">
-                <div class="result">Bonne réponse : A- produit 2^n types de cellules haploïdes</div>
+                <div class="result">Bonne réponse : E- intervient à chaque méiose durant l'anaphase I</div>
             </div>
         </div>
 
@@ -261,7 +269,14 @@
 
         <!-- Exercice 1 - Question 16 -->
         <div class="question">
-            <h3>16. Chez la tomate, la hauteur des plantes dépend d'une paire d'allèles (D, D- ; les plantes de grande taille sont porteuses de l'allèle dominant D. D'autre part, la pilosité des tiges dépend d'une paire d'allèles (H, h) ; l'allèle dominant H provoque la formation de tiges velues.</h3>
+            <h3>16. Chez la tomate, la hauteur des plantes dépend d’une paire d’allèles (D, d) ; les plantes de grande taille sont porteuses de l’allèle dominant D.</h3><br>
+			D’autre part, la pilosité des tiges dépend d’une paire d’allèles (H, h) ; l’allèle dominant H provoque la formation de tiges velues.<br>
+			Un dihybride de grande taille à tige velue est croisé avec une plante naine à tige nue.<br>
+			Les individus de F1 présentent les phénotypes suivants :<br>
+			- 118 grands à tige velue+<br>
+			- 121 nains à tige nue<br>
+			- 112 grands à tige nue<br>
+			- 109 nains à tige velue</h3>
             <div class="options">
                 <div class="option" onclick="toggleSelection(this)">A- Les gènes étudiés sont situés sur deux paires de chromosomes homologues différentes</div>
                 <div class="option" onclick="toggleSelection(this)">B- Les hybrides F1 obtenus sont obligatoirement issus du croisement de deux parents de lignée pure de génotypes respectifs (D//D ; H//H) et (d//d ; h//h)</div>
@@ -372,7 +387,8 @@
             <button type="button" onclick="document.getElementById('explanation22').style.display = 'block'">Valider</button>
             <div class="explanation" id="explanation22">
                 <div class="result">Réponse attendue :</div>
-                <p>Allèle dominant = sans cornes (SC)<br>Allèle récessif = avec cornes (AC)</p>
+                <p>Allèle dominant = sans cornes (SC)<br>
+				Allèle récessif = avec cornes (AC)</p>
             </div>
         </div>
 
@@ -393,13 +409,15 @@
         <!-- Exercice 3 - Question 3 -->
         <div class="question">
             <h3>Exercice 3 - Question 3 : Quel doit être le phénotype de deux parents pour qu'ils puissent avoir comme descendants que des rouans avec cornes ?</h3>
+			Des bovins de race pure, blancs, croisés avec des individus de race pure, roux, donnent naissance à des descendants rouans (de couleur intermédiaire).
             <textarea rows="3"></textarea>
             <button type="button" onclick="document.getElementById('explanation24').style.display = 'block'">Valider</button>
             <div class="explanation" id="explanation24">
                 <div class="result">Réponse attendue :</div>
-                <p>P1 : (B//B ; ac//aC- = [B, ac]<br>
-                P2 : (R//R ; ac//aC- = [R, ac]<br>
-                F1 : 100% (B//R ; ac//aC-</p>
+                <p>PBlanc : B//B<br>
+				Roux : R//R<br>
+				Rouan : B//R<br><br>
+				Pour avoir des descendants uniquement rouans avec cornes, il faut des parents de lignée pure, c’est-à-dire homozygote pour les 2 gènes. On doit avoir les 2 parents suivants : P1 : (B//B ; ac//ac) = [B, ac]</p>
             </div>
         </div>
 	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
