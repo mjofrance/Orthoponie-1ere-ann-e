@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Biologie Cellulaire - TD2</title>
+     <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Biologie Cellulaire - TD2</h1>
+
+        <!-- Exercice 1 -->
+        <h2>Exercice 1 : QCM</h2>
+
+        <!-- Question 36 -->
+        <div class="question">
+            <h3>36- Le centrosome contient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 centrioles</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2 centrioles perpendiculaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. 9 doublets de tubulines</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une coiffe GTP</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B. 2 centrioles perpendiculaires</div>
+            </div>
+        </div>
+
+        <!-- Question 37 -->
+        <div class="question">
+            <h3>37- Une catastrophe correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une reprise de la polymérisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une désorganisation lente des MT</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une dépolymérisation rapide à l'extrémité +</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un arrêt complet des dynéines</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['C'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : C. Une dépolymérisation rapide à l'extrémité +</div>
+            </div>
+        </div>
+
+        <!-- Question 38 -->
+        <div class="question">
+            <h3>38- La protéine Tau :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Se fixe longitudinalement comme MAP2</div>
+                <div class="option" onclick="toggleSelection(this)">B. Stabilise les MT des dendrites</div>
+                <div class="option" onclick="toggleSelection(this)">C. Stabilise les MT de l'axone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est spécifique des fibroblastes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['C'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : C. Stabilise les MT de l'axone</div>
+            </div>
+        </div>
+
+        <!-- Question 39 -->
+        <div class="question">
+            <h3>39- Les kinésines se déplacent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Vers l'extrémité -</div>
+                <div class="option" onclick="toggleSelection(this)">B. Vers l'extrémité +</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement dans le noyau</div>
+                <div class="option" onclick="toggleSelection(this)">D. Jamais sur les MT</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['B'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : B. Vers l'extrémité +</div>
+            </div>
+        </div>
+
+        <!-- Question 40 -->
+        <div class="question">
+            <h3>40- Le transport rétrograde dans l'axone est assuré par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les kinésines</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les dynéines</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'actine</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les FI</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(40, ['B'])">Valider</button>
+            <div class="explanation" id="explanation40">
+                <div class="result">Bonne réponse : B. Les dynéines</div>
+            </div>
+        </div>
+
+        <!-- Question 41 -->
+        <div class="question">
+            <h3>41- Les cils et flagelles contiennent un axonème composé de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 9 doublets +0</div>
+                <div class="option" onclick="toggleSelection(this)">B. 9 doublets +2 MT centraux</div>
+                <div class="option" onclick="toggleSelection(this)">C. 13 protofilaments</div>
+                <div class="option" onclick="toggleSelection(this)">D. 9 triplets</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(41, ['B'])">Valider</button>
+            <div class="explanation" id="explanation41">
+                <div class="result">Bonne réponse : B. 9 doublets +2 MT centraux</div>
+            </div>
+        </div>
+
+        <!-- Question 42 -->
+        <div class="question">
+            <h3>42- Les mouvements ciliaires sont dus :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aux kinésines</div>
+                <div class="option" onclick="toggleSelection(this)">B. À la polymérisation des MT</div>
+                <div class="option" onclick="toggleSelection(this)">C. À la dynéine</div>
+                <div class="option" onclick="toggleSelection(this)">D. À la filamine</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(42, ['C'])">Valider</button>
+            <div class="explanation" id="explanation42">
+                <div class="result">Bonne réponse : C. À la dynéine</div>
+            </div>
+        </div>
+
+        <!-- Question 43 -->
+        <div class="question">
+            <h3>43- Lors de la mitose, le fuseau mitotique apparaît :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Par stabilisation des MT interphasiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Par polymérisation à partir des centrosomes dupliqués</div>
+                <div class="option" onclick="toggleSelection(this)">C. Par action des FI</div>
+                <div class="option" onclick="toggleSelection(this)">D. Par fusion des cils</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(43, ['B'])">Valider</button>
+            <div class="explanation" id="explanation43">
+                <div class="result">Bonne réponse : B. Par polymérisation à partir des centrosomes dupliqués</div>
+            </div>
+        </div>
+
+        <!-- Question 44 -->
+        <div class="question">
+            <h3>44- Le cytosquelette d'actine intervient dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La phagocytose</div>
+                <div class="option" onclick="toggleSelection(this)">B. La migration cellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. La cytodiérèse</div>
+                <div class="option" onclick="toggleSelection(this)">D. Toutes les réponses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(44, ['D'])">Valider</button>
+            <div class="explanation" id="explanation44">
+                <div class="result">Bonne réponse : D. Toutes les réponses</div>
+            </div>
+        </div>
+
+        <!-- Question 45 -->
+        <div class="question">
+            <h3>45- Les protéines associées aux FI (IFAPs) permettent notamment :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. D'ancrer les FI entre eux et à la membrane</div>
+                <div class="option" onclick="toggleSelection(this)">B. De polymériser les MT</div>
+                <div class="option" onclick="toggleSelection(this)">C. D'assembler l'actine</div>
+                <div class="option" onclick="toggleSelection(this)">D. D'hydrolyser le GTP</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(45, ['A'])">Valider</button>
+            <div class="explanation" id="explanation45">
+                <div class="result">Bonne réponse : A. D'ancrer les FI entre eux et à la membrane</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 -->
+        <h2>Exercice 2 : Questions ouvertes</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1- Citez les différents éléments du cytosquelette et leur composition :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_1">
+                <div class="result">Réponse attendue :</div>
+                <p>FI : protéines et changent en fonction des cellules (ex : Kératine) / microtubules : tubuline alpha et beta</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2- Pourquoi parle-t-on d'hétérodimères de tubuline ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_2">
+                <div class="result">Réponse attendue :</div>
+                <p>Association de deux tubulines différentes</p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3- Citez dans l'ordre chronologique les étapes de la mitose :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_3">
+                <div class="result">Réponse attendue :</div>
+                <p>PMAT (Prophase, Métaphase, Anaphase, Télophase)</p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4- Citez les différents types de mort cellulaire :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_4">
+                <div class="result">Réponse attendue :</div>
+                <p>Nécrose et Apoptose</p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5- Nom des molécules permettant le passage d'une phase à l'autre dans le cycle cellulaire ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_5').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_5">
+                <div class="result">Réponse attendue :</div>
+                <p>Cycline - CDK</p>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6- Citez les différents points de contrôle du cycle cellulaire :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_6').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_6">
+                <div class="result">Réponse attendue :</div>
+                <p>DDCP (entre G1 et S) / Point de contrôle Réplication RCP (entre G2 et M) / Point de contrôle Mitotic MPC (entre Métaphase et Anaphase)</p>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7- Quelle serait la conséquence d'une mitose sans cytodiérèse ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_7').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_7">
+                <div class="result">Réponse attendue :</div>
+                <p>Pas de division cytoplasmique, tout le matériel génétique en double</p>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8- Quelle serait la conséquence de l'attachement des microtubules du même pôle aux 2 kinétochores ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_8').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_8">
+                <div class="result">Réponse attendue :</div>
+                <p>Toutes les chromatides des chromosomes dans la même cellule</p>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9- Quelle est la différence entre la sénescence et la phase G0 ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_9').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_9">
+                <div class="result">Réponse attendue :</div>
+                <p>Sortie du cycle en G0 est réversible et Sénescence : sortie définitive du cycle cellulaire</p>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10- Selon vous, la membrane nucléaire fait-elle partie du système endomembranaire ? Pourquoi ou pourquoi pas ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_10').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_10">
+                <div class="result">Réponse attendue :</div>
+                <p>Oui, car elle permet la communication entre plusieurs compartiments cellulaires (car enveloppe nucléaire communique avec le REG).</p>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11- Les agents chimiothérapeutiques tels que la vincristine et la colchicine perturbent la mitose en se liant à la tubuline. Quelle est exactement la structure mitotique ciblée par ces médicaments et quel effet cela aurait-il sur la division cellulaire ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_11').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_11">
+                <div class="result">Réponse attendue :</div>
+                <p>Agents chimiothérapeutiques perturbent toute la mitose (polymérisation et dépolymérisation du fuseau mitotique) => si pas de fuseau mitotique fonctionnel, pas de division cellulaire.</p>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12- Énumérez certaines raisons pour lesquelles une cellule qui vient de terminer la cytokinèse peut entrer dans la phase G0 au lieu de la phase G1 :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_12').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_12">
+                <div class="result">Réponse attendue :</div>
+                <p>Pas besoin que les cellules se divisent davantage / cellule a atteint sa maturité fonctionnelle / cellule a des lésions qui doivent être réparées.</p>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13- Expliquer les rôles des régulateurs positifs du cycle cellulaire par rapport aux régulateurs négatifs :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_13').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_13">
+                <div class="result">Réponse attendue :</div>
+                <p>Régulateurs Positifs = protéines faisant avancer le cycle cellulaire (cycline/CDK) / Régulateurs négatifs : protéines mettant en pause ou arrêtant le cycle cellulaire (Checkpoint). Équilibre entre RP et RN : pathologique quand équilibre rompu.</p>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14- Pourquoi les phospholipides ont-ils tendance à s'orienter spontanément vers quelque chose qui ressemble à une membrane ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_14').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_14">
+                <div class="result">Réponse attendue :</div>
+                <p>Tête hydrophile et queue hydrophobe (ne peuvent pas se mélanger à l'eau).</p>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15- Les deux solutions intraveineuses régulièrement administrées en médecine, une solution saline normale et une solution lactée de Ringer, sont isotoniques. Pourquoi est-ce important ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_15').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_15">
+                <div class="result">Réponse attendue :</div>
+                <p>Pour éviter l'entrée de trop d'eau dans la cellule ou la sortie d'eau => maintenir équilibre osmotique.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16- Pourquoi les ions ont-ils du mal à traverser les membranes plasmiques malgré leur petite taille ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_16').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_16">
+                <div class="result">Réponse attendue :</div>
+                <p>Les ions sont chargés et la membrane plasmique est hydrophobe.</p>
+            </div>
+        </div>
+
+        <!-- Exercice 3 -->
+        <h2>Exercice 3 : Vrai ou Faux</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Tous les filaments intermédiaires sont dans le cytoplasme.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Les filaments intermédiaires ont des domaines centraux communs mais des extrémités variables.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+		<div class="question">
+        <h3>3. L’assemblage des monomères des filaments intermédiaires nécessitent de l’énergie</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. L'axonème des cils et des flagelles comprend neuf doublets de microtubules, ainsi qu'une paire centrale de microtubules.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Un centriole est formé de 2 centrosomes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : FAUX (1 centrosome est composé de 2 centrioles)</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. La lamina nucléaire est constituée de protéines de type filaments intermédiaires, et elle est associée à la membrane nucléaire interne, du côté interne.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Si une cellule à la prophase de la mitose a 20 centromères, elle a 20 chromosomes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. La duplication de l'information génétique se fait lors de la prophase.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : FAUX (pendant l'interphase, phase S)</div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Chaque chromatide est constituée d'une molécule d'ADN.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. La sénescence est une forme de mort cellulaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Les chromosomes présentent un état de condensation maximale en anaphase.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : FAUX (en métaphase)</div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Le centrosome est dupliqué en prophase.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : FAUX (pendant l'interphase, phase S)</div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Les 2 types de mort cellulaire provoquent une réaction inflammatoire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : FAUX (seule la nécrose provoque une réaction inflammatoire)</div>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Les complexes TOM sont constitués d'un récepteur et d'un canal de translocation.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Les cellules hors cycle en état G0 peuvent reprendre le cycle en phase G1 si les conditions environnementales redeviennent favorables.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Les kinétochores sont des plaques de protéines associées à certaines portions d'ADN du centromère.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Les Cdk peuvent être activées même si elles ne sont pas liées à une cycline.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : FAUX (les kinases ne s'activent que si elles sont associées à une cycline)</div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Les cyclines possèdent une activité enzymatique et se lient aux Cdk pour en augmenter l'activité.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : FAUX (les cyclines n'ont pas d'activité enzymatique en elles-mêmes)</div>
+            </div>
+        </div>
+
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Au point de contrôle métaphase-anaphase, la cellule contrôle le bon positionnement des chromosomes sur la plaque équatoriale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : FAUX (contrôle le bon attachement du fuseau aux kinétochores)</div>
+        </div>
+		</div>
+		
+		
+        <!-- Exercice 4 -->
+        <h2>Exercice 4 : Images de la mitose</h2>
+        <div class="question">
+            <h3>1. Pour chaque image, donnez le nom de la phase correspondante en justifiant votre réponse.</h3>
+            <img src="genetiqueTD2_suite_4_2.jpg" alt="Images de la mitose" class="diagram-qcm">
+		    <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation4_1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation4_1">
+                <div class="result">Réponse attendue :</div>
+            <p>Prophase = f/a/h<br>
+			Métaphase = g<br>
+			Anaphase = b/e/c<br>
+			Télophase = c/d<br>
+			(C'est soit la fin de l'anaphase soit le début de la télophase car les chromosomes sont déjà aux pôles).</p>
+            </div>
+		
+		
+		</div>
+        <div class="question">
+            <h3>2. Classez ces huit électronographies dans l'ordre chronologique correspondant au déroulement d'une mitose.</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation4_2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation4_2">
+                <div class="result">Réponse attendue :</div>
+                <p>F/A/H/G/B/E/C/D</p>
+            </div>
+        </div>
+
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+		function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber.trim()}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

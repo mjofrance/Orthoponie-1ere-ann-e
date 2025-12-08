@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Biologie Cellulaire et Génétique - TD3</title>
+     <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Biologie Cellulaire et Génétique - TD3</h1>
+
+        <!-- Exercice 1 : QCM -->
+        <h2>Exercice 1 : QCM </h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Concernant le croisement de Drosophiles :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le mâle et la femelle ont produit des gamètes recombinés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il y a eu un brassage intrachromosomique lors de la prophase I chez les femelles de F1</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il y a eu un brassage intrachromosomique lors de l'anaphase I chez les femelles de F1</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ce croisement est un cas de monohybridisme</div>
+                <div class="option" onclick="toggleSelection(this)">E. Les deux gènes étudiés sont indépendants</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B. Il y a eu un brassage intrachromosomique lors de la prophase I chez les femelles de F1</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Les poulets bleus sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Homozygotes récessifs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Hétérozygotes avec l'allèle « blanc » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hétérozygotes avec l'allèle « noir » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un phénotype apparu par recombinaison d'allèles</div>
+                <div class="option" onclick="toggleSelection(this)">E. Un phénotype expliqué par de la codominance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['E'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : E. Un phénotype expliqué par de la codominance</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Les poulets blancs sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Logiquement homozygotes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Hétérozygotes avec l'allèle « blanc » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hétérozygotes avec l'allèle « noir » dominant</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un phénotype apparu par recombinaison d'allèles</div>
+                <div class="option" onclick="toggleSelection(this)">E. Un phénotype expliqué par de la codominance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : A. Logiquement homozygotes</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Le croisement de poules bleues avec des coqs bleus doit donner normalement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 75 % de poulets bleus</div>
+                <div class="option" onclick="toggleSelection(this)">B. 50 % de poulets blancs</div>
+                <div class="option" onclick="toggleSelection(this)">C. 25 % de poulets noirs</div>
+                <div class="option" onclick="toggleSelection(this)">D. 100 % de poulets bleus</div>
+                <div class="option" onclick="toggleSelection(this)">E. 3 phénotypes différents dont deux à pourcentage égal</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C. 25 % de poulets noirs, E. 3 phénotypes différents dont deux à pourcentage égal</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Concernant l'empreinte génomique parentale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un nombre limité de gènes du génome humain est soumis à empreinte génomique parentale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Tous les gènes du génome humain sont soumis à empreinte génomique parentale</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'empreinte génomique parentale est un phénomène réversible</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'empreinte génomique parentale est un phénomène qui contrôle l'expression de certains gènes en fonction du parent qui les transmet</div>
+                <div class="option" onclick="toggleSelection(this)">E. Aucune des propositions ci-dessus n'est exacte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : A. Un nombre limité de gènes du génome humain est soumis à empreinte génomique parentale, D. L'empreinte génomique parentale est un phénomène qui contrôle l'expression de certains gènes en fonction du parent qui les transmet</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. Concernant l'inactivation du chromosome X :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il s'agit d'un processus qui se met en place très précocement chez l'embryon de sexe masculin</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sur le chromosome X inactif, tous les gènes sont inactivés</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'inactivation du chromosome X est un exemple d'épigénétique</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'inactivation du chromosome X entraîne une haploïdie fonctionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">E. Aucune des propositions ci-dessus n'est exacte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : C. L'inactivation du chromosome X est un exemple d'épigénétique, D. L'inactivation du chromosome X entraîne une haploïdie fonctionnelle</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. D'après l'arbre généalogique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'allèle responsable de la maladie est dominant car la fréquence de cette maladie est importante</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'allèle responsable de la maladie est récessif car les parents II-2 et II-3 sont sains</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'individu II-2 est sain, donc l'allèle responsable de la maladie ne peut pas être porté par Y</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'allèle responsable de la maladie est porté par un autosome</div>
+                <div class="option" onclick="toggleSelection(this)">E. L'allèle responsable de la maladie est porté par le chromosome X</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. L'allèle responsable de la maladie est récessif car les parents II-2 et II-3 sont sains, C. L'individu II-2 est sain, donc l'allèle responsable de la maladie ne peut pas être porté par Y, D. L'allèle responsable de la maladie est porté par un autosome</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Toujours d'après l'arbre généalogique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La probabilité que le fœtus IV-1 soit malade est de 1/4</div>
+                <div class="option" onclick="toggleSelection(this)">B. La probabilité que le fœtus IV-1 soit malade est de 1/600</div>
+                <div class="option" onclick="toggleSelection(this)">C. La probabilité que le fœtus IV-1 soit malade est de 1/1600</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le fœtus sera sain quel que soit son sexe</div>
+                <div class="option" onclick="toggleSelection(this)">E. Il n'y a aucun moyen de savoir si le fœtus sera atteint</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B. La probabilité que le fœtus IV-1 soit malade est de 1/600</div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. On étudie la nature des gamètes des individus II-2 et II-3 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. II-2 produit 50 % de gamètes porteurs de l'allèle morbide et 50 % de gamètes sains</div>
+                <div class="option" onclick="toggleSelection(this)">B. II-3 produit 100 % de gamètes sains</div>
+                <div class="option" onclick="toggleSelection(this)">C. II-2 produit 100 % de gamètes sains</div>
+                <div class="option" onclick="toggleSelection(this)">D. II-2 produit 50 % de X sain et 50 % de Y</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : A. II-2 produit 50 % de gamètes porteurs de l'allèle morbide et 50 % de gamètes sains, D. II-2 produit 50 % de X sain et 50 % de Y</div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Dans le cas d'une maladie héréditaire autosomique dominante :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Pénétrance incomplète des chromosomes X</div>
+                <div class="option" onclick="toggleSelection(this)">B. Pénétrance totale et expressivité incomplète</div>
+                <div class="option" onclick="toggleSelection(this)">C. Pénétrance variable et expressivité incomplète</div>
+                <div class="option" onclick="toggleSelection(this)">D. Pénétrance incomplète et expressivité variable</div>
+                <div class="option" onclick="toggleSelection(this)">E. Changements probablement dus à des facteurs mitochondriaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : D. Pénétrance incomplète et expressivité variable</div>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. Quel type d'héritage est le plus probable dans cet arbre généalogique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hérédité mitochondriale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Héritage lié à Y</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hérédité récessive autosomique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Héritage lié à l'X dominant</div>
+                <div class="option" onclick="toggleSelection(this)">E. Héritage récessif lié à l'X</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : C. Hérédité récessive autosomique</div>
+            </div>
+        </div>
+
+        <!-- Exercice 2 : Vrai ou Faux -->
+        <h2>Exercice 2 : Vrai ou Faux</h2>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. Les lysosomes jouent un rôle dans la synthèse des lipides.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. Les ribosomes sont limités par une membrane.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. Le centrosome est le centre organisateur des microfilaments.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. L'appareil de Golgi joue un rôle dans le stockage de calcium.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Tous les transports membranaires nécessitent l'intervention de protéines.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Les transports actifs se font contre le gradient de concentration.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Les transports perméatifs comprennent l'endocytose et l'exocytose.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Les canaux sont des pores ouverts simultanément des deux côtés.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. L'appareil de Golgi intervient dans la maturation des protéines.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. Les pores nucléaires permettent uniquement la diffusion passive de petites molécules.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <h3>22. L'enveloppe nucléaire est une différenciation locale de l'appareil de Golgi.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <h3>23. Le nucléole est le lieu de synthèse des ARNm.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <h3>24. Le cytosquelette est responsable du transport de certains organites cellulaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <h3>25. Les microtubules présentent une structure polarisée.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+            <h3>26. Les microfilaments constituent la charpente des cils et des flagelles.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+            <h3>27. La lamina nucléaire est constituée de protéines de type filaments intermédiaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+            <h3>28. La 2ème étape de la respiration cellulaire se déroule dans la matrice mitochondriale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+            <h3>29. L'ATP synthase est située dans la membrane interne entre les crêtes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+            <h3>30. Toutes les divisions cellulaires sont des reproductions conformes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question">
+            <h3>31. En prophase, il y a deux centrosomes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber.trim()}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
