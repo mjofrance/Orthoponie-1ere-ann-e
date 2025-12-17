@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand QCM de Pédiatrie et Orthophonie</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Grand QCM de Pédiatrie et Orthophonie</h1>
+        <p>Ce QCM comporte plus de 100 questions basées sur vos cours de pédiatrie, neurologie et orthophonie.</p>
+
+        <h2 class="section-title">Partie 1 : Néonatologie et Physiologie</h2>
+
+        <div class="question">
+            <h3>1. Un nouveau-né est considéré "à terme" s'il naît :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Entre 35 et 37 SA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre 37 et 41 SA révolues</div>
+                <div class="option" onclick="toggleSelection(this)">C. À partir de 38 SA</div>
+                <div class="option" onclick="toggleSelection(this)">D. Après 41 SA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B</div>
+                <p>Un nouveau-né à terme naît entre 37 SA et 41 SA révolues. Avant 37 SA, c'est un prématuré.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. La grande prématurité correspond à une naissance :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Entre 32 et 36 SA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre 28 et 32 SA</div>
+                <div class="option" onclick="toggleSelection(this)">C. Avant 28 SA</div>
+                <div class="option" onclick="toggleSelection(this)">D. Après 37 SA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B</div>
+                <p>32-36 SA : Prématurité modérée. 28-32 SA : Grande prématurité. < 28 SA : Extrême prématurité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Comment calcule-t-on l'âge corrigé ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Âge réel + semaines d'aménorrhée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Âge réel - nombre de semaines d'avance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Âge réel + 41 SA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'âge corrigé permet d'évaluer le développement en tenant compte de la prématurité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. L'émission du méconium doit avoir lieu au plus tard avant :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. H12</div>
+                <div class="option" onclick="toggleSelection(this)">B. H24</div>
+                <div class="option" onclick="toggleSelection(this)">C. H36</div>
+                <div class="option" onclick="toggleSelection(this)">D. H48</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C</div>
+                <p>La première émission de méconium se fait physiologiquement avant la 36ème heure de vie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. La première miction (urines) doit avoir lieu avant :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. H12</div>
+                <div class="option" onclick="toggleSelection(this)">B. H24</div>
+                <div class="option" onclick="toggleSelection(this)">C. H36</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le nouveau-né doit uriner dans ses premières 24 heures de vie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Le score d'Apgar évalue :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'âge gestationnel</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'adaptation à la vie extra-utérine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le risque d'infection</div>
+                <div class="option" onclick="toggleSelection(this)">D. La qualité du sommeil</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il est mesuré à 1, 3, 5 et 10 minutes de vie. Un score > 7 est normal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Une perte de poids est physiologique chez le nouveau-né :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : VRAI</div>
+                <p>Une perte de poids survient physiologiquement dans les 3 premiers jours de vie (jusqu'à 10%).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Quels sont les réflexes archaïques (automatismes primaires) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Succion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Grasping</div>
+                <div class="option" onclick="toggleSelection(this)">C. Moro</div>
+                <div class="option" onclick="toggleSelection(this)">D. Marche automatique</div>
+                <div class="option" onclick="toggleSelection(this)">E. Toutes les réponses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['E'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : E</div>
+                <p>Tous ces réflexes doivent être présents à la naissance. Leur absence est pathologique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Le test de Guthrie est réalisé :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À la naissance (H0)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Autour de H48</div>
+                <div class="option" onclick="toggleSelection(this)">C. À J8</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un dépistage systématique de maladies rares réalisé sur papier buvard vers 48h-72h de vie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Quelle maladie n'est PAS dépistée par le test de Guthrie ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Mucoviscidose</div>
+                <div class="option" onclick="toggleSelection(this)">B. Hypothyroïdie congénitale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Diabète de type 1</div>
+                <div class="option" onclick="toggleSelection(this)">D. Drépanocytose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le diabète de type 1 n'est pas dépisté à la naissance. La phénylcétonurie, l'hyperplasie des surrénales, etc., le sont.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. La supplémentation en Vitamine K sert à prévenir :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le rachitisme</div>
+                <div class="option" onclick="toggleSelection(this)">B. La maladie hémorragique du nouveau-né</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'ictère</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B</div>
+                <p>La Vitamine K est indispensable à la coagulation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. La supplémentation en Vitamine D est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Systématique jusqu'à 18 mois puis pluri-annuelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Uniquement pour les prématurés</div>
+                <div class="option" onclick="toggleSelection(this)">C. Arrêtée dès la marche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : A</div>
+                <p>Elle prévient le rachitisme et doit être poursuivie tout au long de la croissance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Le périmètre crânien moyen à terme est de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 30 cm</div>
+                <div class="option" onclick="toggleSelection(this)">B. 35 cm</div>
+                <div class="option" onclick="toggleSelection(this)">C. 40 cm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B</div>
+                <p>Poids moyen : 3500g, Taille : 50cm, PC : 35cm.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Une fontanelle bombée peut être un signe de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Déshydratation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Hypertension intra-crânienne (HTIC)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Craniosténose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B</div>
+                <p>À l'inverse, une fontanelle déprimée (creuse) est un signe de déshydratation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. La manoeuvre de Barlow et Ortolani dépiste :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La luxation congénitale de hanche</div>
+                <div class="option" onclick="toggleSelection(this)">B. La fracture de clavicule</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le pied bot</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : A</div>
+                <p>On recherche un ressaut, signe d'instabilité de la hanche.</p>
+            </div>
+        </div>
+
+         <div class="question">
+            <h3>16. Le dépistage auditif (OEA) est effectué en maternité.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+                <p>Il permet de dépister la surdité congénitale précocement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Un score de Silverman élevé indique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une bonne adaptation respiratoire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une détresse respiratoire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une bonne vitalité neurologique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le score de Silverman évalue la lutte respiratoire. Plus il est élevé, plus la détresse est importante.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. La fréquence cardiaque normale du nouveau-né au repos est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 60-80 bpm</div>
+                <div class="option" onclick="toggleSelection(this)">B. 80-100 bpm</div>
+                <div class="option" onclick="toggleSelection(this)">C. 120-160 bpm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le cœur du nouveau-né bat beaucoup plus vite que celui de l'adulte.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. La prophylaxie de la mort inattendue du nourrisson (MIN) inclut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le couchage sur le ventre</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le couchage sur le dos</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le partage du lit parental (co-dodo) sans précaution</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le couchage doit être strict sur le dos, dans une gigoteuse, sans oreiller ni peluche.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. L'ictère (jaunisse) est toujours pathologique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il existe un ictère physiologique fréquent lié à l'immaturité hépatique transitoire.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 2 : Pathologies Néonatales</h2>
+
+        <div class="question">
+            <h3>21. L'immaturité de la coordination succion-déglutition-respiration persiste généralement jusqu'à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 28 SA</div>
+                <div class="option" onclick="toggleSelection(this)">B. 32 SA</div>
+                <div class="option" onclick="toggleSelection(this)">C. 34-35 SA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['C'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : C</div>
+                <p>Avant ce terme, l'alimentation orale autonome est difficile et risquée (fausses routes).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. La leucomalacie périventriculaire est une lésion de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La substance grise</div>
+                <div class="option" onclick="toggleSelection(this)">B. La substance blanche</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['B'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une nécrose de la substance blanche, fréquente chez le grand prématuré.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. L'encéphalopathie anoxo-ischémique est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une infection bactérienne</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un manque d'oxygène et un bas débit sanguin périnatal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une malformation génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un accident (asphyxie) survenant souvent lors d'un accouchement difficile.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. Quel est le traitement de référence de l'encéphalopathie anoxo-ischémique modérée à sévère ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'hyperthermie</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'hypothermie thérapeutique</div>
+                <div class="option" onclick="toggleSelection(this)">C. La corticothérapie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['B'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : B</div>
+                <p>On abaisse la température corporelle (33-34°C) pendant 72h pour protéger le cerveau.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. L'atrésie de l'œsophage se manifeste souvent par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hypersalivation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une sonde gastrique qui bute</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une détresse respiratoire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Toutes les réponses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : D</div>
+                <p>C'est une interruption de la continuité de l'œsophage, urgence chirurgicale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. Dans l'atrésie de l'œsophage, le "Sham feeding" consiste à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une alimentation factice pour maintenir le réflexe de succion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une alimentation par sonde naso-gastrique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une interdiction totale de stimulation orale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['A'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : A</div>
+                <p>Cela permet de préserver l'oralité en attendant la réparation chirurgicale complète.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. Les fentes labio-palatines nécessitent une chirurgie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Immédiate à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Programmée (souvent vers 6-9 mois pour le palais)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Jamais, elles se referment seules</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['B'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : B</div>
+                <p>La prise en charge est pluridisciplinaire et la fermeture chirurgicale est séquencée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. L'hémorragie intra-ventriculaire est une complication fréquente chez :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le nouveau-né à terme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le prématuré</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'enfant post-terme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['B'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : B</div>
+                <p>Elle est liée à la fragilité des vaisseaux cérébraux chez le prématuré.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Le risque de séquelles neuro-développementales augmente avec le degré de prématurité.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : VRAI</div>
+                <p>L'extrême prématurité comporte les risques les plus élevés de séquelles motrices et cognitives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. Quelle séquelle digestive est fréquente après atrésie de l'œsophage ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le reflux gastro-œsophagien (RGO)</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'intolérance au lactose</div>
+                <div class="option" onclick="toggleSelection(this)">C. La constipation chronique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['A'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : A</div>
+                <p>Le RGO touche 20 à 60% des enfants opérés d'atrésie de l'œsophage.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 3 : Neurologie et Développement</h2>
+
+        <div class="question">
+            <h3>31. Quel est un signe d'alerte ("Red Flag") majeur du développement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une régression des acquisitions</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un bébé qui ne fait pas de bruit</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un refus du contact corporel</div>
+                <div class="option" onclick="toggleSelection(this)">D. Toutes les réponses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(31, ['D'])">Valider</button>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : D</div>
+                <p>Ces signes doivent faire suspecter un trouble du neurodéveloppement (TSA, maladie dégénérative, surdité...).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32. Le Syndrome de Landau-Kleffner est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une aphasie acquise avec épilepsie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forme de Trisomie 21</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un trouble moteur pur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['A'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : A</div>
+                <p>Il se caractérise par une régression du langage (aphasie) chez un enfant qui parlait, associée à des anomalies EEG.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33. La Trisomie 21 est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un gène défectueux sur le chromosome X</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un chromosome 21 supplémentaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une infection virale pendant la grossesse</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['B'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est l'anomalie chromosomique la plus fréquente, causant une déficience intellectuelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34. Parmi les signes physiques de la Trisomie 21, on trouve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une macrocéphalie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des fentes palpébrales obliques en haut et en dehors</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un pli palmaire unique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Réponses B et C</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(34, ['D'])">Valider</button>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : D</div>
+                <p>La dysmorphie inclut aussi une nuque plate, un épicanthus, une hypotonie...</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35. L'hypotonie est une caractéristique fréquente de la Trisomie 21.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation35">
+                <div class="result">Réponse : VRAI</div>
+                <p>L'hypotonie axiale est quasi constante à la naissance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36. Quel examen est crucial devant un retard psychomoteur pour éliminer une cause sensorielle ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'IRM cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le bilan ophtalmologique et auditif</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le caryotype</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B</div>
+                <p>"Réflexe n°1 : éliminer les troubles sensoriels" (vision, audition) avant tout diagnostic cognitif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37. Vers quel âge un enfant fait-il typiquement des phrases sujet-verbe-complément et dit "Je" ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 18 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 5 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['B'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : B</div>
+                <p>À 3 ans, le langage s'estruct et l'intelligibilité est bonne.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38. La Paralysie Cérébrale (PC) est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une lésion cérébrale progressive</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une lésion cérébrale non progressive sur un cerveau en développement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une maladie musculaire génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['B'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un trouble moteur permanent mais dont l'expression peut changer, dû à une lésion précoce (ex: anoxie).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39. L'AVC de l'enfant se manifeste souvent par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hémiplégie (paralysie d'un côté)</div>
+                <div class="option" onclick="toggleSelection(this)">B. De la fièvre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une toux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['A'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : A</div>
+                <p>Comme chez l'adulte, l'hémiplégie soudaine est un signe d'alerte d'AVC.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>40. Les "Troubles Dys" (dysphasie, dyslexie...) sont des troubles :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Spécifiques et durables</div>
+                <div class="option" onclick="toggleSelection(this)">B. Globaux et transitoires</div>
+                <div class="option" onclick="toggleSelection(this)">C. Liés à une déficience intellectuelle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(40, ['A'])">Valider</button>
+            <div class="explanation" id="explanation40">
+                <div class="result">Bonne réponse : A</div>
+                <p>Ils surviennent chez des enfants d'intelligence normale, sans déficit sensoriel majeur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>41. Le risque de Trisomie 21 augmente avec :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'âge paternel</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'âge maternel</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le tabagisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(41, ['B'])">Valider</button>
+            <div class="explanation" id="explanation41">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le risque passe de 1/1500 à 20 ans à 1/100 à 40 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>42. La maladie d'Alzheimer précoce est fréquente chez les adultes porteurs de Trisomie 21.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation42">
+                <div class="result">Réponse : VRAI</div>
+                <p>Les premiers signes peuvent apparaître dès 35-40 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>43. Le périmètre crânien doit être surveillé pour dépister :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'obésité</div>
+                <div class="option" onclick="toggleSelection(this)">B. La microcéphalie ou la macrocéphalie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le strabisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(43, ['B'])">Valider</button>
+            <div class="explanation" id="explanation43">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un indicateur de la croissance cérébrale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>44. Une cassure de la courbe de poids est un signe d'alerte.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation44">
+                <div class="result">Réponse : VRAI</div>
+                <p>La perte d'un couloir dans la courbe doit faire rechercher une cause (nutritionnelle, digestive, etc.).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>45. Le "Rebond d'adiposité" précoce (avant 6 ans) est un facteur de risque de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Maigreur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Obésité future</div>
+                <div class="option" onclick="toggleSelection(this)">C. Grande taille</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(45, ['B'])">Valider</button>
+            <div class="explanation" id="explanation45">
+                <div class="result">Bonne réponse : B</div>
+                <p>La courbe IMC remonte normalement vers 6 ans. Si elle remonte avant, c'est un risque d'obésité.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 4 : Organisation des Soins & Pathologies Infantiles</h2>
+
+        <div class="question">
+            <h3>46. Combien d'examens médicaux obligatoires sont prévus jusqu'à 16 ans ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 10</div>
+                <div class="option" onclick="toggleSelection(this)">B. 15</div>
+                <div class="option" onclick="toggleSelection(this)">C. 20</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(46, ['C'])">Valider</button>
+            <div class="explanation" id="explanation46">
+                <div class="result">Bonne réponse : C</div>
+                <p>20 examens pris en charge à 100%.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>47. Les certificats de santé obligatoires doivent être envoyés à la PMI à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 8 jours, 9 mois, 24 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 1 mois, 1 an, 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. À chaque vaccin</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(47, ['A'])">Valider</button>
+            <div class="explanation" id="explanation47">
+                <div class="result">Bonne réponse : A</div>
+                <p>Ces 3 certificats permettent un suivi épidémiologique et social.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>48. La PMI (Protection Maternelle et Infantile) suit les enfants jusqu'à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 18 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(48, ['B'])">Valider</button>
+            <div class="explanation" id="explanation48">
+                <div class="result">Bonne réponse : B</div>
+                <p>La PMI assure des consultations de prévention pour les 0-6 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>49. Le CAMSP (Centre d'Action Médico-Sociale Précoce) accueille :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les adultes handicapés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les enfants de 0 à 6 ans avec difficultés de développement ou handicap</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement les enfants autistes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(49, ['B'])">Valider</button>
+            <div class="explanation" id="explanation49">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une structure pluridisciplinaire (pédiatre, kiné, ortho, psychomot...) de diagnostic et soin.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>50. Parmi les vaccins suivants, lequel est OBLIGATOIRE chez le nourrisson ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. BCG (Tuberculose)</div>
+                <div class="option" onclick="toggleSelection(this)">B. DTP (Diphtérie Tétanos Polio)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Grippe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(50, ['B'])">Valider</button>
+            <div class="explanation" id="explanation50">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le DTP est obligatoire. Le BCG n'est plus obligatoire (mais recommandé en Ile-de-France/Guyane...).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>51. La diversification alimentaire débute classiquement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dès la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre 4 et 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. Après 1 an</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(51, ['B'])">Valider</button>
+            <div class="explanation" id="explanation51">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est la fenêtre d'introduction des solides pour prévenir les allergies et couvrir les besoins.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>52. Le lait de vache standard est-il adapté au nourrisson de moins d'un an ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation52">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il est trop riche en protéines et pauvre en fer. Il faut utiliser du lait maternel ou des préparations infantiles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>53. La bronchiolite est une infection :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Bactérienne</div>
+                <div class="option" onclick="toggleSelection(this)">B. Virale (VRS)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Parasitaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(53, ['B'])">Valider</button>
+            <div class="explanation" id="explanation53">
+                <div class="result">Bonne réponse : B</div>
+                <p>Elle est causée principalement par le Virus Respiratoire Syncytial (VRS).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>54. Le traitement principal de la gastro-entérite aiguë est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les antibiotiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le Soluté de Réhydratation Orale (SRO)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le jeûne strict</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(54, ['B'])">Valider</button>
+            <div class="explanation" id="explanation54">
+                <div class="result">Bonne réponse : B</div>
+                <p>La priorité est de prévenir la déshydratation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>55. Une fièvre chez l'enfant est définie par une température supérieure à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 37.5°C</div>
+                <div class="option" onclick="toggleSelection(this)">B. 38.0°C</div>
+                <div class="option" onclick="toggleSelection(this)">C. 39.0°C</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(55, ['B'])">Valider</button>
+            <div class="explanation" id="explanation55">
+                <div class="result">Bonne réponse : B</div>
+                <p>On parle de fièvre au-dessus de 38°C.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>56. Les convulsions fébriles simples ont un pronostic :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Grave, avec séquelles fréquentes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Excellent, bénin</div>
+                <div class="option" onclick="toggleSelection(this)">C. Incertain</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(56, ['B'])">Valider</button>
+            <div class="explanation" id="explanation56">
+                <div class="result">Bonne réponse : B</div>
+                <p>Elles sont impressionnantes mais généralement bénignes chez l'enfant entre 1 et 5 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>57. Le syndrome du bébé secoué est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un jeu sans danger</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forme grave de maltraitance traumatique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une maladie génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(57, ['B'])">Valider</button>
+            <div class="explanation" id="explanation57">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il provoque des lésions cérébrales graves (hématomes) et oculaires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>58. Devant une suspicion de maltraitance, le médecin doit :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ne rien faire sans preuve absolue</div>
+                <div class="option" onclick="toggleSelection(this)">B. Rédiger une information préoccupante (IP) ou un signalement</div>
+                <div class="option" onclick="toggleSelection(this)">C. En parler uniquement aux parents</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(58, ['B'])">Valider</button>
+            <div class="explanation" id="explanation58">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une obligation légale de protection de l'enfant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>59. La plagiocéphalie positionnelle (tête plate) peut être prévenue par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le couchage sur le ventre pour dormir</div>
+                <div class="option" onclick="toggleSelection(this)">B. La variation des positions lors de l'éveil (tummy time) et alternance des appuis</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le port du casque systématique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(59, ['B'])">Valider</button>
+            <div class="explanation" id="explanation59">
+                <div class="result">Bonne réponse : B</div>
+                <p>On garde le dodo sur le dos, mais on stimule la motricité et on varie les appuis à l'éveil.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>60. Beyfortus est un traitement préventif contre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La grippe</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le VRS (Bronchiolite)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La gastro-entérite</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(60, ['B'])">Valider</button>
+            <div class="explanation" id="explanation60">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un anticorps monoclonal administré au nouveau-né pour prévenir les formes graves de bronchiolite.</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Partie 5 : Orthophonie et Oralité</h2>
+
+        <div class="question">
+            <h3>61. Une prescription de bilan orthophonique doit préciser le nombre de séances.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation61">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le prescripteur ne fixe pas le nombre de séances, c'est l'orthophoniste qui le détermine après bilan.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>62. L'intitulé correct d'une ordonnance initiale est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. "Bilan orthophonique"</div>
+                <div class="option" onclick="toggleSelection(this)">B. "Bilan orthophonique avec rééducation si nécessaire"</div>
+                <div class="option" onclick="toggleSelection(this)">C. "10 séances de rééducation du langage"</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(62, ['B'])">Valider</button>
+            <div class="explanation" id="explanation62">
+                <div class="result">Bonne réponse : B</div>
+                <p>Cette formulation permet d'enchaîner sur les soins sans retourner chez le médecin.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>63. L'orthophoniste intervient-il en néonatologie ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation63">
+                <div class="result">Réponse : VRAI</div>
+                <p>Oui, pour soutenir l'oralité alimentaire, la coordination succion-déglutition et l'attachement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>64. Le bégaiement apparaissant vers 3 ans est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toujours psychologique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Fréquent et souvent transitoire (bégaiement physiologie), mais à surveiller</div>
+                <div class="option" onclick="toggleSelection(this)">C. Définitif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(64, ['B'])">Valider</button>
+            <div class="explanation" id="explanation64">
+                <div class="result">Bonne réponse : B</div>
+                <p>On conseille aux parents de ne pas faire répéter l'enfant et de consulter si cela persiste ou inquiète.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>65. L'implant cochléaire est indiqué dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les otites à répétition</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les surdités sévères à profondes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les retards de langage simples</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(65, ['B'])">Valider</button>
+            <div class="explanation" id="explanation65">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il permet de restaurer une audition fonctionnelle en stimulant directement le nerf auditif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>66. Un retard de langage à 2 ans (moins de 50 mots, pas d'association de 2 mots) nécessite :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. D'attendre l'école sans rien faire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une vérification de l'audition et une surveillance/guidance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une IRM cérébrale immédiate</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(66, ['B'])">Valider</button>
+            <div class="explanation" id="explanation66">
+                <div class="result">Bonne réponse : B</div>
+                <p>On parle de "parleurs tardifs". L'audition est le premier check.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>67. La dysphasie est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un trouble fonctionnel de la voix</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un trouble structurel et durable du développement du langage oral</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un retard mental</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(67, ['B'])">Valider</button>
+            <div class="explanation" id="explanation67">
+                <div class="result">Bonne réponse : B</div>
+                <p>Contrairement au retard simple, la dysphasie est un trouble persistant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>68. La DAP (Demande d'Accord Préalable) est envoyée à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La famille</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'assurance maladie (Sécu)</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'école</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(68, ['B'])">Valider</button>
+            <div class="explanation" id="explanation68">
+                <div class="result">Bonne réponse : B</div>
+                <p>Elle est nécessaire pour la prise en charge financière des séances de rééducation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>69. Le compte-rendu de bilan orthophonique est obligatoire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation69">
+                <div class="result">Réponse : VRAI</div>
+                <p>Il doit être adressé au médecin prescripteur et une copie remise au patient.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>70. L'orthophoniste peut réaliser des soins à domicile si :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La famille le demande par confort</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le médecin l'a prescrit ("à domicile")</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il pleut</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(70, ['B'])">Valider</button>
+            <div class="explanation" id="explanation70">
+                <div class="result">Bonne réponse : B</div>
+                <p>La mention "à domicile" sur l'ordonnance est nécessaire pour le remboursement des indemnités de déplacement.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 6 : Révision Rapide (Vrai/Faux)</h2>
+
+        <div class="question">
+            <h3>71. Le carnet de santé contient les courbes de croissance.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation71"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>72. Un bébé prématuré a plus de risques de troubles de l'oralité.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation72"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>73. La vitamine K prévient le rachitisme.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation73"><div class="result">Réponse : FAUX (C'est la vit D. La K prévient les hémorragies).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>74. L'allaitement maternel est recommandé jusqu'à 6 mois exclusif.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation74"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>75. Le lait 1er âge couvre les besoins jusqu'à 6 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation75"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>76. Le gluten doit être introduit avant 4 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation76"><div class="result">Réponse : FAUX (Entre 4 et 12 mois).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>77. L'obésité de l'enfant est définie par un IMC > 97ème percentile.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation77"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>78. La fièvre à 39°C chez un nourrisson de moins de 3 mois est une urgence.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation78"><div class="result">Réponse : VRAI (Risque infectieux bactérien sévère).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>79. La varicelle est une maladie bactérienne.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation79"><div class="result">Réponse : FAUX (Virale).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>80. Les oreillons peuvent causer une surdité.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation80"><div class="result">Réponse : VRAI</div></div>
+        </div>
+        
+        <div class="question">
+            <h3>81. Le ROR est un vaccin contre Rougeole, Oreillons, Rubéole.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation81"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>82. L'autisme se guérit avec des médicaments.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation82"><div class="result">Réponse : FAUX (C'est un trouble du développement, on accompagne, on ne "guérit" pas).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>83. Un enfant qui ne marche pas à 18 mois doit être examiné.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation83"><div class="result">Réponse : VRAI (C'est la limite supérieure habituelle).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>84. Le strabisme est normal après 4 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation84"><div class="result">Réponse : FAUX (Il doit disparaître après 3-4 mois. Sinon consulter).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>85. La "mort subite du nourrisson" est plus fréquente si on fume près du bébé.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation85"><div class="result">Réponse : VRAI (Le tabagisme passif est un facteur de risque majeur).</div></div>
+        </div>
+
+         <div class="question">
+            <h3>86. La plagiocéphalie est une fermeture prématurée des sutures du crâne.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation86"><div class="result">Réponse : FAUX (C'est une déformation positionnelle. La fermeture prématurée est la craniosténose).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>87. Le réflexe de Moro est un réflexe de défense (écartement des bras).</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation87"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>88. La succion non nutritive (tétine) peut apaiser le nouveau-né.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation88"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>89. L'hypothyroïdie congénitale non traitée entraîne un retard mental.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation89"><div class="result">Réponse : VRAI (D'où l'importance du dépistage Guthrie).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>90. La mucoviscidose est une maladie génétique touchant les poumons et le pancréas.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation90"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>91. Un bébé de 3 mois doit tenir sa tête.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation91"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>92. La station assise est acquise vers 12 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation92"><div class="result">Réponse : FAUX (Plutôt vers 6-8 mois).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>93. Le pointage (montrer du doigt) apparaît vers 9-12 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation93"><div class="result">Réponse : VRAI (C'est un précurseur important du langage).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>94. L'attention conjointe est absente dans l'autisme précoce.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation94"><div class="result">Réponse : VRAI (C'est un signe d'alerte).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>95. Les enfants T21 ont souvent une petite bouche et une macroglossie relative.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation95"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>96. La surdité de perception touche l'oreille moyenne.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation96"><div class="result">Réponse : FAUX (Elle touche l'oreille interne ou le nerf. L'oreille moyenne = transmission).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>97. L'otite séreuse peut causer un retard de langage.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation97"><div class="result">Réponse : VRAI (Par baisse de l'audition transmissionnelle durable).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>98. Le médecin scolaire peut prescrire des médicaments.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation98"><div class="result">Réponse : FAUX (Son rôle est préventif, d'adaptation et d'orientation, sauf urgence).</div></div>
+        </div>
+
+        <div class="question">
+            <h3>99. Le PAI (Projet d'Accueil Individualisé) concerne les enfants malades à l'école (allergie, diabète...).</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation99"><div class="result">Réponse : VRAI</div></div>
+        </div>
+
+        <div class="question">
+            <h3>100. Ce QCM vous a aidé à réviser ?</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation100"><div class="result">Réponse : VRAI (On l'espère !)</div></div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            // Find the explanation div by ID
+            const explanationDiv = document.getElementById(`explanation${questionNumber}`);
+            if (!explanationDiv) return;
+
+            // Find the parent question container
+            const questionElement = explanationDiv.closest('.question');
+            
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                // Get the first letter (A, B, C...)
+                const optionLetter = option.textContent.trim().charAt(0);
+                
+                // Reset classes
+                option.classList.remove("correct", "incorrect");
+
+                // Check if this option is one of the correct answers
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } 
+                // Mark incorrect if selected but not a correct answer
+                else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                
+                // Remove selection state for clean display
+                option.classList.remove("selected");
+            });
+
+            // Show explanation
+            explanationDiv.style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent.trim().toLowerCase() === 'vrai') ||
+                    (correctAnswer === 'faux' && option.textContent.trim().toLowerCase() === 'faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const explanationDiv = element.closest('.question').querySelector('.explanation');
+            explanationDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Pédiatrie - Révision</title>
+     <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="home-link">Retour à l'accueil</a>
+        <h1>QCM Révision Pédiatrie</h1>
+
+        <div class="question">
+            <h3>1. Quelle est cette pathologie ? (Image de nouveau-né avec fente)</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q1.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : Fente Labio-Palatine</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Quelle est cette pathologie ? (Image de profil avec micrognathie)</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q2.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : Syndrome de Pierre Robin</div>
+                <p>Caractéristiques : Micrognathie, Rétrognathie, Glossoptose.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Qu'est ce que cet objet ?</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q3.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : Biberon "Medela"</div>
+                <p>Tétine longue adaptée en cas de fente.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quelle est cette pathologie ? (Schéma digestif/trachée)</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q4.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : Atrésie de l'œsophage</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Que représente cette image ? (Bébé avec dispositif de refroidissement)</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q5.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation5').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : Hypothermie Thérapeutique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Pour quelle pathologie ce traitement (hypothermie) est-il utilisé ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation6').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : Encéphalopathie Anoxo-ischémique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. A propos de l'Encéphalopathie Anoxo-ischémique: quelle(s) proposition(s) ci-dessous est (sont) fausse(s) ?</h3>
+            <p>1. Fréquente<br>2. Prévisible<br>3. Pas de risque de Séquelle<br>4. Pas de suivi particulier pour le nouveau-né</p>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A- Propositions 1 et 2 uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">B- Proposition 3 uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C- Toutes les propositions sont vraies</div>
+                <div class="option" onclick="toggleSelection(this)">D- Toutes les propositions sont fausses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : D - Toutes les propositions sont fausses</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Définition de la prématurité</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation8').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : Naissance avant 37 semaines d'aménorrhée (SA)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. De quoi s'agit-il (test clinique) et pourquoi y procède-t-on ?</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q9.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation9').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : Manœuvre du tiré assis</div>
+                <p>C'est un test du tonus axial. A la naissance, on observe normalement une hypotonie axiale et une hypertonie périphérique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10A. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10A.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10A').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10A">
+                <div class="result">Réponse : Réflexe de succion</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10B. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10B.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10B').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10B">
+                <div class="result">Réponse : les 4 points cardinaux</div>
+            </div>
+        </div>
+		
+		<div class="question">
+            <h3>10C. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10C.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10C').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10C">
+                <div class="result">Réponse : Réflexe de Grasping</div>
+            </div>
+        </div>
+		
+		<div class="question">
+            <h3>10D. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10D.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10D').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10D">
+                <div class="result">Réponse : Réflexe de Moreau</div>
+            </div>
+        </div>
+		
+		<div class="question">
+            <h3>10E. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10E.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10E').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10E">
+                <div class="result">Réponse : Réflexe d’allongement croisé</div>
+            </div>
+        </div>
+		
+		<div class="question">
+            <h3>10F. Identifier le réflexe archaïques</h3>
+			<img src="PEDIATRIE_QCM_1A_Revision_Q10F.jpg" class="diagram-qcm">
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation10F').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation10F">
+                <div class="result">Réponse : Réflexe de marche automatique</div>
+            </div>
+        </div>
+		
+
+        <div class="question">
+            <h3>11. Réflexes archaïques : à partir de quand ? et jusqu'à quand ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation11').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : De la naissance jusqu'à 4 mois (voire 5-6 mois)</div>
+                <p>Note : La succion commence dès la grossesse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. De quelle pathologie s'agit il ? (Caryotype avec 3 chromosomes 21)</h3>
+            <img src="PEDIATRIE_QCM_1A_Revision_Q12.jpg" class="diagram-qcm">
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation12').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : Trisomie 21</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. A propos de la trisomie 21: quelle incidence (nombre de naissances) ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation13').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : 1/2000</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. A propos de la trisomie 21: quel facteur de risque connu ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation14').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : Âge maternel</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Trisomie 21 : Citer 3 malformations physiques + 3 malformations / difficultés orthophoniques</h3>
+            <textarea rows="5" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation15').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse :</div>
+                <p><strong>Physique :</strong> Visage rond et plat, nuque plate et épaisse, fentes palpébrales obliques en haut et en dehors, épicanthus, petit nez, petite bouche, protrusion de la langue.</p>
+                <p><strong>Orthophonie :</strong> Palais ogival, hypotonie bucco-linguo-faciale, hyperlaxité (mauvais contrôle mandibule), respiration buccale, troubles de l'articulation, retard de langage, succion/déglutition peu tonique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Nombre d'AVC pédiatrique par an en France</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation16').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : 1100/an</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Quels sont les 2 types d'AVC ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation17').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : AVC ischémique & AVC hémorragique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Citez les symptômes cliniques possiblement évocateurs d'AVC</h3>
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation18').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse :</div>
+                <ul>
+                    <li>Convulsions</li>
+                    <li>Déficit neurologique brutal (aigu)</li>
+                    <li>Faiblesse / déficit moteur unilatéral (hémicorporel)</li>
+                    <li>Déformation de la bouche</li>
+                    <li>Trouble du langage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. Qu'est ce qu'un TSA ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation19').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : Trouble du Spectre Autistique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. A propos du TSA: définition et prévalence dans la population générale ?</h3>
+            <textarea rows="4" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation20').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse :</div>
+                <p><strong>Définition :</strong> Trouble d'origine neurodéveloppementale caractérisé par des perturbations dans l'interaction et la communication sociale, et des comportements répétitifs et stéréotypés.</p>
+                <p><strong>Prévalence :</strong> Environ 1% de la population.</p>
+                <p>(Note : 50% des enfants avec un TSA ont une déficience intellectuelle).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. Qu'est ce qu'un TLO ?</h3>
+            <textarea rows="2" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation21').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : Trouble du Langage Oral</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. Quels signes d'alerte et de sévérité après 3 ans pour un TLO ? (3 réponses attendues)</h3>
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation22').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse :</div>
+                <ul>
+                    <li>Inintelligibilité à 3 ans</li>
+                    <li>Agrammatisme (ne pas faire de phrase) à 3-4 ans</li>
+                    <li>Trouble de la compréhension</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. Trouble du langage: citer des exemples de diagnostics différentiels</h3>
+            <textarea rows="3" placeholder="Votre réponse..."></textarea>
+            <button type="button" onclick="document.getElementById('explanation23').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse :</div>
+                <ul>
+                    <li>Surdité (audiogramme)</li>
+                    <li>Trouble du spectre de l'autisme</li>
+                    <li>Pathologie neurologique ou génétique (retard marche, malformations...)</li>
+                    <li>Déficience intellectuelle</li>
+                    <li>Syndrome de Landau-Kleffner (régression langage)</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="index.html" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            // Désélectionner les autres options pour une question à choix unique (ici le cas de la Q7 adapté)
+            const siblings = element.parentElement.children;
+            for (let i = 0; i < siblings.length; i++) {
+                siblings[i].classList.remove("selected");
+            }
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const button = event.target;
+            const questionElement = button.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                // Vérifier si l'option est correcte
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } 
+                // Marquer comme incorrect si sélectionné mais faux
+                else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
