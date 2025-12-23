@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Psychologie du Développement affectif et cognitif</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Psychologie du Développement (Affectif & Cognitif)</h1>
+
+        <h2 class="section-title">Partie 1 : Théorie de l'Attachement</h2>
+
+        <div class="question">
+            <h3>1- Quel auteur a défini la "dépression anaclitique" comme un syndrome résultant d'une carence affective ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Jean Piaget</div>
+                <div class="option" onclick="toggleSelection(this)">B. René Spitz</div>
+                <div class="option" onclick="toggleSelection(this)">C. Donald Winnicott</div>
+                <div class="option" onclick="toggleSelection(this)">D. Konrad Lorenz</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B. René Spitz </div>
+                <p>Spitz a identifié ce syndrome suite à ses travaux sur l'hospitalisme et la carence affective chez le jeune enfant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quelles sont les trois fonctions de la "mère suffisamment bonne" selon Winnicott ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Assimilation, accommodation et équilibration</div>
+                <div class="option" onclick="toggleSelection(this)">B. Holding, handling et object presenting</div>
+                <div class="option" onclick="toggleSelection(this)">C. Protection, socialisation et exploration</div>
+                <div class="option" onclick="toggleSelection(this)">D. Orientation, signaux et discrimination</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B. Holding, handling et object presenting </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- L'expérience de Harry Harlow sur les macaques Rhésus a démontré l'importance de : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La nourriture comme seul lien d'attachement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le contact physique et le réconfort (nature of love)</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'apprentissage par observation</div>
+                <div class="option" onclick="toggleSelection(this)">D. La génétique pure</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B. Le contact physique et le réconfort </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Quel type d'attachement est caractérisé par une "minimisation de la proximité" ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sécure optimal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ambivalent-résistant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Évitant-fuyant</div>
+                <div class="option" onclick="toggleSelection(this)">D. Désorganisé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C. Évitant-fuyant </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Quelle est la proportion approximative de l'attachement de type "Désorganisé" dans la population ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Environ 7/10</div>
+                <div class="option" onclick="toggleSelection(this)">B. Environ 2/10</div>
+                <div class="option" onclick="toggleSelection(this)">C. Environ 1/10</div>
+                <div class="option" onclick="toggleSelection(this)">D. Moins de 5%</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['D'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : D. Moins de 5% </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Que signifie l'acronyme MIO selon Bowlby ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Mémoire Interne Organisée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Modèles Internes Opérants</div>
+                <div class="option" onclick="toggleSelection(this)">C. Maturation Intellectuelle Optimale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Mode d'Interaction Obligatoire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B. Modèles Internes Opérants </div>
+                <p>Ce sont des modèles mentaux (représentations de soi et de la figure d'attachement).</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 2 : Développement Cognitif (Piaget)</h2>
+
+        <div class="question">
+            <h3>7- Pour Piaget, l'intelligence adulte est définie comme : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une capacité de mémorisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forme supérieure d'adaptation biologique au milieu</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un héritage purement génétique</div>
+                <div class="option" onclick="toggleSelection(this)">D. La maîtrise du langage parlé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. Une forme supérieure d'adaptation biologique au milieu </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Comment Piaget nomme-t-il l'action de modifier un schème pour intégrer un nouvel objet ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Assimilation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Accommodation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Équilibration</div>
+                <div class="option" onclick="toggleSelection(this)">D. Schématisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B. Accommodation </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- À quel stade de développement correspond l'acquisition de la "Permanence de l'objet" ? </h3>
+            <div class=options>
+                <div class="option" onclick="toggleSelection(this)">A. Stade sensori-moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Stade pré-opératoire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Stade opératoire concret</div>
+                <div class="option" onclick="toggleSelection(this)">D. Stade opératoire formel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : A. Stade sensori-moteur </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- L'égocentrisme intellectuel au stade pré-opératoire se définit par : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une volonté de tout garder pour soi</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une centration excessive sur soi empêchant l'examen d'autres points de vue</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un sentiment de supériorité par rapport aux pairs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une absence de langage socialisé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. Une centration excessive sur soi... </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- À quel âge un enfant réussit-il généralement l'épreuve de conservation des liquides ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 6/7 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 7/8 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 9 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 11 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. 7/8 ans </div>
+                <p>La conservation numérique est acquise plus tôt (6/7 ans).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Parmi les suivants, lequel n'est PAS un type de schème décrit par Piaget ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Réflexes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Moteurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Émotionnels</div>
+                <div class="option" onclick="toggleSelection(this)">D. Opératoires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : C. Émotionnels </div>
+                <p>Les 4 types sont : réflexes, perceptifs, moteurs et opératoires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Dans le système INRC au stade formel, que signifie la lettre 'N' ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Neutralisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Négation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Normalisation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Noyau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Négation </div>
+                <p>INRC : Identité, Négation, Réciproque, Corrélative.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- La pensée "hypothético-déductive" apparaît au stade : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sensori-moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Pré-opératoire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Opératoire concret</div>
+                <div class="option" onclick="toggleSelection(this)">D. Opératoire formel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : D. Opératoire formel </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Quels sont les 3 niveaux d'arguments de réponse à l'épreuve de conservation ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Identité, Réversibilité, Compensation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Assimilation, Accommodation, Équilibration</div>
+                <div class="option" onclick="toggleSelection(this)">C. Signifié, Signifiant, Symbole</div>
+                <div class="option" onclick="toggleSelection(this)">D. Perception, Action, Représentation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : A. Identité, Réversibilité, Compensation </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quelle étude montre que l'attachement sécurisé favorise la motivation et la réussite scolaire à 7, 9, 12 et 15 ans ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ainsworth et al. (1978)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Jacobsen, Edelstein et Hofmann (1994)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Moss et al. (2004)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Bowlby (1982)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B. Jacobsen, Edelstein et Hofmann (1994) </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- L'attachement à l'âge adulte est caractérisé par : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une absence totale de lien avec l'enfance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une plasticité en fonction des expériences de vie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un état définitivement figé à 2 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une disparition des MIO</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B. Une plasticité en fonction des expériences de vie </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Quel outil évalue l'attachement des adultes ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. IPPA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Situation Étrange</div>
+                <div class="option" onclick="toggleSelection(this)">C. AAI (Adult Attachment Interview)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Épreuves de Piaget</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : C. AAI </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'intelligence est considérée comme une recherche de quoi selon Piaget ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De mémorisation parfaite</div>
+                <div class="option" onclick="toggleSelection(this)">B. D'équilibration majorante</div>
+                <div class="option" onclick="toggleSelection(this)">C. D'imitation différée</div>
+                <div class="option" onclick="toggleSelection(this)">D. De protection parentale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B. D'équilibration majorante </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Quel phénomène Konrad Lorenz a-t-il étudié en éthologie ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'hospitalisme</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'effet de miroir</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'empreinte (imprinting)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le stade du miroir</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : C. L'empreinte </div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            // Désélectionner les autres options de la même question
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.remove("selected"));
+            element.classList.add("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

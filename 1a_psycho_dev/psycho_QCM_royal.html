@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Royal: Test Psycho</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM Royal : Psychologie du Développement & Neuropsychologie</h1>
+
+        <h2 class="section-title">Partie 1 : Questions générales</h2>
+
+        <div class="question">
+            <h3>1. L'approche mixte est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Transversale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Longitudinale</div>
+                <div class="option" onclick="toggleSelection(this)">C. La combinaison des deux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C </div>
+                <p>L'approche mixte combine les approches transversale et longitudinale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Concernant la théorie de Bronfenbrenner, réponse(s) correcte(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'environnement influence le développement de l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'environnement n'a pas d'impact sur le développement de l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Perspective holistique et globale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Perspective centrée que sur les individus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Concernant Tolman quelles sont les réponses correctes ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. C'est lui qui parle de contiguïté temporelle (Guthrie)</div>
+                <div class="option" onclick="toggleSelection(this)">B. C'est lui qui parle de renforçateurs (Skinner)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Apprentissage latent</div>
+                <div class="option" onclick="toggleSelection(this)">D. Comportement = réponse globale (représentation mentale du but et des lieux)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : C et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quel(s) courant(s) font intervenir l'environnement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Innéisme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Interactionnisme</div>
+                <div class="option" onclick="toggleSelection(this)">C. Constructivisme</div>
+                <div class="option" onclick="toggleSelection(this)">D. Empirisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B, C et D </div>
+                <p>L'innéisme se concentre sur les facteurs biologiques internes, contrairement aux autres courants.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Le stade sensori-moteur se trouve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Après le pré-opératoire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Avant le stade opératoire formel</div>
+                <div class="option" onclick="toggleSelection(this)">C. Avant le stade opératoire concret</div>
+                <div class="option" onclick="toggleSelection(this)">D. Entre le stade pré-opératoire et le stade opératoire concret</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : C </div>
+                <p>C'est le tout premier stade (0-2 ans).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Quelles phobies ralentissent le rythme cardiaque ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Attaque de panique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Phobies sociales</div>
+                <div class="option" onclick="toggleSelection(this)">C. Phobies liées au sang</div>
+                <div class="option" onclick="toggleSelection(this)">D. Phobies liées aux animaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : C </div>
+                <p>C'est une réaction vagale spécifique aux phobies sang/injection/accident.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partie 2 : Anciennes Annales</h2>
+
+        <div class="question">
+            <h3>Q1. Dans le behaviorisme, l'observation objective ne peut s'appliquer que sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Stimulations et comportement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Stimulations et sensation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Comportement et réponses</div>
+                <div class="option" onclick="toggleSelection(this)">D. Stimulations et processus mentaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(101, ['A'])">Valider</button>
+            <div class="explanation" id="explanation101">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q2. Quelles sont les affirmations correctes concernant les troubles anxieux ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le principe de base en Thérapies Comportementales et Cognitives est celui de l’habituation : la réponse anxieuse augmente au fur et à mesure des confrontations longues et sans danger; elle va aboutir à une extinction.</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les phobies peuvent être schématisées comme un déséquilibre du dialogue entre deux régions cérébrales : l'amygdale et le cortex préfrontal.</div>
+                <div class="option" onclick="toggleSelection(this)">C. La phobie sociale est une peur excessive d’être obligé d’agir en société.</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'attaque de panique ne se produit que lors d'exposition à l'objet</div>
+                <div class="option" onclick="toggleSelection(this)">E. La restructuration cognitive permet de critiquer et modifier ses pensées pour aider à résoudre une phobie.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(102, ['B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation102">
+                <div class="result">Bonnes réponses : B, C et E </div>
+                <p>A est le principe, mais l'affirmation B, C et E sont les définitions cliniques exactes validées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q3. Lorsque Skinner conditionnait ses pigeons à effectuer une certaine réponse motrice pour avoir de la nourriture, les graines étaient disposées dans une mangeoire recouverte d'un couvercle transparent. Pour éviter que les animaux ne picorent le couvercle entre les essais, il éteignait la lumière chaque fois que les pigeons picoraient le couvercle, faisant ainsi disparaître la nourriture de leur vue. Il arrivait ainsi à faire diminuer la fréquence des picorements sur le couvercle.<p>
+			De quel type de conditionnement opérant parle-t-on ici ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Renforcement positif</div>
+                <div class="option" onclick="toggleSelection(this)">B. Renforcement négatif</div>
+                <div class="option" onclick="toggleSelection(this)">C. Punition positive</div>
+                <div class="option" onclick="toggleSelection(this)">D. Punition négative</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(103, ['D'])">Valider</button>
+            <div class="explanation" id="explanation103">
+                <div class="result">Bonne réponse : D </div>
+                <p>Retrait d'un stimulus (lumière/vue des graines) pour diminuer un comportement = Punition Négative.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q4. Deux procédures de renforcement sont souvent mises en jeu simultanément dans la vie courante ce qui fait qu'elles s'auto-entretiennent. Ex : le bébé qui pleure dans sonberceau et qui est calmé dans les bras de son papa (il n'a ni faim, ni soif, ni mal, auquel cas les bras ne le calmeraient pas). Si l'on se place côté bébé : il pleure, son père le prend à bras. Il va donc pleurer pour que son père le prenne à bras, procédure de renforcement __________ avec comme agent renforçateur la stimulation appétitive : être pris à bras. Côté père, l'enfant crie, il prend le bébé pour faire cesser ses hurlements : procédure de renforcement __________avec comme agent renforçateur la cessation de la stimulation aversive : pleurs du bébé. Chacun est donc renforcé et il n'y a pas de raison que cela s'arrête.<p>
+			De quel type de renforcement parle-t-on ici ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. RP (père) / RP (bébé)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Renforcement négatif (côté père) / renforcement positif (côté bébé)</div>
+                <div class="option" onclick="toggleSelection(this)">C. RN (père) / RN (bébé)</div>
+                <div class="option" onclick="toggleSelection(this)">D. RP (père) / RN (bébé)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(104, ['B'])">Valider</button>
+            <div class="explanation" id="explanation104">
+                <div class="result">Bonne réponse : B </div>
+                <p>Père : les pleurs s'arrêtent (retrait aversif = Négatif). Bébé : obtient les bras (ajout appétitif = Positif).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q5. L'une de ces affirmations est INCORRECTE. Quelle est-elle ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L’agoraphobie est la phobie de se retrouver dans des endroits publics où la survenue d’une attaque de panique serait problématique ou embarrassante.</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le centre "cérébral" de la peur se situe dans le cortex préfrontal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Troubles anxieux dus à un mauvais mécanisme d'extinction...</div>
+                <div class="option" onclick="toggleSelection(this)">D. La technique d'exposition est progressive...</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(105, ['B'])">Valider</button>
+            <div class="explanation" id="explanation105">
+                <div class="result">Bonne réponse : B </div>
+                <p>Le centre de la peur est l'amygdale, pas le cortex préfrontal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q6. Dans le conditionnement classique, le gradient de généralisation indique que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la RC est déclenchée par un stimulus ressemblant au SC original</div>
+                <div class="option" onclick="toggleSelection(this)">B. la RC est déclenchée par un stimulus très différent</div>
+                <div class="option" onclick="toggleSelection(this)">C. la RC est d'autant plus efficace que le stimulus est différent</div>
+                <div class="option" onclick="toggleSelection(this)">D. plus un stimulus est proche du SC, plus la RI sera importante</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(106, ['A'])">Valider</button>
+            <div class="explanation" id="explanation106">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+
+
+        <div class="question">
+            <h3>Q7. La psychophysique est l’étude des relations entre perception et stimulus physique. Il s’agit de mettre en relation les variations du monde physique (les stimuli) avec les variations du monde subjectif qui lui sont reliées (la perception). On retrouve plusieurs méthodes pour faire ce lien :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La méthode de l’intervalle qui permet d’établir la fonction psychométrique et donc de connaître la valeur du seuil absolu qui correspond exactement à 50 % de détection.</div>
+                <div class="option" onclick="toggleSelection(this)">B. La méthode de l’ajustement, où le sujet règle progressivement l’intensité du stimulus pour que celui ci soit juste perçu.</div>
+                <div class="option" onclick="toggleSelection(this)">C. La méthode des constantes qui consiste à présenter aux sujets des séries de stimuli d’intensité variable dans un ordre aléatoire. On associe à chaque valeur de stimulus un pourcentage de réponse.</div>
+                <div class="option" onclick="toggleSelection(this)">D. La méthode des limites où l’on présente aux sujets des séries successives de stimuli ordonnés selon leur intensité de manière croissante ou décroissante.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(107, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation107">
+                <div class="result">Bonnes réponses : B, C et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q8. Lors d'une atteinte unilatérale de l'aire visuelle V1, la moitié du champ visuel est affecté, c'est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. une héminégligence</div>
+                <div class="option" onclick="toggleSelection(this)">B. une ataxie optique</div>
+                <div class="option" onclick="toggleSelection(this)">C. une hémianopsie</div>
+                <div class="option" onclick="toggleSelection(this)">D. un scotome</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(108, ['C'])">Valider</button>
+            <div class="explanation" id="explanation108">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q9. La périphérie rétinienne contient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Autant de cônes que de bâtonnets</div>
+                <div class="option" onclick="toggleSelection(this)">B. Plus de cônes que de bâtonnets</div>
+                <div class="option" onclick="toggleSelection(this)">C. Plus de bâtonnets que de cônes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que des cônes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(109, ['C'])">Valider</button>
+            <div class="explanation" id="explanation109">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q10. L'agnosie visuelle est liée à une atteinte de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La voie ventrale</div>
+                <div class="option" onclick="toggleSelection(this)">B. La voie dorsale</div>
+                <div class="option" onclick="toggleSelection(this)">C. La voie frontale</div>
+                <div class="option" onclick="toggleSelection(this)">D. La voie pariétale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(110, ['A'])">Valider</button>
+            <div class="explanation" id="explanation110">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q11. Quelle(s) affirmation(s) caractérise(nt) la somatotopie ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Parties corticales importantes = seuils d'acuité élevés (sensibles)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Parties corticales importantes = seuils d'acuité bas (sensibles)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Représentation surface cutanée sur cortex prop. à densité récepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Représentation surface cortex sur surface cutanée...</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(111, ['C'])">Valider</button>
+            <div class="explanation" id="explanation111">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q12. L'asomatognosie correspond :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Difficulté à reconnaître parties du corps (lésion somatosensoriel)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Difficulté à reconnaître parties du corps (lésion somesthésique)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Fausse perception de mouvement (somatosensoriel)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Fausse perception de mouvement (somesthésique)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(112, ['A'])">Valider</button>
+            <div class="explanation" id="explanation112">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q13. Une saccade se décompose en deux phases :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Phase de planification</div>
+                <div class="option" onclick="toggleSelection(this)">B. Phase d'anticipation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Phase de déplacement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Phase d'éveil</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(113, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation113">
+                <div class="result">Bonnes réponses : A et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q14. Absence de conscience de la tache aveugle, explication :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Binoculaire : récepteurs de l'autre œil compensent</div>
+                <div class="option" onclick="toggleSelection(this)">B. Monoculaire : récepteurs de l'autre œil compensent</div>
+                <div class="option" onclick="toggleSelection(this)">C. Monoculaire : système perceptif "remplit" la zone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Binoculaire : système perceptif "remplit" la zone</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(114, ['C'])">Valider</button>
+            <div class="explanation" id="explanation114">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q15. L'achromatopsie cérébrale correspond :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. incapacité à discriminer les couleurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. incapacité à percevoir des formes en mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">C. incapacité à reconnaître les parties de son propre corps</div>
+                <div class="option" onclick="toggleSelection(this)">D. incapacité à percevoir les informations dans l'hémichamp gauche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(115, ['A'])">Valider</button>
+            <div class="explanation" id="explanation115">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q16. Le phénomène de la constance des couleurs indique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. couleurs maintenues malgré variations éclairage</div>
+                <div class="option" onclick="toggleSelection(this)">B. couleurs varient selon l'éclairage</div>
+                <div class="option" onclick="toggleSelection(this)">C. mur blanc paraît orange...</div>
+                <div class="option" onclick="toggleSelection(this)">D. tableau multicolore plus stable que surface monochrome</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(116, ['A'])">Valider</button>
+            <div class="explanation" id="explanation116">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q17. Prosopagnosie - Affirmations justes :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Affecte sélectivement l'identification des visages mais pas objets</div>
+                <div class="option" onclick="toggleSelection(this)">B. Affecte visages et objets</div>
+                <div class="option" onclick="toggleSelection(this)">C. Altération fonctions perceptives élémentaires</div>
+                <div class="option" onclick="toggleSelection(this)">D. Absence d'altération fonctions perceptives élémentaires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(117, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation117">
+                <div class="result">Bonnes réponses : A et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q18. Colliot et Jamet (2017) se sont intéressés aux effets de la présence d’un plan lors de l’apprentissage d’un document multimédia. Selon les auteurs, si un plan est ajouté à un texte les performances d’apprentissage des étudiants devraient être meilleures face à celles des étudiants apprenant le même texte sans la présence d’un plan. Dans leur étude, chaque étudiant avait pour tâche d’apprendre deux documents multimédia, le premier document portait sur le fonctionnement de la mémoire et le second portait sur les troubles mnésiques fréquemment rencontrés. Les auteurs voulaient tester si une différence de difficulté, ou pas,existait entre ces deux conditions. Les étudiants apprenaient ces documents avec un plan organisant les informations présentées ou bien sans plan. 40 étudiants ont participé à cette étude. Pour les deux documents les sujets étaient soumis à un test de mémorisation des informations (noté sur 20) ainsi qu’à un test de compréhension (noté sur 10).<p>
+			Dans cette étude, nous avons :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une première VI qui est le format de présentation du document multimédia et qui s’écrit de la façon suivante : F2 = {avec plan, sans plan}. Cette VI est inter-sujet et provoquée.<p>
+				Une seconde VI qui est le thème du document pédagogique et qui s’écrit de la façon suivante : T2 = {mémoire, trouble mnésique}. Cette VI est intra-sujet et provoquée.<p><p>
+				La première VD est le score au test de mémorisation qui s’écrit de la façon suivante UMEMORISATION = {0, 1,…, 20}<p>
+				La seconde VD est le score au test de compréhension qui s’écrit de la façon suivante : UCOMPREHENSION = {0, 1,…, 10}</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une première VI qui est le format de présentation du document multimédia et qui s’écrit de la façon suivante : F2 = {avec plan, sans plan}. Cette VI est intra-sujet et provoquée.<p>
+				Une seconde VI qui est le thème du document pédagogique et qui s’écrit de la façon suivante : T2 = {mémoire, trouble mnésique}. Cette VI est inter-sujet et provoquée.<p>
+				La première VD est le score au test de mémorisation qui s’écrit de la façon suivante UMEMORISATION = {0, 1,…, 20}<p>
+				La seconde VD est le score au test de compréhension qui s’écrit de la façon suivante : UCOMPREHENSION = {0, 1,…, 10}</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une première VI qui est le format de présentation du document multimédia et qui s’écrit de la façon suivante : F2 = {avec plan, sans plan}. Cette VI est intersujet et provoquée.<p>
+				La première VD est le score au test de mémorisation qui s’écrit de la façon suivante UMEMORISATION = {0, 1,…, 20}<p>
+				La seconde VD est le score au test de compréhension qui s’écrit de la façon suivante : UCOMPREHENSION = {0, 1,…, 10}</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une première VI qui est le format de présentation du document multimédia et qui s’écrit de la façon suivante : F2 = {avec plan, sans plan}. Cette VI est intersujet et provoquée.<p>
+				Une seconde VI qui est le thème du document pédagogique et qui s’écrit de la façon suivante : T2 = {mémoire, trouble mnésique}. Cette VI est intrasujet et provoquée.<p>
+				La première VD est le score au test de mémorisation qui s’écrit de la façon suivante UMEMORISATION = {0, 1,…, 10}<p>
+				La seconde VD est le score au test de compréhension qui s’écrit de la façon suivante : UCOMPREHENSION = {0, 1,…, 20}</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(118, ['A'])">Valider</button>
+            <div class="explanation" id="explanation118">
+                <div class="result">Bonne réponse : A</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q19. Pour l'expérience de Colliot et Jamet (2017), le plan d'expérience est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. S20 < F2 > * T2 🡪 UMEMORISATION x UCOMPREHENSION</div>
+                <div class="option" onclick="toggleSelection(this)">B. S20 < F2 > 🡪 UMEMORISATION x UCOMPREHENSION</div>
+                <div class="option" onclick="toggleSelection(this)">C. S40 < F2 > * T2 🡪 UMEMORISATION x UCOMPREHENSION</div>
+                <div class="option" onclick="toggleSelection(this)">D. S20 < T2 > * F2 🡪 UMEMORISATION x UCOMPREHENSION</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(119, ['A'])">Valider</button>
+            <div class="explanation" id="explanation119">
+                <div class="result">Bonne réponse : A </div>
+                <p>20 sujets par groupe de Format, croisés avec le Thème.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q20. Quel est le plan d’expérimentation à partir des informations notées ci-dessous pour la variable dépendante « note ».<p>
+			Nombre de VI intersujets - 2<p><p>
+			Nombre de VI intrasujets - 2<p>
+			Nombre de groupes expérimentaux - 15<p>
+			Nombre de sujets - 150<p>
+			Nombre d’observation saisie par sujets - 4</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. S10 < A3 * C5 > * R2 * D2 → UNOTE</div>
+                <div class="option" onclick="toggleSelection(this)">B. S10 < A10 * C5 > * R2 * D2 → UNOTE</div>
+                <div class="option" onclick="toggleSelection(this)">C. S15 < A3 * C2 > * R2 * D2 → UNOTE</div>
+                <div class="option" onclick="toggleSelection(this)">D. S15 < A3 * C5 > * R2 * D2 → UNOTE</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(120, ['A'])">Valider</button>
+            <div class="explanation" id="explanation120">
+                <div class="result">Bonne réponse : A </div>
+                <p>150 sujets / 15 groupes = 10 sujets par groupe (S10). Facteurs inter A3*C5 (3*5=15).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q21. Le développement des habiletés posturales concerne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les ajustements du corps en relation avec la gravité</div>
+                <div class="option" onclick="toggleSelection(this)">B. les déplacements rapides</div>
+                <div class="option" onclick="toggleSelection(this)">C. les ajustements de la coordination visuo-manuelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. les déplacements latéralisés</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(121, ['A'])">Valider</button>
+            <div class="explanation" id="explanation121">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q22. Le bébé de 4 mois peut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. soulever la tête et les épaules dans des efforts actifs</div>
+                <div class="option" onclick="toggleSelection(this)">B. redresser sa tête</div>
+                <div class="option" onclick="toggleSelection(this)">C. maintenir la tête dans le prolongement du cou</div>
+                <div class="option" onclick="toggleSelection(this)">D. tenir en position assise</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(122, ['A'])">Valider</button>
+            <div class="explanation" id="explanation122">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q23. La coordination visuo-manuelle apparaît entre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3ème ou 4ème semaine</div>
+                <div class="option" onclick="toggleSelection(this)">B. 4ème semaine</div>
+                <div class="option" onclick="toggleSelection(this)">C. entre le 3ème ou 5ème mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. à partir du 6ème mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(123, ['C'])">Valider</button>
+            <div class="explanation" id="explanation123">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q24. Les systèmes sensoriels sont au nombre de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 5</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6</div>
+                <div class="option" onclick="toggleSelection(this)">C. 7 (selon Den)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 9</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(124, ['C'])">Valider</button>
+            <div class="explanation" id="explanation124">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q25. Le développement du langage commence :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. dès la vie fœtale</div>
+                <div class="option" onclick="toggleSelection(this)">B. au moment de la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">C. à partir de 2 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. à partir de 3 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(125, ['A'])">Valider</button>
+            <div class="explanation" id="explanation125">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q26. L'audition :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. joue un rôle dans le développement du langage</div>
+                <div class="option" onclick="toggleSelection(this)">B. n'est pas fonctionnelle avant la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">C. fonctionnelle uniquement dans les premières heures</div>
+                <div class="option" onclick="toggleSelection(this)">D. fonctionnelle uniquement dans les premiers jours</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(126, ['A'])">Valider</button>
+            <div class="explanation" id="explanation126">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q27. A la naissance :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. le bébé ne réagit pas aux sons connus</div>
+                <div class="option" onclick="toggleSelection(this)">B. s'oriente vers la voix de sa mère</div>
+                <div class="option" onclick="toggleSelection(this)">C. s'oriente vers sa langue maternelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. produit des vocalisations</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(127, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation127">
+                <div class="result">Bonnes réponses : B et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q28. Durant la période pré-linguistique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. le bébé émet des sons végétatifs</div>
+                <div class="option" onclick="toggleSelection(this)">B. le bébé commence à babiller</div>
+                <div class="option" onclick="toggleSelection(this)">C. le bébé produit des vocalisations</div>
+                <div class="option" onclick="toggleSelection(this)">D. le bébé produit des énoncés de plus de deux mots</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(128, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation128">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q29. Qui a écrit : "Un bébé tout seul, ça n'existe pas" (1972) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Mélanie Klein</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lev Vygotsky</div>
+                <div class="option" onclick="toggleSelection(this)">C. Donald Winnicott</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sigmund Freud</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(129, ['C'])">Valider</button>
+            <div class="explanation" id="explanation129">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q30. Une relation parent-enfant sécurisante aide l'enfant à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. réguler ses émotions lors de situation stressante</div>
+                <div class="option" onclick="toggleSelection(this)">B. explorer son environnement</div>
+                <div class="option" onclick="toggleSelection(this)">C. favoriser son développement cognitif, émotionnel et langagier</div>
+                <div class="option" onclick="toggleSelection(this)">D. aucune de ces affirmations</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(130, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation130">
+                <div class="result">Bonnes réponses : A, B et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q31. Procédure pour évaluer l'attachement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la situation stressante</div>
+                <div class="option" onclick="toggleSelection(this)">B. la situation étrange</div>
+                <div class="option" onclick="toggleSelection(this)">C. la situation de réaction à la perte</div>
+                <div class="option" onclick="toggleSelection(this)">D. aucune de ces affirmations</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(131, ['B'])">Valider</button>
+            <div class="explanation" id="explanation131">
+                <div class="result">Bonne réponse : B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q32. Le stade opératoire concret se trouve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. avant le stade sensori-moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. après le stade sensori-moteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. entre le stade sensori-moteur et le stade des opérations formelles</div>
+                <div class="option" onclick="toggleSelection(this)">D. après le stade des opérations formelles</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(132, ['C'])">Valider</button>
+            <div class="explanation" id="explanation132">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q33. La pensée symbolique se développe à partir de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 6-8 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 18-24 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 4-5 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 6-7 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(133, ['B'])">Valider</button>
+            <div class="explanation" id="explanation133">
+                <div class="result">Bonne réponse : B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q34. La conservation du nombre apparaît vers :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 4-5 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6-7 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 8-9 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 10-11 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(134, ['B'])">Valider</button>
+            <div class="explanation" id="explanation134">
+                <div class="result">Bonne réponse : B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q35. Lors du stade opératoire formel :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. opérations ne portent pas sur des propositions verbales</div>
+                <div class="option" onclick="toggleSelection(this)">B. raisonnement que sur propositions concrètes</div>
+                <div class="option" onclick="toggleSelection(this)">C. enfant non conservant</div>
+                <div class="option" onclick="toggleSelection(this)">D. la pensée devient hypothético-déductive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(135, ['D'])">Valider</button>
+            <div class="explanation" id="explanation135">
+                <div class="result">Bonne réponse : D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q36. On s'intéresse aux changements par l'intermédiaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. des facteurs internes</div>
+                <div class="option" onclick="toggleSelection(this)">B. des facteurs internalisés</div>
+                <div class="option" onclick="toggleSelection(this)">C. des facteurs sensibles</div>
+                <div class="option" onclick="toggleSelection(this)">D. des facteurs externes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(136, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation136">
+                <div class="result">Bonnes réponses : A et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q37. Lequel de ces courants prend en compte l'environnement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Innéisme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Empirisme</div>
+                <div class="option" onclick="toggleSelection(this)">C. Interactionnisme</div>
+                <div class="option" onclick="toggleSelection(this)">D. Constructivisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(137, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation137">
+                <div class="result">Bonnes réponses : B, C et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q38. "L'homme n'est pas simplement un être biologique mais également un être social" :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Watson</div>
+                <div class="option" onclick="toggleSelection(this)">B. Wallon</div>
+                <div class="option" onclick="toggleSelection(this)">C. Pavlov</div>
+                <div class="option" onclick="toggleSelection(this)">D. Piaget</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(138, ['B'])">Valider</button>
+            <div class="explanation" id="explanation138">
+                <div class="result">Bonne réponse : B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q39. Vygotsky - Affirmations vraies :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Langage = moyen d'échange et de liaison sociale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Langage égocentrique apparaît sur cette base sociale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Langage égocentrique est transitoire vers langage intérieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Langage a une fonction initiale de communication</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(139, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation139">
+                <div class="result">Bonnes réponses : A, C et D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q40. L'approche mixte permet de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Pallier aux inconvénients des approches longitudinale et transversale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Recueillir des informations relatives à la dimension individuelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Effectuer des coupes transversales</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aucune de ces affirmations</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(140, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation140">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Note : Le texte source contient une double négation dans la réponse A ("Ne pas pallier..."), mais le contexte académique de l'approche mixte confirme qu'elle sert à combiner les avantages et réduire les inconvénients.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q41. Théorie du mouvement des yeux : orienter leurs (1) vers les zones les plus (2) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. mouvements oculaires / informatives</div>
+                <div class="option" onclick="toggleSelection(this)">B. fixations / informatives</div>
+                <div class="option" onclick="toggleSelection(this)">C. mouvements oculaires / irrépressibles</div>
+                <div class="option" onclick="toggleSelection(this)">D. défocalisations / systématiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(141, ['B'])">Valider</button>
+            <div class="explanation" id="explanation141">
+                <div class="result">Bonne réponse : B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q42. Le système visuel du nourrisson :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est fonctionnel à la naissance (mais immature)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est impliqué dans le développement social</div>
+                <div class="option" onclick="toggleSelection(this)">C. Permet de concevoir les composantes d'un visage</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est fonctionnel à l'âge de 2 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(142, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation142">
+                <div class="result">Bonnes réponses : A et B </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q43. Les premiers échanges bébé-adulte se réalisent par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Gestes, expressions faciales, regards, manifestations corporelles</div>
+                <div class="option" onclick="toggleSelection(this)">B. Langage parlé complété...</div>
+                <div class="option" onclick="toggleSelection(this)">C. Manifestations corporelles, grimaces...</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(143, ['A'])">Valider</button>
+            <div class="explanation" id="explanation143">
+                <div class="result">Bonne réponse : A </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q44. Une relation parent-enfant insécurisante prédispose à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Adopter des comportements empathiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. La dépression</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des difficultés de la régulation émotionnelle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(144, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation144">
+                <div class="result">Bonnes réponses : B et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q45. Le holding désigne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des soins apportés par la mère</div>
+                <div class="option" onclick="toggleSelection(this)">B. La capacité à ne rien imaginer...</div>
+                <div class="option" onclick="toggleSelection(this)">C. La capacité de la mère à contenir les angoisses du bébé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(145, ['C'])">Valider</button>
+            <div class="explanation" id="explanation145">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q46. Le nourrisson :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Présente des compétences auditives avant la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ne peut pas percevoir les stimulations avant 2 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. Perçoit la voix humaine et les visages comme attracteurs puissants</div>
+                <div class="option" onclick="toggleSelection(this)">D. Peut produire des réponses verbales fiables</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(146, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation146">
+                <div class="result">Bonnes réponses : A et C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q47. Selon Vygotsky, affirmations exactes :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le langage n'a pas de fonction sociale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le langage égocentrique est une forme de pensée intérieure</div>
+                <div class="option" onclick="toggleSelection(this)">C. Vygotsky partage le même point de vue que Piaget</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(147, ['B'])">Valider</button>
+            <div class="explanation" id="explanation147">
+                <div class="result">Bonne réponse : B </div>
+                <p>Vygotsky voit le langage égocentrique comme une étape vers la pensée intérieure, contrairement à Piaget.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionId, correctAnswers) {
+            // Récupérer les options
+            const questionContainer = document.getElementById(`explanation${questionId}`).parentElement;
+            const options = questionContainer.querySelectorAll('.option');
+
+            options.forEach(option => {
+                // Nettoyage des classes précédentes
+                option.classList.remove("correct", "incorrect");
+                
+                // Récupération de la lettre (A, B, C...)
+                const optionLetter = option.textContent.trim().charAt(0).toUpperCase();
+
+                // Vérification
+                const isCorrect = correctAnswers.includes(optionLetter);
+                const isSelected = option.classList.contains("selected");
+
+                if (isCorrect) {
+                    option.classList.add("correct");
+                } else if (isSelected) {
+                    option.classList.add("incorrect");
+                }
+                
+                // On enlève la sélection visuelle pour montrer le résultat final
+                option.classList.remove("selected");
+            });
+
+            // Afficher l'explication
+            document.getElementById(`explanation${questionId}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Développement Moteur et Sensoriel</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Développement Moteur et Sensoriel</h1>
+
+        <h2>Exercice : Questionnaire à Choix Multiples</h2>
+
+        <div class="question">
+            <h3>1- Quelle structure cérébrale est responsable de la planification et de la coordination des mouvements ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le cortex moteur primaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le cortex prémoteur et l'aire motrice supplémentaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le lobe occipital</div>
+                <div class="option" onclick="toggleSelection(this)">D. La moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le cortex prémoteur et l'aire motrice supplémentaire assurent la planification, tandis que le cortex moteur primaire s'occupe de l'exécution.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quel est le rôle principal des noyaux gris centraux ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Gérer les fonctions cardio-respiratoires</div>
+                <div class="option" onclick="toggleSelection(this)">B. Filtrer les informations visuelles uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Initier les gestes voulus et inhiber les gestes inappropriés</div>
+                <div class="option" onclick="toggleSelection(this)">D. Produire la gaine de myéline</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C</div>
+                <p>Ils servent à automatiser les séquences motrices et à rythmer l'amplitude des mouvements.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Quelle partie du cervelet agit spécifiquement sur l'équilibre ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le néocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le paléocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'archéocervelet (vestibulocervelet)</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'olive bulbaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : C</div>
+                <p>L'archéocervelet active les muscles du tronc et des ceintures pour maintenir l'équilibre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- À quel moment débute le développement du système nerveux central (SNC) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dès la 3ème semaine de gestation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Au 5ème mois de grossesse</div>
+                <div class="option" onclick="toggleSelection(this)">D. À 12 semaines de vie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le développement du SNC commence dès la 3ème semaine avec la formation du tube neural.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Qu'est-ce que l'élagage synaptique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La création massive de neurones</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'élimination des connexions nerveuses peu utilisées</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réparation de la gaine de myéline</div>
+                <div class="option" onclick="toggleSelection(this)">D. La migration des cellules gliales</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B</div>
+                <p>Ce processus rend le cerveau plus efficace en ne gardant que les connexions fréquemment sollicitées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Quelle est la fonction de la myéline ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Stocker les souvenirs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Isoler les axones pour accélérer la conduction nerveuse</div>
+                <div class="option" onclick="toggleSelection(this)">C. Produire des neurotransmetteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Filtrer les toxines du sang</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B</div>
+                <p>La myéline protège les axones et assure une transmission rapide de l'information.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Selon la loi de succession céphalo-caudale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le contrôle se développe du centre vers les extrémités</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le contrôle se développe de la tête vers les pieds</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le contrôle apparaît d'abord dans les jambes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les mouvements fins précèdent les mouvements globaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'enfant contrôle d'abord les muscles du cou, puis du tronc, avant les jambes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La loi de différenciation signifie que le développement va :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Du spécifique vers le global</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du global vers le spécifique (diffus vers sélectif)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement de gauche à droite</div>
+                <div class="option" onclick="toggleSelection(this)">D. De manière aléatoire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le nourrisson mobilise d'abord tout son membre avant d'isoler le mouvement des doigts.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Les réflexes archaïques sont d'origine :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Corticale (volontaire)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sous-corticale (tronc cérébral, moelle)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Environnementale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B</div>
+                <p>Ils sont automatiques et progressivement inhibés par la maturation corticale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Quel réflexe est déclenché par un bruit soudain et présente une phase d'extension des bras ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le réflexe de succion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le réflexe de Moro</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le réflexe d'agrippement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le réflexe de reptation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le réflexe de Moro est une réponse d'alerte primitive.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- À quel âge disparaît généralement le grasping (agrippement palmaire) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 1 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 5-6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 12 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 2 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B</div>
+                <p>Sa disparition laisse place à la préhension volontaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Que sont les "mouvements généraux" (GM) de Prechtl ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des réflexes brefs et prévisibles</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des mouvements spontanés, fluides et variés</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des tics nerveux de l'adolescent</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des mouvements uniquement visuels</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : B</div>
+                <p>Ils reflètent l'intégrité des circuits neuronaux et sont observables dès la vie fœtale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Les "Fidgety movements" apparaissent durant quelle période ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De 9 à 38 semaines de gestation</div>
+                <div class="option" onclick="toggleSelection(this)">B. À la naissance (Writhing)</div>
+                <div class="option" onclick="toggleSelection(this)">C. De 3 à 5 mois post-terme</div>
+                <div class="option" onclick="toggleSelection(this)">D. Après l'acquisition de la marche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : C</div>
+                <p>Ce sont de petits mouvements circulaires très sensibles à l'intégrité neurologique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Au début de la phase statique, on observe chez le nouveau-né :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hypertonie de l'axe et hypotonie des membres</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une hypertonie des membres et hypotonie de l'axe</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une force musculaire équilibrée partout</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une absence totale de tonus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B</div>
+                <p>Cette répartition du tonus va progressivement s'inverser avec le développement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- À quel âge un enfant peut-il généralement se mettre seul sur le côté ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Vers 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. Vers 9 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. À 18 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B</div>
+                <p>La position sur le côté est une position intermédiaire acquise aux alentours de 4 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La "phase dynamique" du développement se caractérise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le repos total du bébé</div>
+                <div class="option" onclick="toggleSelection(this)">B. La découverte de l'espace et les premiers déplacements</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement le développement du langage</div>
+                <div class="option" onclick="toggleSelection(this)">D. La marche sans appui immédiate</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B</div>
+                <p>Cette phase inclut les retournements, le ramper et le quatre-pattes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le déplacement par "pivots" appartient à quelle phase ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Phase statique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Phase dynamique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Phase de verticalité</div>
+                <div class="option" onclick="toggleSelection(this)">D. Phase fœtale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les pivots permettent au bébé d'attraper des objets en tournant sur le ventre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Quelle étape précède généralement la station debout autonome ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La marche automatique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le chevalier servant</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le sourire social</div>
+                <div class="option" onclick="toggleSelection(this)">D. La course</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le chevalier servant permet le redressement en libérant un genou pour poser le pied au sol.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Quel système sensoriel permet de ressentir la position du corps dans l'espace ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le système olfactif</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le système proprioceptif</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le système gustatif</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le système auditif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B</div>
+                <p>La proprioception utilise des récepteurs dans les muscles et articulations.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Quel outil est considéré comme l'un des plus robustes pour évaluer le développement global de 0 à 42 mois ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La figure de Rey</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le BHK</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le BAYLEY-4</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le M ABC 2</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le Bayley-4 est un outil standardisé EBP très complet pour la petite enfance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- À quoi sert le test NP-MOT ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À tester uniquement l'audition</div>
+                <div class="option" onclick="toggleSelection(this)">B. À explorer les fonctions neuro-psychomotrices (tonus, praxies, latéralité...) chez l'enfant de 4-8 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. À mesurer le quotient intellectuel</div>
+                <div class="option" onclick="toggleSelection(this)">D. À évaluer la vue à la naissance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['B'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il évalue des fonctions complexes comme les praxies, les gnosies et le rythme.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Le réflexe tonique asymétrique du cou (RTAC) est aussi appelé :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Réflexe de l'escrimeur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Réflexe de la grenouille</div>
+                <div class="option" onclick="toggleSelection(this)">C. Réflexe du parachutiste</div>
+                <div class="option" onclick="toggleSelection(this)">D. Réflexe de survie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['A'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : A</div>
+                <p>Il fait partie des réflexes archaïques présents à la naissance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Le système vestibulaire se situe dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'œil</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'oreille interne (canaux semi-circulaires, utricule, saccule)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le bout des doigts</div>
+                <div class="option" onclick="toggleSelection(this)">D. La peau du dos</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il permet l'ajustement constant de l'équilibre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Selon Thelen, le développement moteur est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un programme génétique rigide</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un processus dynamique et auto-organisé</div>
+                <div class="option" onclick="toggleSelection(this)">C. Indépendant de l'environnement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Fini dès l'âge de 3 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['B'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les compétences émergent de l'interaction entre le corps, le cerveau et l'environnement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Le Brunet-Lézine 3 évalue quels domaines ? (Réponses multiples possibles)</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Posture</div>
+                <div class="option" onclick="toggleSelection(this)">B. Coordination</div>
+                <div class="option" onclick="toggleSelection(this)">C. Langage</div>
+                <div class="option" onclick="toggleSelection(this)">D. Socialisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : A, B, C et D</div>
+                <p>Il permet de calculer des quotients de développement (QD) dans ces quatre domaines.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Qu'étudie spécifiquement l'échelle BHK ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La force des jambes</div>
+                <div class="option" onclick="toggleSelection(this)">B. La qualité de l'écriture (lisibilité, vitesse)</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'audition des nouveau-nés</div>
+                <div class="option" onclick="toggleSelection(this)">D. La mastication</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['B'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'enfant doit copier un texte pendant 5 minutes pour repérer les difficultés graphomotrices.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Quel lobe cérébral est associé au traitement des informations auditives ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Lobe frontal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lobe temporal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Lobe pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lobe occipital</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['B'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le lobe temporal traite les sons.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- Le "social gating" signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le bébé refuse de voir les gens</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les interactions sociales amplifient l'apprentissage</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cerveau se ferme au monde extérieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'apprentissage est purement solitaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['B'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le social agit comme un moteur de l'apprentissage multimodal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- À quel âge la latéralité fonctionnelle se stabilise-t-elle généralement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 0-2 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 4-6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 12-15 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. À l'âge adulte seulement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est la période où la latéralité préférentielle devient fonctionnelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- La myélinisation du cortex préfrontal se poursuit jusqu'à quel âge environ ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 10 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 25 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 50 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : C</div>
+                <p>Elle se poursuit durant l'adolescence pour permettre le contrôle de soi et la planification.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.getElementById(`explanation${questionNumber}`).parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
