@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Sémiologie et Organisation des Soins en Pédiatrie</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Pédiatrie (Sémiologie & Organisation)</h1>
+
+        <div class="section-title">Partie 1 : Sémiologie de l'enfant</div>
+
+        <div class="question">
+            <h3>1- Quel est le poids moyen d'un nouveau-né à terme ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 2500 g</div>
+                <div class="option" onclick="toggleSelection(this)">B. 3000 g</div>
+                <div class="option" onclick="toggleSelection(this)">C. 3500 g</div>
+                <div class="option" onclick="toggleSelection(this)">D. 4500 g</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C. 3500 g</div>
+                <p>Le poids moyen à terme se situe entre 2700 et 4000 g, avec une moyenne à 3500 g.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- À quel âge un enfant se tient-il généralement assis sans appui ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 8-9 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 12 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C. 8-9 mois</div>
+                <p>La position assise avec appui est acquise vers 5-6 mois, et sans appui vers 8-9 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- VRAI/FAUX : Une naissance est considérée comme prématurée avant 37 semaines d'aménorrhée (SA).</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : VRAI</div>
+                <p>À partir de 37 SA, le bébé est considéré "à terme". Avant cela, il s'agit d'une naissance prématurée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Quelle est la taille moyenne d'un enfant à 4 ans ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 75 cm</div>
+                <div class="option" onclick="toggleSelection(this)">B. 90 cm</div>
+                <div class="option" onclick="toggleSelection(this)">C. 100 cm</div>
+                <div class="option" onclick="toggleSelection(this)">D. 110 cm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C. 100 cm</div>
+                <p>La taille moyenne à 1 an est de 75 cm et elle atteint 100 cm à 4 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Les réflexes archaïques disparaissent généralement entre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 0 et 1 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2 et 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 6 et 8 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 10 et 12 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B. 2 et 4 mois</div>
+                <p>La succion, le réflexe de Moro ou la marche automatique disparaissent entre 2 et 4 mois de vie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- VRAI/FAUX : La fontanelle antérieure se ferme entre 8 et 18 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : VRAI</div>
+                <p>La fontanelle antérieure (bregma), de forme losangique, se ferme physiologiquement durant cette période.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- À quel âge un enfant commence-t-il généralement à faire des phrases de 3 mots ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 12 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 18 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 2 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 3 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : C. 2 ans</div>
+                <p>À 24 mois, un enfant possède environ 100 mots et construit des phrases de 3 mots en utilisant "je".</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La diversification alimentaire doit idéalement débuter à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 2 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 8 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 12 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B. 4 mois</div>
+                <p>L'allaitement exclusif est recommandé jusqu'à 4 mois, âge auquel on débute la diversification.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- VRAI/FAUX : Le brossage des dents est recommandé dès l'âge de 6 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : VRAI</div>
+                <p>Bien qu'en pratique cela soit souvent fait vers 2-3 ans, l'hygiène bucco-dentaire commence dès 6 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Quel signe d'alerte linguistique doit inquiéter à 18 mois ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Absence de phrase</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aucun mot produit</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ne raconte pas d'histoire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ne dit pas son prénom</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. Aucun mot produit</div>
+                <p>L'absence totale de mots à 18 mois est un signe d'alerte. L'absence de phrase est une alerte pour l'âge de 3 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Le périmètre crânien (PC) moyen à la naissance est de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 30 cm</div>
+                <div class="option" onclick="toggleSelection(this)">B. 35 cm</div>
+                <div class="option" onclick="toggleSelection(this)">C. 40 cm</div>
+                <div class="option" onclick="toggleSelection(this)">D. 45 cm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. 35 cm</div>
+                <p>La norme à terme se situe entre 32 et 38 cm.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- VRAI/FAUX : La "peur de l'étranger" apparaît généralement vers 9 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : VRAI</div>
+                <p>C'est une étape clé du développement social où l'enfant réagit également à son prénom.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Un cycle de sommeil chez un nouveau-né (0-2 mois) dure environ :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 50 minutes</div>
+                <div class="option" onclick="toggleSelection(this)">B. 70 minutes</div>
+                <div class="option" onclick="toggleSelection(this)">C. 90 minutes</div>
+                <div class="option" onclick="toggleSelection(this)">D. 120 minutes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A. 50 minutes</div>
+                <p>Le cycle s'allonge avec l'âge pour atteindre environ 90 minutes vers 3-4 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Combien de vaccins sont actuellement obligatoires en France pour les nourrissons ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3</div>
+                <div class="option" onclick="toggleSelection(this)">B. 8</div>
+                <div class="option" onclick="toggleSelection(this)">C. 11</div>
+                <div class="option" onclick="toggleSelection(this)">D. 15</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : C. 11</div>
+                <p>Depuis 2018, 11 vaccinations sont obligatoires incluant DTP, Coqueluche, Hépatite B, etc.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- VRAI/FAUX : La marche autonome doit être acquise au plus tard à 18 mois.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+                <p>L'absence de marche à 18 mois est considérée comme un signe d'alerte moteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La préhension fine (pince pouce-index) est acquise vers :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 9 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 15 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : C. 9 mois</div>
+                <p>C'est à cet âge que l'enfant passe d'une saisie globale à une manipulation plus précise.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- La supplémentation en Vitamine D est nécessaire jusqu'à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 18 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. La fin de la croissance (18 ans)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['D'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : D. La fin de la croissance (18 ans)</div>
+                <p>Elle est quotidienne jusqu'à 18 mois, puis pluri-annuelle jusqu'à 18 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- VRAI/FAUX : Un nouveau-né peut maintenir sa tête dans l'axe pendant quelques secondes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : VRAI</div>
+                <p>C'est le début du tonus actif. La stabilité complète dans l'axe est attendue à 3 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'apparition des premières règles (ménarche) survient généralement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Au début de la puberté</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 mois après le début</div>
+                <div class="option" onclick="toggleSelection(this)">C. 2 ans après le début</div>
+                <div class="option" onclick="toggleSelection(this)">D. À la fin de la puberté</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : C. 2 ans après le début</div>
+                <p>Le développement mammaire commence entre 8 et 13 ans, et les règles suivent environ 2 ans plus tard.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Quel lait est totalement inadapté à l'alimentation d'un nourrisson ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Lait maternel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lait 1er âge</div>
+                <div class="option" onclick="toggleSelection(this)">C. Lait de vache</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lait HA (hypoallergénique)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : C. Lait de vache</div>
+                <p>Le lait de vache ne répond pas aux besoins nutritionnels spécifiques du nourrisson et peut être nocif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- VRAI/FAUX : À 6 mois, un enfant reconnaît normalement un visage familier.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : VRAI</div>
+                <p>C'est une acquisition sensorielle et sociale majeure de cet âge.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- La répétition de syllabes (babillage) apparaît vers :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 9 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 12 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['B'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : B. 6 mois</div>
+                <p>Le babillage (ma-ma, ba-ba) se consolide vers 6-9 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Un strabisme est considéré comme pathologique s'il persiste au-delà de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 1 mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. 4 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. 12 mois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['C'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : C. 4 mois</div>
+                <p>Avant 4 mois, un strabisme intermittent peut être physiologique, mais il devient suspect après cet âge.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- VRAI/FAUX : L'IMC (Indice de Masse Corporelle) se calcule par la formule Poids / Taille.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : FAUX</div>
+                <p>La formule correcte est IMC = Poids / (Taille²).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Le test d'acuité visuelle commence généralement à partir de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 1 an</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 4-5 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'entrée au collège</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['C'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : C. 4-5 ans</div>
+                <p>C'est l'âge où la coopération de l'enfant permet des tests fiables avec des échelles adaptées.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Partie 2 : Organisation des soins en pédiatrie</div>
+
+        <div class="question">
+            <h3>26- Combien d'examens de santé sont pris en charge gratuitement de la naissance à 16 ans ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 10</div>
+                <div class="option" onclick="toggleSelection(this)">B. 15</div>
+                <div class="option" onclick="toggleSelection(this)">C. 20</div>
+                <div class="option" onclick="toggleSelection(this)">D. 25</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['C'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : C. 20</div>
+                <p>Le nouveau calendrier de l'Assurance Maladie prévoit 20 examens obligatoires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Quel document est l'outil de liaison indispensable et strictement confidentiel ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La carte Vitale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le livret de famille</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le carnet de santé</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le bulletin de naissance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : C. Le carnet de santé</div>
+                <p>Il contient toutes les données périnatales, les courbes de croissance et le carnet vaccinal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- VRAI/FAUX : L'orthophoniste peut rédiger une demande d'entente préalable suite à un bilan.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : VRAI</div>
+                <p>Cette demande doit être faite auprès de la Sécurité Sociale avec un délai de réponse de 15 jours.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- Le CAMSP accueille des enfants présentant des difficultés jusqu'à quel âge ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 12 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 18 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B. 6 ans</div>
+                <p>Le Centre d'Action Médico-Sociale Précoce s'occupe du dépistage et de la rééducation précoce (0-6 ans).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- Quelle structure dépend du Conseil Départemental ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La Médecine Scolaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le CMPP</div>
+                <div class="option" onclick="toggleSelection(this)">C. La PMI</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'Hôpital</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : C. La PMI</div>
+                <p>La Protection Maternelle et Infantile est un service départemental sous la responsabilité du président du conseil départemental.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31- VRAI/FAUX : Une prescription d'orthophonie doit comporter le nombre précis de séances.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Réponse : FAUX</div>
+                <p>La prescription ne doit comporter ni le nombre de séances, ni le domaine d'exploration précis.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32- Le PAI (Projet d'Accueil Individualisé) concerne principalement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les élèves en situation de handicap lourd</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les élèves avec troubles des apprentissages (Dys)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les élèves avec pathologies chroniques ou allergies</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les élèves surdoués</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['C'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : C. Les élèves avec pathologies chroniques ou allergies</div>
+                <p>Il permet de définir les soins et protocoles d'urgence au sein de l'école.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33- Quel plan d'accompagnement est spécifique aux troubles des apprentissages (Dys) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. PPRE</div>
+                <div class="option" onclick="toggleSelection(this)">B. PAP</div>
+                <div class="option" onclick="toggleSelection(this)">C. PAI</div>
+                <div class="option" onclick="toggleSelection(this)">D. PPS</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['B'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : B. PAP</div>
+                <p>Le Plan d'Accompagnement Personnalisé est destiné aux élèves ayant des difficultés scolaires durables d'origine troubles "dys".</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34- VRAI/FAUX : La MDPH est le guichet unique pour les droits des personnes handicapées.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation34">
+                <div class="result">Réponse : VRAI</div>
+                <p>Maison Départementale des Personnes Handicapées. Elle évalue les besoins et attribue les prestations (comme l'AEEH).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35- Les ULIS accueillent au maximum combien d'élèves par classe en école primaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 8</div>
+                <div class="option" onclick="toggleSelection(this)">B. 10</div>
+                <div class="option" onclick="toggleSelection(this)">C. 12</div>
+                <div class="option" onclick="toggleSelection(this)">D. 15</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(35, ['C'])">Valider</button>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : C. 12</div>
+                <p>Les Unités Localisées pour l'Inclusion Scolaire (Ulis-école) sont limitées à 12 élèves.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36- Quelle structure s'occupe des enfants et adolescents jusqu'à 20 ans ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. CAMSP</div>
+                <div class="option" onclick="toggleSelection(this)">B. CMPP</div>
+                <div class="option" onclick="toggleSelection(this)">C. PMI</div>
+                <div class="option" onclick="toggleSelection(this)">D. RASED</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B. CMPP</div>
+                <p>Le Centre Médico-Psycho-Pédagogique traite les troubles du langage, du comportement ou des apprentissages jusqu'à 20 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37- VRAI/FAUX : L'AESH a un rôle pédagogique identique à celui de l'enseignant.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation37">
+                <div class="result">Réponse : FAUX</div>
+                <p>L'AESH (Accompagnant d'Élève en Situation de Handicap) apporte une aide matérielle et à l'autonomie, mais n'a pas de mission pédagogique propre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38- Les SEGPA accueillent des élèves en difficulté scolaire grave à partir de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La Maternelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'École Élémentaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le Collège</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le Lycée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['C'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : C. Le Collège</div>
+                <p>Les Sections d'Enseignement Général et Professionnel Adapté commencent à la 6ème.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39- Quel établissement accueille les enfants avec une déficience intellectuelle ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. IEM</div>
+                <div class="option" onclick="toggleSelection(this)">B. IME</div>
+                <div class="option" onclick="toggleSelection(this)">C. ITEP</div>
+                <div class="option" onclick="toggleSelection(this)">D. SESSAD</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['B'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : B. IME</div>
+                <p>IME = Institut Médico-Éducatif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>40- VRAI/FAUX : Une "Information Préoccupante" (IP) peut être transmise en cas de risque de danger pour un mineur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation40">
+                <div class="result">Réponse : VRAI</div>
+                <p>Elle est transmise à la CRIP (Cellule de Recueil des Informations Préoccupantes) pour évaluation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>41- L'allocation destinée aux parents d'un enfant handicapé s'appelle :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. APL</div>
+                <div class="option" onclick="toggleSelection(this)">B. RSA</div>
+                <div class="option" onclick="toggleSelection(this)">C. AEEH</div>
+                <div class="option" onclick="toggleSelection(this)">D. AJPP</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(41, ['C'])">Valider</button>
+            <div class="explanation" id="explanation41">
+                <div class="result">Bonne réponse : C. AEEH</div>
+                <p>Allocation d'Éducation de l'Enfant Handicapé. Elle peut être complétée par 6 catégories suivant les frais engagés.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>42- Quel service dépend du Ministère de l'Éducation Nationale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La PMI</div>
+                <div class="option" onclick="toggleSelection(this)">B. La Médecine Scolaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le CAMSP</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'ASE</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(42, ['B'])">Valider</button>
+            <div class="explanation" id="explanation42">
+                <div class="result">Bonne réponse : B. La Médecine Scolaire</div>
+                <p>Contrairement à la PMI qui est départementale, la médecine scolaire est nationale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>43- VRAI/FAUX : Le secret professionnel peut être levé pour protéger un mineur en danger.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation43">
+                <div class="result">Réponse : VRAI</div>
+                <p>Tout professionnel a l'obligation de protéger un mineur et peut se délier du secret pour informer les autorités compétentes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>44- Le SESSAD intervient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement à l'hôpital</div>
+                <div class="option" onclick="toggleSelection(this)">B. Uniquement en centre spécialisé</div>
+                <div class="option" onclick="toggleSelection(this)">C. À domicile et à l'école</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement en vacances</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(44, ['C'])">Valider</button>
+            <div class="explanation" id="explanation44">
+                <div class="result">Bonne réponse : C. À domicile et à l'école</div>
+                <p>Service d'Éducation Spéciale et de Soins à Domicile. Il favorise le maintien en milieu ordinaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>45- L'ITEP (ou DITEP) accueille des enfants présentant :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un handicap moteur pur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une surdité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des troubles du comportement et de la conduite</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un cancer</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(45, ['C'])">Valider</button>
+            <div class="explanation" id="explanation45">
+                <div class="result">Bonne réponse : C. Des troubles du comportement et de la conduite</div>
+                <p>Ces troubles perturbent gravement la socialisation et l'accès aux apprentissages.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>46- VRAI/FAUX : La CMU-C s'appelle désormais la Complémentaire Santé Solidaire (CSS).</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation46">
+                <div class="result">Réponse : VRAI</div>
+                <p>C'est un dispositif essentiel pour l'accès aux soins des populations précaires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>47- La visite médicale scolaire obligatoire pour tous les enfants a lieu à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. 6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. 10 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. 15 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(47, ['B'])">Valider</button>
+            <div class="explanation" id="explanation47">
+                <div class="result">Bonne réponse : B. 6 ans</div>
+                <p>C'est l'examen médical obligatoire de la 6ème année.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>48- Un enfant sur combien vit sous le seuil de pauvreté en France ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 1 sur 2</div>
+                <div class="option" onclick="toggleSelection(this)">B. 1 sur 5</div>
+                <div class="option" onclick="toggleSelection(this)">C. 1 sur 10</div>
+                <div class="option" onclick="toggleSelection(this)">D. 1 sur 20</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(48, ['B'])">Valider</button>
+            <div class="explanation" id="explanation48">
+                <div class="result">Bonne réponse : B. 1 sur 5</div>
+                <p>C'est un enjeu social majeur de la pédiatrie contemporaine.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>49- VRAI/FAUX : Le signalement judiciaire se fait auprès du Procureur de la République.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation49">
+                <div class="result">Réponse : VRAI</div>
+                <p>Il est utilisé en cas de danger grave et imminent nécessitant une protection immédiate.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>50- Quelle structure permet de scolariser des élèves avec handicap sensoriel (vue/ouïe) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. SEGPA</div>
+                <div class="option" onclick="toggleSelection(this)">B. IES (Instituts d'Éducation Sensorielle)</div>
+                <div class="option" onclick="toggleSelection(this)">C. ITEP</div>
+                <div class="option" onclick="toggleSelection(this)">D. EREA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(50, ['B'])">Valider</button>
+            <div class="explanation" id="explanation50">
+                <div class="result">Bonne réponse : B. IES (Instituts d'Éducation Sensorielle)</div>
+                <p>Ils dispensent des soins et une éducation adaptée aux enfants de 3 à 20 ans.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.getElementById(`explanation${questionNumber}`).parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionLetter = option.textContent.trim().charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent.trim() === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent.trim() === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionId = element.parentElement.parentElement.querySelector('.explanation').id;
+            document.getElementById(questionId).style.display = "block";
+        }
+    </script>
+</body>
+</html>
