@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Test Audition</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Test Audition</h1>
+
+        <div class="section-title">
+            <h2>Exercice 1</h2>
+        </div>
+
+        <div class="question">
+            <h3>1. L'audiométrie vocale chez l'enfant :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. consiste en la répétition pour l'enfant de mots enregistrés diffusé à l'intensité choisi par l'appariteur</div>
+                <div class="option" onclick="toggleSelection(this)">b. peut se faire également par des désignations, par l'enfant, des images correspondant au mot demandé sur imagier</div>
+                <div class="option" onclick="toggleSelection(this)">c. comporte des listes de mots calibrés</div>
+                <div class="option" onclick="toggleSelection(this)">d. peut s'effectuer en champs libre ou à l'aide d'un casque</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['a', 'b', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : a, b, c et d</div>
+                <p>L'audiométrie vocale pédiatrique utilise du matériel calibré (listes de mots), s'adapte aux capacités de l'enfant (répétition ou désignation d'images) et peut être réalisée via différents vecteurs sonores.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Concernant l'oreille moyenne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Le canal circulaire supérieur se situe dans la caisse du tympan</div>
+                <div class="option" onclick="toggleSelection(this)">b. le nerf jacobson, ou nerf tympanique chemine dans l'oreille moyenne</div>
+                <div class="option" onclick="toggleSelection(this)">c. le nerf jacobson, ou nerf tympanique donne l'innervation parasympathique de la glande parotide</div>
+                <div class="option" onclick="toggleSelection(this)">d. le nerf tympanique rejoint une branche du nerf facial</div>
+                <div class="option" onclick="toggleSelection(this)">e. la caisse tympanique est composée de 6 parois</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['b', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : b, c et e</div>
+                <p>Le nerf de Jacobson (branche du IX) chemine bien sur le promontoire et assure la fonction parasympathique de la parotide. La caisse est classiquement décrite comme un cube à 6 parois. Les canaux semi-circulaires sont dans l'oreille interne.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Concernant le dépistage néonatal :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Il est réalisé par un médecin ORL</div>
+                <div class="option" onclick="toggleSelection(this)">b. Il permet de confirmer la surdité dans les trois premiers jours de vie</div>
+                <div class="option" onclick="toggleSelection(this)">c. Il est indiqué dans le carnet de santé</div>
+                <div class="option" onclick="toggleSelection(this)">d. Il peut être renouvelé si le test échoue</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : c et d</div>
+                <p>Le dépistage n'est pas forcément fait par un ORL (souvent puéricultrice). Il ne confirme pas la surdité (dépistage ≠ diagnostic) mais oriente vers un diagnostic. Un re-test est prévu en cas d'échec.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. La physiologie de la cochlée, coche la (les) bonne(s) réponse(s) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. le tympan transmet des ondes acoustiques à la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">b. l'étrier transmet un influx nerveux à la fenêtre ovale de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">c. la cochlée possède une fenêtre ovale qui transmet des vibrations et une fenêtre ronde qui permet une décompression.</div>
+                <div class="option" onclick="toggleSelection(this)">d. le canal cochléaire est situé entre les 2 rampes</div>
+                <div class="option" onclick="toggleSelection(this)">e. les 2 rampes de la cochlée transmettent un influx nerveux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : c et d</div>
+                <p>L'étrier transmet une onde mécanique (pas un influx). Le canal cochléaire (scala media) est entre la rampe vestibulaire et tympanique. L'influx nerveux est créé par l'organe de Corti, pas les rampes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Quelle(s) est (sont) la (les) réponse(s) correcte(s) concernant le réflexe stapédien ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. il résulte de la contraction du muscle tenseur du tympan en réponse à une stimulation sonore trop importante</div>
+                <div class="option" onclick="toggleSelection(this)">b. il est testé sur une seule fréquence</div>
+                <div class="option" onclick="toggleSelection(this)">c. il peut être aboli en cas de paralysie faciale, d'otospongiose, de cophose</div>
+                <div class="option" onclick="toggleSelection(this)">d. il est abaissé dans la surdité de perception d'origine endocochléaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : c et d</div>
+                <p>Le réflexe stapédien implique le muscle de l'étrier (innervé par le VII). Son seuil est abaissé en cas de recrutement (origine endocochléaire).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Concernant l'oreille externe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'hélix a une forme scaphoïde</div>
+                <div class="option" onclick="toggleSelection(this)">B. l'inter-tragus est entre le tragus et l'antitragus</div>
+                <div class="option" onclick="toggleSelection(this)">C. le lobe est constitué de cartilage</div>
+                <div class="option" onclick="toggleSelection(this)">D. La cavité de l'hélix se finit par le meatus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'incisure inter-tragienne sépare bien le tragus de l'antitragus. Le lobe est le seul élément du pavillon dépourvu de cartilage.</p>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <h2>Exercice 2</h2>
+        </div>
+
+<div class="question">
+            <h3>1. Parmi ces examens, quels sont ceux correspondant à des examens d'audiométrie objective ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. L'impédancemétrie</div>
+                <div class="option" onclick="toggleSelection(this)">b. L'épreuve de Rinne</div>
+                <div class="option" onclick="toggleSelection(this)">c. Les oto-émissions acoustiques</div>
+                <div class="option" onclick="toggleSelection(this)">d. L'audiométrie tonale</div>
+                <div class="option" onclick="toggleSelection(this)">e. Les potentiels évoqués auditifs</div>
+                <div class="option" onclick="toggleSelection(this)">f. Auditory Steady-State Response (ASSR)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['a', 'c', 'e', 'f'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : a, c, e, f </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Concernant l'épreuve de Rinne</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Il s'agit d'un examen d'audiométrie objective</div>
+                <div class="option" onclick="toggleSelection(this)">b. Il s'agit d'un examen d'audiométrie subjective</div>
+                <div class="option" onclick="toggleSelection(this)">c. Le principe est de comparer la conduction osseuse avec la conduction aérienne</div>
+                <div class="option" onclick="toggleSelection(this)">d. Dans une audition normale, la conduction osseuse est supérieure à la conduction aérienne</div>
+                <div class="option" onclick="toggleSelection(this)">e. Le Rinne est dit positif quand la conduction osseuse est supérieure à la conduction aérienne.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['b', 'c'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : b, c </div>
+                <p>Note : Le Rinne est positif quand CA > CO. L'item e est donc faux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. La tympanométrie</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Elle étudie la contraction du muscle stapédien</div>
+                <div class="option" onclick="toggleSelection(this)">b. Elle renseigne sur les capacités de transmission de l'oreille moyenne</div>
+                <div class="option" onclick="toggleSelection(this)">c. Chez un sujet sain, le tympanogramme sera plat</div>
+                <div class="option" onclick="toggleSelection(this)">d. En cas de dysfonctionnement tubo tympanique, le résultat sera un pic décalé vers les pressions négatives.</div>
+                <div class="option" onclick="toggleSelection(this)">e. La transmission du son est optimale quand la pression de l'oreille externe est supérieure à celle de la caisse du tympan.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['b', 'd'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : b, d </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Les oto-émissions acoustiques</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Ce sont des sons émis par les cellules ciliées internes de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">b. Il s'agit d'un test réalisé dans le dépistage auditif</div>
+                <div class="option" onclick="toggleSelection(this)">c. Ce test permet de détecter des pertes auditives de 10 décibels</div>
+                <div class="option" onclick="toggleSelection(this)">d. Le stimulus est un clic de large spectre de fréquence</div>
+                <div class="option" onclick="toggleSelection(this)">e. Toutes les réponses sont exactes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['b', 'd'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : b, d </div>
+                <p>Note : Émises par les cellules ciliées externes (CCE).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Concernant les potentiels évoqués auditifs précoces (PEAP)</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. C'est un examen d'audiométrie objective</div>
+                <div class="option" onclick="toggleSelection(this)">b. L'examen des PEAp consiste en l'identification et la mesure de 5 pics</div>
+                <div class="option" onclick="toggleSelection(this)">c. Le stimulus est un clic de spectre situé entre 6kHz et 8kHz</div>
+                <div class="option" onclick="toggleSelection(this)">d. Il permet de déterminer un seuil auditif</div>
+                <div class="option" onclick="toggleSelection(this)">e. Il permet de localiser une atteinte auditive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['a', 'b', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : a, b, d, e </div>
+                <p>Le clic est plutôt centré sur 2-4kHz selon les notes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. L'audiométrie tonale liminaire</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Est un examen d'audiométrie objective</div>
+                <div class="option" onclick="toggleSelection(this)">b. Est réalisée en conduction osseuse et en conduction aérienne</div>
+                <div class="option" onclick="toggleSelection(this)">c. Le spectre des fréquences testées va du 125 Hz à 8kHz</div>
+                <div class="option" onclick="toggleSelection(this)">d. La recherche des seuils se fait de préférence par intensité croissante</div>
+                <div class="option" onclick="toggleSelection(this)">e. Toutes les réponses sont exactes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['b', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : b, c, d </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. L'audiométrie vocale</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. A pour but de mesurer l'intelligibilité de la parole</div>
+                <div class="option" onclick="toggleSelection(this)">b. Evalue le système neuro-sensoriel de l'audition</div>
+                <div class="option" onclick="toggleSelection(this)">c. Est basée sur la répétition de mots par le patient testé</div>
+                <div class="option" onclick="toggleSelection(this)">d. Le seuil d'intelligibilité correspond au pourcentage maximal de mots correctement perçus</div>
+                <div class="option" onclick="toggleSelection(this)">e. Chez un sujet normo entendant, la courbe d'intelligibilité vocale est en forme de S allongé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['a', 'b', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : a, b, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Un sujet normo-entendant</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Aura un test de Rinne positif ou nul</div>
+                <div class="option" onclick="toggleSelection(this)">b. L'épreuve de Weber ne retrouvera pas de latéralisation</div>
+                <div class="option" onclick="toggleSelection(this)">c. Aura des résultats similaires en CA et en CO</div>
+                <div class="option" onclick="toggleSelection(this)">d. Aura des OEA positives</div>
+                <div class="option" onclick="toggleSelection(this)">e. Toutes les réponses sont exactes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['a', 'b', 'c', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : a, b, c, d, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. L'incidence de la surdité profonde néonatale de l'enfant est:</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. 1/100 000</div>
+                <div class="option" onclick="toggleSelection(this)">b. 1/10 000</div>
+                <div class="option" onclick="toggleSelection(this)">c. 1/1 000</div>
+                <div class="option" onclick="toggleSelection(this)">d. 1/100</div>
+                <div class="option" onclick="toggleSelection(this)">e. 1/10</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['c'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : c </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Concernant la surdité congénitale, quelle(s) est(sont) la(les) proposition(s) vraie(s)?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. 50% des surdités congénitales n'ont pas de facteur de risque connu</div>
+                <div class="option" onclick="toggleSelection(this)">b. 15% des surdités dont l'étiologie est congénitale apparaissent secondairement après la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">c. Les causes génétiques sont rares</div>
+                <div class="option" onclick="toggleSelection(this)">d. La faible incidence de la surdité congénitale justifie de ne pas réaliser systématiquement un dépistage à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">e. Le dépistage est réalisé uniquement lorsqu'il existe un facteur de risque de surdité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['a', 'b'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : a, b </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Concernant le dépistage néonatal de la surdité, quelle(s) est(sont) la(les) proposition(s) vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Le premier test est réalisé avant la sortie de l'enfant à la maternité</div>
+                <div class="option" onclick="toggleSelection(this)">b. Le premier test est réalisé lors du premier mois de vie</div>
+                <div class="option" onclick="toggleSelection(this)">c. Si le premier test n'est pas concluant, un re-test est réalisé à la maternité</div>
+                <div class="option" onclick="toggleSelection(this)">d. Si le test réalisé à la maternité n'est pas concluant, l'enfant est adressé par un pédiatre référent pour réalisation de tests audiométriques complémentaires</div>
+                <div class="option" onclick="toggleSelection(this)">e. Si le test réalisé à la maternité n'est pas concluant, l'enfant est adressé à un centre d'action médico-social précoce.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['a', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : a, c, d </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Quel(s) est(sont) l'(les) examen(s) qui peu(ven)t être utilisé(s) pour le dépistage néonatal de la surdité en maternité?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Otoémissions acoustiques</div>
+                <div class="option" onclick="toggleSelection(this)">b. Potentiels évoqués auditifs</div>
+                <div class="option" onclick="toggleSelection(this)">c. Potentiels évoqués auditifs automatisés</div>
+                <div class="option" onclick="toggleSelection(this)">d. Audiométrie comportementale avec babymètre</div>
+                <div class="option" onclick="toggleSelection(this)">e. Réflexe d'orientation conditionnée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['a', 'c'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : a, c </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Concernant l'audiométrie comportementale chez le jeune enfant, quelle(s) est(sont) la(les) proposition(s) vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Elle est plus facile à réaliser chez le jeune enfant que chez le grand enfant</div>
+                <div class="option" onclick="toggleSelection(this)">b. Elle repose sur l'observation des réactions de l'enfant lors de stimulations sonores</div>
+                <div class="option" onclick="toggleSelection(this)">c. Les techniques de réalisation sont identiques quel que soit l'âge</div>
+                <div class="option" onclick="toggleSelection(this)">d. Elle ne nécessite pas de participation de l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">e. Elle est plus facile à réaliser chez les enfants ayant des troubles psychomoteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['b'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : b </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Concernant l'audiométrie comportementale, quelle(s) est(sont) la(les) propositions vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Le babymètre est utilisé pour les enfants de 12 mois</div>
+                <div class="option" onclick="toggleSelection(this)">b. Le réflexe d'orientation et d'investigation est utilisé pour les enfants</div>
+                <div class="option" onclick="toggleSelection(this)">c. Le test de réaction vocale peut être utilisé à 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">d. Le vibrateur osseux peut être utilisé à 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">e. Le conditionnement son-action peut être utilisé à 3 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['b', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : b, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Concernant l'audiométrie comportementale du jeune enfant, quelle(s) est(sont) la(les) proposition(s) vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. L'enfant doit être dans un environnement ludique</div>
+                <div class="option" onclick="toggleSelection(this)">b. Il est préférable que les parents ne soient pas présents lors du test</div>
+                <div class="option" onclick="toggleSelection(this)">c. Il est souvent nécessaire de faire plusieurs séances pour avoir les seuils sur l'ensemble des fréquences</div>
+                <div class="option" onclick="toggleSelection(this)">d. Les tests sont différents en fonction de l'âge de l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">e. Elle ne nécessite pas la participation de l'enfant</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['a', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : a, c, d </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Concernant les potentiels évoqués auditifs, quelle(s) est(sont) la(les) proposition(s) vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Ils permettent de préciser le seuil auditif pour toutes les fréquences</div>
+                <div class="option" onclick="toggleSelection(this)">b. Ils nécessitent la participation active de l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">c. La durée de l'examen est entre 30 et 45 minutes</div>
+                <div class="option" onclick="toggleSelection(this)">d. Ils peuvent être perturbés par une activité musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">e. Ils peuvent parfois être réalisés sous anesthésie générale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['c', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : c, d, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Quelles sont les fonctions de l'oreille externe ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Transformation d'un message mécanique en message électrique</div>
+                <div class="option" onclick="toggleSelection(this)">b. Amplification des sons</div>
+                <div class="option" onclick="toggleSelection(this)">c. Protection de l'oreille moyenne</div>
+                <div class="option" onclick="toggleSelection(this)">d. Equilibration</div>
+                <div class="option" onclick="toggleSelection(this)">e. Localisation des sons</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['b', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : b, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Quelles sont les propositions vraies concernant l'oreille moyenne?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. La chaîne ossiculaire est constituée de 2 osselets</div>
+                <div class="option" onclick="toggleSelection(this)">b. A l'état normal, c'est une cavité remplie de liquide</div>
+                <div class="option" onclick="toggleSelection(this)">c. Une anomalie de l'oreille moyenne donnera une surdité de transmission</div>
+                <div class="option" onclick="toggleSelection(this)">d. A l'état normal, le tympan est en contact direct avec tous les osselets</div>
+                <div class="option" onclick="toggleSelection(this)">e. Permet l'amplification des sons</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. Le réflexe stapédien</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Dépend du trijumeau (V)</div>
+                <div class="option" onclick="toggleSelection(this)">b. Se déclenche pour des sons forts (>= 80dB)</div>
+                <div class="option" onclick="toggleSelection(this)">c. Entraîne une contraction du muscle stapédien</div>
+                <div class="option" onclick="toggleSelection(this)">d. Provoque une hypermobilité du stapes</div>
+                <div class="option" onclick="toggleSelection(this)">e. Provoque une rigidification du stapes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['b', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : b, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. L'oreille interne</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Est située dans le rocher (os temporal)</div>
+                <div class="option" onclick="toggleSelection(this)">b. Sert uniquement à l'audition</div>
+                <div class="option" onclick="toggleSelection(this)">c. Est constituée de la cochlée et du vestibule</div>
+                <div class="option" onclick="toggleSelection(this)">d. Est une cavité remplie d'air</div>
+                <div class="option" onclick="toggleSelection(this)">e. Contient des cellules ciliées</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['a', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : a, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. La cochlée</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. A une organisation tonotopique</div>
+                <div class="option" onclick="toggleSelection(this)">b. Les fréquences graves sont intégrées à la base</div>
+                <div class="option" onclick="toggleSelection(this)">c. Les fréquences aiguës sont intégrées à la base</div>
+                <div class="option" onclick="toggleSelection(this)">d. Est constituée des rampes vestibulaires et tympaniques</div>
+                <div class="option" onclick="toggleSelection(this)">e. Contient l'organe de Corti</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['a', 'c', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonnes réponses : a, c, d, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. Lorsqu'un son passe dans la cochlée</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Il entre par la fenêtre ovale</div>
+                <div class="option" onclick="toggleSelection(this)">b. La fenêtre ovale est immédiatement suivie de la rampe tympanique</div>
+                <div class="option" onclick="toggleSelection(this)">c. Il sort par la fenêtre ronde</div>
+                <div class="option" onclick="toggleSelection(this)">d. La jonction entre rampe vestibulaire et tympanique à l'apex de la cochlée s'appelle l'otospongiose</div>
+                <div class="option" onclick="toggleSelection(this)">e. Le son est transformé d'un message mécanique en message électrique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['a', 'c', 'e'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonnes réponses : a, c, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. L'organe de Corti</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Est l'organe de l'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">b. Contient deux types de cellules ciliées</div>
+                <div class="option" onclick="toggleSelection(this)">c. Baigne dans le périlymphe</div>
+                <div class="option" onclick="toggleSelection(this)">d. Les stéréocils des cellules ciliées externes sont contractiles</div>
+                <div class="option" onclick="toggleSelection(this)">e. Est stimulé par la vibration de la membrane basilaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['b', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonnes réponses : b, d, e </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. Une surdité de perception</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Peut être liée à une pathologie de l'oreille interne</div>
+                <div class="option" onclick="toggleSelection(this)">b. Est causée par l'atteinte de l'oreille externe et/ou moyenne</div>
+                <div class="option" onclick="toggleSelection(this)">c. Peut être liée à une atteinte du nerf</div>
+                <div class="option" onclick="toggleSelection(this)">d. Est toujours bilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">e. Donne systématiquement une dégradation de toutes les fréquences (Hz) sur l'audiogramme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['a', 'c'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonnes réponses : a, c </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. Concernant la biophysique, quelle.s sont/est la/les réponse.s correcte.s?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'unité Décibel indique l'écart relatif entre deux pressions acoustiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans un atelier, si deux machines produisent chacune une intensité sonore de 60 dB, le niveau d'intensité sonore total sera de 120dB</div>
+                <div class="option" onclick="toggleSelection(this)">C. En champ libre, le bruit augmente de 6 dB quand la distance est multipliée par deux</div>
+                <div class="option" onclick="toggleSelection(this)">D. La sonie est la composante auditive subjective liée à l'intensité acoustique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonnes réponses : A, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. Concernant la chaîne ossiculaire</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. En contact avec la membrane tympanique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Fait partie de l'oreille interne</div>
+                <div class="option" onclick="toggleSelection(this)">C. En contact avec la fenêtre ovale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Relie l'hypopharynx par la trompe d'Eustache</div>
+                <div class="option" onclick="toggleSelection(this)">E. Comporte 3 osselets</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['A', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonnes réponses : A, C, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. Concernant l'oreille moyenne</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Reliée à la trompe d'Eustache dont la partie antérieur est localisée au niveau de l'hypopharynx</div>
+                <div class="option" onclick="toggleSelection(this)">B. Comporte du liquide endolymphatique et périlymphatique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Comporte la chaîne ossiculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. est impliquée dans la surdité de perception</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonnes réponses : A, C </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. Concernant le rôle de la cochlée</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est un organe sensoriel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est un transducteur transformant l'énergie mécanique en influx nerveux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Transmet au nerf auditif des ondes acoustiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Permet la création d'un influx nerveux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonnes réponses : A, B, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Concernant l'anatomie de la cochlée</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Située dans l'os du rocher</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est remplie d'air</div>
+                <div class="option" onclick="toggleSelection(this)">C. Comporte 3 fenêtres</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est en forme d'escargot</div>
+                <div class="option" onclick="toggleSelection(this)">E. Aucune des réponses n'est correcte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonnes réponses : A, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. Concernant l'audiométrie tonale</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. En surdité de transmission la conduction osseuse et la conduction aérienne sont collées</div>
+                <div class="option" onclick="toggleSelection(this)">B. En surdité de transmission les sons aigus sont toujours moins bien perçus</div>
+                <div class="option" onclick="toggleSelection(this)">C. En surdité mixte la conduction aérienne et la conduction osseuse sont décalées</div>
+                <div class="option" onclick="toggleSelection(this)">D. En surdité mixte la conduction osseuse est abaissée</div>
+                <div class="option" onclick="toggleSelection(this)">E. En surdité de perception la conduction aérienne et la conduction osseuse dont décalées</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonnes réponses : C, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31. Concernant l'audiométrie tonale</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Pour tester la conduction osseuse, un simulateur est posé sur le pavillon</div>
+                <div class="option" onclick="toggleSelection(this)">B. Pour tester la conduction aérienne, un simulateur est posé sur la mastoïde</div>
+                <div class="option" onclick="toggleSelection(this)">C. La conduction osseuse peut être réalisée en champ libre</div>
+                <div class="option" onclick="toggleSelection(this)">D. La conduction aérienne peut être réalisée en champ libre</div>
+                <div class="option" onclick="toggleSelection(this)">E. L'audiométrie tonale permet de mesurer la compréhension</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(31, ['D'])">Valider</button>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32. Concernant l'impédancemétrie</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Permet de mesurer le seuil auditif</div>
+                <div class="option" onclick="toggleSelection(this)">B. Permet de mesurer la compliance du tympan</div>
+                <div class="option" onclick="toggleSelection(this)">C. La tympanométrie est mesurée en faisant varier les pression sur la membrane tympanique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une courbe plate indique la présence d'un épanchement dans l'oreille moyenne</div>
+                <div class="option" onclick="toggleSelection(this)">E. Le réflexe stapédien entraîne la contraction du muscle de l'étrier</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['B', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonnes réponses : B, C, D, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33. Concernant la cochlée quelle(s) est (sont) la (les) réponse(s) vraies ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il existe des neurones dans la structure osseuse de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les cellules ciliées reposent sur les cellules de soutiens</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les neurones reposent sur la membrane basilaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les cellules ciliées transmettent des influx nerveux aux neurones dont les fibres forment le nerf auditif</div>
+                <div class="option" onclick="toggleSelection(this)">E. Il existe des cellules ciliées supérieures et cellules ciliés inférieures</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonnes réponses : A, B, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34. Concernant la physiologie de la cochlée quelle est la/ les bonne/s réponse/s?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La répartition de la détection des sons dans la cochlée est aléatoire</div>
+                <div class="option" onclick="toggleSelection(this)">B. La détection des ondes dans la cochlée suit une organisation tonotopique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans une organisation tonotopique, les sons de faible intensité sont détectés à la bas et les sons de forte intensité à l'apex de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans une organisation tonotopique, les bruits environnants sont détectés à la base et les sons de la parole à l'apex de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">E. Dans une organisation tonotopique, les sons aigus sont détectés à la base et les sons graves à l'apex de la cochlée.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(34, ['B', 'E'])">Valider</button>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonnes réponses : B, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35. Concernant l'organisation tonotopique fréquentielle, quelle est (sont) la (les) réponse(s) vraie(s) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle est présente sur la chaine ossiculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle est présente sur la membrane tympanique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle est présente dans la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle est présente dans les noyaux auditif du tronc cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">E. Elle est présente dans le cortex auditif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(35, ['C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonnes réponses : C, D, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36. Presbyacousie</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. surdité de perception</div>
+                <div class="option" onclick="toggleSelection(this)">B. mixte</div>
+                <div class="option" onclick="toggleSelection(this)">C. transmission</div>
+                <div class="option" onclick="toggleSelection(this)">D. bilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">E. fréquences graves</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonnes réponses : A, D </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37. Surdité de perception asymétrique</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Schwannome vestibulaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. otite séro-muqueuse</div>
+                <div class="option" onclick="toggleSelection(this)">C. maladie de Menière</div>
+                <div class="option" onclick="toggleSelection(this)">D. cholestéatome</div>
+                <div class="option" onclick="toggleSelection(this)">E. surdité brusque</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['A', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonnes réponses : A, C, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38. Masquage</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. systématique</div>
+                <div class="option" onclick="toggleSelection(this)">B. surdité unilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">C. courbes fantômes si mal réalisé</div>
+                <div class="option" onclick="toggleSelection(this)">D. surdité transmission au lieu de perception</div>
+                <div class="option" onclick="toggleSelection(this)">E. masquage par voie osseuse: Rainville</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonnes réponses : B, C, E </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39. Suppléance mentale</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. mots monosyllabiques → liste de Lafon</div>
+                <div class="option" onclick="toggleSelection(this)">B. dissyllabiques liste de founder</div>
+                <div class="option" onclick="toggleSelection(this)">C. liste de phrases</div>
+                <div class="option" onclick="toggleSelection(this)">D. logatome</div>
+                <div class="option" onclick="toggleSelection(this)">E. je ne sais plus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['C'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : C </div>
+            </div>
+        </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                // On récupère la lettre (a, b, c...) ou le texte pour comparer
+                const optionText = option.textContent.trim().charAt(0).toLowerCase();
+                const correctLetters = correctAnswers.map(l => l.toLowerCase());
+                
+                if (correctLetters.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
