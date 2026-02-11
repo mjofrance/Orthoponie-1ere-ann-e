@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système Nerveux - Embryologie</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Développement du Système Nerveux - Embryologie</h1>
+
+        <div class="question">
+            <h3>1. La nidation est l'implantation de la morula dans la muqueuse utérine.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est l'implantation du blastocyste (morula s'est creusée de cavités).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Les trois tissus fondamentaux sont l'épiblaste, le mésoblaste et l'ectoblaste.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : FAUX</div>
+                <p>Endoblaste pas épiblaste.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Le système nerveux dérive de l'ectoblaste.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : VRAI</div>
+                <p>L'ectoblaste se différencie en neuroectoblaste.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. La gastrulation a lieu au cours de la 3ème semaine de développement.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Le SNP dérive du tube neural.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le SNP dérive des crêtes neurales, c'est le SNC qui dérive du tube neural.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Dans l'ordre d'apparition, on trouve la gouttière neurale, la plaque neurale et le tube neural.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ordre correct : plaque neurale > gouttière neurale > tube neural.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Le mésencéphale est la vésicule primitive située entre le prosencéphale et le métencéphale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le métencéphale est une vésicule secondaire. La 3ème vésicule primitive est le rhombencéphale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Le prosencéphale est à l'origine du cerveau.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Chaque vésicule cérébrale primitive se divise en 2 vésicules cérébrales secondaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le mésencéphale ne se divise pas.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Le tronc cérébral dérive de 3 vésicules cérébrales secondaires différentes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Le métencéphale est à l'origine de la moelle épinière.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est la partie caudale du tube neural.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. La moelle épinière dérive de la vésicule cérébrale la plus caudale, le myélencéphale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : FAUX</div>
+                <p>Cela dérive de la partie caudale du tube neural.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. La formation du tissu cérébral se poursuit après la naissance.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Lors de la neurogénèse, les cellules différenciées migrent en périphérie du tube neural.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Les cellules souches du système nerveux sont les cellules neuroépithéliales.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Ces cellules se différencient en précurseurs des différents types de cellules du tissu nerveux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Les cellules souches se situent dans la couche marginale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : FAUX</div>
+                <p>Couche ventriculaire ou germinative.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. La couche marginale du tube neural donnera la substance blanche.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. La formation des réseaux neuronaux dépend de facteurs génétiques et environnementaux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : VRAI</div>
+                <p>Le "ménage" dépend de l'environnement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. Le spina bifida est un défaut de fermeture du tube neural.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : VRAI</div>
+                <p>Défaut de fermeture au niveau de la moelle épinière.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            // Extraction du numéro de la question depuis le H3
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber.trim()}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Le Système Nerveux - Vrai ou Faux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Le Système Nerveux</h1>
+        <h2>Exercice : Vrai ou Faux</h2>
+
+        <div class="question">
+            <h3>1. D'un point de vue fonctionnel, le SN peut être subdivisé en SN central et SN périphérique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est d'un point de vue anatomique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Les ganglions font partie du SN périphérique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. On trouve des méninges dans la colonne vertébrale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. La pie-mère est la méninge accolée à l'os.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est la dure-mère.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Le diencéphale est composé du thalamus et de l'hypothalamus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : VRAI</div>
+                <p>(notamment mais pas uniquement)</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Le liquide céphalorachidien (LCR) circule dans l'espace épidural.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il circule dans l'espace sous arachnoïde.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Chaque hémisphère cérébral comprend 4 lobes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : VRAI</div>
+                <p>Chaque hémisphère contient bien 4 lobes même s'il existe un 5ème lobe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Le cortex cérébral contient toute la substance grise du cerveau.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il y a d'autres substances grises dans les noyaux gris centraux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Le thalamus joue un rôle dans la thermorégulation.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est l'hypothalamus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. La glande pinéale est une des structures du diencéphale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : VRAI</div>
+                <p>Elle fait partie de l'épithalamus, elle est également appelée « épiphyse ».</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Certains tissus nerveux produisent des hormones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : VRAI</div>
+                <p>Exemple : la mélatonine synthétisée par l'épiphyse de l'épithalamus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Le cervelet est le centre de coordination des fonctions autonomes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est le centre de coordination des mouvements, de l'équilibre et de la posture.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Les trois régions du cervelet sont le métencéphale, le pont et le bulbe rachidien.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont les régions du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. La moelle épinière s'étend de la première cervicale à la dernière lombaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : FAUX</div>
+                <p>Elle s'étend jusqu'à la vertèbre lombaire L1.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. La substance grise est en périphérie dans tout le SNC.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : FAUX</div>
+                <p>Dans la moelle épinière, elle est autour du canal de l'épendyme (inverse du cerveau où elle est en périphérie).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Les corps cellulaires des neurones sont toujours dans la substance grise.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+                <p>Dans la substance grise de la moelle épinière et celle du cerveau.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Les corps cellulaires des neurones sont toujours dans le SNC.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les corps cellulaires sont toujours dans la substance grise, mais il y en a aussi dans les ganglions (SNP).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Les nerfs sensitifs sont efférents.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les nerfs sensitifs sont afférents, et les nerfs moteurs sont efférents.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. Il y a 12 paires de nerfs crâniens et 31 paires de nerfs rachidiens.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. La racine postérieure des nerfs rachidiens est motrice.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : FAUX</div>
+                <p>La racine postérieure est sensitive.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. Le rameau dorsal d'un nerf rachidien est sensitif.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les rameaux sont mixtes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. Un nerf issu d'un plexus contient des fibres de plusieurs nerfs rachidiens.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. Les nerfs crâniens innervent uniquement la tête et le cou.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : FAUX</div>
+                <p>La Paire X (nerf vague) innerve aussi les régions thoracique et abdominale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. Tous les nerfs crâniens sont mixtes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les nerfs olfactifs (I), optiques (II) et vestibulo-cochléaires (VIII) sont uniquement sensitifs.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. La gaine entourant les nerfs est la périnèvre.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le périnèvre entoure le faisceau. La gaine du nerf est l'épinèvre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. Un récepteur sensoriel est une cellule spécialisée.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : VRAI</div>
+                <p>Mais cela peut aussi être la partie terminale d'un neurone sensoriel.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. Les récepteurs sensoriels des organes des sens sont des intérocepteurs.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont des extérocepteurs.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. Les récepteurs sensoriels font partie du SNC.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils font partie du SNP.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Le cortex cérébral est formé de 6 couches de neurones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. L'épaisseur des couches est identique dans tout le cortex.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les 6 couches sont présentes partout, mais leur épaisseur varie en fonction des zones et de leur rôle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31. Les couches du cortex représentent les unités fonctionnelles de traitement de l'information.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont les colonnes (toutes les couches d'une même colonne traitent la même information).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32. Les aires cérébrales sensorielles reçoivent les messages des récepteurs sensoriels.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation32">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33. Les neurones sont les cellules les plus abondantes du tissu nerveux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation33">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont les cellules gliales.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34. Les zones de réception des messages sont les dendrites des neurones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation34">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35. Un neurone est souvent constitué de nombreuses dendrites, d'un corps cellulaire et de plusieurs axones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation35">
+                <div class="result">Réponse : FAUX</div>
+                <p>L'axone est toujours unique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36. Les corps de Nissl sont présents dans tout le neurone.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation36">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils ne sont pas présents dans l'axone ni le cône d'émergence.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37. Le transport vers l'extrémité de l'axone est le transport antérograde.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation37">
+                <div class="result">Réponse : VRAI</div>
+                <p>Il implique les kinésines.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38. Le transport rétrograde utilise la dynéine comme protéine motrice.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation38">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39. Seul l'axone peut être myélinisé.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation39">
+                <div class="result">Réponse : VRAI</div>
+                <p>Les dendrites ne sont pas myélinisées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>40. La gaine de myéline est formée par des cellules gliales.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation40">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>41. La gaine de myéline est continue le long de l'axone.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation41">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il y a des interruptions : les nœuds de Ranvier.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>42. Les cellules de Schwann sont les cellules produisant la gaine de myéline dans le SNC.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation42">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les cellules de Schwann agissent dans le SNP ; dans le SNC, ce sont les oligodendrocytes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>43. Les astrocytes permettent les échanges entre le sang et les neurones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation43">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>44. La microglie joue un rôle immunitaire dans le cerveau.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation44">
+                <div class="result">Réponse : VRAI</div>
+                <p>Elle joue un rôle de macrophage.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            // Extraction du numéro de la question pour afficher l'explication correspondante
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            const explanationDiv = document.getElementById(`explanation${questionNumber.trim()}`);
+            if (explanationDiv) {
+                explanationDiv.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

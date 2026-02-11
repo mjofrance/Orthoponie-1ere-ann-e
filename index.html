@@ -4,66 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrthoRévisions - Accueil</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #4a6fa5;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .category {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .category h2 {
-            color: #4a6fa5;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-        }
-        .qcm-list {
-            list-style: none;
-            padding: 0;
-        }
-        .qcm-list li {
-            margin-bottom: 0.5rem;
-        }
-        .qcm-list a {
-            color: #4a6fa5;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .qcm-list a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #4a6fa5;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -71,9 +12,20 @@
         <p>Préparez vos révisions en orthophonie</p>
     </header>
 
-    <div class="container">
-	
-	        <section class="category">
+    <div class="container-home">
+        <section class="category">
+            <h2>Neurosciences</h2>
+            <ul class="qcm-list">
+                <li><a href="1a_neurosciences/developpement_systeme_nerveux.html">Le développement du système Nerveux - Embryologie  - Vrai ou Faux</a></li>
+                <li><a href="1a_neurosciences/le_systeme_nerveux.html">Le système nerveux - VRAI ou FAUX</a></li>
+            </ul>
+        </section>
+
+        <details class="main-dropdown">
+            <summary>1ere Année - Premier Semestre</summary>
+            
+            <div class="dropdown-content">
+                	        <section class="category">
             <h2>Audition</h2>
             <ul class="qcm-list">
                 <li><a href="1a_audition/audition_QCM_expertise_audition.html">QCM Multi cours Audition</a></li>
@@ -164,6 +116,8 @@
             </ul>
         </section>
 
+                </div>
+        </details>
     </div>
 
     <footer>
