@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Le Message Nerveux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Le Message Nerveux</h1>
+
+        <div class="question">
+            <h3>1- Le potentiel de repos d'une fibre nerveuse est d'environ :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 0 mV</div>
+                <div class="option" onclick="toggleSelection(this)">B. +30 mV</div>
+                <div class="option" onclick="toggleSelection(this)">C. -70 mV</div>
+                <div class="option" onclick="toggleSelection(this)">D. -55 mV</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le potentiel membranaire de repos est une différence de potentiel négative d'environ -70 mV entre l'intérieur et l'extérieur de la cellule.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Concernant la répartition ionique de part et d'autre de la membrane :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le Na+ est plus concentré à l'extérieur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le K+ est plus concentré à l'intérieur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le Cl- est plus concentré à l'intérieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les protéines chargées négativement sont à l'intérieur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Le milieu extracellulaire est riche en Na+ et Cl-, alors que le milieu intracellulaire est riche en K+ et en protéines (anions organiques).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Le maintien du potentiel de repos nécessite :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un transport passif uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'intervention de la pompe Na+/K+ ATPase</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une consommation d'énergie (ATP)</div>
+                <div class="option" onclick="toggleSelection(this)">D. La fermeture totale de tous les canaux K+</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La pompe Na+/K+ maintient les gradients de concentration en transportant activement les ions contre leur gradient, ce qui consomme de l'ATP.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Le potentiel d'action (PA) se caractérise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une inversion brusque et transitoire de la ddp</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une amplitude constante (loi du tout ou rien)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une diminution de l'amplitude avec la distance</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une phase de dépolarisation suivie d'une repolarisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Le PA est invariant en amplitude et se propage sans atténuation le long de l'axone.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- La phase de dépolarisation du PA est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La sortie massive de K+</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'entrée massive de Na+</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'ouverture des canaux Na+ voltage-dépendants</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'activation de la pompe Na+/K+</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'arrivée d'un stimulus seuil ouvre les canaux Na+ VD, entraînant une entrée rapide d'ions sodium dans la cellule.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- La repolarisation de la membrane est permise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'inactivation des canaux Na+</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'ouverture des canaux K+ voltage-dépendants</div>
+                <div class="option" onclick="toggleSelection(this)">C. La sortie d'ions K+</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'entrée d'ions Cl-</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>La sortie de K+ compense l'entrée de Na+ et ramène le potentiel vers des valeurs négatives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- L'intensité d'un stimulus est codée au niveau de l'axone par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'amplitude des potentiels d'action</div>
+                <div class="option" onclick="toggleSelection(this)">B. La fréquence des potentiels d'action</div>
+                <div class="option" onclick="toggleSelection(this)">C. La vitesse de propagation du message</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le nombre de neurones recrutés</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>L'amplitude d'un PA étant fixe, c'est la fréquence des décharges qui traduit l'intensité du stimulus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La période réfractaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Empêche la sommation de deux PA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Permet la propagation bidirectionnelle du PA</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est due à l'inactivation des canaux Na+</div>
+                <div class="option" onclick="toggleSelection(this)">D. Impose une limite maximale à la fréquence des PA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>La période réfractaire garantit que le message nerveux ne se déplace que dans un seul sens (unidirectionnel).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- La conduction saltatoire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Se produit dans les fibres amyélinisées</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est plus lente que la conduction de proche en proche</div>
+                <div class="option" onclick="toggleSelection(this)">C. Se fait de nœud de Ranvier en nœud de Ranvier</div>
+                <div class="option" onclick="toggleSelection(this)">D. Nécessite la présence de gaine de myéline</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : C et D</div>
+                <p>La myéline joue le rôle d'isolant, forçant le PA à "sauter" d'un nœud à l'autre, ce qui accélère la vitesse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La vitesse de propagation du message nerveux augmente avec :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La diminution du diamètre de la fibre</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'augmentation du diamètre de la fibre</div>
+                <div class="option" onclick="toggleSelection(this)">C. La présence de myéline</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une baisse de température</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Plus le diamètre est grand et plus l'isolation (myéline) est importante, plus la conduction est rapide.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- La synapse chimique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est bidirectionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilise des neurotransmetteurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Présente une fente synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est plus rapide que la synapse électrique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Contrairement aux synapses électriques, les synapses chimiques sont unidirectionnelles et utilisent des messagers chimiques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- L'arrivée d'un PA au bouton synaptique déclenche :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'ouverture de canaux calciques (Ca2+) voltage-dépendants</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'exocytose des vésicules de neurotransmetteurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. La synthèse immédiate d'ADN</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'entrée de Ca2+ dans l'élément pré-synaptique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Le calcium est le signal indispensable pour la fusion des vésicules avec la membrane présynaptique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Un neurotransmetteur peut être :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement excitateur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Excitateur ou inhibiteur selon le récepteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Éliminé par dégradation enzymatique dans la fente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Recapturé par le neurone pré-synaptique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>L'effet dépend du type de canal ionique ouvert sur le neurone post-synaptique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le PPSE (Potentiel Post-Synaptique Excitateur) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Correspond à une hyperpolarisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Correspond à une dépolarisation locale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Favorise la genèse d'un PA</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est dû à une entrée de Na+ ou Ca2+</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Le PPSE rapproche le potentiel membranaire du seuil de décharge du potentiel d'action.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Le PPSI (Potentiel Post-Synaptique Inhibiteur) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Éloigne le potentiel du seuil de décharge</div>
+                <div class="option" onclick="toggleSelection(this)">B. Peut être dû à une entrée de Cl-</div>
+                <div class="option" onclick="toggleSelection(this)">C. Peut être dû à une sortie de K+</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est une dépolarisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le PPSI provoque une hyperpolarisation, rendant le neurone moins excitable.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La sommation spatiale consiste en :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'addition de messages provenant de plusieurs synapses différentes</div>
+                <div class="option" onclick="toggleSelection(this)">B. La répétition de messages à haute fréquence sur une seule synapse</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'intégration de PPS arrivant simultanément en divers points du neurone</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'augmentation de la taille des vésicules</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Le neurone fait la somme algébrique de toutes les informations reçues de ses différents voisins au même instant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- La sclérose en plaques (SEP) est une maladie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Caractérisée par une démyélinisation des axones</div>
+                <div class="option" onclick="toggleSelection(this)">B. Qui accélère le message nerveux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Provoquant des plaques de cicatrisation (sclérose)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Liée à une hyper-concentration de Na+</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La perte de myéline perturbe ou bloque la conduction des influx nerveux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Au niveau du cône d'émergence (zone gâchette) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les PPS sont intégrés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le PA est généré si le seuil est atteint</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il n'y a aucun canal voltage-dépendant</div>
+                <div class="option" onclick="toggleSelection(this)">D. C'est le lieu de la synthèse des neurotransmetteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>C'est la région de l'axone où la densité de canaux Na+ VD est la plus forte, permettant le déclenchement du PA.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'acétylcholine est un neurotransmetteur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement présent dans le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">B. Impliqué dans la jonction neuromusculaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Toujours inhibiteur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Qui peut se lier à des récepteurs nicotiniques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>L'acétylcholine est le messager principal de la commande motrice au niveau des muscles striés.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- La sommation temporelle :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Nécessite l'activation de plusieurs neurones présynaptiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Résulte de messages répétés provenant d'une même synapse</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dépend de la fréquence des PA arrivant au bouton synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Se produit uniquement dans les dendrites</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Si les PPS se succèdent assez rapidement, ils s'ajoutent avant que le premier ne soit dissipé.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

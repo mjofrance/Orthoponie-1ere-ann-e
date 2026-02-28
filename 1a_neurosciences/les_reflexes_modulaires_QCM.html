@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Les Réflexes Médullaires</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Les Réflexes Médullaires</h1>
+
+        <div class="question">
+            <h3>1- La posture se définit comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un mouvement décidé par le sujet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le maintien du corps dans une position donnée contre la pesanteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une activité intentionnelle uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">D. La fixation des angles articulaires dans une position statique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La posture est le maintien du corps en lutte contre la pesanteur et fixe les angles articulaires de manière statique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Le tonus musculaire est caractérisé par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des contractions puissantes et brèves</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un relâchement total des muscles au repos</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des contractions peu puissantes mais de longue durée</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un ajustement permanent des commandes musculaires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : C et D</div>
+                <p>Le tonus musculaire permet le maintien de la posture grâce à des contractions peu puissantes, durables et ajustées en permanence.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Un mouvement automatique involontaire en réaction à une stimulation est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un mouvement volontaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une réaction réflexe</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une activité intentionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un tonus de posture</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B</div>
+                <p>Une réaction réflexe est un mouvement automatique involontaire déclenché par une stimulation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Concernant les muscles antagonistes (fléchisseurs et extenseurs) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ils se contractent toujours simultanément</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le raccourcissement de l'un entraîne l'étirement de l'autre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ils sont rattachés aux os par des tendons</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ils travaillent de façon coordonnée pour mobiliser une articulation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Les muscles antagonistes fonctionnent en opposition : quand l'un se contracte/raccourcit, l'autre s'étire. Ils sont fixés par des tendons.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Le réflexe myotatique est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une contraction d'un muscle en réponse à son propre étirement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un réflexe volontaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un outil de diagnostic clinique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement présent au niveau du genou</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Le réflexe myotatique est la contraction involontaire d'un muscle suite à son étirement, utilisé par les médecins pour tester le système nerveux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Quels sont des exemples de réflexes myotatiques ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le réflexe rotulien (genou)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le réflexe achilléen (cheville)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le réflexe de retrait suite à une brûlure</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le réflexe bicipital (bras)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Les réflexes rotulien, achilléen et bicipital sont des réflexes de type myotatique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- L'arc réflexe myotatique comprend dans l'ordre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Récepteur, fibre sensitive, centre nerveux, fibre motrice, effecteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Cerveau, moelle épinière, muscle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Stimulus, récepteur, voie afférente, centre, voie efférente, réponse</div>
+                <div class="option" onclick="toggleSelection(this)">D. Organe de Golgi, interneurone, muscle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>L'arc réflexe suit un trajet précis du récepteur vers le centre nerveux, puis vers l'effecteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Le fuseau neuromusculaire est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le centre nerveux du réflexe</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le récepteur sensoriel sensible à l'étirement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Situé dans le tendon du muscle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Constitué de fibres musculaires modifiées</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Le fuseau neuromusculaire capte l'étirement au sein même du muscle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- La fibre nerveuse sensitive (afférente) du réflexe myotatique est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une fibre de type Ia</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une fibre de type Gamma</div>
+                <div class="option" onclick="toggleSelection(this)">C. Myélinisée à conduction rapide</div>
+                <div class="option" onclick="toggleSelection(this)">D. Située dans la racine ventrale de la moelle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Les fibres Ia sont des fibres sensitives myélinisées de gros diamètre, permettant une conduction rapide du message.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Le centre nerveux du réflexe myotatique se situe dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le cerveau (cortex moteur)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">C. La substance grise de la moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le ganglion spinal</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : C</div>
+                <p>La moelle épinière est le centre intégrateur où se fait la synapse entre neurone sensitif et motoneurone.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- On dit que le réflexe myotatique est monosynaptique car :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il n'y a qu'une seule synapse entre le neurone sensitif et le motoneurone</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il ne fait intervenir qu'un seul muscle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le message ne passe pas par le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il n'y a pas d'interneurone dans le circuit principal excitateur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A et D</div>
+                <p>Un circuit monosynaptique signifie que le neurone sensitif fait directement synapse avec le motoneurone.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- L'innervation réciproque lors du réflexe myotatique implique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La contraction du muscle étiré</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le relâchement du muscle antagoniste</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un interneurone inhibiteur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un circuit uniquement monosynaptique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Pour que le muscle étiré se contracte, l'antagoniste doit se relâcher via un message inhibiteur transmis par un interneurone.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- L'organe tendineux de Golgi est stimulé par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un étirement léger du muscle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forte tension exercée sur le tendon</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une contraction musculaire prolongée et puissante</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le froid uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Cet organe est stimulé par une forte tension sur le tendon pendant un temps long.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le réflexe tendineux de Golgi (myotatique inverse) entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une déchirure musculaire systématique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le relâchement du muscle contracté</div>
+                <div class="option" onclick="toggleSelection(this)">C. La contraction du muscle antagoniste</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une protection contre les tensions excessives</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>C'est un réflexe protecteur qui provoque le relâchement du muscle pour éviter les lésions sous forte tension.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Le réflexe ipsilatéral de flexion est déclenché par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un étirement du tendon</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une stimulation douloureuse (piqûre, brûlure)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La volonté du sujet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une lumière intense</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un réflexe protecteur de retrait suite à une douleur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Le réflexe d'extension croisée se manifeste par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une flexion du membre opposé à la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une extension du membre opposé à la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le maintien de l'équilibre lors d'un retrait brutal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un circuit polysynaptique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>En plus du retrait du membre blessé, le membre opposé s'étend pour compenser le poids et maintenir l'équilibre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Un message nerveux inhibiteur au niveau synaptique provoque :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une augmentation de l'activité du motoneurone</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un arrêt ou une diminution de l'émission de potentiels d'action</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une contraction plus forte du muscle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le relâchement du muscle effecteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Les messages inhibiteurs diminuent la commande motrice, entraînant le relâchement musculaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La racine dorsale du nerf rachidien contient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les fibres motrices uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les fibres sensitives</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le ganglion spinal</div>
+                <div class="option" onclick="toggleSelection(this)">D. La substance blanche uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La voie afférente (sensitive) emprunte la racine dorsale où se situe le corps cellulaire du neurone dans le ganglion spinal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'effecteur dans l'arc réflexe myotatique est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le muscle squelettique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. La peau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le muscle est l'organe qui réalise la réponse (contraction) à la suite du message moteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Quelle est la fonction principale du réflexe myotatique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Éviter les brûlures</div>
+                <div class="option" onclick="toggleSelection(this)">B. Permettre la marche volontaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Maintenir la posture et le tonus musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Déplacer des objets lourds</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : C</div>
+                <p>Il permet un ajustement permanent des muscles pour lutter contre la gravité et maintenir l'équilibre statique.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.getElementById(`explanation${questionNumber}`).parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

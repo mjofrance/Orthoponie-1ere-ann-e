@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Le Système Nerveux - Expert</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Le Système Nerveux</h1>
+
+        <h2>Exercice 1 : Organisation Anatomique et Fonctionnelle</h2>
+
+        <div class="question">
+            <h3>1- Quelles structures appartiennent au Système Nerveux Central (SNC) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les nerfs crâniens</div>
+                <div class="option" onclick="toggleSelection(this)">C. La moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : A, C, D</div>
+                <p>Le SNC comprend l'encéphale (cerveau, tronc cérébral, cervelet) et la moelle épinière. Les nerfs appartiennent au système nerveux périphérique (SNP).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Concernant les nerfs du Système Nerveux Périphérique (SNP) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il existe 12 paires de nerfs crâniens</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il existe 31 paires de nerfs rachidiens</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les nerfs rachidiens sont reliés à l'encéphale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les nerfs assurent la transmission de l'information vers les organes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, B, D</div>
+                <p>Les nerfs rachidiens (ou spinaux) sont reliés à la moelle épinière et non à l'encéphale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Le système nerveux autonome (végétatif) régule :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La contraction des muscles squelettiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le rythme cardiaque</div>
+                <div class="option" onclick="toggleSelection(this)">C. La digestion</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les fonctions involontaires de l'organisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B, C, D</div>
+                <p>Le système autonome contrôle les fonctions viscérales involontaires. Les muscles squelettiques dépendent du système nerveux somatique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Les fonctions principales du système nerveux sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La réception d'informations sensorielles</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'intégration et le traitement des données</div>
+                <div class="option" onclick="toggleSelection(this)">C. La production de cellules sanguines</div>
+                <div class="option" onclick="toggleSelection(this)">D. La commande motrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, B, D</div>
+                <p>Le système nerveux reçoit, traite et répond. La production de sang (hématopoïèse) est une fonction de la moelle osseuse.</p>
+            </div>
+        </div>
+
+        <h2>Exercice 2 : Cellules et Tissu Nerveux</h2>
+
+        <div class="question">
+            <h3>5- Quelles caractéristiques s'appliquent aux neurones ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ils sont capables de se diviser par mitose à l'âge adulte</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ils ont une longévité extrême</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ils possèdent un métabolisme très élevé</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ils sont excitables</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : B, C, D</div>
+                <p>Les neurones sont amitotiques (ne se divisent pas). Ils consomment beaucoup de glucose et d'oxygène.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Le corps cellulaire (soma) du neurone contient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le noyau</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les corps de Nissl</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cône d'émergence de l'axone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des récepteurs aux neurotransmetteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B, C, D</div>
+                <p>Le soma est le centre biosynthétique et peut également recevoir des contacts synaptiques (synapses axosomatiques).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Concernant l'axone :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il peut y en avoir plusieurs par neurone</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il conduit l'influx nerveux vers le corps cellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il se termine par des boutons terminaux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sa longueur peut atteindre un mètre</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : C, D</div>
+                <p>L'axone est unique et conduit l'influx de manière centrifuge (s'éloignant du corps cellulaire).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Les cellules gliales du SNC incluent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les astrocytes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les cellules de Schwann</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les oligodendrocytes</div>
+                <div class="option" onclick="toggleSelection(this)">D. La microglie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, C, D</div>
+                <p>Les cellules de Schwann se trouvent uniquement dans le système nerveux périphérique (SNP).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Les rôles des astrocytes sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Soutien structurel des neurones</div>
+                <div class="option" onclick="toggleSelection(this)">B. Formation de la gaine de myéline</div>
+                <div class="option" onclick="toggleSelection(this)">C. Régulation des échanges (barrière hémato-encéphalique)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Capture des neurotransmetteurs en excès</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, C, D</div>
+                <p>C'est l'oligodendrocyte qui forme la myéline dans le SNC.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La gaine de myéline :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Accélère la vitesse de l'influx nerveux</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est présente sur les dendrites</div>
+                <div class="option" onclick="toggleSelection(this)">C. Protège et isole électriquement l'axone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est composée majoritairement de lipides</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : A, C, D</div>
+                <p>Les dendrites ne sont jamais myélinisées. La myéline est une substance grasse isolante.</p>
+            </div>
+        </div>
+
+        <h2>Exercice 3 : Synapses et Signalisation</h2>
+
+        <div class="question">
+            <h3>11- Les nœuds de Ranvier :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont des zones dépourvues de myéline</div>
+                <div class="option" onclick="toggleSelection(this)">B. Permettent la conduction saltatoire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Se trouvent uniquement dans le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont riches en canaux ioniques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A, B, D</div>
+                <p>Ils existent partout où il y a des axones myélinisés (SNC et SNP).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Lors d'une synapse chimique, les étapes chronologiques sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Arrivée du potentiel d'action</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entrée de Calcium (Ca2+)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Exocytose des neurotransmetteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Fixation sur les récepteurs postsynaptiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A, B, C, D</div>
+                <p>Toutes ces étapes se succèdent pour transmettre le signal d'un neurone à l'autre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Une synapse peut s'établir entre un axone et :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une dendrite</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un corps cellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un autre axone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un vaisseau sanguin</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : A, B, C</div>
+                <p>On parle respectivement de synapses axo-dendritique, axo-somatique et axo-axonale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Les neurotransmetteurs peuvent être éliminés de la fente par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dégradation enzymatique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Recapture par le neurone présynaptique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Diffusion hors de la fente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Transformation en myéline</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : A, B, C</div>
+                <p>La fin du signal dépend de la disparition rapide du neurotransmetteur dans la fente.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Le transport axonal :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le transport antérograde va vers les boutons terminaux</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le transport rétrograde utilise la kinésine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Permet le renouvellement des protéines de la membrane</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est essentiel car l'axone ne synthétise pas de protéines</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A, C, D</div>
+                <p>Le transport rétrograde utilise la **dynéine**. La kinésine est pour le transport antérograde.</p>
+            </div>
+        </div>
+
+        <h2>Exercice 4 : Anatomie Tissulaire</h2>
+
+        <div class="question">
+            <h3>16- La substance blanche du cerveau :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Contient les corps cellulaires des neurones</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est riche en axones myélinisés</div>
+                <div class="option" onclick="toggleSelection(this)">C. Assure la communication entre les aires cérébrales</div>
+                <div class="option" onclick="toggleSelection(this)">D. Se situe en périphérie du cerveau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : B, C</div>
+                <p>Dans le cerveau, la substance blanche est interne. C'est la substance grise (cortex) qui contient les corps cellulaires et se trouve en périphérie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le néocortex est caractérisé par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une organisation en 3 couches</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une organisation en 6 couches</div>
+                <div class="option" onclick="toggleSelection(this)">C. La présence de neurones pyramidaux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un fonctionnement en colonnes verticales</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : B, C, D</div>
+                <p>L'organisation en 3 couches concerne l'allocortex (plus ancien). Le néocortex en possède 6.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Les neurones sensitifs (afférents) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont souvent de type pseudo-unipolaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Transmettent l'info des récepteurs vers le SNC</div>
+                <div class="option" onclick="toggleSelection(this)">C. Possèdent leur corps cellulaire dans les ganglions rachidiens</div>
+                <div class="option" onclick="toggleSelection(this)">D. Commandent la contraction musculaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A, B, C</div>
+                <p>La commande musculaire est assurée par les neurones moteurs (efférents).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- La microglie a pour fonctions :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La défense immunitaire du SNC</div>
+                <div class="option" onclick="toggleSelection(this)">B. La phagocytose des débris cellulaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. La sécrétion de liquide céphalo-rachidien</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le rôle de macrophage résident</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : A, B, D</div>
+                <p>La sécrétion du LCR est assurée par les cellules épendymaires (plexus choroïdes).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Concernant la morphologie des neurones :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les neurones multipolaires sont les plus fréquents</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les neurones bipolaires se trouvent dans la rétine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un neurone pyramidal a une forme de triangle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un neurone unipolaire possède 2 axones</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A, B, C</div>
+                <p>Un neurone unipolaire (ou pseudo-unipolaire) possède un seul prolongement court qui se divise en deux branches, mais l'axone reste considéré comme une unité fonctionnelle unique.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
