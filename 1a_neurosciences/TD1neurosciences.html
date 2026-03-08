@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Neurosciences - TD1</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Neurosciences - TD1 </h1>
+
+        <h2>Exercice 1 : QCU (Une seule réponse correcte) </h2>
+
+        <div class="question">
+            <h3>1. Le système nerveux central comprend : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les nerfs et les ganglions </div>
+                <div class="option" onclick="toggleSelection(this)">B. Le cerveau et les nerfs crâniens </div>
+                <div class="option" onclick="toggleSelection(this)">C. L'encéphale et la moelle épinière </div>
+                <div class="option" onclick="toggleSelection(this)">D. Les plexus nerveux </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q1', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q1">
+                <div class="result">Bonne réponse : C. L'encéphale et la moelle épinière </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Le système nerveux parasympathique : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Prépare à l'effort </div>
+                <div class="option" onclick="toggleSelection(this)">B. Augmente la fréquence cardiaque </div>
+                <div class="option" onclick="toggleSelection(this)">C. Favorise le repos et la digestion </div>
+                <div class="option" onclick="toggleSelection(this)">D. Est actif uniquement pendant le stress </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q2', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q2">
+                <div class="result">Bonne réponse : C. Favorise le repos et la digestion </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Les voies afférentes transportent : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des messages moteurs </div>
+                <div class="option" onclick="toggleSelection(this)">B. Des hormones </div>
+                <div class="option" onclick="toggleSelection(this)">C. Des informations sensorielles vers le SNC </div>
+                <div class="option" onclick="toggleSelection(this)">D. Des informations du SNC vers les muscles </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q3', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q3">
+                <div class="result">Bonne réponse : C. Des informations sensorielles vers le SNC </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quelle méninge est accolée au cerveau ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dure-mère </div>
+                <div class="option" onclick="toggleSelection(this)">B. Arachnoïde </div>
+                <div class="option" onclick="toggleSelection(this)">C. Pie-mère </div>
+                <div class="option" onclick="toggleSelection(this)">D. Épendyme </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q4', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q4">
+                <div class="result">Bonne réponse : C. Pie-mère </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Le liquide céphalo-rachidien (LCR) : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Circule dans l'espace épidural </div>
+                <div class="option" onclick="toggleSelection(this)">B. Est produit par les astrocytes </div>
+                <div class="option" onclick="toggleSelection(this)">C. Protège et nourrit le système nerveux central </div>
+                <div class="option" onclick="toggleSelection(this)">D. Est composé majoritairement de protéines </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q5', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q5">
+                <div class="result">Bonne réponse : C. Protège et nourrit le système nerveux central </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Quelle structure est le principal relais des informations sensorielles ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hypothalamus </div>
+                <div class="option" onclick="toggleSelection(this)">B. Thalamus </div>
+                <div class="option" onclick="toggleSelection(this)">C. Cervelet </div>
+                <div class="option" onclick="toggleSelection(this)">D. Tronc cérébral </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q6', ['B'])">Valider</button>
+            <div class="explanation" id="explanationex1_q6">
+                <div class="result">Bonne réponse : B. Thalamus </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. L'hypothalamus est impliqué dans : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La vision </div>
+                <div class="option" onclick="toggleSelection(this)">B. L'équilibre </div>
+                <div class="option" onclick="toggleSelection(this)">C. L'homéostasie et la régulation hormonale </div>
+                <div class="option" onclick="toggleSelection(this)">D. La motricité volontaire </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q7', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q7">
+                <div class="result">Bonne réponse : C. L'homéostasie et la régulation hormonale </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Le lobe frontal est impliqué dans : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La vision </div>
+                <div class="option" onclick="toggleSelection(this)">B. La sensibilité </div>
+                <div class="option" onclick="toggleSelection(this)">C. La motricité volontaire et le langage </div>
+                <div class="option" onclick="toggleSelection(this)">D. L'équilibre </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q8', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q8">
+                <div class="result">Bonne réponse : C. La motricité volontaire et le langage </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Les aires associatives du cortex permettent : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La commande des muscles </div>
+                <div class="option" onclick="toggleSelection(this)">B. L'interprétation consciente des informations </div>
+                <div class="option" onclick="toggleSelection(this)">C. La production du LCR </div>
+                <div class="option" onclick="toggleSelection(this)">D. La conduction des réflexes </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q9', ['B'])">Valider</button>
+            <div class="explanation" id="explanationex1_q9">
+                <div class="result">Bonne réponse : B. L'interprétation consciente des informations </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Le cervelet a pour rôle principal : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mémoire </div>
+                <div class="option" onclick="toggleSelection(this)">B. La coordination des mouvements </div>
+                <div class="option" onclick="toggleSelection(this)">C. La perception visuelle </div>
+                <div class="option" onclick="toggleSelection(this)">D. La régulation hormonale </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q10', ['B'])">Valider</button>
+            <div class="explanation" id="explanationex1_q10">
+                <div class="result">Bonne réponse : B. La coordination des mouvements </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Le tronc cérébral : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ne contient que des fibres sensitives </div>
+                <div class="option" onclick="toggleSelection(this)">B. Est impliqué dans les fonctions vitales </div>
+                <div class="option" onclick="toggleSelection(this)">C. Commande les mouvements volontaires </div>
+                <div class="option" onclick="toggleSelection(this)">D. Est une partie du système nerveux périphérique </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q11', ['B'])">Valider</button>
+            <div class="explanation" id="explanationex1_q11">
+                <div class="result">Bonne réponse : B. Est impliqué dans les fonctions vitales </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. La racine dorsale d'un nerf rachidien est : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Motrice </div>
+                <div class="option" onclick="toggleSelection(this)">B. Sensitive </div>
+                <div class="option" onclick="toggleSelection(this)">C. Autonome </div>
+                <div class="option" onclick="toggleSelection(this)">D. Endocrine </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q12', ['B'])">Valider</button>
+            <div class="explanation" id="explanationex1_q12">
+                <div class="result">Bonne réponse : B. Sensitive </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Un récepteur sensoriel : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Produit des hormones </div>
+                <div class="option" onclick="toggleSelection(this)">B. Fait partie du SNC </div>
+                <div class="option" onclick="toggleSelection(this)">C. Transforme un stimulus en message nerveux </div>
+                <div class="option" onclick="toggleSelection(this)">D. Est toujours un neurone moteur </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q13', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q13">
+                <div class="result">Bonne réponse : C. Transforme un stimulus en message nerveux </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Les propriocepteurs informent sur : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La douleur </div>
+                <div class="option" onclick="toggleSelection(this)">B. La température </div>
+                <div class="option" onclick="toggleSelection(this)">C. La position et les mouvements du corps </div>
+                <div class="option" onclick="toggleSelection(this)">D. La vision </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q14', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q14">
+                <div class="result">Bonne réponse : C. La position et les mouvements du corps </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Quelle partie du neurone reçoit les messages ? </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Axone </div>
+                <div class="option" onclick="toggleSelection(this)">B. Arborisation terminale </div>
+                <div class="option" onclick="toggleSelection(this)">C. Dendrites </div>
+                <div class="option" onclick="toggleSelection(this)">D. Gaine de myéline </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q15', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q15">
+                <div class="result">Bonne réponse : C. Dendrites </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. La gaine de myéline : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Accélère la conduction du message nerveux </div>
+                <div class="option" onclick="toggleSelection(this)">B. Est produite par les neurones </div>
+                <div class="option" onclick="toggleSelection(this)">C. Est continue le long de l'axone </div>
+                <div class="option" onclick="toggleSelection(this)">D. N'existe que dans le SNC </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q16', ['A'])">Valider</button>
+            <div class="explanation" id="explanationex1_q16">
+                <div class="result">Bonne réponse : A. Accélère la conduction du message nerveux </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Dans le SNC, la myéline est produite par : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les astrocytes </div>
+                <div class="option" onclick="toggleSelection(this)">B. Les cellules de Schwann </div>
+                <div class="option" onclick="toggleSelection(this)">C. Les oligodendrocytes </div>
+                <div class="option" onclick="toggleSelection(this)">D. La microglie </div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('ex1_q17', ['C'])">Valider</button>
+            <div class="explanation" id="explanationex1_q17">
+                <div class="result">Bonne réponse : C. Les oligodendrocytes </div>
+            </div>
+        </div>
+
+        <h2>Exercice 2 : Tableaux de correspondances </h2>
+
+        <div class="question">
+            <h3>1. Associez les éléments de la Liste 1 et Liste 2 : </h3>
+            <p><strong>Liste 1 :</strong> x- Unité fonctionnelle, a- Fibre sensitive, b- Fibre motrice, c- Centre nerveux, d- Réflexe, e- Fuseau neuromusculaire </p>
+            <p><strong>Liste 2 :</strong> 0- neurone, 1- Récepteur, 2- Coordination, 3- Afférent, 4- Involontaire, 5- Efférent </p>
+            <textarea rows="3" placeholder="Votre réponse (ex: x-0, a-1...)"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex2_t1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex2_t1">
+                <div class="result">Réponses correctes : </div>
+                <p>X-0, a-3, b-5, C-2, d-4, e-1 </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Associez les éléments de la Liste 1 et Liste 2 : </h3>
+            <p><strong>Liste 1 :</strong> a- Neurone en T, b- Fuseau neuromusculaire, c- Interneurone, d- Motoneurone, e- Synapse </p>
+            <p><strong>Liste 2 :</strong> 1- Transduction, 2- Message afférent, 3- Message efférent, 4- Coordination, 5- Transmission </p>
+            <textarea rows="3" placeholder="Votre réponse"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex2_t2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex2_t2">
+                <div class="result">Réponses correctes : </div>
+                <p>a-2, b-1, C-4, d-3, e-5 </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Associez les éléments de la Liste 1 et Liste 2 : </h3>
+            <p><strong>Liste 1 :</strong> a- Dendrite, b- Cône d'émergence, c- Myéline, d- Nœud de Ranvier, e- Axone, f- Corps cellulaire </p>
+            <p><strong>Liste 2 :</strong> 1- Génération, 2- Réception, 3- Message efférent, 4- Conduction saltatoire, 5- Isolement, 6- Noyau </p>
+            <textarea rows="3" placeholder="Votre réponse"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex2_t3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex2_t3">
+                <div class="result">Réponses correctes : </div>
+                <p>a-2, b-1, C-5, d-4, e-3, f-6 </p>
+            </div>
+        </div>
+
+        <h2>Exercice 3 : Caractéristiques des potentiels </h2>
+
+        <div class="question">
+            <h3>Attribuez les caractéristiques suivantes au(x) potentiel(s) correspondant(s) : PA, PPSE, ou PPSI. </h3>
+            <ul>
+                <li>a- nécessite l'intervention des canaux voltages-dépendants. </li>
+                <li>b- se propage sur de longues distances en conservant les mêmes caractéristiques. </li>
+                <li>c- traduit une dépolarisation de la membrane du neurone. </li>
+                <li>d- nécessite que le neurone soit dépolarisé jusqu'au seuil pour avoir lieu. </li>
+                <li>e- est provoqué par une entrée d'ions Na+ dans le neurone. </li>
+                <li>f- est provoquée par une augmentation de la perméabilité membranaire aux ions Cl-. </li>
+                <li>g- résulte de l'action d'un neurotransmetteur. </li>
+                <li>h- est le signal d'un message codé en fréquence. </li>
+                <li>i- éloigne la membrane du potentiel seuil. </li>
+            </ul>
+            <textarea rows="4" placeholder="Potentiel d'action : ...&#10;PPSE : ...&#10;PPSI : ..."></textarea>
+            <button type="button" onclick="document.getElementById('explanationex3_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex3_q1">
+                <div class="result">Réponses attendues : </div>
+                <p><strong>Potentiel d'action :</strong> a, b, c, d, e, h </p>
+                <p><strong>PPSE :</strong> c, e, g </p>
+                <p><strong>PPSI :</strong> f, g, i </p>
+            </div>
+        </div>
+
+        <h2>Exercice 4 : Étapes d'un potentiel d'action </h2>
+        
+        <div class="question">
+            <h3>Indiquez l'ordre correct des étapes numérotées du diagramme : </h3>
+            <img src="images/TD1neurosciences_ex4.png" alt="Étapes d'un potentiel d'action" class="diagram-qcm">
+
+            <textarea rows="2" placeholder="Séquence : ..."></textarea>
+            <button type="button" onclick="document.getElementById('explanationex4_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex4_q1">
+                <div class="result">Réponse attendue : </div>
+                <p>La séquence d'événements correcte du potentiel d'action est : 4, 2, 6, 1, 5, 3 </p>
+            </div>
+        </div>
+
+        <h2>Exercice 5 : Analyse de graphique </h2>
+
+        <img src="images/TD1neurosciences_ex5.png" alt="Graphique du potentiel d'action (phases 1 à 5, seuils b et c)" class="diagram-qcm">
+
+        <div class="question">
+            <h3>1) À quoi correspondent les potentiels b et c ? </h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex5_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex5_q1">
+                <div class="result">Réponse attendue : </div>
+                <p>b : potentiel seuil, c : potentiel de repos </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2) Quel phénomène ionique est responsable du changement de la situation 1 à 3 ? </h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex5_q2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex5_q2">
+                <div class="result">Réponse attendue : </div>
+                <p>Ouverture des canaux voltage-dépendants à Na+, activés quand le potentiel de membrane atteint la valeur seuil &rarr; entrée de Na+ dans le neurone &rarr; l'intérieur devient positif par rapport à l'extérieur. </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3) Quel phénomène ionique est responsable du changement de la situation 3 à 4 ? </h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex5_q3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex5_q3">
+                <div class="result">Réponse attendue : </div>
+                <p>Inactivation des canaux à Na+ et ouverture des canaux à K+ &rarr; sortie des ions K+ </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4) Quels seraient les effets d'un inhibiteur de canaux à Na+ ? </h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex5_q4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex5_q4">
+                <div class="result">Réponse attendue : </div>
+                <p>Pas d'ouverture des canaux à Na+ &rarr; pas d'entrée de Na+ &rarr; pas de dépolarisation &rarr; pas de PA </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5) Le TEA est un bloqueur de K+. Quel sera son effet sur le potentiel de membrane ? </h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex5_q5').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex5_q5">
+                <div class="result">Réponse attendue : </div>
+                <p>Pas d'ouverture des canaux à K+ &rarr; pas de sortie de K+ du neurone &rarr; repolarisation très lente due uniquement à l'activité des canaux de fuite potassiques et aux pompes (sortie de Na+) &rarr; durée du potentiel d'action prolongée et de la période réfractaire également. Pas d'hyperpolarisation. </p>
+            </div>
+        </div>
+
+        <h2>Exercice 6 : Synapse et récepteur </h2>
+
+        <img src="images/TD1neurosciences_ex6.png" alt="Structures A, B et C" class="diagram-qcm">
+
+        <div class="question">
+            <h3>1) Que désignent les légendes A, B et C ? </h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex6_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex6_q1">
+                <div class="result">Réponse attendue : </div>
+                <p>A : Récepteur sensoriel <br>
+                B : Neurone sensitif (neurone en T) <br>
+                C : Synapse interneuronale </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2) Indiquez quels potentiels nerveux on trouve au niveau de chacune de ces structures : </h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex6_q2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex6_q2">
+                <div class="result">Réponse attendue : </div>
+                <p>A : Potentiel de récepteur / potentiel générateur <br>
+                B : Potentiel d'action <br>
+                C : Potentiel post-synaptique <br>
+                (Les potentiels de récepteurs et les PPS ont les mêmes caractéristiques) </p>
+            </div>
+        </div>
+
+        <h2>Exercice 7 : Mouvements ioniques </h2>
+
+        <img src="images/TD1neurosciences_ex7.png" alt="Mouvements ioniques Structures A, B, C" class="diagram-qcm">
+
+        <div class="question">
+            <h3>1) Nommez les structures A, B et C. </h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex7_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex7_q1">
+                <div class="result">Réponse attendue : </div>
+                <p>A : canaux de fuite, toujours ouverts <br>
+                B : pompe ionique Na+/K+ (fait sortir 3 ions Na+ et entrer 2 ions K+ contre le gradient) <br>
+                C : canaux voltage dépendants (ne s'ouvrent que lorsque la membrane est dépolarisée) </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2) Précisez l'origine du potentiel de repos. </h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex7_q2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex7_q2">
+                <div class="result">Réponse attendue : </div>
+                <p>Le potentiel de repos est dû à la répartition inégale des ions Na+ et K+ de part et d'autre de la membrane plasmique. Cela s'explique par : <br>
+                - La perméabilité sélective de la membrane aux ions Na+ et K+ (canaux de fuite à K+ plus efficaces que ceux à Na+) <br>
+                - La présence de la pompe Na+/K+ qui transporte les ions contre leur gradient de concentration. </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3) À quelle phase du PA correspond le document 1 ? </h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex7_q3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex7_q3">
+                <div class="result">Réponse attendue : </div>
+                <p>Il représente la phase de dépolarisation : entrée massive des ions Na+ due à l'ouverture des canaux voltage-dépendants à Na+ alors que les canaux voltage-dépendants à K+ sont fermés. </p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4) Complétez le tableau d'état des canaux : </h3>
+            <p>Donnez l'état (Ouverts/Fermés/Active) pour : Repos, Dépolarisation, Repolarisation, Hyperpolarisation pour chaque type de canal. </p>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanationex7_q4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex7_q4">
+                <div class="result">Réponses attendues : </div>
+                <table border="1" cellpadding="5" cellspacing="0" style="width:100%; text-align:left; border-collapse: collapse; margin-top: 10px;">
+                    <tr>
+                        <th></th>
+                        <th>Canaux fuite K+</th>
+                        <th>Canaux fuite Na+</th>
+                        <th>CVD K+</th>
+                        <th>CVD Na+</th>
+                        <th>Pompe Na+/K+</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Potentiel de repos</strong></td><td>Ouverts</td><td>Ouverts</td><td>Fermés</td><td>Fermés</td><td>Active</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dépolarisation</strong></td><td>Ouverts</td><td>Ouverts</td><td>Fermés</td><td>Ouverts</td><td>Active</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Repolarisation</strong></td><td>Ouverts</td><td>Ouverts</td><td>Ouverts</td><td>Fermés</td><td>Active</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hyperpolarisation</strong></td><td>Ouverts</td><td>Ouverts</td><td>Ouverts</td><td>Fermés</td><td>Active</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Exercice 8 : Schéma de la moelle épinière </h2>
+
+        <img src="images/TD1neurosciences_ex8.png" alt="Schéma moelle épinière 1 à 10" class="diagram-qcm">
+
+        <div class="question">
+            <h3>Indiquez le nom des différentes structures du schéma (1 à 10) : </h3>
+            <textarea rows="5" placeholder="1: ...&#10;2: ..."></textarea>
+            <button type="button" onclick="document.getElementById('explanationex8_q1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanationex8_q1">
+                <div class="result">Réponses attendues : </div>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>1. Récepteur sensoriel / fuseau neuromusculaire </li>
+                    <li>2. Neurone sensitif / fibre afférente </li>
+                    <li>3. Neurone moteur / motoneurone </li>
+                    <li>4. Corps cellulaire du neurone sensitif / ganglion rachidien </li>
+                    <li>5. Racine dorsale / postérieure du nerf rachidien </li>
+                    <li>6. Racine ventrale / antérieure du nerf rachidien </li>
+                    <li>7. Muscle / plaque motrice </li>
+                    <li>8. Interneurone </li>
+                    <li>9. Substance grise de la moelle épinière </li>
+                    <li>10. Substance blanche de la moelle épinière </li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionId, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionId}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0];
+            document.getElementById(`explanation${questionNumber.trim()}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
