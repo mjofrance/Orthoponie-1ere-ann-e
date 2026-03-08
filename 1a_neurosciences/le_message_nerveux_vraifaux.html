@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Le Message Nerveux - Vrai ou Faux</title>
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Physiologie du Message Nerveux</h1>
+        <h2>Exercice : Vrai ou Faux</h2>
+
+        <div class="question">
+            <h3>1. Le potentiel membranaire de repos d'un neurone est d'environ -70 mV.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. La face interne de la membrane neuronale est électronégative par rapport à la face externe.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Le potentiel de membrane est identique dans toutes les cellules vivantes, qu'elles soient excitables ou non.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il y a un potentiel négatif dans toutes les cellules mais il peut varier dans les cellules excitables.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Au repos, la concentration en ions Na+ est plus élevée à l'intérieur du neurone qu'à l'extérieur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : FAUX</div>
+                <p>Au repos, la concentration en Na+ est plus élevée dans le milieu extra cellulaire. C'est le K+ qui est plus concentré à l'intérieur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. La pompe Na+/K+ fonctionne grâce à un transport passif selon le gradient de concentration.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est un transport actif qui consomme de l'énergie fournie par l'ATP.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Les canaux de fuite sont beaucoup plus perméables aux ions K+ qu'aux ions Na+.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : VRAI</div>
+                <p>Environ 100 fois plus perméables.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. La fuite des ions K+ vers l'extérieur contribue majoritairement au potentiel de repos.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Un potentiel d'action correspond à une inversion temporaire de la polarité membranaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. La phase de dépolarisation du PA est due à l'ouverture massive des canaux K+ voltage-dépendants.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : FAUX</div>
+                <p>La dépolarisation est due à l'entrée massive d'ions Na+ par les canaux Na+ voltage-dépendants.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. La phase de repolarisation est due à la sortie des ions K+ de la cellule.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Le potentiel d'action obéit à la "loi du tout ou rien".</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. La période réfractaire empêche la propagation bidirectionnelle du message nerveux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Les potentiels gradués sont des modifications locales du potentiel de membrane dont l'amplitude diminue avec la distance.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Un potentiel gradué peut être soit une dépolarisation, soit une hyperpolarisation.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Si un potentiel gradué n'atteint pas le seuil d'excitation, aucun PA n'est généré.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Les fibres nerveuses myélinisées conduisent le message nerveux plus lentement que les fibres amyéliniques.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : FAUX</div>
+                <p>La myéline permet une conduction saltatoire beaucoup plus rapide.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. La gaine de myéline est formée par les cellules de Schwann dans le système nerveux périphérique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Les nœuds de Ranvier sont des zones dépourvues de myéline où le PA se régénère.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. La conduction saltatoire se produit dans les fibres amyéliniques.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : FAUX</div>
+                <p>Elle n'a lieu que dans les fibres myélinisées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. Plus le diamètre de la fibre nerveuse est grand, plus la vitesse de propagation est élevée.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. La conduction saltatoire se fait de nœud de Ranvier en nœud de Ranvier.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. La vitesse de propagation augmente avec le diamètre de la fibre nerveuse.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. La sclérose en plaques est une maladie caractérisée par une démyélinisation des axones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. L'intensité d'un stimulus est codée par l'amplitude des potentiels d'action.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : FAUX</div>
+                <p>L'intensité est codée par la fréquence des PA (nombre de PA par seconde).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. Une synapse chimique nécessite l'intervention de neurotransmetteurs.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. La transmission synaptique est bidirectionnelle.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : FAUX</div>
+                <p>Elle est unidirectionnelle (du neurone présynaptique vers le postsynaptique).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. L'arrivée d'un PA au bouton synaptique entraîne l'ouverture de canaux calciques.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : VRAI</div>
+                <p>C'est l'ouverture de canaux calciques voltage-dépendants provoquée par la dépolarisation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. Un neurotransmetteur est toujours excitateur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il peut être excitateur ou inhibiteur selon le type de récepteur sur lequel il agit.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Un PPSE correspond à une dépolarisation de la membrane post-synaptique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. La sommation spatiale résulte de messages répétés provenant d'une seule synapse.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Réponse : FAUX</div>
+                <p>La sommation spatiale résulte de l'activation simultanée de plusieurs synapses différentes.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            // Récupère le numéro de la question pour afficher l'explication correspondante
+            const questionNumber = element.parentElement.parentElement.querySelector('h3').textContent.split('.')[0].trim();
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
