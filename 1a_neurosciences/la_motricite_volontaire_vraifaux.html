@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La motricité volontaire - VRAI ou FAUX</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="home-link">Retour à l'accueil</a>
+        <h1>La motricité volontaire - VRAI ou FAUX</h1>
+
+        <!-- Question 1 (À remplacer par les données de votre PDF) -->
+        <div class="question">
+            <h3>1. Le cortex moteur primaire est la seule aire impliquée dans la motricité volontaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result"><strong>Bonne réponse : Faux</strong><br>
+                D'autres aires (prémotrice, supplémentaire), les ganglions de la base et le cervelet y participent également.</div>
+            </div>
+        </div>
+
+        <!-- Question 2 (À remplacer par les données de votre PDF) -->
+        <div class="question">
+            <h3>2. La voie pyramidale croise la ligne médiane au niveau du bulbe rachidien.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result"><strong>Bonne réponse : Vrai</strong><br>
+                C'est ce qu'on appelle la décussation des pyramides.</div>
+            </div>
+        </div>
+
+        <!-- Vous pouvez copier/coller ce bloc pour ajouter d'autres questions. Pensez bien à incrémenter le h3 ("3.", "4.", etc.) et l'ID de l'explication (explanation3, explanation4) -->
+        
+        <br>
+        <a href="../index.html" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            
+            // Extrait le numéro de la question depuis le <h3> pour afficher la bonne explication
+            const questionTitle = element.parentElement.parentElement.querySelector('h3').textContent;
+            const questionNumberMatch = questionTitle.match(/\d+/);
+            if (questionNumberMatch) {
+                document.getElementById(`explanation${questionNumberMatch[0]}`).style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
