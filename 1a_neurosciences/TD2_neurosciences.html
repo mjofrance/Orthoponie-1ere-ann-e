@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Neurosciences - TD2</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Neurosciences - TD2 (Système Moteur et Cervelet)</h1>
+
+        <h2 class="section-title">Exercice 1 : Choisissez la bonne réponse pour chaque question</h2>
+
+        <div class="question">
+            <h3>1_1. Quelle structure est responsable de l'exécution directe du mouvement volontaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aire prémotrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aire motrice supplémentaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortex moteur primaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_1', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_1">
+                <div class="result">Bonne réponse : C. Cortex moteur primaire</div>
+                <p>Le cortex moteur primaire (M1) est responsable de l'exécution des mouvements volontaires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_2. Concernant la voie pyramidale, quelle affirmation est correcte ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle est polysynaptique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle est indirecte</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle est constituée de deux neurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle ne croise jamais la ligne médiane</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_2', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_2">
+                <div class="result">Bonne réponse : C. Elle est constituée de deux neurones</div>
+                <p>La voie pyramidale est une voie directe motrice composée principalement de deux neurones (motoneurone supérieur et inférieur).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_3. La décussation pyramidale a lieu :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans le thalamus</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le bulbe rachidien</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans la moelle lombaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_3', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_3">
+                <div class="result">Bonne réponse : C. Dans le bulbe rachidien</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_4. Une lésion du cortex moteur primaire entraîne principalement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Tremblements</div>
+                <div class="option" onclick="toggleSelection(this)">B. Paralysie controlatérale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ataxie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dystonie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_4', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_4">
+                <div class="result">Bonne réponse : B. Paralysie controlatérale</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_5. Quelle structure est impliquée dans la planification guidée par l'environnement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aire motrice primaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aire prémotrice</div>
+                <div class="option" onclick="toggleSelection(this)">C. Aire motrice supplémentaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Thalamus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_5', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_5">
+                <div class="result">Bonne réponse : B. Aire prémotrice</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_6. L'aire motrice supplémentaire est responsable :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De l'exécution du mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">B. De l'initiation interne du mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du tonus musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des réflexes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_6', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_6">
+                <div class="result">Bonne réponse : B. De l'initiation interne du mouvement</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_7. Quelle structure joue un rôle majeur dans la coordination fine et l'ajustement du mouvement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Cortex préfrontal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ganglions de la base</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_7', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_7">
+                <div class="result">Bonne réponse : C. Cervelet</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_8. Les ganglions de la base ont pour rôle principal :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Produire la contraction musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Initier et sélectionner les mouvements</div>
+                <div class="option" onclick="toggleSelection(this)">C. Transmettre directement aux muscles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Gérer les réflexes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_8', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_8">
+                <div class="result">Bonne réponse : B. Initier et sélectionner les mouvements</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_9. Concernant les voies extrapyramidales :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elles sont directes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elles sont monosynaptiques</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elles sont polysynaptiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elles ne passent pas par le tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_9', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_9">
+                <div class="result">Bonne réponse : C. Elles sont polysynaptiques</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_10. Quelle structure intervient dans la prise de décision du mouvement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Cortex moteur primaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Cortex préfrontal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">D. Tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_10', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_10">
+                <div class="result">Bonne réponse : B. Cortex préfrontal</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_11. Un patient présente: une hémiplégie droite et un signe de Babinski droit. La lésion est située :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans l'hémisphère droit</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans l'hémisphère gauche</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans les ganglions de la base</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_11', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_11">
+                <div class="result">Bonne réponse : B. Dans l'hémisphère gauche</div>
+                <p>Les voies motrices sont croisées. Des symptômes à droite indiquent une lésion à gauche.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_12. Une lésion de l'aire prémotrice entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Paralysie complète</div>
+                <div class="option" onclick="toggleSelection(this)">B. Tremblement de repos</div>
+                <div class="option" onclick="toggleSelection(this)">C. Apraxie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Hyperréflexie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_12', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_12">
+                <div class="result">Bonne réponse : C. Apraxie</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_13. Une atteinte des ganglions de la base peut entraîner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hémiplégie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Babinski positif</div>
+                <div class="option" onclick="toggleSelection(this)">C. Difficulté à initier les mouvements</div>
+                <div class="option" onclick="toggleSelection(this)">D. Paralysie flasque</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_13', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_13">
+                <div class="result">Bonne réponse : C. Difficulté à initier les mouvements</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_14. La voie cortico-nucléaire innerve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les membres inférieurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les muscles du tronc</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les muscles de la tête et du cou</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les muscles lisses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_14', ['C'])">Valider</button>
+            <div class="explanation" id="explanation1_14">
+                <div class="result">Bonne réponse : C. Les muscles de la tête et du cou</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>1_15. Les motoneurones alpha :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont situés dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">B. Innervent directement les muscles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Sont uniquement inhibiteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont dans le cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('1_15', ['B'])">Valider</button>
+            <div class="explanation" id="explanation1_15">
+                <div class="result">Bonne réponse : B. Innervent directement les muscles</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 2 : Cas cliniques (Questions ouvertes)</h2>
+
+        <div class="question">
+            <h3>2_1. Cas 1 - Un patient de 68 ans arrive aux urgences après un AVC de l'hémisphère gauche. Signes: paralysie du bras et de la jambe droits, hyperréflexie, signe de Babinski droit, sensibilité conservée. <br>Quelle région corticale est probablement atteinte ? <br>Pourquoi la paralysie est-elle du côté droit ? <br>Quel faisceau moteur est touché ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_1">
+                <div class="result">Réponses attendues :</div>
+                <ul>
+                    <li><strong>Région atteinte :</strong> Cortex moteur primaire.</li>
+                    <li><strong>Côté droit :</strong> Controlatéral. Les voies motrices sont croisées et décussent au niveau du bulbe.</li>
+                    <li><strong>Faisceau :</strong> Voie cortico-spinale (voie pyramidale).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2_2. Cas 2 - Une patiente peut bouger normalement son bras, mais lorsqu'on lui demande: "Montrez comment utiliser un marteau" elle n'arrive pas à réaliser le geste, alors qu'elle comprend la consigne. <br>Comment s'appelle ce trouble ? <br>Quelle région corticale est suspectée ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_2">
+                <div class="result">Réponses attendues :</div>
+                <p><strong>Trouble :</strong> Apraxie.<br><strong>Région :</strong> Aire prémotrice.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2_3. Cas 3 - Un patient présente : difficulté à initier un mouvement, lenteur motrice, difficulté pour coordonner les deux mains. Mais la force musculaire est normale. <br>Quelle aire motrice est probablement atteinte ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_3">
+                <div class="result">Réponse attendue :</div>
+                <p>L'aire motrice supplémentaire (AMS).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2_4. Cas 4 - Un patient comprend les questions mais parle difficilement : phrases très courtes, langage lent, effort important pour articuler. Exemple: "Moi... vouloir... eau". <br>Quel est le trouble ? <br>Quelle aire corticale est atteinte ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation2_4').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation2_4">
+                <div class="result">Réponses attendues :</div>
+                <p><strong>Trouble :</strong> Aphasie de Broca.<br><strong>Région :</strong> Aire de Broca.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 3 : Vrai ou Faux</h2>
+
+        <div class="question">
+            <h3>3_1. Dans l'aire motrice primaire, la couche IV est très développée.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_1">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Elle est très peu développée, c'est la couche de réception. Ce sont les couches III et V qui sont développées, ce sont les couches de sorties du cortex.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_2. L'aire motrice primaire correspond à l'aire 6 de Brodmann.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_2">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Non, c'est l'aire 4.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_3. L'aire prémotrice contribue à préparer les mouvements sur la base d'indices externes.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_3">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_4. La destruction des aires prémotrices entraîne une paralysie.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_4">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Ce sont les lésions du cortex moteur primaire qui entraînent des paralysies (lésion prémotrice = apraxie).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_5. Les noyaux gris centraux comprennent les ganglions de la base et le thalamus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_5">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_6. L'information provenant des ganglions de la base retourne à l'aire prémotrice.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_6">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : L'information retourne à l'Aire Motrice Supplémentaire (AMS).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_7. Le cervelet joue un rôle régulateur du mouvement notamment en ajustant le programme moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_7">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_8. L'information provenant du cervelet retourne au cortex prémoteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_8">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Retour au cortex moteur primaire (M1).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_9. La voie pyramidale est une voie à 2 neurones.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_9">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_10. Le faisceau pyramidal croisé correspond à la voie corticospinale ventrolatérale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_10">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : C'est la voie corticospinale latérale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_11. Les fibres de la voie pyramidale directe se connectent à des fibres du côté ipsilatéral.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_11">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Toutes les voies motrices sont croisées. Elles se connectent donc à des fibres controlatérales.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_12. La voie extra-pyramidale est polysynaptique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_12">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_13. Les fibres d'une même unité motrice sont regroupées dans le muscle.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_13">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Elles sont dispersées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_14. Toutes les unités motrices ont la même taille.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_14">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Leur taille est proportionnelle à la précision du mouvement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3_15. Tous les mouvements sont produits volontairement.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3_15">
+                <div class="result">Réponse : FAUX</div>
+                <p>Justification : Les réflexes ne sont pas produits volontairement.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 4 : QCM Cervelet</h2>
+
+        <div class="question">
+            <h3>4_1. Concernant les pédoncules cérébelleux, quelle proposition est correcte ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ils relient le cervelet uniquement au cortex cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ils sont au nombre de deux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ils assurent des connexions avec le tronc cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ils ne véhiculent que des fibres efférentes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_1', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_1">
+                <div class="result">Bonne réponse : C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_2. À propos du cortex cérébelleux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il comporte six couches comme le cortex cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les cellules de Purkinje sont situées dans la couche la plus interne</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fibres parallèles sont dans la couche moléculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les cellules granulaires sont superficielles</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_2', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_2">
+                <div class="result">Bonne réponse : C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_3. Concernant les cellules de Purkinje :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elles constituent la principale voie afférente</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elles sont excitatrices sur les noyaux profonds</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elles se trouvent dans la couche granulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elles représentent l'unique voie efférente du cortex cérébelleux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_3', ['D'])">Valider</button>
+            <div class="explanation" id="explanation4_3">
+                <div class="result">Bonne réponse : D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_4. Les fibres grimpantes proviennent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De l'olive bulbaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du noyau dentelé</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du cortex cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">D. De la moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_4', ['A'])">Valider</button>
+            <div class="explanation" id="explanation4_4">
+                <div class="result">Bonne réponse : A</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_5. Concernant les fibres moussues :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elles établissent des synapses directes avec les cellules de Purkinje</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elles passent par les cellules granulaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elles sont inhibitrices</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elles proviennent uniquement de la moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_5', ['B'])">Valider</button>
+            <div class="explanation" id="explanation4_5">
+                <div class="result">Bonne réponse : B</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_6. Les fibres parallèles sont issues :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Du cortex cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du noyau dentelé</div>
+                <div class="option" onclick="toggleSelection(this)">C. De l'olive bulbaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. De la moelle épinière (indirectement via les granulaires)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_6', ['D'])">Valider</button>
+            <div class="explanation" id="explanation4_6">
+                <div class="result">Note : Les fibres parallèles sont les axones des cellules granulaires, qui reçoivent elles-mêmes les fibres moussues (moelle/tronc).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_7. Une cellule de Purkinje reçoit principalement des afférences :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. D'une seule fibre parallèle</div>
+                <div class="option" onclick="toggleSelection(this)">B. De quelques fibres moussues uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C. D'un grand nombre de fibres parallèles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Exclusivement des fibres grimpantes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_7', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_7">
+                <div class="result">Bonne réponse : C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_8. Concernant les noyaux cérébelleux profonds :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ils sont situés dans la substance grise périphérique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ils reçoivent directement les afférences périphériques</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ils reçoivent les projections des cellules de Purkinje</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ils n'ont pas de rôle moteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_8', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_8">
+                <div class="result">Bonne réponse : C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_9. Le paléocervelet est principalement impliqué dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le tonus musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">C. La cognition</div>
+                <div class="option" onclick="toggleSelection(this)">D. La vision</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_9', ['A'])">Valider</button>
+            <div class="explanation" id="explanation4_9">
+                <div class="result">Bonne réponse : A. Le tonus musculaire</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_10. L'archéocervelet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Correspond au vermis</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est relié aux noyaux vestibulaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. Contrôle les mouvements fins des membres</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est le plus récent phylogénétiquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_10', ['B'])">Valider</button>
+            <div class="explanation" id="explanation4_10">
+                <div class="result">Bonne réponse : B. Est relié aux noyaux vestibulaires</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_11. Le néocervelet est impliqué dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les réflexes</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'audition</div>
+                <div class="option" onclick="toggleSelection(this)">C. La respiration</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le mouvement volontaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_11', ['D'])">Valider</button>
+            <div class="explanation" id="explanation4_11">
+                <div class="result">Bonne réponse : D. Le mouvement volontaire</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_12. Dans la boucle cérébello-thalamo-corticale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le cervelet projette directement sur la moelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le thalamus est contourné</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le noyau dentelé est impliqué</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il n'y a pas de retour cortical</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_12', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_12">
+                <div class="result">Bonne réponse : C. Le noyau dentelé est impliqué</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_14. Une lésion du lobe flocculo-nodulaire entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des troubles de l'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une perte de sensibilité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une paralysie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une aphasie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_14', ['A'])">Valider</button>
+            <div class="explanation" id="explanation4_14">
+                <div class="result">Bonne réponse : A. Des troubles de l'équilibre</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_15. Dans le syndrome cérébelleux cinétique, on retrouve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hypertonie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une dysmétrie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une anesthésie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une paralysie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_15', ['B'])">Valider</button>
+            <div class="explanation" id="explanation4_15">
+                <div class="result">Bonne réponse : B. Une dysmétrie</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_18. Le rôle fondamental du cervelet est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Générer le mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Inhiber tous les mouvements</div>
+                <div class="option" onclick="toggleSelection(this)">C. Produire les réflexes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Comparer mouvement prévu et réalisé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_18', ['D'])">Valider</button>
+            <div class="explanation" id="explanation4_18">
+                <div class="result">Bonne réponse : D. Comparer mouvement prévu et réalisé</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_19. Lors d'un mouvement volontaire: le cortex envoie une information au cervelet, le mouvement est ajusté puis renvoyé au cortex. Quelle voie est impliquée ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Vestibulo-spinale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Spino-cérébelleuse</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortico-ponto-cérébelleuse puis cérébello-thalamo-corticale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Rubro-spinale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_19', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_19">
+                <div class="result">Bonne réponse : C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4_20. Un patient a une lésion du noyau dentelé. Quel déficit est le plus probable ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Trouble de l'équilibre pur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Trouble du tonus axial</div>
+                <div class="option" onclick="toggleSelection(this)">C. Trouble de la planification motrice</div>
+                <div class="option" onclick="toggleSelection(this)">D. Perte de sensibilité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_20', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_20">
+                <div class="result">Bonne réponse : C. Trouble de la planification motrice (Néocervelet)</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 5 : Organisation fonctionnelle du cervelet</h2>
+        <div class="question">
+            <h3>5_1. Complétez pour l'Archéocervelet (vestibulocerebellum) : Afférence, Noyau associé, Efférence et Rôle.</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation5_1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation5_1">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Afférence :</strong> Noyau vestibulaire du tronc cérébral (oreille interne > noyau vestibulaire > archéocervelet)<br>
+                <strong>Noyau associé :</strong> Noyau fastigial<br>
+                <strong>Efférence :</strong> Vers les motoneurones axiaux<br>
+                <strong>Rôle :</strong> Équilibre</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5_2. Complétez pour le Paléocervelet (spinocerebellum) : Afférence, Noyau associé, Efférence et Rôle.</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation5_2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation5_2">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Afférence :</strong> Moelle épinière et tronc cérébral (informations proprioceptives)<br>
+                <strong>Noyau associé :</strong> Noyau interposé<br>
+                <strong>Efférence :</strong> Tronc cérébral > Moelle épinière > motoneurones<br>
+                <strong>Rôle :</strong> Tonus musculaire</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5_3. Complétez pour le Néocervelet (cerebrocerebellum) : Afférence, Noyau associé, Efférence et Rôle.</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation5_3').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation5_3">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Afférence :</strong> Cortex cérébral<br>
+                <strong>Noyau associé :</strong> Noyau dentelé<br>
+                <strong>Efférence :</strong> Thalamus > cortex moteur<br>
+                <strong>Rôle :</strong> Régulation / coordination du mouvement volontaire</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 6 : Cas cliniques (Cervelet)</h2>
+
+        <div class="question">
+            <h3>6_1. Cas 1 : Un patient présente une marche ébrieuse, une instabilité en position debout, des troubles non aggravés à la fermeture des yeux. Quelle structure est la plus probablement atteinte ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hémisphères cérébelleux</div>
+                <div class="option" onclick="toggleSelection(this)">B. Vermis</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortex moteur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Noyau dentelé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('6_1', ['B'])">Valider</button>
+            <div class="explanation" id="explanation6_1">
+                <div class="result">Bonne réponse : B. Vermis</div>
+                <p>Il s'agit d'une atteinte cérébelleuse statique (difficulté à l'arrêt). Le syndrome statique correspond à une lésion du vermis.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6_2. Cas 2 : Un patient présente dysmétrie, tremblement intentionnel, difficulté à effectuer des mouvements précis de la main droite. Quelle structure est atteinte ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Vermis</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lobe flocculo-nodulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hémisphère cérébelleux droit</div>
+                <div class="option" onclick="toggleSelection(this)">D. Noyau fastigial</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('6_2', ['C'])">Valider</button>
+            <div class="explanation" id="explanation6_2">
+                <div class="result">Bonne réponse : C. Hémisphère cérébelleux droit</div>
+                <p>L'atteinte du cervelet a des conséquences du côté ipsilatéral. Ces signes sont caractéristiques d'un syndrome cérébelleux cinétique (difficulté pendant le mouvement).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6_3. Cas 3 : Un patient présente vertiges, instabilité, troubles de la fixation du regard lors des mouvements de la tête. Quelle structure est atteinte ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Néocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Paléocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">C. Archéocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Noyau dentelé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('6_3', ['C'])">Valider</button>
+            <div class="explanation" id="explanation6_3">
+                <div class="result">Bonne réponse : C. Archéocervelet</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6_4. Cas 4 : Un patient présente une atteinte du tonus musculaire axial avec hypotonie. Quelle structure est principalement impliquée ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Archéocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Paléocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">C. Néocervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Vermis</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('6_4', ['B'])">Valider</button>
+            <div class="explanation" id="explanation6_4">
+                <div class="result">Bonne réponse : B. Paléocervelet</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionId, correctAnswers) {
+            // Ajustement par rapport à votre script pour utiliser un ID sous forme de chaîne ('1_1', '1_2', etc.)
+            const explanationBlock = document.getElementById('explanation' + questionId);
+            const questionElement = explanationBlock.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            explanationBlock.style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            // Récupère l'identifiant personnalisé de type "3_1" depuis le <h3> (ex: "3_1. Texte...")
+            const h3Text = element.parentElement.parentElement.querySelector('h3').textContent;
+            const questionId = h3Text.split('.')[0].trim();
+            document.getElementById('explanation' + questionId).style.display = "block";
+        }
+    </script>
+</body>
+</html>

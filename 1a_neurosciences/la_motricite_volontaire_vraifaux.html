@@ -3,45 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCM : La motricité volontaire - VRAI ou FAUX</title>
-    <!-- Lien vers le fichier CSS externe -->
+    <title>QCM : La Motricité Volontaire - Vrai ou Faux</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="home-link">Retour à l'accueil</a>
-        <h1>La motricité volontaire - VRAI ou FAUX</h1>
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Quiz : La Motricité Volontaire</h1>
+        <p style="text-align: center;">Répondez par Vrai ou Faux aux affirmations suivantes.</p>
 
-        <!-- Question 1 (À remplacer par les données de votre PDF) -->
         <div class="question">
-            <h3>1. Le cortex moteur primaire est la seule aire impliquée dans la motricité volontaire.</h3>
+            <h3>1. Tous les motoneurones ont leur corps cellulaire dans la moelle épinière.</h3>
             <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
                 <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
             </div>
             <div class="explanation" id="explanation1">
-                <div class="result"><strong>Bonne réponse : Faux</strong><br>
-                D'autres aires (prémotrice, supplémentaire), les ganglions de la base et le cervelet y participent également.</div>
+                <div class="result">Réponse : FAUX</div>
+                <p>Pour les mouvements volontaires de la tête et du cou, les motoneurones des nerfs crâniens sont dans les noyaux gris du tronc cérébral.</p>
             </div>
         </div>
 
-        <!-- Question 2 (À remplacer par les données de votre PDF) -->
         <div class="question">
-            <h3>2. La voie pyramidale croise la ligne médiane au niveau du bulbe rachidien.</h3>
+            <h3>2. La partie gauche du cortex moteur contrôle la motricité de la partie droite du corps.</h3>
             <div class="options">
                 <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
             </div>
             <div class="explanation" id="explanation2">
-                <div class="result"><strong>Bonne réponse : Vrai</strong><br>
-                C'est ce qu'on appelle la décussation des pyramides.</div>
+                <div class="result">Réponse : VRAI</div>
+                <p>Il s'agit d'une commande controlatérale.</p>
             </div>
         </div>
 
-        <!-- Vous pouvez copier/coller ce bloc pour ajouter d'autres questions. Pensez bien à incrémenter le h3 ("3.", "4.", etc.) et l'ID de l'explication (explanation3, explanation4) -->
-        
-        <br>
-        <a href="../index.html" class="home-link">Retour à l'accueil</a>
+        <div class="question">
+            <h3>3. Il y a plusieurs aires motrices faisant partie du cortex moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Les aires prémotrices interviennent dans la prise de décision du mouvement.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les aires prémotrices interviennent dans la planification / programmation. C'est le cortex préfrontal qui intervient dans la prise de décision.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Le cortex moteur regroupe 3 aires : les aires motrices primaire et secondaire et l'aire prémotrice.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le cortex moteur regroupe : l'aire motrice primaire, l'aire prémotrice et l'aire motrice supplémentaire (AMS).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Le cortex moteur est situé dans la partie antérieure du lobe pariétal.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il est situé dans le lobe frontal, en avant du sillon central.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. L'aire motrice primaire correspond à l'aire 6 de Brodmann.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : FAUX</div>
+                <p>L'aire motrice primaire correspond à l'aire 4 de Brodmann.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Les couches très développées dans l'aire motrice primaire sont les couches III et IV.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont les couches III (pyramidale) et V qui sont très développées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. La couche V est la couche de sortie du cortex.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. La surface de projection d'une région du corps dans le cortex est proportionnelle à la taille de cette région.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : FAUX</div>
+                <p>Cela dépend de la finesse de la commande motrice (homonculus moteur).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. La représentation des régions du corps dans le cortex est la même chez tous les individus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : FAUX</div>
+                <p>Si la place est identique, la taille dépend des expériences (apprentissage, lésion) : c'est la plasticité cérébrale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Le cortex préfrontal intervient dans la prise de décision et le choix des actions.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Toutes les aires du cortex moteur ont une organisation somatotopique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Toutes les aires impliquées dans la motricité volontaire font partie du cortex moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il existe aussi le cortex pariétal postérieur, etc.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Les aires prémotrices peuvent être actives même si aucun mouvement n'est réalisé.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+                <p>Elles s'activent lors de l'intention ou de la réflexion mentale au geste.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. L'aire prémotrice intervient dans la planification de mouvements mémorisés.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Le cortex pariétal postérieur intègre des informations sensorielles utiles à la planification du mouvement.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : VRAI</div>
+                <p>L'évaluation du contexte permet la planification.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Les aires motrices spécialisées se trouvent en avant du cortex moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. Les ganglions de la base sont des noyaux de substance blanche enfouis profondément dans le cerveau.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont des noyaux de substance grise.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. Les ganglions de la base envoient des informations à l'AMS via l'hypothalamus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : FAUX</div>
+                <p>Les informations sont envoyées via le thalamus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. Le cervelet permet l'ajustement en temps réel du mouvement en intégrant l'ensemble des informations provenant du cortex.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. Toutes les étapes du mouvement volontaire nécessitent l'implication du cortex moteur et d'au moins une autre structure cérébrale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : VRAI</div>
+                <p>Il y a toujours des parties de l'encéphale qui interviennent dans la décision ou l'ajustement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. La voie de la motricité volontaire est la voie pyramidale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. Les voies pyramidales sont des voies qui vont directement du cortex moteur aux muscles.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : FAUX</div>
+                <p>Elles vont du cortex moteur au motoneurone du tronc cérébral ou de la moelle épinière.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. Les voies extrapyramidales sont des voies indirectes car elles établissent des relais au niveau de la moelle épinière.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : FAUX</div>
+                <p>Elles sont bien indirectes, mais elles établissent des relais au niveau des noyaux gris du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. Dans les voies extra-pyramidales, un premier neurone va du cortex moteur aux noyaux gris centraux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le premier neurone va du cortex moteur aux noyaux gris du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. Toutes les fibres de la voie pyramidale contrôlent des muscles controlatéraux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. Les muscles striés squelettiques sont les seuls effecteurs de la motricité volontaire.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation28">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Les corps cellulaires des neurones innervant les muscles striés squelettiques sont situés dans la moelle épinière et le tronc cérébral.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation29">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. Les neurones innervant les muscles striés squelettiques ne subissent que des influences stimulatrices.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation30">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils subissent de nombreuses influences, à la fois inhibitrices et stimulatrices.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31. Les neurones innervant les muscles striés squelettiques ne subissent que des influences provenant du cortex moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation31">
+                <div class="result">Réponse : FAUX</div>
+                <p>Par exemple, pour les réflexes, ce sont des neurones sensitifs ou des interneurones qui apportent les messages.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32. Les mouvements des doigts lorsqu'on écrit ne nécessitent pas obligatoirement le cortex cérébral.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation32">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33. Le cortex cérébral est la seule partie de l'encéphale impliquée lorsqu'on tape volontairement dans un ballon.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation33">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34. Plus le mouvement est précis et plus l'unité motrice contient de fibres musculaires.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation34">
+                <div class="result">Réponse : FAUX</div>
+                <p>Plus le mouvement est précis, moins l'unité motrice contient de fibres (permettant une modulation fine).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35. Tous les nerfs rachidiens sont regroupés en plexus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation35">
+                <div class="result">Réponse : FAUX</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
     </div>
 
     <script>
@@ -57,11 +434,14 @@
                 }
             });
             
-            // Extrait le numéro de la question depuis le <h3> pour afficher la bonne explication
-            const questionTitle = element.parentElement.parentElement.querySelector('h3').textContent;
-            const questionNumberMatch = questionTitle.match(/\d+/);
-            if (questionNumberMatch) {
-                document.getElementById(`explanation${questionNumberMatch[0]}`).style.display = "block";
+            // Extraction du numéro de question depuis le h3 précédent
+            const questionDiv = element.closest('.question');
+            const h3 = questionDiv.querySelector('h3');
+            const questionNumber = h3.textContent.split('.')[0].trim();
+            
+            const explanation = document.getElementById(`explanation${questionNumber}`);
+            if (explanation) {
+                explanation.style.display = "block";
             }
         }
     </script>
