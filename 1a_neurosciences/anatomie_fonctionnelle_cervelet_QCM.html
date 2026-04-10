@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Anatomie Fonctionnelle du Cervelet</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Anatomie Fonctionnelle du Cervelet</h1>
+
+        <div class="question">
+            <h3>1- Le cervelet est un centre nerveux régulateur de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La fonction motrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. La posture</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">D. La vision uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le cervelet régule le mouvement, la posture et l'équilibre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- De quels segments le cervelet reçoit-il des informations ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">B. Tronc cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. Système digestif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Il reçoit des informations de tous les segments du SNC.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Quelle est la fonction majeure du cervelet selon le document ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Détecter l'erreur entre mouvement prévu et réalisé</div>
+                <div class="option" onclick="toggleSelection(this)">B. Réduire l'erreur motrice</div>
+                <div class="option" onclick="toggleSelection(this)">C. Initier la pensée consciente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Stocker la mémoire épisodique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Le cervelet compare l'intention à l'action et réduit l'erreur grâce à ses projections.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Le cervelet est situé dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La fosse crânienne antérieure</div>
+                <div class="option" onclick="toggleSelection(this)">B. La fosse crânienne postérieure</div>
+                <div class="option" onclick="toggleSelection(this)">C. La fosse cérébelleuse</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le canal rachidien</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Il loge dans la fosse crânienne postérieure, aussi appelée fosse cérébelleuse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- La structure fibreuse qui recouvre le cervelet s'appelle :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La faux du cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">B. La tente du cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">C. La dure-mère spinale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le corps calleux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une forte toile fibreuse dépendant de la dure-mère.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Par quels pédoncules le cervelet est-il relié au tronc cérébral ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Pédoncules cérébelleux supérieurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Pédoncules cérébelleux moyens</div>
+                <div class="option" onclick="toggleSelection(this)">C. Pédoncules cérébelleux inférieurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Pédoncules cérébraux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Attention, les pédoncules "cérébraux" appartiennent au mésencéphale, pas au cervelet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Le cervelet est composé de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Deux hémisphères</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une structure médiane appelée vermis</div>
+                <div class="option" onclick="toggleSelection(this)">C. Quatre lobes frontaux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un bulbe rachidien interne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Le vermis relie les deux hémisphères cérébelleux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Quels sont les trois lobes principaux du cervelet ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Lobe antérieur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lobe moyen</div>
+                <div class="option" onclick="toggleSelection(this)">C. Lobe postérieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lobe flocculo-nodulaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Le cervelet est divisé anatomiquement en ces trois lobes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le lobe antérieur est principalement impliqué dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La planification des mouvements volontaires</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'initiation des mouvements volontaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. La coordination fine des mouvements</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'équilibre pur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Il collabore avec le cortex moteur pour les schémas moteurs complexes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Le lobe flocculo-nodulaire est crucial pour :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le maintien de l'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">B. La coordination des mouvements oculaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. La stabilité du regard</div>
+                <div class="option" onclick="toggleSelection(this)">D. La force musculaire brute</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Situé près du tronc cérébral, il gère l'équilibre et l'oculomotricité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- L'organisation interne du cervelet comprend :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une substance grise périphérique (cortex)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une substance blanche centrale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des noyaux gris centraux profonds</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement de la substance blanche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>C'est une organisation typique : cortex plissé, centre blanc et noyaux profonds.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Citez les couches du cortex cérébelleux (de l'extérieur vers l'intérieur) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Couche moléculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Couche des cellules de Purkinje</div>
+                <div class="option" onclick="toggleSelection(this)">C. Couche granulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Couche pyramidale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le cortex cérébelleux ne possède que 3 couches cellulaires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Quelle cellule constitue la seule voie de sortie (efférente) du cortex cérébelleux ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La cellule granulaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. La cellule de Purkinje</div>
+                <div class="option" onclick="toggleSelection(this)">C. La fibre moussue</div>
+                <div class="option" onclick="toggleSelection(this)">D. La cellule étoilée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B</div>
+                <p>Leurs axones projettent vers les noyaux profonds ou d'autres parties du SNC.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Les informations afférentes arrivent au cervelet par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les fibres grimpantes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les fibres moussues</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fibres de Purkinje</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les fibres longitudinales</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Les fibres grimpantes et moussues sont les deux grandes voies d'entrée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- L'olive inférieure du bulbe rachidien donne naissance aux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Fibres moussues</div>
+                <div class="option" onclick="toggleSelection(this)">B. Fibres grimpantes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Fibres parallèles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cellules de Golgi</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les fibres grimpantes s'enroulent autour de l'arbre dendritique des cellules de Purkinje.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Les axones des cellules granulaires forment :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les fibres parallèles</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les fibres grimpantes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fibres moussues</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le vermis</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : A</div>
+                <p>Ils remontent vers la couche superficielle et se divisent en "T" pour former les fibres parallèles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Quel est le rôle électrophysiologique des cellules de Purkinje sur les noyaux profonds ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Excitateur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Inhibiteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Neutre</div>
+                <div class="option" onclick="toggleSelection(this)">D. Modulateur uniquement thermique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les axones des cellules de Purkinje ont un rôle inhibiteur sur les neurones des noyaux cérébelleux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Identifiez les noyaux gris profonds du cervelet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Noyau dentelé</div>
+                <div class="option" onclick="toggleSelection(this)">B. Noyau fastigial</div>
+                <div class="option" onclick="toggleSelection(this)">C. Noyaux interposés (embolus et globulus)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Noyau caudé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le noyau caudé est un noyau gris central du cerveau, pas du cervelet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Le noyau dentelé est principalement impliqué dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'équilibre axial</div>
+                <div class="option" onclick="toggleSelection(this)">B. La planification des mouvements volontaires complexes</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'exécution des mouvements fins</div>
+                <div class="option" onclick="toggleSelection(this)">D. La digestion</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>C'est le plus grand des noyaux profonds, lié au néocervelet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Quelles sont les trois unités fonctionnelles du cervelet ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Archéocervelet (Vestibulocérébellum)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Paléocervelet (Spinocérébellum)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Néocervelet (Cérébrocérébellum)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Mésocervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Ces divisions correspondent à l'évolution phylogénétique du cervelet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Le paléocervelet (ou spinocervelet) régule :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le tonus musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. La posture (statique et dynamique)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La planification motrice abstraite</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'audition</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Il reçoit les informations proprioceptives inconscientes pour adapter le tonus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Une lésion du cervelet peut entraîner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une ataxie (troubles de coordination)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une dysmétrie (geste qui dépasse son but)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une parole scandée et explosive</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une paralysie totale (perte de force)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>L'ataxie cérébelleuse conserve la force musculaire, contrairement à une paralysie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- L'ataxie de Friedreich est liée à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une carence en vitamine C</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un manque de protéine frataxine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un dysfonctionnement des mitochondries</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une accumulation de radicaux libres toxiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>La cellule "rouille et meurt" à cause du stress oxydatif mitochondrial.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Le syndrome cérébelleux statique est lié à une atteinte :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Du vermis</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des hémisphères cérébelleux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du lobe occipital</div>
+                <div class="option" onclick="toggleSelection(this)">D. Du noyau dentelé uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['A'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : A</div>
+                <p>L'atteinte vermienne cause des troubles de l'équilibre et une marche ébrieuse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Le syndrome cérébelleux cinétique se manifeste par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hypotonie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des tremblements lors du mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une asynergie musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une cécité corticale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Il résulte d'une atteinte des hémisphères cérébelleux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Dans l'ataxie cérébelleuse, la fermeture des yeux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aggrave considérablement les troubles</div>
+                <div class="option" onclick="toggleSelection(this)">B. N'aggrave pas les troubles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Améliore l'équilibre</div>
+                <div class="option" onclick="toggleSelection(this)">D. Provoque une chute immédiate systématique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['B'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une caractéristique majeure pour différencier l'ataxie cérébelleuse de l'ataxie vestibulaire ou proprioceptive.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Quelle structure assure la boucle de régulation du tonus musculaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le noyau rouge</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le faisceau rubro-spinal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les noyaux interposés</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le cortex visuel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>La boucle passe par le paléocervelet, les noyaux interposés, puis le noyau rouge.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- L'écriture d'un patient cérébelleux est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Trop petite (micrographie)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Irrégulière en amplitude (lettres)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Irrégulière dans l'espacement des mots</div>
+                <div class="option" onclick="toggleSelection(this)">D. Parfaitement calligraphiée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'écriture reflète la dysmétrie et le manque de coordination spatio-temporelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- Le cervelet fonctionne comme un "système asservi", cela signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Qu'il est subordonné aux ordres mais s'auto-contrôle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Qu'il possède des mécanismes d'auto-régulation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Qu'il ne reçoit aucune information du cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. Qu'il est totalement indépendant du SNC</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>L'organisation en boucles permet un contrôle permanent de l'action en cours.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- Les fibres moussues transmettent des informations provenant de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du système vestibulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du cortex cérébral (via le pont)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Exclusivement de l'olive bulbaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>L'olive bulbaire, elle, donne naissance aux fibres grimpantes.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            // On récupère le bouton cliqué pour trouver la question parente
+            const button = event.target;
+            const questionElement = button.closest('.question');
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0); // Récupère A, B, C ou D
+                
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

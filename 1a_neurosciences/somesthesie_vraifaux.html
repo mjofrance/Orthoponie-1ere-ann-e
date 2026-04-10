@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Somesthésie - Vrai/Faux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Vrai ou Faux : Somesthésie</h1>
+
+        <div class="section-title"><h2>Partie 1 : Récepteurs et Potentiels</h2></div>
+
+        <div class="question">
+            <h3>1- Le corps cellulaire du protoneurone est dans la substance grise de la moelle épinière.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il est situé dans le ganglion rachidien.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- On peut trouver des récepteurs sensoriels au niveau des os.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : VRAI</div>
+                <p>On en trouve au niveau de l'enveloppe osseuse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Les thermorécepteurs sont des terminaisons encapsulées de neurones sensitifs.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ce sont des terminaisons libres (comme les nocicepteurs).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Tous les mécanorécepteurs sont sensibles au même stimulus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation4">
+                <div class="result">Réponse : FAUX</div>
+                <p>Si le stimulus est toujours mécanique, ils varient selon la nature (pression, vibration, étirement...).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Lorsqu'un récepteur sensoriel est stimulé, cela crée un potentiel générateur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation5">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est le potentiel récepteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Le potentiel générateur est toujours transformé en message nerveux.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il n'est transformé en message nerveux que lorsqu'un certain seuil est atteint.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Plus le champ récepteur est étendu, plus la sensibilité est discriminative.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation7">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est l'inverse : plus le champ est étendu, plus le récepteur distingue sur une grande surface (moins précis).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Plus les récepteurs sont en surface, plus leur champ récepteur est étroit.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation8">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Les récepteurs phasiques sont à adaptation lente.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation9">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils sont à adaptation rapide.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Les récepteurs phasiques indiquent le début et la fin du stimulus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : VRAI</div>
+                <p>On les appelle récepteurs "on/off".</p>
+            </div>
+        </div>
+
+        <div class="section-title"><h2>Partie 2 : Voies de transmission</h2></div>
+
+        <div class="question">
+            <h3>11- Les thermorécepteurs sensibles au chaud sont situés dans l'épiderme.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils sont situés dans le derme.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Le transfert de l'information sensorielle du récepteur au cortex nécessite 2 relais.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : VRAI</div>
+                <p>Ce sont des voies à 3 neurones avec 2 relais.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Le corps cellulaire du neurone de 3ème ordre est situé dans l'épithalamus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il est situé dans le thalamus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Les neurones transmettant des informations thermiques sont myélinisés.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : FAUX</div>
+                <p>Ils sont généralement de faible diamètre (non myélinisés ou peu myélinisés).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Les mécanorécepteurs transmettent des informations via des fibres myélinisées de gros diamètre.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La voie lemniscale est la voie afférente du tact fin.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- La voie lemniscale croise la ligne médiane et remonte dans la moelle épinière.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : FAUX</div>
+                <p>C'est la voie extra-lemniscale qui croise avant de remonter. La voie lemniscale remonte dans la moelle avant de croiser dans le tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Dans la voie lemniscale, la synapse avec le 2ème neurone se fait dans le tronc cérébral.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Une lésion de la moelle épinière entraîne une perte de la sensibilité fine homolatérale et douloureuse controlatérale.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation19">
+                <div class="result">Réponse : VRAI</div>
+                <p>Le tact épicritique remonte avant de croiser (lésion homolatérale), alors que la douleur croise avant de remonter (lésion controlatérale).</p>
+            </div>
+        </div>
+
+        <div class="section-title"><h2>Partie 3 : Cortex et Analyse</h2></div>
+
+        <div class="question">
+            <h3>20- Le cortex somesthésique primaire est situé dans le lobe pariétal, juste en arrière du cortex moteur.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation20">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Le cortex somesthésique primaire reçoit des informations de neurones provenant du thalamus.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation21">
+                <div class="result">Réponse : VRAI</div>
+                <p>Le 2ème relais se fait nécessairement dans le thalamus quelle que soit la voie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- La réception des informations se fait au niveau de la couche V du cortex.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : FAUX</div>
+                <p>La réception se fait au niveau de la couche IV.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Toutes les voies de la sensibilité ont une organisation somatotopique.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Les surfaces du corps les plus représentées dans le cortex sont celles présentant une densité élevée de récepteurs.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : VRAI</div>
+                <p>Plus il y a de récepteurs, plus il y a d'informations à traiter.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Les surfaces de projection des différentes parties du corps sont variables en fonction des expériences individuelles.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Seul le cortex somesthésique secondaire (S2) analyse les informations sensorielles reçues par S1.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation26">
+                <div class="result">Réponse : FAUX</div>
+                <p>Le cortex pariétal postérieur, les aires motrices et le cortex temporal collaborent également.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Le cortex pariétal postérieur reçoit des informations de S2 mais pas de S1.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation27">
+                <div class="result">Réponse : FAUX</div>
+                <p>Il reçoit des informations de S2 ET de S1, ,ainsi que des informations )visuelles..</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') || 
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            
+            // Extraction du numéro de question pour afficher l'explication correspondante
+            const h3Text = element.parentElement.parentElement.querySelector('h3').textContent;
+            const questionNumber = h3Text.split('-')[0].trim();
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

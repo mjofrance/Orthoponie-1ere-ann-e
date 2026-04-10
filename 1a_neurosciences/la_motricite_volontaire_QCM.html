@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La Motricité Volontaire</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : La Motricité Volontaire</h1>
+
+        <h2>Test de connaissances : Système Moteur</h2>
+
+        <div class="question">
+            <h3>1- Quels sont les types de motricité décrits dans le cours ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Motricité réflexe</div>
+                <div class="option" onclick="toggleSelection(this)">B. Motricité volontaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Motricité automatique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Motricité végétative</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le cours distingue la motricité réflexe (protection), volontaire (intentionnelle) et automatique (séquences apprises comme la marche).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- La motricité volontaire se caractérise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une commande centrale au niveau du cortex</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un caractère stéréotypé et immuable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un mouvement intentionnel</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'implication de centres nerveux supraspinaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Elle est intentionnelle, non stéréotypée, et nécessite l'action coordonnée de centres supraspinaux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Quelles sont les phases d'un mouvement volontaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Phase de transduction sensorielle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Phase intentionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Phase de planification et programmation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Phase de réalisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Le mouvement se divise en phases intentionnelle (but), planification (coordination) et réalisation (voies nerveuses).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- L'aire motrice primaire (M1) se situe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans le lobe frontal</div>
+                <div class="option" onclick="toggleSelection(this)">B. En arrière du sillon de Rolando</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le gyrus précentral</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans l'aire 4 de Brodmann</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Située dans la partie postérieure du lobe frontal, juste en avant du sillon de Rolando (gyrus précentral), elle correspond à l'aire 4.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Quelles couches corticales sont très développées dans l'aire M1 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Couche IV (granulaire)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Couche III (pyramidale)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Couche V (cellules de Betz)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Couche VI (multiforme)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La couche III (communication) et la couche V (principale sortie avec cellules de Betz) sont très développées, contrairement à la couche IV.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Concernant l'Homonculus de Penfield :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. C'est une carte somatotopique du cortex moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. La surface est proportionnelle à la taille réelle du muscle</div>
+                <div class="option" onclick="toggleSelection(this)">C. La main et la tête occupent une place prépondérante</div>
+                <div class="option" onclick="toggleSelection(this)">D. La carte est figée dès la naissance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La surface est proportionnelle à la finesse de la motricité (main/tête) et non à la taille. Elle est plastique et évolue avec l'apprentissage.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- L'aire prémotrice (APM) est impliquée dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La planification guidée par des indices externes</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'ajustement postural avant le mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réalisation purement réflexe</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'acquisition de gestes appris</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'APM gère la planification via des stimuli sensoriels (ex: saisir une tasse), la posture et l'apprentissage moteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- L'aire motrice supplémentaire (AMS) se distingue par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Son rôle dans les mouvements générés volontairement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Son implication dans la coordination bilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le contrôle exclusif de la motricité oculaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'organisation des séquences motrices complexes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'AMS intervient dans l'initiation spontanée, la coordination des deux mains et les enchaînements (ex: piano).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le cortex préfrontal intervient dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La prise de décision</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le choix des actions supérieures</div>
+                <div class="option" onclick="toggleSelection(this)">C. La contraction directe des muscles striés</div>
+                <div class="option" onclick="toggleSelection(this)">D. La phase intentionnelle du mouvement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Siège des fonctions cognitives supérieures, il décide de l'action en amont de la réalisation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Une lésion de l'aire de Broca entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une surdité totale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une réduction de la fluence verbale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un agrammatisme</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une compréhension du langage préservée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>L'aphasie de Broca se marque par un style télégraphique, une fluence réduite, mais la compréhension reste relativement épargnée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Les ganglions de la base comprennent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le noyau caudé</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le putamen</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le globus pallidus</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Ils regroupent le striatum (noyau caudé + putamen) et le pallidum, situés sous le cortex.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Quel est le rôle principal des ganglions de la base ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Déclencher directement la contraction musculaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Agir comme un filtre moteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Activer le mouvement approprié et inhiber les concurrents</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'automatisation des mouvements</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Ils modulent les programmes moteurs sans déclencher directement la contraction.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- La maladie de Parkinson est liée à un dysfonctionnement de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La moelle épinière cervicale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des ganglions de la base (substance noire)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du système vestibulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Du contrôle de l'initiation du mouvement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Elle se manifeste par une difficulté à initier les mouvements (akinésie/bradykinésie) suite à l'atteinte des ganglions de la base.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le cervelet joue un rôle dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La régulation inconsciente du programme moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. La fluidité et l'harmonie des mouvements</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le stockage de séquences apprises</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'équilibre et la posture</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : A, B, C et D</div>
+                <p>Il coordonne, ajuste en temps réel et intègre les informations pour produire des gestes fluides.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- La voie pyramidale (cortico-spinale) est une voie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Directe (sans relais entre cortex et motoneurone)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Polysynaptique lente</div>
+                <div class="option" onclick="toggleSelection(this)">C. Responsable de la motricité volontaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Croisée (décussation)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>C'est la voie directe du mouvement volontaire. Elle croise la ligne médiane (décussation) au niveau du bulbe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Le faisceau cortico-nucléaire innerve :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les muscles des membres inférieurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. La tête et le cou</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les muscles de la face et de la langue</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le diaphragme uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Destiné aux motoneurones des nerfs crâniens, il permet la mastication, déglutition et phonation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Les voies extra-pyramidales se distinguent par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Leurs relais dans le tronc cérébral (noyau rouge, olive...)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le contrôle de la posture et du tonus</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une conduction très rapide à un seul neurone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Leur rôle dans la motricité automatique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Ce sont des voies indirectes et polysynaptiques passant par différents relais du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Quel faisceau extra-pyramidal est impliqué dans l'équilibre ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le faisceau rubro-spinal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le faisceau vestibulo-spinal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le faisceau tecto-spinal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le faisceau cortico-spinal latéral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le faisceau vestibulo-spinal prend naissance dans le bulbe et contrôle l'équilibre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Le motoneurone alpha est considéré comme la "voie finale commune" car :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il reçoit toutes les influences (volontaires, réflexes, auto)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il est le seul à sortir du système nerveux central vers le muscle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il intègre des signaux excitateurs et inhibiteurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il se situe exclusivement dans le cortex moteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Situé dans la corne antérieure ou les noyaux crâniens, il est le point de convergence de toutes les commandes motrices.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- La cellule de Renshaw :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est un motoneurone géant</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est un interneurone inhibiteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Limite la fréquence de décharge des motoneurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. Évite les contractions convulsives</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>C'est un mécanisme d'autocontrôle inhibiteur qui stabilise l'activité du motoneurone alpha.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Selon le principe de taille (Henneman) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les grands motoneurones sont recrutés en premier</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les petits motoneurones sont recrutés en premier</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le recrutement dépend de la puissance nécessaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. On peut activer un grand motoneurone seul</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Les petits motoneurones sont toujours recrutés avant les grands pour permettre une modulation fine de la force.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Une unité motrice est composée de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un seul motoneurone alpha</div>
+                <div class="option" onclick="toggleSelection(this)">B. Plusieurs motoneurones pour une fibre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Toutes les fibres musculaires innervées par ce motoneurone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un faisceau de nerfs sensitifs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>L'unité motrice est l'entité fonctionnelle de base composée d'un motoneurone et des fibres associées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Le signe de Babinski est caractéristique de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une lésion du motoneurone périphérique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une lésion de la voie pyramidale (syndrome pyramidal)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une extension du gros orteil à la stimulation plantaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une paralysie flasque</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>C'est un signe neurologique d'atteinte du système nerveux central (voie pyramidale).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Les symptômes d'une lésion extra-pyramidale incluent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Bradykinésie (lenteur)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Tremblement de repos</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hyperréflexie vive</div>
+                <div class="option" onclick="toggleSelection(this)">D. Rigidité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'hyperréflexie appartient au syndrome pyramidal. Le syndrome extra-pyramidal se définit par des mouvements anormaux et la rigidité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Une lésion du motoneurone périphérique (corne antérieure) provoque :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une paralysie flasque</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une spasticité importante</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une aréflexie (perte des réflexes)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une amyotrophie (fonte musculaire)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Contrairement au central, l'atteinte périphérique entraîne une perte de tonus et de masse musculaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Le cortex pariétal postérieur (aires 5 et 7) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Évalue le contexte spatial du mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Reçoit des informations visuelles et somatosensorielles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est le siège de l'exécution motrice pure</div>
+                <div class="option" onclick="toggleSelection(this)">D. Envoie des informations aux aires prémotrices</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Il intègre les données proprioceptives et visuelles pour renseigner l'aire 6 sur le but à atteindre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Les plexus nerveux sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des regroupements de nerfs rachidiens</div>
+                <div class="option" onclick="toggleSelection(this)">B. Présents pour tous les nerfs de T2 à T12</div>
+                <div class="option" onclick="toggleSelection(this)">C. Exemples : Brachial, Lombaire, Sacral</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement sensitifs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Les nerfs T2 à T12 ne forment pas de plexus. Les plexus (ex: brachial pour le bras) regroupent les racines pour innerver les membres.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- Quels éléments participent à la programmation du lancer d'une balle ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les aires motrices secondaires (APM/AMS)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le cervelet (force/amplitude)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les ganglions de la base (stratégie/expérience)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement la moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>C'est un effort hiérarchique impliquant l'intégration sensorielle, le filtrage des ganglions et la précision du cervelet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- La plasticité cérébrale du cortex moteur signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La carte motrice peut changer avec l'entraînement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les neurones morts se régénèrent instantanément</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une lésion peut entraîner une réorganisation des surfaces corticales</div>
+                <div class="option" onclick="toggleSelection(this)">D. La structure est immuable à l'âge adulte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La représentation corticale n'est pas figée ; elle évolue selon les expériences vécues.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- Les CPG (Central Pattern Generators) de la moelle épinière :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Permettent la marche automatique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Nécessitent une attention consciente constante</div>
+                <div class="option" onclick="toggleSelection(this)">C. Génèrent des rythmes alternés (extenseurs/fléchisseurs)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont situés dans le cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Situés dans la moelle, ces réseaux de neurones auto-entretiennent des mouvements rythmiques comme la locomotion.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            let anySelected = false;
+
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (option.classList.contains("selected")) {
+                    anySelected = true;
+                    if (correctAnswers.includes(optionLetter)) {
+                        option.classList.add("correct");
+                    } else {
+                        option.classList.add("incorrect");
+                    }
+                } else if (correctAnswers.includes(optionLetter)) {
+                    // Option correcte non sélectionnée
+                    option.classList.add("correct");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

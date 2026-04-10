@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Royal Annales Neuro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM Royal Annales Neuro</h1>
+
+        <h2>Exercice : QCM à Choix Multiples</h2>
+
+        <div class="question">
+            <h3>1- Cocher les réponses correctes :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La totalité du SNC est recouverte par les méninges</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le thalamus est dans le télencéphale</div>
+                <div class="option" onclick="toggleSelection(this)">C. le télencéphale contient uniquement de la substance grise</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne(s) réponse(s) : A</div>
+                <p>Explications : Le thalamus est dans le diencéphale. Le télencéphale contient aussi de la substance blanche.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- A propos du cervelet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. contient 3 subdivisions fonctionnelles</div>
+                <div class="option" onclick="toggleSelection(this)">B. est relié au TC antérieurement</div>
+                <div class="option" onclick="toggleSelection(this)">C. le cortex du cervelet contient 3 couches de neurones</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne(s) réponse(s) : A, B, C</div>
+                <p>Explications : Les 3 subdivisions sont l'archéocervelet, le paléocervelet et le néocervelet. Les 3 couches sont la couche moléculaire, les cellules de Purkinje, et la couche granulaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- D'après le schéma des expériences sur la moelle épinière, sélectionnez les bonnes réponses :</h3>
+			<img src="royal_neurosciences_QCM_q3.jpg" class="diagram-qcm">
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'expérience 1 montre qu'il n'y a pas de motricité ni de sensibilité</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans l'expérience 2, toutes les cellules sont dégénérées</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'expérience 2 montre qu'il n'y a pas de motricité mais que la sensibilité persiste.</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'expérience 3 montre qu'il n'y a pas de motricité mais que la sensibilité persiste.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne(s) réponse(s) : A, D</div>
+                <p>Explications : Lié à l'anatomie de la moelle épinière : la racine dorsale est sensitive, la racine ventrale est motrice, le nerf spinal est mixte.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Le cortex cérébral :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Possède 6 couches</div>
+                <div class="option" onclick="toggleSelection(this)">B. Afférences arrivent sur la couche IV</div>
+                <div class="option" onclick="toggleSelection(this)">C. Possède 5 aires sensorielles</div>
+                <div class="option" onclick="toggleSelection(this)">D. l'unité fonctionnelle du traitement de l'info est en colonne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne(s) réponse(s) : A, B, D</div>
+                <p>Explications : Le cortex possède 5 lobes (et non 5 aires sensorielles). L'unité fonctionnelle est en colonne de 6 couches plus ou moins développées selon l'activité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- La somesthésie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. épicritique rassemble le tact fin et tact grossier</div>
+                <div class="option" onclick="toggleSelection(this)">B. La voie extra-lemniscale est pour l'info nociceptive</div>
+                <div class="option" onclick="toggleSelection(this)">C. La somesthésie est une voie à 2 neurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. La voie des récepteurs cutanés est myélinisée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne(s) réponse(s) : B, C</div>
+                <p>Explications : Le tact grossier appartient à la sensibilité protopathique. La voie extra-lemniscale concerne l'information nociceptive + thermique + tact grossier. Seuls les mécanorécepteurs tactiles (Aβ) sont myélinisés, les thermorécepteurs et nocicepteurs cutanés sont peu ou pas myélinisés.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Concernant le système nerveux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'ensemble du système nerveux est entouré par les méninges</div>
+                <div class="option" onclick="toggleSelection(this)">B. le télencéphale est constitué que de substance grise</div>
+                <div class="option" onclick="toggleSelection(this)">C. le thalamus est situé dans le télencéphale</div>
+                <div class="option" onclick="toggleSelection(this)">D. la substance blanche est composée de l'axone des neurones</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne(s) réponse(s) : D</div>
+                <p>Explications : Uniquement le SNC est entouré par les méninges. Le télencéphale est constitué aussi de la substance blanche. Le thalamus est dans le diencéphale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Concernant le système nerveux (suite) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les ganglions constituent la substance grise</div>
+                <div class="option" onclick="toggleSelection(this)">B. les ganglions font partie du SNP</div>
+                <div class="option" onclick="toggleSelection(this)">C. La moelle épinière se termine au niveau de la deuxième vertèbre lombaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. l'épinèvre est l'ensemble des faisceaux d'un nerf</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne(s) réponse(s) : B</div>
+                <p>Explications : Les ganglions sont constitués de substance grise. La moelle épinière se termine au niveau de la première vertèbre lombaire. L'épinèvre entoure l'ensemble des faisceaux d'un nerf.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Le développement du système nerveux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'anencéphalie est une absence de fermeture du tube neural du coté du cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">B. la couche du manteau forme la substance blanche</div>
+                <div class="option" onclick="toggleSelection(this)">C. la cause de la microcéphalie est une prolifération anormale</div>
+                <div class="option" onclick="toggleSelection(this)">D. l'ensemble du cerveau provient du prosencéphale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne(s) réponse(s) : A, C, D</div>
+                <p>Explications : La couche du manteau forme la substance grise.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le potentiel de repos :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. il est de -70mv</div>
+                <div class="option" onclick="toggleSelection(this)">B. il est négatif côté intracellulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. les canaux de fuite potassiques permettent une entrée de na+</div>
+                <div class="option" onclick="toggleSelection(this)">D. les pompes na+/k+ permettent la sortie du na+ dans le sens du gradient de concentration</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+                <p>Explications : Il est positif en extracellulaire (PEC) et négatif en intracellulaire (NIC). Les canaux de fuite potassiques permettent la sortie de K+. Les pompes na+/k+ fonctionnent contre le gradient de concentration.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Les synapses :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le potentiel d'action est transmis aux neurotransmetteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. l'exocytose du neurotransmetteur se déroule dans un neurone présynaptique</div>
+                <div class="option" onclick="toggleSelection(this)">C. il y a une entrée de sodium dans la cellule</div>
+                <div class="option" onclick="toggleSelection(this)">D. les PPS se déplacent en augmentant d'amplitude jusqu'au cône d'émergence de l'axone</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne(s) réponse(s) : C</div>
+                <p>Explications : Le potentiel d'action permet l'exocytose des neuro-transmetteurs. Il y a une entrée de sodium quand il y a excitation (l'inhibition correspond au chlore). Les PPS se déplacent en diminuant d'amplitude.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Les aires corticales motrices :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. sont situées dans l'aire 4 et 6 de Brodmann</div>
+                <div class="option" onclick="toggleSelection(this)">B. sont situées dans le lobe frontal en avant du sillon de Rolando</div>
+                <div class="option" onclick="toggleSelection(this)">C. l'hémisphère gauche permet de diriger le côté droit</div>
+                <div class="option" onclick="toggleSelection(this)">D. dans l'aire motrice primaire, la couche IV est très développée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne(s) réponse(s) : A, C</div>
+                <p>Explications : Rolando est devant la zone pariétale, Sylvius est près du temporal. Dans l'aire motrice, les couches III et V sont très développées car ce sont des efférences motrices.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Le cervelet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Se situe dans la fosse crânienne postérieure</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il est constitué de 3 couches de cellules</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les cellules de Purkinje envoient les informations afférentes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les corps cellulaires des fibres moussues sont dans le Tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne(s) réponse(s) : A, B, D</div>
+                <p>Explications : Les cellules de Purkinje envoient des informations efférentes vers les noyaux cérébelleux. Les corps cellulaires des fibres moussues sont dans le pont qui appartient au tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Le cervelet (suite) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les axones des cellules de purkinje forment les noyaux gris centraux</div>
+                <div class="option" onclick="toggleSelection(this)">B. le paléocervelet permet le tonus musculaire grâce aux informations proprioceptives des membres</div>
+                <div class="option" onclick="toggleSelection(this)">C. l'archéocervelet se trouve dans le lobe flocculo-nodulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. l'archéocervelet a pour rôle la coordination des mouvements volontaires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne(s) réponse(s) : B, C</div>
+                <p>Explications : Les axones de Purkinje se dirigent vers les noyaux gris centraux. Archéo = équilibre = noyaux fastigiaux = lobe flocculo-nodulaire. Paléo = tonus musculaire = noyaux interposés. Néo = coordination des mouvements = noyaux dentelés (néocervelet).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le cervelet (suite 2) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Se trouve en avant du tronc cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est constitué de 3 subdivisions</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le paléocervelet se projette sur les noyaux interposés</div>
+                <div class="option" onclick="toggleSelection(this)">D. reçoit les informations de la moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne(s) réponse(s) : B, C, D</div>
+                <p>Explications : Se trouve en arrière du tronc cérébral. Il reçoit des informations de la moelle épinière, mais aussi du tronc cérébral et du cortex cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Les fibres nerveuses :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les fibres sensorielles envoient un influx nerveux au SNC</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les nerfs moteurs constituent les voies efférentes</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'influx nerveux est envoyé aux les récepteurs sensoriels</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les corps cellulaires des fibres motrices sont contenus dans le Tronc cérébral ou la moelle épinière</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne(s) réponse(s) : B, D</div>
+                <p>Explications : Afférent = qui arrive. Efférent = qui effectue. L'influx va des récepteurs sensoriels vers le SNC. Le tronc cérébral contient les corps cellulaires (bulbe rachidien pour les nerfs crâniens).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Le développement du système nerveux (suite) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. le tube neural est formé à partir de l'endoblaste</div>
+                <div class="option" onclick="toggleSelection(this)">B. le tube neural est à l'origine du SNC</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les phases de la neurogenèse dans l'ordre sont la prolifération la différenciation et la migration</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne(s) réponse(s) : B, C</div>
+                <p>Explications : Le tube neural est formé à partir de l'ectoblaste. Les phases sont bien dans cet ordre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le potentiel d'action :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. a toujours la même amplitude</div>
+                <div class="option" onclick="toggleSelection(this)">B. est créé si la dépolarisation de la membrane atteint un seuil</div>
+                <div class="option" onclick="toggleSelection(this)">C. se régénère de proche en proche sur les fibres amyéliniques</div>
+                <div class="option" onclick="toggleSelection(this)">D. se propage sur les dendrites et l'axone</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne(s) réponse(s) : A, B, C</div>
+                <p>Explications : Si les fibres sont myélinisées, il s'agit d'une propagation saltatoire (saut de nœud de Ranvier en nœud de Ranvier).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Le réflexe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. le réflexe myotatique est réalisé par un muscle effecteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. l'arc réflexe est constitué de 5 éléments</div>
+                <div class="option" onclick="toggleSelection(this)">C. le réflexe tendineux de golgi est un circuit nerveux avec un interneurone inhibiteur</div>
+                <div class="option" onclick="toggleSelection(this)">D. le réflexe myotatique est un circuit polysynaptique avec un interneurone excitateur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne(s) réponse(s) : A, B, C</div>
+                <p>Explications : Le muscle effecteur est le même que celui stimulé. L'arc = stimulus -> récepteur -> voie afférente sensorielle -> centre nerveux -> voie efférente motrice. Le circuit polysynaptique avec interneurone excitateur est pour le réflexe de flexion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Les voies motrices :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la voie extra pyramidale est polysynaptique</div>
+                <div class="option" onclick="toggleSelection(this)">B. la voie pyramidale joue un rôle dans la nociception</div>
+                <div class="option" onclick="toggleSelection(this)">C. la voie cortico nucléaire est une voie pyramidale</div>
+                <div class="option" onclick="toggleSelection(this)">D. la voie extra pyramidale fait relais au niveaux des noyaux gris ou du cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">E. la voie extra pyramidale sert de rétrocontrôle sur la commande motrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne(s) réponse(s) : A, C, D, E</div>
+                <p>Explications : La voie pyramidale correspond à la motricité volontaire. La voie cortico nucléaire est pour les nerfs crâniens.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Les voies motrices (suite) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les axones des motoneurones sont myélinisés</div>
+                <div class="option" onclick="toggleSelection(this)">B. le motoneurone alpha est la voie finale du mouvement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+                <p>Explications : Toujours myélinisés car ils sont très longs et l'information doit être rapide. C'est la voie commune à toutes les voies de commande.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Récepteurs sensoriels :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les mécanorécepteurs dans les couches profondes ont des champs récepteurs étroits</div>
+                <div class="option" onclick="toggleSelection(this)">B. les récepteurs phasiques détectent durant toute la durée du stimulus</div>
+                <div class="option" onclick="toggleSelection(this)">C. Meisner et Pacini sont des mécanorécepteurs à adaptation rapide</div>
+                <div class="option" onclick="toggleSelection(this)">D. les propriocepteurs sont des récepteurs somatosensoriels mécaniques internes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne(s) réponse(s) : C, D</div>
+                <p>Explications : En profondeur, les champs sont larges. Les récepteurs phasiques sont rapides (début + fin). Les propriocepteurs sont utiles dans les réflexes et le tonus (fuseau neuromusculaire, organe tendineux de Golgi, récepteurs articulaires).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Cortex somesthésique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. est localisé dans le lobe pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">B. constitué de 4 aires corticales</div>
+                <div class="option" onclick="toggleSelection(this)">C. informations proviennent de la couche V</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'homonculus sensitif traduit de la richesse de la densité des récepteurs périphériques dans chaque partie du corps</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne(s) réponse(s) : A, B, D</div>
+                <p>Explications : Les 4 aires sont 3a, 3b, 1 et 2. Les informations arrivent sur la couche IV.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- La somesthésie (suite) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. le tact fin permet une sensibilité épicritique</div>
+                <div class="option" onclick="toggleSelection(this)">B. la voie extra lemniscale permet de donner des informations nociceptives thermiques et tactiles</div>
+                <div class="option" onclick="toggleSelection(this)">C. la somesthésie est une voie à 2 neurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. les messages des récepteurs cutanés sont transmis par des fibres myélinisées</div>
+                <div class="option" onclick="toggleSelection(this)">E. il y a une organisation sensorielle dans l'ensemble des voies afférentes</div>
+                <div class="option" onclick="toggleSelection(this)">F. le dernier neurone fait relais pour la voie afférente jusqu'au tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+                <p>Explications : La voie extra lemniscale donne des informations tactiles grossières uniquement (tact fin pas en extra-lemniscal). La somesthésie compte 3 neurones et 2 relais. Les fibres ne sont pas toujours myélinisées. L'organisation est somatotopique. Le relais s'effectue jusqu'au cortex cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- La nociception :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les enképhalines bloquent la libération de la substance P</div>
+                <div class="option" onclick="toggleSelection(this)">B. les enképhalines permettent de moduler la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">C. les neurones à convergence sont des neurones spécifiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. les nocicepteurs sont encapsulées en fin de terminaison</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne(s) réponse(s) : A, B</div>
+                <p>Explications : Les enképhalines l'atténuent. Les neurones à convergence répondent à différents stimulus. Les nocicepteurs ont des terminaisons libres.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- La mémoire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'hippocampe joue un rôle dans la mémoire déclarative</div>
+                <div class="option" onclick="toggleSelection(this)">B. les étapes dans l'ordre du circuit de Papez : fornix, corps mamillaires hypothalamiques, noyaux antérieurs du thalamus, gyrus cingulaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. les souvenirs sont consolidés dans l'hippocampe</div>
+                <div class="option" onclick="toggleSelection(this)">D. la mémoire permet la plasticité synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">E. la potentialisation à long terme augmente l'efficacité synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">F. les synapses modifiables utilisent le glutamate comme neuromédiateur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'C', 'E', 'F'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne(s) réponse(s) : A, C, E, F</div>
+                <p>Explications : Mémoire déclarative = mémoire à long terme. Le circuit de Papez amène vers l'hippocampe. La plasticité synaptique permet la mémoire (et l'inverse).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- - La mémoire suite :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. les récepteurs AMPA sont perméables au calcium</div>
+                <div class="option" onclick="toggleSelection(this)">B. la protéine tau sert à l'architecture des neurones et leur stabilité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Alzheimer est dû à 2 types de lésions</div>
+                <div class="option" onclick="toggleSelection(this)">D. La potentialisation à long terme correspond à une modification morphologique des synapses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne(s) réponse(s) : B, C, D</div>
+                <p>Explications : AMPA = canal au sodium (Na+), NMDA = canal au calcium (Ca2+). La potentialisation à long terme correspond aussi à la plasticité synaptique.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La Nociception et la Douleur</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : La Nociception</h1>
+
+        <h2>Test de connaissances sur la physiologie de la douleur</h2>
+
+        <div class="question">
+            <h3>1- Selon l'IASP, la douleur est définie comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une simple réponse réflexe motrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une expérience sensorielle et émotionnelle désagréable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement associée à une lésion tissulaire réelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Associée à une lésion réelle ou potentielle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La définition de 1979 précise le caractère émotionnel et le fait que la lésion peut être réelle ou simplement potentielle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- La dimension sensorielle (somesthésique) de la douleur permet de distinguer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'intensité de la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. La réponse affective et cognitive</div>
+                <div class="option" onclick="toggleSelection(this)">C. La localisation précise</div>
+                <div class="option" onclick="toggleSelection(this)">D. La durée et la nature de l'agression</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>La somesthésie gère les paramètres "techniques" (où, combien de temps, quelle force), tandis que la dimension psychologique gère l'affect.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Les fibres responsables des sensations thermo-algiques sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les fibres Aα</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les fibres Aδ (peu myélinisées)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fibres C (amyéliniques)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les fibres Aβ (fortement myélinisées)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Les fibres Aδ et C véhiculent les messages nociceptifs, contrairement aux Aβ qui gèrent le tact non douloureux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Les nocicepteurs-mécanorécepteurs :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont reliés aux fibres C</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sont des terminaisons libres de fibres Aδ</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ont un champ récepteur large</div>
+                <div class="option" onclick="toggleSelection(this)">D. Provoquent une sensation de piqûre bien localisée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Ces récepteurs répondent aux stimuli mécaniques intenses avec un champ récepteur réduit (2-3 mm).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Les nocicepteurs polymodaux répondent à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La chaleur (45-60°C)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des stimuli chimiques nociceptifs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des stimuli mécaniques intenses</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement au toucher léger</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Leur nom "polymodal" indique qu'ils réagissent à plusieurs types d'énergies provoquant une lésion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- La douleur tardive (type brûlure, sourde) est transmise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les fibres Aδ</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les fibres C</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des fibres à vitesse de conduction lente (1 m/s)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les fibres Aβ</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Les fibres C sont non myélinisées, ce qui explique leur lenteur et le délai d'environ 1 seconde avant la perception.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Où se terminent majoritairement les fibres C dans la corne dorsale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Couche I de Rexed</div>
+                <div class="option" onclick="toggleSelection(this)">B. Couche II (substance gélatineuse)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Couche V</div>
+                <div class="option" onclick="toggleSelection(this)">D. Couche IX</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. Couche II</div>
+                <p>Les fibres C font leur premier relais principalement dans la couche II de Rexed.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Les neurones de 2ème ordre "à convergence" :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Reçoivent uniquement des infos nociceptives</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sont situés dans la couche V de Rexed</div>
+                <div class="option" onclick="toggleSelection(this)">C. Reçoivent des infos tactiles et viscérales</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont impliqués dans le codage de l'intensité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Ces neurones intègrent différentes informations, ce qui explique parfois les erreurs de localisation (douleurs projetées).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le faisceau spinothalamique (voie extra-lemniscale) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Monte du côté ipsilatéral à la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Croise la ligne médiane (décussation) dans la moelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Se dirige vers le thalamus</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est situé dans le cordon postérieur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Il se situe dans le cordon antéro-latéral controlatéral après avoir croisé la ligne médiane.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Le cortex somatosensoriel primaire (S1) est responsable de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mémorisation de la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. La localisation précise de la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'aspect émotionnel désagréable</div>
+                <div class="option" onclick="toggleSelection(this)">D. La discrimination de la nature du stimulus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>S1 code le "où" et le "quoi". Le "souffrir" dépend davantage du cortex frontal et limbique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Quelles structures font partie du système limbique impliqué dans la douleur ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Cortex cingulaire antérieur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Amygdale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortex insulaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. Motoneurones alpha</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Ces structures gèrent l'apprentissage, la mémoire et l'affect lié à la douleur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Le rôle de l'hypothalamus dans la nociception est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La localisation spatiale</div>
+                <div class="option" onclick="toggleSelection(this)">B. La régulation végétative</div>
+                <div class="option" onclick="toggleSelection(this)">C. La libération d'hormones du stress</div>
+                <div class="option" onclick="toggleSelection(this)">D. La coordination des réflexes de retrait</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'hypothalamus gère les réponses neuroendocriniennes à l'agression douloureuse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Le mécanisme du "Gate Control" (contrôle segmentaire) repose sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'inhibition des fibres fines par les fibres de gros diamètre</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'action d'un interneurone inhibiteur à enképhaline</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activation des fibres Aβ par le tact</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'ouverture du portillon par les fibres Aδ/C</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Le tact (Aβ) ferme le portillon en activant l'interneurone inhibiteur qui freine les fibres nociceptives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- La neurostimulation électrique transcutanée (TENS) utilise quel principe ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La destruction des nocicepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le recrutement des fibres tactiles Aβ</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le mécanisme du Gate Control</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'anesthésie locale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>En stimulant les fibres du tact, on "ferme" la porte à la douleur au niveau de la moelle épinière.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Le système inhibiteur descendant (contrôle central) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Part du tronc cérébral vers la moelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilise la sérotonine et la noradrénaline</div>
+                <div class="option" onclick="toggleSelection(this)">C. Amplifie toujours la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Implique la substance grise périaqueducale (SGPA)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>C'est un "frein naturel" qui bloque les messages au niveau médullaire, surtout en cas d'urgence.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quels sont les principaux neurotransmetteurs excitateurs de la douleur ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. GABA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Glutamate</div>
+                <div class="option" onclick="toggleSelection(this)">C. Substance P</div>
+                <div class="option" onclick="toggleSelection(this)">D. Enképhaline</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le glutamate gère la transmission rapide (Aδ) et la substance P les messages persistants (C).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le glutamate agit sur quels récepteurs postsynaptiques ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Récepteurs opioïdes μ</div>
+                <div class="option" onclick="toggleSelection(this)">B. Récepteurs AMPA</div>
+                <div class="option" onclick="toggleSelection(this)">C. Récepteurs NMDA</div>
+                <div class="option" onclick="toggleSelection(this)">D. Récepteurs NK1</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le glutamate déclenche des potentiels d'action via les récepteurs NMDA et AMPA.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La libération de Substance P provoque :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un potentiel de forte amplitude</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une atténuation du signal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une prolongation de la sensation douloureuse</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une transmission immédiate de douleur aiguë</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Elle amplifie et prolonge le signal, souvent en cas de stimulus intense.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Les enképhalines sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Des morphines endogènes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des neurotransmetteurs de la douleur rapide</div>
+                <div class="option" onclick="toggleSelection(this)">C. Capables de bloquer la libération de Substance P</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sécrétées par des interneurones médullaires</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Elles agissent sur les récepteurs opioïdes pour inhiber le message nociceptif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Le contrôle inhibiteur diffus par stimulation nociceptive (CIDN) explique que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une douleur peut en masquer une autre</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le cerveau ignore toutes les douleurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. La douleur doit être plus intense pour masquer la première</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il faut stimuler un territoire métamérique identique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Le CIDN met sous silence les neurones non concernés pour augmenter le contraste et la précision.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- La dimension cognitive de la douleur inclut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'attention portée au stimulus</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'anticipation et l'expérience passée</div>
+                <div class="option" onclick="toggleSelection(this)">C. La peur et l'anxiété</div>
+                <div class="option" onclick="toggleSelection(this)">D. La libération de prostaglandines</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>L'attention et l'expérience sont des facteurs cognitifs. La peur et l'anxiété sont classées comme émotionnelles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- La transduction correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le passage du message dans la moelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. La transformation de l'énergie (lésion) en message nerveux</div>
+                <div class="option" onclick="toggleSelection(this)">C. La perception consciente dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">D. La première étape du système nociceptif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>C'est la conversion d'un stimulus physique ou chimique en influx électrique au niveau périphérique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- L'inflammation augmente la douleur car :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les médiateurs (histamine, prostaglandines) activent les nocicepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle induit une sensibilisation périphérique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle détruit les fibres Aβ</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle prolonge l'activation des récepteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>La "soupe inflammatoire" abaisse le seuil d'activation des nocicepteurs.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Le cortex frontal permet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De supprimer la sensation brute de douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. De gérer le caractère désagréable ("souffrance")</div>
+                <div class="option" onclick="toggleSelection(this)">C. De localiser la piqûre sur la main</div>
+                <div class="option" onclick="toggleSelection(this)">D. D'adapter le comportement affectif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Une déconnexion frontale laisse la sensation intacte mais enlève la souffrance associée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Le réflexe de retrait :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est un réflexe médullaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Nécessite une interprétation corticale préalable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Implique les motoneurones des muscles fléchisseurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est déclenché par les fibres Aδ</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>C'est une réaction de protection automatique gérée au niveau de la moelle épinière.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Dans la moelle épinière, la substance gélatineuse de Rolando correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La couche V de Rexed</div>
+                <div class="option" onclick="toggleSelection(this)">B. La couche II de Rexed</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un centre de modulation important</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le lieu de passage des cordons postérieurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La couche II est cruciale pour le premier filtrage des messages nociceptifs.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- La voie paléo-spinothalamique est caractérisée par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une conduction rapide</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une conduction lente</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une faible information spatio-temporelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une organisation somatotopique précise</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Contrairement à la voie néo-spinothalamique, elle est plus diffuse et lente.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- Le "noyau spinal du trijumeau" véhicule la nociception de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La face</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les membres inférieurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les viscères abdominaux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les muscles axiaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['A'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : A. La face</div>
+                <p>Il rejoint les autres voies nociceptives au niveau du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- La sensibilisation centrale correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une diminution de l'activité des neurones de la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une augmentation de l'excitabilité des neurones médullaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un phénomène de plasticité du système nerveux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un blocage total des récepteurs NMDA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>C'est une modification du traitement du signal au niveau de la moelle qui amplifie la douleur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- Parmi ces substances, lesquelles sont des opioïdes naturels ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Noradrénaline</div>
+                <div class="option" onclick="toggleSelection(this)">B. Endorphines</div>
+                <div class="option" onclick="toggleSelection(this)">C. Enképhalines</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sérotonine</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Les endorphines et enképhalines sont les ligands naturels des récepteurs opioïdes (morphiniques).</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
