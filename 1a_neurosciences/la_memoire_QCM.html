@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : La Mémoire</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : La Mémoire</h1>
+
+        <div class="question">
+            <h3>1- Selon la définition du cours, la mémoire correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un processus uniquement dédié au stockage des images</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'ensemble des processus permettant d'apprendre, stocker et réutiliser des informations</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une trace physique indélébile de l'intelligence</div>
+                <div class="option" onclick="toggleSelection(this)">D. La trace qui reste d'un apprentissage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La mémoire est définie comme l'ensemble des processus d'apprentissage, de stockage et de récupération, et elle est considérée comme la trace d'un apprentissage.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quels sont les 4 processus distincts de la mémoire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Encodage, Consolidation, Stockage, Rappel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Perception, Attention, Encodage, Oubli</div>
+                <div class="option" onclick="toggleSelection(this)">C. Encodage, Sommeil, Cristallisation, Utilisation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Encodage, Consolidation, Archivage, Récupération</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : A. Encodage, Consolidation, Stockage, Rappel</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Le processus d'encodage dépend de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mémoire à court terme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des capacités attentionnelles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du contexte émotionnel et cognitif</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement du sens de l'ouïe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>L'encodage fait entrer l'information via les sens et dépend de la mémoire à court terme, de l'attention et du contexte (environnemental, émotionnel).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Qu'est-ce que la consolidation ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le passage de la mémoire de travail vers la mémoire à long terme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un processus visant à rendre l'information plus stable</div>
+                <div class="option" onclick="toggleSelection(this)">C. La recherche active d'un souvenir ancien</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'élimination des souvenirs inutiles</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A et B</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Lors du rappel, l'information est copiée temporairement de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mémoire sensorielle vers la mémoire à long terme</div>
+                <div class="option" onclick="toggleSelection(this)">B. La mémoire à long terme vers la mémoire de travail</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'hippocampe vers le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'hémisphère droit vers l'hémisphère gauche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B. La mémoire à long terme vers la mémoire de travail</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- La mémoire procédurale est une mémoire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Déclarative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Non déclarative</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des automatismes et habiletés</div>
+                <div class="option" onclick="toggleSelection(this)">D. Consciente et verbalisable</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>C'est la mémoire des savoir-faire (vélo, piano), elle est implicite/inconsciente.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Quelles structures sont impliquées dans la mémoire procédurale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'hippocampe</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le striatum et les noyaux gris centraux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le cortex préfrontal</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le striatum gère les habiletés motrices acquises et le cervelet la musculature squelettique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La mémoire de travail (à court terme) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. A une capacité illimitée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Permet de manipuler des informations pendant une tâche</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est relativement labile (s'efface vite sans effort)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dure de quelques secondes à quelques heures</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : B, C et D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le modèle de Baddeley pour la mémoire de travail postule l'existence de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une boucle phonologique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un calepin visuo-spatial</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un processeur central (Cortex préfrontal)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un réservoir émotionnel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La mémoire iconique est la mémoire sensorielle de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'ouïe</div>
+                <div class="option" onclick="toggleSelection(this)">B. La vision</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le toucher</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le goût</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. La vision</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- La mémoire sémantique correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Nos souvenirs personnels datés</div>
+                <div class="option" onclick="toggleSelection(this)">B. La mémoire encyclopédique et conceptuelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. La connaissance du sens des mots et des objets</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des événements dépendants du contexte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La mémoire sémantique stocke les concepts et connaissances générales, indépendamment du contexte d'acquisition.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- La mémoire épisodique se caractérise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un contexte spatio-temporel précis</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une absence d'émotions</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une récupération consciente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une apparition dès la naissance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Elle se constitue entre 3 et 5 ans et contient des détails sensoriels et émotionnels.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Quelle distinction Tulving a-t-il établie en 2005 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Entre mémoire court terme et long terme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre mémoire épisodique et mémoire autobiographique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Entre mémoire visuelle et auditive</div>
+                <div class="option" onclick="toggleSelection(this)">D. Entre neurones et cellules gliales</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Entre mémoire épisodique et mémoire autobiographique</div>
+                <p>La mémoire autobiographique organise les épisodes en une narration cohérente de l'histoire de sa vie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le célèbre patient H.M. a subi une ablation de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'hippocampe et des régions temporales avoisinantes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le lobe frontal</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'amygdale uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B. L'hippocampe et des régions temporales avoisinantes</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Suite à son opération, le patient H.M. présentait :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une perte de l'intelligence</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une mémoire à court terme normale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une incapacité à former de nouveaux souvenirs (amnésie antérograde)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une perte de la mémoire procédurale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quelles sont les 3 régions corticales du lobe temporal médian essentielles à la mémoire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Cortex entorhinal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Cortex périrhinal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortex parahippocampique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cortex moteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le circuit de Papez implique les structures suivantes :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hippocampe et Fornix</div>
+                <div class="option" onclick="toggleSelection(this)">B. Corps mamillaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. Noyau antérieur du thalamus</div>
+                <div class="option" onclick="toggleSelection(this)">D. Gyrus cingulaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : A, B, C et D</div>
+                <p>C'est le circuit hippocampo-mamillo-thalamo-cingulaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Qu'est-ce qu'un engramme ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une unité de mesure de l'intelligence</div>
+                <div class="option" onclick="toggleSelection(this)">B. La trace physique d'un souvenir dans le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un neurotransmetteur spécifique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une population de neurones modifiée par l'apprentissage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : B et D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Selon la loi de Hebb (1949) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les neurones qui déchargent ensemble se lient ensemble</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'apprentissage renforce les synapses</div>
+                <div class="option" onclick="toggleSelection(this)">C. La mémoire est localisée dans un seul neurone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une activation partielle peut rappeler la représentation complète</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : A, B et D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- La Potentialisation à Long Terme (PLT) repose sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une augmentation durable de l'efficacité synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une stimulation à basse fréquence</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activation simultanée de deux neurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une diminution du nombre de récepteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Quel neurotransmetteur est principalement impliqué dans la PLT ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dopamine</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sérotonine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Glutamate</div>
+                <div class="option" onclick="toggleSelection(this)">D. GABA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['C'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : C. Glutamate</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Les récepteurs NMDA ont pour particularité :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. D'être perméables au calcium (Ca2+)</div>
+                <div class="option" onclick="toggleSelection(this)">B. D'être bloqués par un ion Magnésium (Mg2+) au repos</div>
+                <div class="option" onclick="toggleSelection(this)">C. De dépendre de la dépolarisation membranaire</div>
+                <div class="option" onclick="toggleSelection(this)">D. D'être activés par le glucose</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Sur le plan morphologique, l'apprentissage peut entraîner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une augmentation de la taille des synapses</div>
+                <div class="option" onclick="toggleSelection(this)">B. La croissance de nouvelles synapses</div>
+                <div class="option" onclick="toggleSelection(this)">C. La transformation de synapses silencieuses en actives</div>
+                <div class="option" onclick="toggleSelection(this)">D. La mort systématique des neurones voisins</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- La Dépression à Long Terme (DLT) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est produite par des influx à basse fréquence</div>
+                <div class="option" onclick="toggleSelection(this)">B. Affaiblit la connexion synaptique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est le support de l'oubli actif</div>
+                <div class="option" onclick="toggleSelection(this)">D. Augmente le nombre de récepteurs AMPA</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- L'amnésie antérograde se définit par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'oubli des souvenirs avant le trauma</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'incapacité à stocker de nouveaux souvenirs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un trouble du rappel</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un défaut de consolidation/stockage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonnes réponses : B et D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Le syndrome de Korsakoff est dû à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une carence en vitamine B1 (thiamine)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un alcoolisme chronique souvent associé</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des lésions des corps mamillaires</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une tumeur du cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonnes réponses : A, B et C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Quels sont les "5 A" de la maladie d'Alzheimer ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Amnésie, Anomie, Aphasie, Apraxie, Agnosie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Attention, Atrophie, Alogie, Ataxie, Aphonie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Amnésie, Apathie, Angoisse, Anorexie, Anosmie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aucun de ces choix</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['A'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : A. Amnésie (mémoire), Anomie (mots), Aphasie (langage), Apraxie (gestes), Agnosie (reconnaissance).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- Dans l'Alzheimer, la protéine Tau :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est hyperphosphorylée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Forme des filaments hélicoïdaux à l'intérieur du neurone</div>
+                <div class="option" onclick="toggleSelection(this)">C. Stabilise mieux les microtubules qu'en temps normal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cause la dégénérescence neurofibrillaire (DNF)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonnes réponses : A, B et D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- Le peptide bêta-amyloïde :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Provient du clivage de la protéine APP</div>
+                <div class="option" onclick="toggleSelection(this)">B. Forme des plaques séniles à l'extérieur des neurones</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est toujours toxique, même à faible dose chez le sujet sain</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est clivé par les bêta et gamma sécrétases</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'APP est normale, mais son clivage anormal produit le peptide amyloïde insoluble qui s'agrège en plaques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- Sur le plan génétique, quel allèle du gène APOE multiplie par 15 le risque d'Alzheimer (si double allèle) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Epsilon 2</div>
+                <div class="option" onclick="toggleSelection(this)">B. Epsilon 3</div>
+                <div class="option" onclick="toggleSelection(this)">C. Epsilon 4</div>
+                <div class="option" onclick="toggleSelection(this)">D. Epsilon 5</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : C. Epsilon 4</div>
+                <p>L'allèle E2 est protecteur, tandis que l'allèle E4 augmente significativement le risque.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.getElementById(`explanation${questionNumber}`).parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

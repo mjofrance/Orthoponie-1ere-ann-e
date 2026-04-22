@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : TD 3 - Somesthésie - Nociception - Mémoire</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : TD 3</h1>
+        <h2>Somesthésie - Nociception - Mémoire</h2>
+
+        <div class="question">
+            <h3>1. La somesthésie correspond :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aux 5 sens uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aux sensations du corps</div>
+                <div class="option" onclick="toggleSelection(this)">C. À la vision et à l'audition</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aux émotions</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B. Aux sensations du corps</div>
+                <p>La somesthésie regroupe l'ensemble des sensations (tact, douleur, température, proprioception) provenant du corps.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. La sensibilité somatique est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Inconsciente</div>
+                <div class="option" onclick="toggleSelection(this)">B. Viscérale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Consciente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement motrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C. Consciente</div>
+                <p>Par opposition à la sensibilité viscérale souvent inconsciente, la sensibilité somatique atteint le cortex pour être perçue consciemment.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Le tact fin correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une sensibilité protopathique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une sensibilité épicritique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une sensibilité viscérale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une douleur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B. Une sensibilité épicritique</div>
+                <p>La sensibilité épicritique permet une discrimination fine des stimuli tactiles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. La proprioception permet :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De ressentir la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. De percevoir la température</div>
+                <div class="option" onclick="toggleSelection(this)">C. De connaître la position du corps</div>
+                <div class="option" onclick="toggleSelection(this)">D. De voir les objets</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C. De connaître la position du corps</div>
+                <p>La proprioception est le sens de la position et du mouvement des différentes parties du corps.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. La voie extra-lemniscale transporte :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le tact fin</div>
+                <div class="option" onclick="toggleSelection(this)">B. La proprioception</div>
+                <div class="option" onclick="toggleSelection(this)">C. La douleur et la température</div>
+                <div class="option" onclick="toggleSelection(this)">D. La vision</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : C. La douleur et la température</div>
+                <p>Aussi appelée voie spinothalamique, elle véhicule les informations thermo-algésiques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Les nocicepteurs sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Encapsulés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des fibres motrices</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des terminaisons libres</div>
+                <div class="option" onclick="toggleSelection(this)">D. Situés uniquement dans le cerveau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : C. Des terminaisons libres</div>
+                <p>Les récepteurs à la douleur sont des terminaisons nerveuses libres non spécialisées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Le potentiel de récepteur est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toujours propagé</div>
+                <div class="option" onclick="toggleSelection(this)">B. Local et non propagé</div>
+                <div class="option" onclick="toggleSelection(this)">C. Identique au potentiel d'action</div>
+                <div class="option" onclick="toggleSelection(this)">D. Indépendant du stimulus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. Local et non propagé</div>
+                <p>C'est une réponse graduée locale qui doit atteindre un seuil pour générer un potentiel d'action.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Le codage de l'intensité du stimulus dépend :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De la couleur du stimulus</div>
+                <div class="option" onclick="toggleSelection(this)">B. De la fréquence des potentiels d'action</div>
+                <div class="option" onclick="toggleSelection(this)">C. De la localisation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Du cortex uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B. De la fréquence des potentiels d'action</div>
+                <p>L'intensité est codée en modulation de fréquence des influx nerveux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Un champ récepteur étendu implique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une meilleure discrimination</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une moins bonne discrimination</div>
+                <div class="option" onclick="toggleSelection(this)">C. Aucun effet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une douleur plus forte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B. Une moins bonne discrimination</div>
+                <p>Plus le champ est large, moins le système peut distinguer deux points proches.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Les récepteurs phasiques :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Répondent en continu</div>
+                <div class="option" onclick="toggleSelection(this)">B. S'adaptent lentement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Répondent au début et à la fin du stimulus</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ne s'adaptent pas</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : C. Répondent au début et à la fin du stimulus</div>
+                <p>Ce sont des récepteurs à adaptation rapide qui signalent les changements de stimulus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Les thermorécepteurs sensibles au chaud sont :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans l'épiderme</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans le derme</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans les muscles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans le cerveau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. Dans le derme</div>
+                <p>Les récepteurs à la chaleur sont situés plus profondément dans le derme que ceux au froid.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Le neurone de 1er ordre a son corps cellulaire :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans le thalamus</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le ganglion rachidien</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans le tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : C. Dans le ganglion rachidien</div>
+                <p>Le neurone afférent primaire (pseudo-unipolaire) se situe dans le ganglion de la racine dorsale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. La voie lemniscale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Transporte la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Transporte le tact fin et la proprioception</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ne croise jamais</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est une voie motrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Transporte le tact fin et la proprioception</div>
+                <p>C'est la voie des cordons postérieurs, rapide et précise.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Dans la voie extra-lemniscale, la décussation se fait :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans la moelle épinière</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans l'hippocampe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B. Dans la moelle épinière</div>
+                <p>Contrairement à la voie lemniscale, le croisement est immédiat à l'étage de l'entrée dans la moelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Le thalamus est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un centre moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un relais sensoriel</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une aire visuelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une structure périphérique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B. Un relais sensoriel</div>
+                <p>Presque toutes les informations sensorielles transitent par le thalamus avant d'atteindre le cortex.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Le cortex somesthésique primaire (S1) est situé :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans le lobe frontal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Dans le lobe temporal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Dans le lobe pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dans le cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : C. Dans le lobe pariétal</div>
+                <p>S1 se trouve sur le gyrus post-central du lobe pariétal.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. S1 reçoit les informations :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Du cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du thalamus</div>
+                <div class="option" onclick="toggleSelection(this)">C. De la moelle directement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Du cortex moteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B. Du thalamus</div>
+                <p>Le neurone de 3ème ordre part du thalamus vers le cortex S1.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. Une zone très représentée dans S1 correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une faible densité de récepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forte densité de récepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une absence de sensibilité</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une lésion</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B. Une forte densité de récepteurs</div>
+                <p>C'est le principe de l'homonculus sensitif : les mains et le visage occupent une grande surface car ils sont très sensibles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. L'astéréognosie correspond :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À une perte de la vision</div>
+                <div class="option" onclick="toggleSelection(this)">B. À une incapacité à reconnaître un objet par le toucher</div>
+                <div class="option" onclick="toggleSelection(this)">C. À une paralysie</div>
+                <div class="option" onclick="toggleSelection(this)">D. À une perte de mémoire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B. À une incapacité à reconnaître un objet par le toucher</div>
+                <p>C'est un trouble de la perception tactile malgré une sensibilité élémentaire conservée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. Concernant la transduction sensorielle :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle correspond à la propagation du potentiel d'action</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle transforme un stimulus en signal électrique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle se produit dans le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle dépend uniquement du thalamus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B. Elle transforme un stimulus en signal électrique</div>
+                <p>C'est le mécanisme fondamental par lequel un récepteur convertit une énergie physique en potentiel de membrane.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. Le potentiel générateur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est toujours suffisant pour déclencher un PA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est indépendant du potentiel de récepteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Peut déclencher un PA s'il atteint un seuil</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est un signal propagé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['C'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : C. Peut déclencher un PA s'il atteint un seuil</div>
+                <p>Le potentiel générateur est le potentiel local qui, s'il est assez intense, génère des PA au niveau du premier nœud de Ranvier.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. Plus un stimulus est intense :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Plus l'amplitude des PA augmente</div>
+                <div class="option" onclick="toggleSelection(this)">B. Plus la fréquence des PA diminue</div>
+                <div class="option" onclick="toggleSelection(this)">C. Plus la fréquence des PA augmente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il n'y a aucun changement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['C'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : C. Plus la fréquence des PA augmente</div>
+                <p>L'amplitude d'un PA est fixe ("loi du tout ou rien"), seule sa fréquence varie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. Concernant les champs récepteurs :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ils sont identiques sur tout le corps</div>
+                <div class="option" onclick="toggleSelection(this)">B. Leur taille influence la discrimination</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ils ne se chevauchent jamais</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ils sont uniquement cutanés</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : B. Leur taille influence la discrimination</div>
+                <p>Petits champs = haute précision (bout des doigts) ; Grands champs = basse précision (dos).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. Les fibres Αβ :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont amyéliniques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Transportent la douleur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ont une conduction rapide</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont lentes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['C'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : C. Ont une conduction rapide</div>
+                <p>Elles sont larges et myélinisées, idéales pour le tact fin.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. Dans la voie lemniscale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il y a un relais médullaire obligatoire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le neurone 1 fait synapse dans la moelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le neurone 1 monte directement au tronc cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle transporte la douleur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['C'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : C. Le neurone 1 monte directement au tronc cérébral</div>
+                <p>Les fibres montent ipsilatéralement dans les colonnes dorsales jusqu'aux noyaux du bulbe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. La somatotopie signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Organisation aléatoire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Organisation fonctionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">C. Organisation spatiale du corps</div>
+                <div class="option" onclick="toggleSelection(this)">D. Organisation motrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['C'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : C. Organisation spatiale du corps</div>
+                <p>La surface du corps est projetée de façon ordonnée sur le cortex.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. Le cortex S1 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Reçoit directement les informations des récepteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est le premier relais</div>
+                <div class="option" onclick="toggleSelection(this)">C. Reçoit des informations thalamiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. N'a pas d'organisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['C'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : C. Reçoit des informations thalamiques</div>
+                <p>Le thalamus est le passage obligé avant S1.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. Une forte densité de récepteurs entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Mauvaise discrimination</div>
+                <div class="option" onclick="toggleSelection(this)">B. Champ récepteur large</div>
+                <div class="option" onclick="toggleSelection(this)">C. Bonne discrimination</div>
+                <div class="option" onclick="toggleSelection(this)">D. Absence de perception</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['C'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : C. Bonne discrimination</div>
+                <p>Plus il y a de récepteurs par cm², plus la résolution tactile est élevée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29. Un patient ne ressent plus le tact fin mais perçoit la douleur. La lésion est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Voie extra-lemniscale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Voie lemniscale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cortex frontal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B. Voie lemniscale</div>
+                <p>La dissociation tabétique montre une atteinte sélective du tact épicritique (voie lemniscale) tout en épargnant la douleur (extra-lemniscale).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30. Une lésion de la moelle gauche entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Perte douleur gauche</div>
+                <div class="option" onclick="toggleSelection(this)">B. Perte tact fin droite</div>
+                <div class="option" onclick="toggleSelection(this)">C. Perte tact fin gauche</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aucun déficit</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['C'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : C. Perte tact fin gauche</div>
+                <p>La voie lemniscale ne décusse qu'au bulbe, donc elle est atteinte du côté de la lésion médullaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31. Un patient reconnaît un objet visuellement mais pas par le toucher :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Agnosie visuelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Astéréognosie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Aphasie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Amnésie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(31, ['B'])">Valider</button>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : B. Astéréognosie</div>
+                <p>Déficit de reconnaissance haptique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32. Une difficulté à localiser un stimulus évoque :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Trouble moteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Trouble somatotopique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Trouble visuel</div>
+                <div class="option" onclick="toggleSelection(this)">D. Trouble auditif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['B'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : B. Trouble somatotopique</div>
+                <p>La localisation dépend de la carte spatiale corticale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33. Une atteinte du cortex pariétal postérieur entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Trouble du schéma corporel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Paralysie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Surdité</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cécité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['A'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : A. Trouble du schéma corporel</div>
+                <p>Le cortex associatif pariétal intègre les sensations pour former l'image du corps.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34. Un patient ignore la moitié de son corps :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Astéréognosie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aphasie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ataxie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Héminégligence</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(34, ['D'])">Valider</button>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : D. Héminégligence</div>
+                <p>Souvent après une lésion pariétale droite (le patient ignore l'espace gauche).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35. Une atteinte du thalamus entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Trouble moteur pur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Trouble auditif uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Trouble visuel uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Trouble du relais sensoriel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(35, ['D'])">Valider</button>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : D. Trouble du relais sensoriel</div>
+                <p>Le thalamus est le "hub" central des entrées sensorielles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36. Une perte de proprioception entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Incapacité à voir</div>
+                <div class="option" onclick="toggleSelection(this)">B. Difficulté à se tenir debout</div>
+                <div class="option" onclick="toggleSelection(this)">C. Douleur intense</div>
+                <div class="option" onclick="toggleSelection(this)">D. Perte de mémoire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B. Difficulté à se tenir debout</div>
+                <p>Sans information sur la position des articulations, l'équilibre et la coordination sont impossibles (ataxie somesthésique).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37. Une atteinte des fibres Αδ entraîne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Perte de douleur rapide</div>
+                <div class="option" onclick="toggleSelection(this)">B. Perte du tact fin</div>
+                <div class="option" onclick="toggleSelection(this)">C. Perte de proprioception</div>
+                <div class="option" onclick="toggleSelection(this)">D. Trouble moteur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['A'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : A. Perte de douleur rapide</div>
+                <p>Les fibres Adélta sont responsables de la douleur "piquante" et immédiate.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38. Une stimulation répétée moins perçue correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sommation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Intégration</div>
+                <div class="option" onclick="toggleSelection(this)">C. Transduction</div>
+                <div class="option" onclick="toggleSelection(this)">D. Adaptation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['D'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : D. Adaptation</div>
+                <p>C'est la diminution de la réponse d'un récepteur à un stimulus maintenu.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.getElementById(`explanation${questionNumber}`).parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mémoire - VRAI ou FAUX</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Petite sécurité pour éviter de changer de réponse après coup */
+        .options.answered {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        La Mémoire - VRAI ou FAUX</h1>
+
+        <div id="quiz-container">
+            </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        const quizData = [
+            { q: "1. La mémoire correspond uniquement au stockage des informations.", a: "Faux", e: "FAUX, il y a aussi encodage / consolidation / rappel" },
+            { q: "2. L’encodage dépend des capacités attentionnelles.", a: "Vrai", e: "VRAI (mais pas uniquement)" },
+            { q: "3. La consolidation permet de rendre l’information plus stable à long terme.", a: "Vrai", e: "VRAI" },
+            { q: "4. Une bonne consolidation garantit toujours un rappel efficace.", a: "Faux", e: "FAUX" },
+            { q: "5. Le rappel est un processus passif.", a: "Faux", e: "FAUX" },
+            { q: "6. La mémoire procédurale est consciente et verbalisable.", a: "Faux", e: "FAUX, la mémoire procédurale est inconsciente" },
+            { q: "7. La mémoire procédurale dépend principalement de l’hippocampe.", a: "Faux", e: "FAUX" },
+            { q: "8. Faire du vélo fait appel à la mémoire procédurale.", a: "Vrai", e: "VRAI" },
+            { q: "9. La mémoire déclarative est inconsciente.", a: "Faux", e: "FAUX, elle est à la fois consciente et inconsciente" },
+            { q: "10. La mémoire de travail a une capacité limitée.", a: "Vrai", e: "VRAI" },
+            { q: "11. La mémoire de travail peut conserver une information sans effort conscient.", a: "Faux", e: "FAUX" },
+            { q: "12. La mémoire sensorielle peut durer plusieurs heures.", a: "Faux", e: "FAUX, seulement quelques millisecondes" },
+            { q: "13. La mémoire sémantique dépend du contexte spatio-temporel.", a: "Faux", e: "FAUX (c’est la mémoire épisodique)" },
+            { q: "14. La mémoire épisodique concerne des événements vécus avec leur contexte.", a: "Vrai", e: "VRAI" },
+            { q: "15. La mémoire autobiographique construit l’identité personnelle.", a: "Vrai", e: "VRAI" },
+            { q: "16. L’hippocampe joue un rôle central dans la consolidation des souvenirs.", a: "Vrai", e: "VRAI" },
+            { q: "17. Une lésion de l’hippocampe empêche la formation de nouveaux souvenirs.", a: "Vrai", e: "VRAI" },
+            { q: "18. La mémoire procédurale est fortement affectée par les lésions de l’hippocampe.", a: "Faux", e: "FAUX" },
+            { q: "19. La plasticité synaptique correspond à l’affaiblissement des connexions neuronales uniquement.", a: "Faux", e: "FAUX, il peut aussi s’agir de renforcement" },
+            { q: "20. La potentialisation à long terme renforce les connexions synaptiques.", a: "Vrai", e: "VRAI" },
+            { q: "21. Les récepteurs NMDA sont impliqués dans la plasticité synaptique.", a: "Faux", e: "FAUX, ce sont les récepteurs AMPA (ils sont multipliés ou disparaissent)" },
+            { q: "22. La dépression à long terme augmente l’efficacité synaptique.", a: "Faux", e: "FAUX, elle affaiblit l’efficacité synaptique" },
+            { q: "23. L’amnésie rétrograde concerne les souvenirs après un événement.", a: "Faux", e: "FAUX, elle concerne les souvenirs avant l’évènement" },
+            { q: "24. Le syndrome de Korsakoff est lié à une carence en vitamine B1.", a: "Vrai", e: "VRAI" },
+            { q: "25. La maladie d’Alzheimer débute généralement au niveau de l’hippocampe.", a: "Vrai", e: "VRAI" },
+            { q: "26. Les plaques amyloïdes sont toujours directement responsables des symptômes.", a: "Faux", e: "FAUX, certains patients en ont sans que cela ait de conséquence" },
+            { q: "27. L’amnésie antérograde correspond à un trouble du rappel.", a: "Faux", e: "FAUX – cela correspond à l’incapacité à intégrer de nouveaux souvenirs" },
+            { q: "28. L’amnésie rétrograde est liée à un défaut de stockage des nouvelles informations.", a: "Faux", e: "FAUX" },
+            { q: "29. Les amnésies touchent plus souvent la mémoire déclarative que procédurale.", a: "Vrai", e: "VRAI" },
+            { q: "30. Dans la maladie d’Alzheimer, la dégénérescence neuronale débute dans le cortex frontal.", a: "Faux", e: "FAUX, dans l’hippocampe" },
+            { q: "31. Les protéines Tau sont normalement impliquées dans la stabilité neuronale.", a: "Vrai", e: "VRAI - cytosquelette" },
+            { q: "32. Les plaques amyloïdes sont toujours corrélées à la sévérité des symptômes.", a: "Faux", e: "FAUX" },
+            { q: "33. La plasticité synaptique diminue avec le vieillissement.", a: "Vrai", e: "VRAI" },
+            { q: "34. La DLT et la PLT utilisent des mécanismes totalement différents.", a: "Faux", e: "FAUX, ce sont les mêmes procédés actifs dans les 2 cas" }
+        ];
+
+        const container = document.getElementById('quiz-container');
+
+        quizData.forEach((item, index) => {
+            const questionId = index + 1;
+            const questionDiv = document.createElement('div');
+            questionDiv.className = 'question';
+            questionDiv.innerHTML = `
+                <h3>${item.q}</h3>
+                <div class="options" id="options-${questionId}">
+                    <div class="option" onclick="handleAutoCheck(this, 'Vrai', '${item.a}', ${questionId})">Vrai</div>
+                    <div class="option" onclick="handleAutoCheck(this, 'Faux', '${item.a}', ${questionId})">Faux</div>
+                </div>
+                <div class="explanation" id="explanation-${questionId}">
+                    <div class="result">Réponse : ${item.a.toUpperCase()}</div>
+                    <p>${item.e}</p>
+                </div>
+            `;
+            container.appendChild(questionDiv);
+        });
+
+        function handleAutoCheck(selectedOption, value, correctValue, id) {
+            const optionsContainer = document.getElementById(`options-${id}`);
+            const explanation = document.getElementById(`explanation-${id}`);
+            const allOptions = optionsContainer.querySelectorAll('.option');
+
+            // 1. Désactiver les clics sur cette question
+            optionsContainer.classList.add('answered');
+
+            // 2. Marquer les couleurs
+            allOptions.forEach(opt => {
+                if (opt.textContent === correctValue) {
+                    opt.classList.add('correct');
+                } else if (opt === selectedOption && value !== correctValue) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            // 3. Afficher l'explication
+            explanation.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
