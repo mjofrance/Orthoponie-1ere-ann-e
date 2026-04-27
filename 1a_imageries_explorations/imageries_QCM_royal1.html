@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imageries et explorations - QCM Royal 1</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Imageries et explorations - QCM Royal 1</h1>
+
+        <div class="question">
+            <h3>1. En imagerie par résonance magnétique, une pondération T1 peut être considérée comme "anatomique" car le cortex apparaît en hypersignal et la substance blanche en hyposignal</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation1">
+                <div class="result">Réponse : b) Faux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Les séquences dites de "susceptibilité magnétique" sont habituellement utilisées pour la recherche de saignements</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">c) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Faux</div>
+            </div>
+            <div class="explanation" id="explanation2">
+                <div class="result">Réponse : c) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Sur une séquence d'IRM encéphalique en pondération T2, le cortex apparaît moins intense que la substance blanche</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">d) Faux</div>
+            </div>
+            <div class="explanation" id="explanation3">
+                <div class="result">Réponse : d) Faux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quelles sont les principales modalités d'imagerie adaptées à l'exploration du cerveau ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Echographie</div>
+                <div class="option" onclick="toggleSelection(this)">e) Scanner</div>
+                <div class="option" onclick="toggleSelection(this)">f) Irm</div>
+                <div class="option" onclick="toggleSelection(this)">b) Radiographie standard</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['e', 'f'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : e) Scanner, f) Irm</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Concernant les principes techniques du scanner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Il nécessite l'émission de faisceaux d'ultrasons</div>
+                <div class="option" onclick="toggleSelection(this)">b) Il nécessite l'émission de faisceaux de rayons X</div>
+                <div class="option" onclick="toggleSelection(this)">c) Il est basé sur la mesure de la densité radiologique des volumes élémentaires d'une coupe</div>
+                <div class="option" onclick="toggleSelection(this)">d) L'acronyme français TDM correspond à tomodensitométrie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['b', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : b, c et d</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Concernant les précautions d'utilisation du scanner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Le scanner est une technique d'imagerie dite irradiante</div>
+                <div class="option" onclick="toggleSelection(this)">b) Les radiations ionisantes n'ont pas d'effet sur la santé humaine</div>
+                <div class="option" onclick="toggleSelection(this)">c) Le scanner est contre-indiqué en cas de pacemaker ou de défibrillateur cardiaque implantable</div>
+                <div class="option" onclick="toggleSelection(this)">d) Le scanner est contre-indiqué en cas de présence de corps étranger métallique dans l'organisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['a'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : a) Le scanner est une technique d'imagerie dite irradiante</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Concernant un saignement récent en scanner, il apparaît :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Hyperéchogène</div>
+                <div class="option" onclick="toggleSelection(this)">b) Hyperdense</div>
+                <div class="option" onclick="toggleSelection(this)">c) En hypersignal</div>
+                <div class="option" onclick="toggleSelection(this)">d) En hyperfixation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['b'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : b) Hyperdense</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Concernant l'analyse de l'image en scanner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Un objet métallique intracrânien (ex: clip chirurgical) est source d'artéfacts limitant l'interprétation de l'examen</div>
+                <div class="option" onclick="toggleSelection(this)">b) Les mouvements du patient pendant l'acquisition n'entraînent pas d'artéfacts</div>
+                <div class="option" onclick="toggleSelection(this)">c) Un scanner ne permet pas de distinguer un accident vasculaire cérébral ischémique ou hémorragique</div>
+                <div class="option" onclick="toggleSelection(this)">d) La détection d'un effet de masse sur le cerveau permet de juger de la gravité d'une hémorragie intracrânienne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['a', 'd'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : a et d</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Concernant l'utilisation de produits de contraste en scanner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) L'injection intraveineuse d'un produit de contraste permet de mieux analyser les vaisseaux intracrâniens</div>
+                <div class="option" onclick="toggleSelection(this)">b) L'injection intraveineuse d'un produit de contraste n'apporte pas d'intérêt dans la détection des tumeurs cérébrales</div>
+                <div class="option" onclick="toggleSelection(this)">c) L'angioscanner permet d'analyser les anévrismes artériels intra-craniens</div>
+                <div class="option" onclick="toggleSelection(this)">d) Les produits de contraste iodés n'entraînent jamais de réaction allergique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['a', 'c'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : a et c</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. En tomodensitométrie, la présence d'air au sein de la boîte crânienne peut être affirmée par le fait de mesurer une densité autour de -1000 UH</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation10">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. En tomodensitométrie, un accident ischémique cérébral récent peut apparaître sous la forme d'une dédifférenciation systématisée de la densité entre la substance blanche et la grise</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation11">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Un scanner encéphalique permet d'éliminer un accident ischémique récent</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation12">
+                <div class="result">Réponse : b) Faux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Le contraste en tomodensitométrie est fonction de la densité des différents tissus traversés par les rayons x</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation13">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. L'imagerie par résonance magnétique n'utilisant aucun rayonnement X, il n'existe donc aucune contre-indication à son utilisation</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation14">
+                <div class="result">Réponse : b) Faux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. En IRM, une restriction de diffusion peut être observée dans un œdème cytotoxique (ex: ischémie cérébrale aigue) ou au sein d'une lésion avec hypercellularité (ex: tumeur maline)</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation15">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Un antécédent de plaie oculaire avec possible éclat métallique dans les yeux justifie la réalisation préalable d'une tomodensitométrie avant de passer une IRM cérébrale</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17. Le contraste BOLD repose sur les variations de concentration en oxygène dans le sang, et permet notamment d'étudier les aires fonctionnelles du langage</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation17">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18. En IRM, ce n'est pas grave si j'ai oublié de faire quelques séquences lors de l'examen car par un jeu de post traitement info, je peux artificiellement reconstituer les séquences non réalisées</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation18">
+                <div class="result">Réponse : b) Faux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19. Parmi les propositions suivantes qui concernent la radio cinéma de déglutition, lesquelles sont vraies ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) L'os hyoïde est le plus souvent visible de profil</div>
+                <div class="option" onclick="toggleSelection(this)">b) Le cartilage thyroïde est rarement visible sauf s'il est calcifié</div>
+                <div class="option" onclick="toggleSelection(this)">c) Le bord inférieur du cricoïde correspond au niveau de C4-C6</div>
+                <div class="option" onclick="toggleSelection(this)">d) La présence de produit radio-opaque dans les sinus piriformes après déglutition est en faveur d'une sténose de la bouche œsophagienne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['a', 'b', 'd'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : a, b et d</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20. Parmi les propositions suivantes qui concernent la radio cinéma de déglutition, lesquelles sont vraies ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) Le produit Radio opaque le plus souvent utilisé est du sulfate baryum</div>
+                <div class="option" onclick="toggleSelection(this)">b) Des textures liquides ou épaissies peuvent être testées</div>
+                <div class="option" onclick="toggleSelection(this)">c) Des manoeuvres de posture peuvent être testées</div>
+                <div class="option" onclick="toggleSelection(this)">d) Quatre incidences sont le plus souvent testées (antérieure, postérieure, latérale et trois-quart)</div>
+                <div class="option" onclick="toggleSelection(this)">e) La présence d'un manipulateur raison et d'un orthophoniste doit être privilégiée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['a', 'b', 'c', 'd', 'e'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : a, b, c, d et e</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. Concernant l'analyse de l'image en scanner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a) L'image analysée est en niveaux de gris</div>
+                <div class="option" onclick="toggleSelection(this)">b) Le scanner ne permet pas de faire des reconstructions 3D</div>
+                <div class="option" onclick="toggleSelection(this)">c) Il est possible de modifier le contraste de l'image en fonction de l'organe analysé</div>
+                <div class="option" onclick="toggleSelection(this)">d) Il est possible de distinguer la substance blanche de la substance grise</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['a', 'c', 'd'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonnes réponses : a, c et d</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22. En TDM la densité d'un hématome intra crânien aigu est habituellement autour de +60UH</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation22">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. En TDM, un hématome extra-dural apparaît habituellement sous la forme d'une lentille hyperdense extra-axiale biconvexe</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation23">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24. En TDM, la densité d'un lipome est habituellement autour de -100 UH</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation24">
+                <div class="result">Réponse : a) Vrai</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25. La présence d'éclat métallique dans le corps est une contre-indication habituelle à la TDM</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">a) Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">b) Faux</div>
+            </div>
+            <div class="explanation" id="explanation25">
+                <div class="result">Réponse : b) Faux (C'est une contre-indication à l'IRM, pas au scanner)</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.trim().charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent.includes('Vrai')) ||
+                    (correctAnswer === 'faux' && option.textContent.includes('Faux'))) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const questionTitle = element.parentElement.parentElement.querySelector('h3').textContent;
+            const questionNumber = questionTitle.split('.')[0].trim();
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

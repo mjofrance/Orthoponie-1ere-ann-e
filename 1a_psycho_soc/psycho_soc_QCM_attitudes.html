@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Psychologie Sociale - Attitudes et Persuasion</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Attitudes, Changement d'attitude et Persuasion</h1>
+
+        <div class="section-title">Introduction et Définitions</div>
+
+        <div class="question">
+            <h3>1- Selon Allport (1935), l'attitude est un état mental et neuropsychologique de préparation à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La réflexion pure</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'action</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'émotion subite</div>
+                <div class="option" onclick="toggleSelection(this)">D. La mémorisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B. L'action</div>
+                <p>Allport définit l'attitude comme une préparation à l'action organisée à la suite de l'expérience.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quelle propriété de l'attitude correspond au fait d'être "pour" ou "contre" un objet ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La centralité</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'accessibilité</div>
+                <div class="option" onclick="toggleSelection(this)">C. La direction</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'intensité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C. La direction</div>
+                <p>La direction (ou valence) caractérise la position favorable ou défavorable vis-à-vis de l'objet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Une attitude "polarisée" est une attitude qui :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est proche de la neutralité</div>
+                <div class="option" onclick="toggleSelection(this)">B. Se rapproche des catégories extrêmes du continuum</div>
+                <div class="option" onclick="toggleSelection(this)">C. Change très fréquemment</div>
+                <div class="option" onclick="toggleSelection(this)">D. N'a pas de direction claire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B. Se rapproche des catégories extrêmes du continuum</div>
+                <p>Plus l'affect est extrême (tout à fait pour/contre), plus l'attitude est dite polarisée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Quel type de structure cognitive caractérise une attitude sur un sujet clivant comme "la chasse" ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Unipolaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Bipolaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Neutre</div>
+                <div class="option" onclick="toggleSelection(this)">D. Amorphe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : B. Bipolaire</div>
+                <p>Une structure bipolaire oppose des arguments "contre" et "pour" (ex: la chasse, la peine de mort).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- L'intensité d'une attitude est-elle figée dans le temps ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Oui, elle est immuable dès la formation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Non, elle évolue selon les contextes sociaux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Oui, sauf en cas de pathologie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle ne dépend que de la génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B. Non, elle évolue selon les contextes sociaux</div>
+                <p>L'intensité évolue en fonction des contextes politiques, socioéconomiques et sociaux.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Propriétés et Modèles</div>
+
+        <div class="question">
+            <h3>6- La "centralité" d'une attitude illustre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La rapidité de réponse</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'engagement personnel (implication de soi)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le nombre d'arguments connus</div>
+                <div class="option" onclick="toggleSelection(this)">D. La position géographique du sujet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B. L'engagement personnel (implication de soi)</div>
+                <p>Les attitudes centrales font partie de nous et nous les défendons face aux menaces.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Comment Fazio (1989) mesure-t-il l'accessibilité d'une attitude ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Par un questionnaire de 100 questions</div>
+                <div class="option" onclick="toggleSelection(this)">B. Par le temps de latence de la réaction</div>
+                <div class="option" onclick="toggleSelection(this)">C. Par l'observation du langage corporel</div>
+                <div class="option" onclick="toggleSelection(this)">D. Par l'analyse des rêves</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B. Par le temps de latence de la réaction</div>
+                <p>L'accessibilité est la facilité avec laquelle l'attitude est activée, mesurée par le temps de réponse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Selon le modèle tripartite classique, quelles sont les 3 composantes de l'attitude ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Cognitive, Affective, Conative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Biologique, Sociale, Psychologique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Verbale, Gestuelle, Écrite</div>
+                <div class="option" onclick="toggleSelection(this)">D. Passée, Présente, Future</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : A. Cognitive, Affective, Conative</div>
+                <p>Ce modèle de Rosenberg & Hovland (1960) inclut les croyances (cognition), les émotions (affect) et les intentions/comportements (conation).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Le modèle unidimensionnel de Thurstone réduit l'attitude à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une somme de connaissances scientifiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une évaluation affective (attirance/répulsion)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un réflexe neurologique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une pression sociale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B. Une évaluation affective (attirance/répulsion)</div>
+                <p>Pour Thurstone, l'attitude est uniquement une réponse évaluative favorable ou défavorable.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Lien Attitude-Comportement</div>
+
+        <div class="question">
+            <h3>10- L'étude de LaPiere (1934) sur le couple chinois a montré :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une parfaite corrélation entre attitude et comportement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une forte discrimination réelle dans les hôtels</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une non-concordance (accueil favorable vs refus par courrier)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que les hôteliers ne lisent pas leur courrier</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : C. Une non-concordance (accueil favorable vs refus par courrier)</div>
+                <p>L'attitude déclarée par courrier était négative alors que le comportement réel était positif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Selon Fishbein & Ajzen, pour prédire un comportement spécifique, il faut mesurer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'attitude générale envers la personne</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'attitude spécifique envers le comportement cible</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le quotient intellectuel du sujet</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'humeur du jour</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. L'attitude spécifique envers le comportement cible</div>
+                <p>Le lien est bien plus fort entre "l'attitude envers le fait d'aller à l'église" et "aller à l'église" qu'avec une attitude générale envers la religion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Quel est le meilleur prédicteur du comportement selon Fishbein & Ajzen ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le souvenir d'enfance</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'intention comportementale</div>
+                <div class="option" onclick="toggleSelection(this)">C. La force physique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le hasard</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : B. L'intention comportementale</div>
+                <p>L'intention est l'instruction que se donne l'individu pour se comporter d'une certaine façon.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Quelle variable la Théorie du Comportement Planifié (TCP) ajoute-t-elle par rapport à la TAR ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La norme subjective</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le contrôle comportemental perçu</div>
+                <div class="option" onclick="toggleSelection(this)">C. La mémoire à long terme</div>
+                <div class="option" onclick="toggleSelection(this)">D. La génétique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Le contrôle comportemental perçu</div>
+                <p>La TCP (Ajzen, 1991) ajoute les croyances sur les freins et facilitateurs de l'action.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Dans l'expérience de Moriarty (1975) sur la plage, pourquoi 95% des gens interviennent-ils pour empêcher le vol ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Parce qu'ils ont été payés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Parce qu'ils ont accepté de "jeter un oeil" (engagement)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Parce qu'ils sont naturellement courageux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Parce que le voleur était mal habillé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B. Parce qu'ils ont accepté de "jeter un oeil" (engagement)</div>
+                <p>L'engagement préalable crée un lien fort qui dicte le comportement futur, souvent sans conscience du déterminant réel.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Persuasion : La Source et le Message</div>
+
+        <div class="question">
+            <h3>15- Qu'est-ce que le "Sleeper Effect" ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le fait de s'endormir devant une publicité</div>
+                <div class="option" onclick="toggleSelection(this)">B. La disparition de la différence d'impact entre source crédible et non-crédible après 4 semaines</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un changement d'attitude uniquement durant le sommeil</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'influence des messages subliminaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B. La disparition de la différence d'impact entre source crédible et non-crédible après 4 semaines</div>
+                <p>À long terme, on retient le message mais on oublie le caractère peu crédible de la source.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Selon l'étude de Cantor (1976), un message sur la contraception est mieux accepté si la source :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est une célébrité mondiale</div>
+                <div class="option" onclick="toggleSelection(this)">B. A un âge similaire aux réceptrices (similitude)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est un homme très âgé</div>
+                <div class="option" onclick="toggleSelection(this)">D. Parle très vite</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B. A un âge similaire aux réceptrices (similitude)</div>
+                <p>La similitude source-récepteur augmente l'impact persuasif.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- L'effet d'attractivité-clémence en justice suggère que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les juges sont toujours sévères</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les personnes physiquement attractives encourent des peines moins lourdes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le physique n'a aucun impact sur le verdict</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il faut être mal habillé pour plaire au jury</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B. Les personnes physiquement attractives encourent des peines moins lourdes</div>
+                <p>C'est le biais "Tout ce qui est beau est bon" appliqué au domaine judiciaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Dans l'expérience de Janis & Feschbach sur l'hygiène dentaire, quel message fut le moins efficace ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le message peu effrayant</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le message très effrayant (appel à la peur massif)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le message neutre</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les trois étaient identiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B. Le message très effrayant (appel à la peur massif)</div>
+                <p>Un appel à la peur trop important engendre le rejet du message par le récepteur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Une communication "bilatérale" consiste à présenter :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement les arguments en faveur de sa thèse</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des arguments pour ET des arguments contre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le même message deux fois de suite</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un message écrit et un message oral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B. Des arguments pour ET des arguments contre</div>
+                <p>La communication bilatérale est plus efficace si l'auditoire est initialement opposé à la thèse ou très éduqué.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Modèles Cognitifs de la Persuasion</div>
+
+        <div class="question">
+            <h3>20- Dans le modèle séquentiel de McGuire, quelle étape précède l'adhésion ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'action</div>
+                <div class="option" onclick="toggleSelection(this)">B. La compréhension</div>
+                <div class="option" onclick="toggleSelection(this)">C. La mémorisation</div>
+                <div class="option" onclick="toggleSelection(this)">D. La résistance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B. La compréhension</div>
+                <p>La réception du message se divise en Attention et Compréhension avant d'arriver à l'Adhésion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Selon la théorie des réponses cognitives, la persuasion dépend :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement du charisme de la source</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des pensées générées par le récepteur durant l'exposition</div>
+                <div class="option" onclick="toggleSelection(this)">C. Du nombre de mots dans le message</div>
+                <div class="option" onclick="toggleSelection(this)">D. De la couleur de l'affiche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['B'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : B. Des pensées générées par le récepteur durant l'exposition</div>
+                <p>Le récepteur traite activement l'information et confronte les arguments à ses attitudes préexistantes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Que signifie l'acronyme ELM (Petty & Cacioppo) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Étude de la Liberté Mentale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elaboration Likelihood Model (Modèle de probabilité d'élaboration)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Évaluation des Liens Mémoriels</div>
+                <div class="option" onclick="toggleSelection(this)">D. Effet de la Lumière sur le Message</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['B'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : B. Elaboration Likelihood Model (Modèle de probabilité d'élaboration)</div>
+                <p>C'est un modèle cognitivo-motivationnel distinguant deux voies de traitement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23- Pour emprunter la "voie centrale" de l'ELM, le récepteur doit avoir :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De l'argent et du temps</div>
+                <div class="option" onclick="toggleSelection(this)">B. La motivation et la capacité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une source experte uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une mauvaise humeur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : B. La motivation et la capacité</div>
+                <p>Si l'un des deux manque, le sujet bascule vers la voie périphérique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- Quel élément est un "indice périphérique" typique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La qualité logique de l'argumentation</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'expertise perçue ou l'attirance physique de la source</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les preuves statistiques fournies</div>
+                <div class="option" onclick="toggleSelection(this)">D. La réfutation des contre-arguments</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['B'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : B. L'expertise perçue ou l'attirance physique de la source</div>
+                <p>Les indices périphériques permettent une évaluation rapide sans effort cognitif coûteux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- Un changement d'attitude obtenu par la voie centrale est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Très fragile et instable</div>
+                <div class="option" onclick="toggleSelection(this)">B. Durable, résistant et prédictif du comportement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Moins efficace que par la voie périphérique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement possible chez les enfants</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['B'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : B. Durable, résistant et prédictif du comportement</div>
+                <p>Parce qu'il résulte d'un traitement approfondi des arguments.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Facteurs d'Influence et Résistance</div>
+
+        <div class="question">
+            <h3>26- Quel facteur peut DIMINUER la capacité de traitement d'un message ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les messages surprenants</div>
+                <div class="option" onclick="toggleSelection(this)">B. La distraction (ex: bruit)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La bonne humeur</div>
+                <div class="option" onclick="toggleSelection(this)">D. La simplicité des arguments</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['B'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : B. La distraction (ex: bruit)</div>
+                <p>La distraction consomme des ressources cognitives, empêchant le traitement central.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27- Selon l'étude de Petty et al. (1981), quand la pertinence du message est FAIBLE, les étudiants sont influencés par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La qualité des arguments</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'expertise de la source (indice périphérique)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Leurs propres notes de cours</div>
+                <div class="option" onclick="toggleSelection(this)">D. Rien du tout, ils ignorent le message</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['B'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : B. L'expertise de la source (indice périphérique)</div>
+                <p>Faible pertinence = faible motivation = traitement périphérique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- L'effet "Boomerang" se produit quand :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. On change d'avis deux fois de suite</div>
+                <div class="option" onclick="toggleSelection(this)">B. La tentative de persuasion renforce l'attitude initiale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le message est renvoyé à l'expéditeur</div>
+                <div class="option" onclick="toggleSelection(this)">D. On oublie le message immédiatement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['B'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : B. La tentative de persuasion renforce l'attitude initiale</div>
+                <p>Souvent lié à la réactance : le sujet sent sa liberté menacée et durcit sa position.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- La "réactance psychologique" (Brehm) est une réaction visant à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Obéir plus vite à l'autorité</div>
+                <div class="option" onclick="toggleSelection(this)">B. Maintenir sa liberté d'action perçue comme menacée</div>
+                <div class="option" onclick="toggleSelection(this)">C. Faire plaisir à l'expéditeur du message</div>
+                <div class="option" onclick="toggleSelection(this)">D. Dormir davantage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B. Maintenir sa liberté d'action perçue comme menacée</div>
+                <p>C'est une motivation à regagner une liberté perdue ou menacée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>30- La technique de l'inoculation vise à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Vacciner contre la grippe</div>
+                <div class="option" onclick="toggleSelection(this)">B. "Immuniser" contre un futur discours contre-attitudinal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Changer radicalement l'avis de quelqu'un</div>
+                <div class="option" onclick="toggleSelection(this)">D. Rendre les gens plus agressifs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['B'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : B. "Immuniser" contre un futur discours contre-attitudinal</div>
+                <p>On expose la personne à des petits arguments contraires pour qu'elle s'entraîne à les réfuter.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Généralités et Études de Cas</div>
+
+        <div class="question">
+            <h3>31- Une personne avec une FORTE estime de soi est généralement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Plus facile à persuader</div>
+                <div class="option" onclick="toggleSelection(this)">B. Plus résistante aux messages persuasifs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Incapable de comprendre un message</div>
+                <div class="option" onclick="toggleSelection(this)">D. Toujours d'accord avec la majorité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(31, ['B'])">Valider</button>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : B. Plus résistante aux messages persuasifs</div>
+                <p>L'estime de soi est une caractéristique dispositionnelle influençant la résistance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32- Concernant le genre, les études récentes montrent que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les femmes sont biologiquement plus influençables</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le genre n'est pas une variable pertinente si les conditions sont égales</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les hommes sont totalement imperméables à la persuasion</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les femmes résistent mieux à la peur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['B'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : B. Le genre n'est pas une variable pertinente si les conditions sont égales</div>
+                <p>À niveau d'éducation et thématique égale, il n'y a pas de différence significative entre hommes et femmes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33- Pour un message DIFFICILE à comprendre, quel canal est le plus persuasif ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Visuel (vidéo)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Auditif (radio)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Écrit</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aucun, c'est impossible</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['C'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : C. Écrit</div>
+                <p>L'écrit permet de revenir sur les arguments complexes, favorisant la compréhension.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>34- Selon Pêtre (2007), à combien de publicités par jour une personne peut-elle être exposée ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Environ 10</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre 1200 et 2200</div>
+                <div class="option" onclick="toggleSelection(this)">C. Exactement 5000</div>
+                <div class="option" onclick="toggleSelection(this)">D. Zéro si elle n'a pas de télé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(34, ['B'])">Valider</button>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : B. Entre 1200 et 2200</div>
+                <p>Même si nous n'en avons pas le souvenir conscient, l'exposition est massive.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35- La persuasion en psychologie sociale est définie comme une situation d'influence :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Symétrique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Asymétrique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Inexistante</div>
+                <div class="option" onclick="toggleSelection(this)">D. Accidentelle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(35, ['B'])">Valider</button>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : B. Asymétrique</div>
+                <p>C'est un acte de communication visant délibérément à modifier l'état mental d'un individu.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36- Pour observer un changement d'attitude, quelle procédure est INDISPENSABLE ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Demander à la personne si elle a changé d'avis</div>
+                <div class="option" onclick="toggleSelection(this)">B. Comparer une mesure AVANT et une mesure APRÈS l'exposition</div>
+                <div class="option" onclick="toggleSelection(this)">C. Utiliser un détecteur de mensonges</div>
+                <div class="option" onclick="toggleSelection(this)">D. Faire un scanner cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B. Comparer une mesure AVANT et une mesure APRÈS l'exposition</div>
+                <p>C'est la seule procédure permettant d'attester scientifiquement d'une modification de l'attitude initiale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37- Quelle est la fonction principale d'une attitude selon Maisonneuve (1973) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement décorative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Cognitive, énergétique et régulatrice des conduites</div>
+                <div class="option" onclick="toggleSelection(this)">C. Digestives et métaboliques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Artistique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['B'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : B. Cognitive, énergétique et régulatrice des conduites</div>
+                <p>L'attitude sous-tend et oriente nos comportements.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38- Dans l'expérience de Swann (1988), la "paradoxal strategy" a conduit :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À un refus total de répondre</div>
+                <div class="option" onclick="toggleSelection(this)">B. Au changement d'attitude des femmes face à des positions extrêmes</div>
+                <div class="option" onclick="toggleSelection(this)">C. À une crise de colère massive</div>
+                <div class="option" onclick="toggleSelection(this)">D. À aucun résultat exploitable</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['B'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : B. Au changement d'attitude des femmes face à des positions extrêmes</div>
+                <p>Face à des questions allant encore plus loin dans leur sens (trop conservatrices), elles ont modéré leur position.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39- La résistance à la persuasion peut s'illustrer sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La dimension cognitive seulement</div>
+                <div class="option" onclick="toggleSelection(this)">B. La dimension affective seulement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les trois dimensions (cognitive, affective, comportementale)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement le matin au réveil</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['C'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : C. Les trois dimensions (cognitive, affective, comportementale)</div>
+                <p>"Je ne le crois pas" (cog), "Je ne l'aime pas" (aff), "Je ne le ferai pas" (comp).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>40- En résumé, la psychologie sociale voit l'humain face au message persuasif comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une marionnette sans défense</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un être traitant activement l'information selon ses ressources</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un ordinateur purement logique et parfait</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une entité qui ne réagit qu'aux couleurs vives</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(40, ['B'])">Valider</button>
+            <div class="explanation" id="explanation40">
+                <div class="result">Bonne réponse : B. Un être traitant activement l'information selon ses ressources</div>
+                <p>La persuasion dépend de l'interaction entre les caractéristiques du message et l'état mental (motivation/capacité) du récepteur.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.remove("selected"));
+            element.classList.add("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                option.classList.remove("correct", "incorrect");
+                
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+            });
+            
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

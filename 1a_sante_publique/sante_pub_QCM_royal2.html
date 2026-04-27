@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santé publique QCM Royal 2</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Santé publique QCM Royal 2</h1>
+
+        <h2>Exercice 1 : Questions de cours</h2>
+
+        <div class="question">
+            <h3>1. Dans les études cas-témoins :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Les cas sont les sujets exposés au facteur de risque étudié.</div>
+                <div class="option" onclick="toggleSelection(this)">b. Les témoins sont indemnes de la maladie étudiée.</div>
+                <div class="option" onclick="toggleSelection(this)">c. Le recueil de l'information sur l'exposition est prospectif.</div>
+                <div class="option" onclick="toggleSelection(this)">d. Les perdus de vue sont à l'origine d'un biais majeur.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['b'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : b. Les témoins sont indemnes de la maladie étudiée.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. En épidémiologie, un biais :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Est une erreur aléatoire liée aux fluctuations d'échantillonnage</div>
+                <div class="option" onclick="toggleSelection(this)">b. Conduit systématiquement à la surestimation du risque relatif ou de l'odds ratio</div>
+                <div class="option" onclick="toggleSelection(this)">c. Est uniquement causé par un facteur de confusion</div>
+                <div class="option" onclick="toggleSelection(this)">d. Est une erreur systématique dans l'estimation d'un paramètre</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['d'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : d. Est une erreur systématique dans l'estimation d'un paramètre</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Cochez la réponse FAUSSE concernant le niveau de preuve scientifique d'une étude :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Il dépend de la présence de biais dans la planification et la réalisation de l'étude</div>
+                <div class="option" onclick="toggleSelection(this)">b. Il est généralement moins élevé pour les études cas-témoins que pour les études de cohortes</div>
+                <div class="option" onclick="toggleSelection(this)">c. Il peut être influencé par la taille de l'échantillon et la puissance statistique de l'étude</div>
+                <div class="option" onclick="toggleSelection(this)">d. Il est systématiquement plus élevé pour les études transversales que pour les essais contrôlés randomisés</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['d'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : d. Il est systématiquement plus élevé pour les études transversales que pour les essais contrôlés randomisés (C'est l'inverse)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. La loi Evin :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Est relative à la lutte contre l'alcoolisme</div>
+                <div class="option" onclick="toggleSelection(this)">b. Est relative à la lutte contre l'alcoolisme et le tabagisme</div>
+                <div class="option" onclick="toggleSelection(this)">c. Est relative à la lutte contre l'alcoolisme, le tabagisme et toute substance illicite</div>
+                <div class="option" onclick="toggleSelection(this)">d. Est relative à la lutte contre tout type d'addictions</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['b'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : b. Est relative à la lutte contre l'alcoolisme et le tabagisme</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Comment nomme-t-on le fait d'envoyer des chercheurs de pays développés étudier des maladies dans des pays en développement sans se renseigner sur le terrain, ni collaborer avec les acteurs locaux ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. La recherche euro-colonialiste</div>
+                <div class="option" onclick="toggleSelection(this)">b. La recherche en santé</div>
+                <div class="option" onclick="toggleSelection(this)">c. La recherche parachute</div>
+                <div class="option" onclick="toggleSelection(this)">d. La recherche en santé globale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['c'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : c. La recherche parachute</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. La protection sociale est un sous ensemble de la sécurité sociale :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation6">
+                <div class="result">Réponse : FAUX (La sécurité sociale est un sous-ensemble de la protection sociale)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Le Réseau sentinelles participant à la surveillance de 10 indicateurs de santé est une source de donnée :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Permanentes exhaustives</div>
+                <div class="option" onclick="toggleSelection(this)">b. Permanentes non-exhaustives (par échantillon)</div>
+                <div class="option" onclick="toggleSelection(this)">c. Ponctuelles exhaustives</div>
+                <div class="option" onclick="toggleSelection(this)">d. Ponctuelles non-exhaustives (par échantillon)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['b'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : b. Permanentes non-exhaustives (par échantillon)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Un cabinet de pédiatre fait partie du secteur de soin :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Primaire</div>
+                <div class="option" onclick="toggleSelection(this)">b. Secondaire</div>
+                <div class="option" onclick="toggleSelection(this)">c. Tertiaire</div>
+                <div class="option" onclick="toggleSelection(this)">d. Quaternaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['a'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : a. Primaire</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Mesure visant à responsabiliser les usagers pour maitriser les dépenses de santé :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Le ticket modérateur</div>
+                <div class="option" onclick="toggleSelection(this)">b. Les Affections de Longues Durée (ALD)</div>
+                <div class="option" onclick="toggleSelection(this)">c. La complémentaire santé solidaire</div>
+                <div class="option" onclick="toggleSelection(this)">d. Le dispositif 100% santé</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['a'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : a. Le ticket modérateur</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Lequel de ces axes, ne fait PAS partie du rôle de l'OMS :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Accès à l'eau potable</div>
+                <div class="option" onclick="toggleSelection(this)">b. Gestion des épidémies</div>
+                <div class="option" onclick="toggleSelection(this)">c. Financement de la recherche en santé publique</div>
+                <div class="option" onclick="toggleSelection(this)">d. Aucune de ces propositions de ne convient</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['c'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : c. Financement de la recherche en santé publique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Que signifie l'acronyme PUMA ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Protection Universelle Maladie Anonyme</div>
+                <div class="option" onclick="toggleSelection(this)">b. Protection Universelle Maladie</div>
+                <div class="option" onclick="toggleSelection(this)">c. Plan Universelle pour les Maladies Anciennes</div>
+                <div class="option" onclick="toggleSelection(this)">d. Permettre Un Meilleur Accès</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['b'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : b. Protection Universelle Maladie</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. Les coûts associés à une réduction de la productivité du malade sont des :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Coûts directs</div>
+                <div class="option" onclick="toggleSelection(this)">b. Coûts indirects</div>
+                <div class="option" onclick="toggleSelection(this)">c. Coûts intangibles</div>
+                <div class="option" onclick="toggleSelection(this)">d. Aucune</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['b'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : b. Coûts indirects</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. Dans une analyse de minimisation des coûts :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. On fait l'hypothèse d'une égalité de l'efficacité des stratégies comparées</div>
+                <div class="option" onclick="toggleSelection(this)">b. L'analyse se résume à une comparaison des couts des stratégies comparées</div>
+                <div class="option" onclick="toggleSelection(this)">c. L'intervention la moins couteuse est la plus efficiente</div>
+                <div class="option" onclick="toggleSelection(this)">d. Toutes ces propositions conviennent</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['d'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : d. Toutes ces propositions conviennent</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Le système de protection sociale français est de type :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Mixte combinant des éléments du Bismarckien et du Beveridgien</div>
+                <div class="option" onclick="toggleSelection(this)">b. Bismarckien</div>
+                <div class="option" onclick="toggleSelection(this)">c. Beveridgien</div>
+                <div class="option" onclick="toggleSelection(this)">d. Libéral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['a'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : a. Mixte combinant des éléments du Bismarckien et du Beveridgien</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15. Dans un système de santé de type Bismarckien, quelle est la principale source de financement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">a. Impôts</div>
+                <div class="option" onclick="toggleSelection(this)">b. Cotisations sociales (entreprises et usagers)</div>
+                <div class="option" onclick="toggleSelection(this)">c. Financement par les usagers</div>
+                <div class="option" onclick="toggleSelection(this)">d. Tiers payant</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['b'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : b. Cotisations sociales (entreprises et usagers)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Le concept de l'aléa moral stipule que la fourniture d'une garantie contre un risque encourage un comportement plus risqué de la part de l'assuré :</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanation16">
+                <div class="result">Réponse : VRAI</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Exercice 2 : Étude de cas (Pneumopathies)</h2>
+		<div class="section-title">Les pneumopathies acquises en réanimation chez les patients sous ventilation mécanique sont fréquentes et associées à une morbidité et une mortalité importante. Les sécrétions qui s'accumulent au-dessus du ballonnet (sous-glottiques) pourraient augmenter le risque de développer ces infections, mais leur rôle exact n’a pas été formellement prouvé.
+		<br>Il est possible que l’aspiration régulière par un professionnel de santé de ces sécrétions réduise le risque de pneumopathie, mais cette hypothèse n’a jamais été testée de manière rigoureuse. 
+		<br>Cette pratique n’est d’ailleurs appliquée systématiquement que dans certains services ou chez certains types de patients.</div>
+        <div class="question">
+            <h3>1. Quel type d'étude aimerait-on proposer dans l'idéal pour démontrer que l'aspiration régulière réduit le risque de pneumopathie ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une étude transversale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une étude expérimentale (essai randomisé contrôlé)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une étude cas-témoin</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une étude de cohorte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('2_1', ['B'])">Valider</button>
+            <div class="explanation" id="explanation2_1">
+                <div class="result">Bonne réponse : B. Une étude expérimentale (essai randomisé contrôlé)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Une étude a comparé l'occurrence de pneumopathie dans le temps entre un groupe avec aspirations régulières et un groupe sans. Quel type d'étude est-ce ?</h3>
+			<img src="sante_pub_qcm2_p2q2.png" class="diagram-qcm">
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une étude de cohorte</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une étude expérimentale (essai randomisé contrôlé)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une étude transversale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une étude cas-témoins</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('2_2', ['A'])">Valider</button>
+            <div class="explanation" id="explanation2_2">
+                <div class="result">Bonne réponse : A. Une étude de cohorte (on suit des groupes exposés/non-exposés dans le temps)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Quel est le risque de pneumopathie dans le groupe n'ayant pas bénéficié d'aspirations (Groupe "Non") ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 34.4% (42 sur 122)</div>
+                <div class="option" onclick="toggleSelection(this)">B. 25.6% (42 sur 164)</div>
+                <div class="option" onclick="toggleSelection(this)">C. 59.5% (25 sur 42)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 37.3% (25 sur 67)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('2_3', ['B'])">Valider</button>
+            <div class="explanation" id="explanation2_3">
+                <div class="result">Bonne réponse : B. 25.6% (42 malades sur un total de 42+122=164 individus)</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Exercice 3 : Interprétation statistique</h2>
+		<img src="sante_pub_qcm2_p3.png" class="diagram-qcm">
+        <div class="question">
+            <h3>1. Pour l'analyse 1 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Facteur de risque, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Facteur protecteur, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">C. Facteur de risque possible, mais liaison non significative</div>
+                <div class="option" onclick="toggleSelection(this)">D. Facteur protecteur possible, mais liaison non significative</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('3_1', ['A'])">Valider</button>
+            <div class="explanation" id="explanation3_1">
+                <div class="result">Bonne réponse : A. Facteur de risque (RR > 1) et liaison significative (l'intervalle ne contient pas 1).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Pour l'analyse 2 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Facteur de risque, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Facteur protecteur, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">C. Facteur de risque possible, mais liaison non significative</div>
+                <div class="option" onclick="toggleSelection(this)">D. Facteur protecteur possible, mais liaison non significative</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('3_2', ['D'])">Valider</button>
+            <div class="explanation" id="explanation3_2">
+                <div class="result">Bonne réponse : D. Facteur protecteur possible (RR < 1), mais liaison non significative (l'intervalle contient 1).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Pour l'analyse 3  :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Facteur de risque, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">B. Facteur protecteur, liaison significative</div>
+                <div class="option" onclick="toggleSelection(this)">C. Facteur de risque possible, mais liaison non significative</div>
+                <div class="option" onclick="toggleSelection(this)">D. Facteur protecteur possible, mais liaison non significative</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('3_3', ['B'])">Valider</button>
+            <div class="explanation" id="explanation3_3">
+                <div class="result">Bonne réponse : B. Facteur protecteur (RR < 1) et liaison significative (l'intervalle ne contient pas 1).</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Exercice 4 : Calcul d'indicateurs (Gard 1997)</h2>
+
+        <div class="question">
+            <h3>1. Calculer le taux brut de mortalité dans le département en 1997 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 10.0‰ (6 153 sur 617 903)</div>
+                <div class="option" onclick="toggleSelection(this)">B. 3.2 ‰ (1 979 sur 617 903)</div>
+                <div class="option" onclick="toggleSelection(this)">C. 49.6% (6 153 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 20.1 ‰ (12 400 sur 617 903)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_1', ['A'])">Valider</button>
+            <div class="explanation" id="explanation4_1">
+                <div class="result">Bonne réponse : A. 10.0‰ (Nombre de décès total / Population totale)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Calculer le taux d'incidence des tumeurs dans le département en 1997 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 4.35 ‰ (2 688 sur 617 903)</div>
+                <div class="option" onclick="toggleSelection(this)">B. 49.6% (6 153 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">C. 13.7% (1 695 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 20.1 ‰ (12 400 sur 617 903)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_2', ['A'])">Valider</button>
+            <div class="explanation" id="explanation4_2">
+                <div class="result">Bonne réponse : A. 4.35 ‰ (Nouveaux cas / Population totale)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Calculer le taux de prévalence des tumeurs dans le département en 1997 :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 10.0% (6 153 sur 617 903)</div>
+                <div class="option" onclick="toggleSelection(this)">B. 49.6% (6 153 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">C. 13.7% (1 695 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 20.1 ‰ (12 400 sur 617 903)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_3', ['D'])">Valider</button>
+            <div class="explanation" id="explanation4_3">
+                <div class="result">Bonne réponse : D. 20.1 ‰ (Total des cas / Population totale)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quel est le taux de létalité des tumeurs dans le département en 1997 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 27.5% (1 695 sur 6 153)</div>
+                <div class="option" onclick="toggleSelection(this)">B. 21.7% (2 688 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">C. 13.7% (1 695 sur 12 400)</div>
+                <div class="option" onclick="toggleSelection(this)">D. 43.7% (2 688 sur 6 153)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('4_4', ['C'])">Valider</button>
+            <div class="explanation" id="explanation4_4">
+                <div class="result">Bonne réponse : C. 13.7% (Décès dus à la tumeur / Total des personnes ayant une tumeur)</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionId, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.trim().charAt(0).toLowerCase();
+                if (correctAnswers.map(a => a.toLowerCase()).includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionId}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                const text = option.textContent.toLowerCase();
+                if ((correctAnswer === 'vrai' && text === 'vrai') || (correctAnswer === 'faux' && text === 'faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            const h3Text = element.parentElement.parentElement.querySelector('h3').textContent;
+            const questionNumber = h3Text.match(/\d+/)[0];
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

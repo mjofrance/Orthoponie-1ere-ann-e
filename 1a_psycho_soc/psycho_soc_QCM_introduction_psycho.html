@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Introduction à la Psychologie Sociale</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Psychologie Sociale</h1>
+
+        <h2>Partie 1 : Fondements et Comportements d'Aide</h2>
+
+        <div class="question">
+            <h3>1- Quelle est la définition de la psychologie sociale selon le cours ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'étude exclusive des pathologies mentales en groupe</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'étude scientifique des comportements, états et processus mentaux dans un monde social</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'analyse des structures économiques des sociétés modernes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B</div>
+                <p>La psychologie sociale étudie comment les individus sont influencés par le monde social et comment ils l'influencent en retour.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Dans l'étude de Latané et Darley (1968), que se passe-t-il quand le nombre de témoins augmente ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le temps d'intervention diminue</div>
+                <div class="option" onclick="toggleSelection(this)">B. La probabilité d'aide reste identique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le temps mis pour intervenir augmente (dilution de responsabilité)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C</div>
+                <p>Plus il y a de témoins, plus la responsabilité est partagée, ce qui ralentit ou empêche l'action d'aide.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Quel auteur propose un "regard ternaire" (Soi - Alter - Objet) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Moscovici</div>
+                <div class="option" onclick="toggleSelection(this)">B. Triplett</div>
+                <div class="option" onclick="toggleSelection(this)">C. Ringelmann</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : A</div>
+                <p>Le regard psychosocial remplace la relation binaire Sujet-Objet par une relation médiatisée par autrui (Alter).</p>
+            </div>
+        </div>
+
+        <h2>Partie 2 : La notion de Groupe</h2>
+
+        <div class="question">
+            <h3>4- Selon Kurt Lewin (1948), un groupe est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une simple somme d'individus juxtaposés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un tout dynamique différent de la somme de ses éléments</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une entité uniquement définie par son chef</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est l'interdépendance et la structure des éléments qui caractérisent le groupe comme un tout dynamique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Dans la classification d'Anzieu et Martin, quel groupe a la structuration la plus élevée ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La foule</div>
+                <div class="option" onclick="toggleSelection(this)">B. La bande</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le groupe secondaire (organisation)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : C</div>
+                <p>Les organisations ont une structuration très élevée avec des rôles planifiés et des relations fonctionnelles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Qu'est-ce que la facilitation sociale (Triplett, 1898) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le fait d'aider ses collègues spontanément</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'amélioration de la performance individuelle en présence d'autrui</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réduction des efforts quand on travaille en équipe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les individus sont souvent plus performants lorsqu'un autre effectue la même tâche à proximité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- La paresse sociale (Ringelmann) correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une performance collective inférieure à la somme des performances individuelles</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un manque de sommeil des membres du groupe</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une stratégie de repos imposée par le leader</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : A</div>
+                <p>Plus le groupe est grand, plus l'effort individuel tend à diminuer car l'impact social est réparti.</p>
+            </div>
+        </div>
+
+        <h2>Partie 3 : Influence Sociale et Normes</h2>
+
+        <div class="question">
+            <h3>8- Le conformisme est une influence qui s'exerce :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. D'une minorité vers une majorité</div>
+                <div class="option" onclick="toggleSelection(this)">B. D'une majorité vers une minorité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Uniquement de manière écrite et légale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le conformisme est le fait de céder à la pression de la majorité (influence majoritaire).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Selon Sherif (1935), une norme sociale est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une loi votée au parlement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une échelle évaluative indiquant une latitude acceptable ou inacceptable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une interdiction formelle de parler</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B</div>
+                <p>La norme définit une marge de conduites permises ou répréhensibles au sein d'une unité sociale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Une norme descriptive renvoie à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ce que la majorité des gens font réellement dans une situation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ce que les gens devraient faire selon la morale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un texte de loi officiel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : A</div>
+                <p>C'est une norme "de fait", basée sur l'observation statistique du comportement le plus fréquent.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Laquelle de ces normes est "formelle" ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Être poli avec la boulangère</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le code de la route</div>
+                <div class="option" onclick="toggleSelection(this)">C. Se taire au cinéma</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B</div>
+                <p>Les normes formelles sont explicites, écrites et souvent codifiées par des lois ou règlements.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Quel type de conséquence de l'influence disparaît dès que la source n'est plus là ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'intériorisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'identification</div>
+                <div class="option" onclick="toggleSelection(this)">C. La complaisance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : C</div>
+                <p>La complaisance est une acceptation publique temporaire sous l'emprise de la source.</p>
+            </div>
+        </div>
+
+        <h2>Partie 4 : Prise de décision et Leadership</h2>
+
+        <div class="question">
+            <h3>13- La "pensée de groupe" (Janis) conduit souvent à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une meilleure analyse des risques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des erreurs graves dues à une volonté excessive d'unanimité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une créativité décuplée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'illusion d'invulnérabilité et la pression à la conformité aveuglent les membres du groupe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- L'effet de polarisation signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le groupe devient neutre après discussion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les opinions individuelles divergent encore plus</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le groupe dévie vers un point de vue plus extrême que l'avis initial majoritaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : C</div>
+                <p>L'échange d'arguments renforce la tendance initiale, menant à une "extrémisation".</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Quel style de leadership reste efficace même quand le leader s'absente ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Autoritaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. Démocratique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Laissez-faire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le style démocratique favorise l'autonomie et la satisfaction, maintenant la performance en l'absence du chef.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Un leader "instrumental" se concentre principalement sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le climat relationnel et la sympathie</div>
+                <div class="option" onclick="toggleSelection(this)">B. La progression du groupe vers ses objectifs et la tâche</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'organisation de fêtes de fin d'année</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B</div>
+                <p>Bales distingue le leader instrumental (la tâche) du leader de cohésion (le relationnel).</p>
+            </div>
+        </div>
+
+        <h2>Partie 5 : Modèles de Changement et Grille de Bales</h2>
+
+        <div class="question">
+            <h3>17- Quelle est la première étape du modèle de changement de Lewin ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La cristallisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le déplacement</div>
+                <div class="option" onclick="toggleSelection(this)">C. La dé-cristallisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : C</div>
+                <p>Il faut d'abord abaisser les résistances et briser l'équilibre actuel (normes) avant de changer.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La Grille de Bales comporte combien de catégories d'observation ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 3 catégories</div>
+                <div class="option" onclick="toggleSelection(this)">B. 12 catégories</div>
+                <div class="option" onclick="toggleSelection(this)">C. 87 catégories</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B</div>
+                <p>Après réduction, Bales a stabilisé son outil sur 12 catégories opérationnelles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Dans la grille de Bales, les "réponses" (catégories 4, 5, 6) appartiennent au domaine :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Émotionnel positif</div>
+                <div class="option" onclick="toggleSelection(this)">B. Instrumental (la tâche)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Émotionnel négatif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le domaine central de la grille concerne la tâche, divisé entre donner des solutions (réponses) et demander (questions).</p>
+            </div>
+        </div>
+
+        <h2>Partie 6 : Sociométrie de Moreno</h2>
+
+        <div class="question">
+            <h3>20- Qui est le fondateur de la sociométrie ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Jacob Levy Moreno</div>
+                <div class="option" onclick="toggleSelection(this)">B. Jean-Paul Sartre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Muzafer Sherif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : A</div>
+                <p>Moreno a créé la sociométrie pour mesurer mathématiquement les relations affectives dans les groupes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21- Comment appelle-t-on un individu qui ne reçoit aucun choix positif dans un sociogramme ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un exclu intégral</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un isolé</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un leader négatif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(21, ['B'])">Valider</button>
+            <div class="explanation" id="explanation21">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'isolé est celui qui ne reçoit aucun choix positif, contrairement au "négligé" qui en reçoit peu.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>22- Une "dyade" en sociométrie correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un groupe de trois personnes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un choix réciproque entre deux personnes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une chaîne de propagation de rumeurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(22, ['B'])">Valider</button>
+            <div class="explanation" id="explanation22">
+                <div class="result">Bonne réponse : B</div>
+                <p>La dyade est la structure de base montrant une relation réciproque forte.</p>
+            </div>
+        </div>
+
+        <h2>Partie 7 : Le Soi et les Biais Cognitifs</h2>
+
+        <div class="question">
+            <h3>23- L'effet de référence à soi montre que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. On oublie plus vite les choses qui nous concernent</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le rappel d'informations encodées en référence à soi est supérieur</div>
+                <div class="option" onclick="toggleSelection(this)">C. On est toujours narcissique en groupe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(23, ['B'])">Valider</button>
+            <div class="explanation" id="explanation23">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le soi agit comme une structure cognitive puissante qui facilite l'organisation et la récupération en mémoire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>24- L'effet PIP (Codol) désigne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La tendance à se croire plus conforme aux normes que les autres</div>
+                <div class="option" onclick="toggleSelection(this)">B. La peur de parler en public</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le besoin de s'habiller comme tout le monde</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(24, ['A'])">Valider</button>
+            <div class="explanation" id="explanation24">
+                <div class="result">Bonne réponse : A</div>
+                <p>C'est la "Conformité Supérieure de Soi" : je suis différent des autres en étant plus "bon élève" de la norme.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>25- L'optimisme comparatif est le fait de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Croire que l'avenir sera sombre pour tout le monde</div>
+                <div class="option" onclick="toggleSelection(this)">B. Juger ses chances de vivre des événements positifs supérieures à celles d'autrui</div>
+                <div class="option" onclick="toggleSelection(this)">C. Comparer les prix avant d'acheter</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(25, ['B'])">Valider</button>
+            <div class="explanation" id="explanation25">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est penser que les bonnes choses arriveront plus à soi et les mauvaises moins ("ça n'arrive qu'aux autres").</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26- Dans quelle culture l'effet d'optimisme comparatif n'est-il pas retrouvé ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Aux États-Unis</div>
+                <div class="option" onclick="toggleSelection(this)">B. En France</div>
+                <div class="option" onclick="toggleSelection(this)">C. Au Japon</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(26, ['C'])">Valider</button>
+            <div class="explanation" id="explanation26">
+                <div class="result">Bonne réponse : C</div>
+                <p>Les Japonais ont tendance à être plus pessimistes pour eux-mêmes que pour les autres.</p>
+            </div>
+        </div>
+
+        <h2>Partie 8 : Psychologie de la Santé et Pensée Sociale</h2>
+
+        <div class="question">
+            <h3>27- Le modèle fondateur de la psychologie de la santé est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le modèle biologique pur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le modèle biopsychosocial</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le modèle psychanalytique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(27, ['B'])">Valider</button>
+            <div class="explanation" id="explanation27">
+                <div class="result">Bonne réponse : B</div>
+                <p>Il intègre les facteurs biologiques, psychologiques et sociaux pour comprendre la santé.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28- La pensée sociale se distingue de la pensée rationnelle par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sa logique confirmatoire et l'usage d'heuristiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Son absence totale de logique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Son utilisation uniquement par des personnes non diplômées</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(28, ['A'])">Valider</button>
+            <div class="explanation" id="explanation28">
+                <div class="result">Bonne réponse : A</div>
+                <p>La pensée sociale cherche la légitimité sociale et le sens quotidien plutôt que la preuve scientifique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>29- Le phénomène NIMBY illustre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le soutien inconditionnel aux éoliennes</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'acceptation d'un projet... sauf à proximité de son propre domicile</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une technique de relaxation en groupe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(29, ['B'])">Valider</button>
+            <div class="explanation" id="explanation29">
+                <div class="result">Bonne réponse : B</div>
+                <p>"Not In My Back Yard" : l'implication personnelle modifie le raisonnement statistique.</p>
+            </div>
+        </div>
+
+        <h2>Partie 9 : Représentations Sociales</h2>
+
+        <div class="question">
+            <h3>30- Qui a initié la théorie des représentations sociales en 1961 ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Serge Moscovici</div>
+                <div class="option" onclick="toggleSelection(this)">B. Jean-Claude Abric</div>
+                <div class="option" onclick="toggleSelection(this)">C. Kevin Nadarajah</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(30, ['A'])">Valider</button>
+            <div class="explanation" id="explanation30">
+                <div class="result">Bonne réponse : A</div>
+                <p>Moscovici a défini les représentations comme des "théories naïves" permettant de comprendre le monde social.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>31- Dans l'approche structurale, le "noyau central" est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La partie la plus flexible de la représentation</div>
+                <div class="option" onclick="toggleSelection(this)">B. La partie stable, partagée et liée à l'histoire du groupe</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un élément qui change chaque semaine</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(31, ['B'])">Valider</button>
+            <div class="explanation" id="explanation31">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le noyau central est la colonne vertébrale de la représentation sociale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>32- Les éléments périphériques servent à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Rendre la représentation totalement rigide</div>
+                <div class="option" onclick="toggleSelection(this)">B. Adapter la représentation aux contextes et expériences individuelles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Remplacer le noyau central en cas de crise</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(32, ['B'])">Valider</button>
+            <div class="explanation" id="explanation32">
+                <div class="result">Bonne réponse : B</div>
+                <p>Ils protègent le noyau en absorbant les variations du quotidien.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>33- Dans l'exemple de la "Transition écologique", quel terme fait partie du noyau central ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Économie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Écologie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Voiture électrique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(33, ['B'])">Valider</button>
+            <div class="explanation" id="explanation33">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'écologie est le terme de plus haute fréquence et de rang d'apparition le plus bas (consensus fort).</p>
+            </div>
+        </div>
+
+        <h2>Questions Récapitulatives</h2>
+
+        <div class="question">
+            <h3>34- L'heuristique de disponibilité explique l'optimisme comparatif par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La difficulté à imaginer son propre futur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le fait qu'on a plus d'exemples en mémoire de sa propre prudence que de celle d'autrui</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une simple envie d'être heureux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(34, ['B'])">Valider</button>
+            <div class="explanation" id="explanation34">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est une explication cognitive basée sur le traitement asymétrique de l'information.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>35- En sociométrie, un "clivage" dans un groupe se voit quand :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Tout le monde s'aime</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le groupe se divise en deux sous-groupes qui s'ignorent mutuellement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le leader est choisi à l'unanimité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(35, ['B'])">Valider</button>
+            <div class="explanation" id="explanation35">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'escadrille B de Jenkins illustrait parfaitement ce clivage avec deux cliques opposées.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>36- Quelle fonction du noyau central donne du sens à l'objet représenté ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Fonction organisatrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. Fonction signifiante</div>
+                <div class="option" onclick="toggleSelection(this)">C. Fonction stabilisatrice</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(36, ['B'])">Valider</button>
+            <div class="explanation" id="explanation36">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le noyau donne la signification principale de l'objet pour le groupe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>37- La "complaisance" est associée à quel type de source ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une source attractive</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une source de pouvoir (punition/récompense)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une source experte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(37, ['B'])">Valider</button>
+            <div class="explanation" id="explanation37">
+                <div class="result">Bonne réponse : B</div>
+                <p>On se conforme pour obtenir un gain ou éviter une sanction, sans y croire forcément.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>38- Un leader "laissez-faire" produit généralement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une performance excellente</div>
+                <div class="option" onclick="toggleSelection(this)">B. Des enfants actifs mais improductifs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une grande satisfaction du groupe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(38, ['B'])">Valider</button>
+            <div class="explanation" id="explanation38">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est le style qui donne les moins bons résultats en termes de production selon Lewin.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>39- "L'identification" (Kelman) se produit quand la source est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Crédible</div>
+                <div class="option" onclick="toggleSelection(this)">B. Séduisante ou attractive</div>
+                <div class="option" onclick="toggleSelection(this)">C. Inquiétante</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(39, ['B'])">Valider</button>
+            <div class="explanation" id="explanation39">
+                <div class="result">Bonne réponse : B</div>
+                <p>On adopte le comportement parce qu'on veut ressembler à la source ou maintenir une relation avec elle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>40- Lequel de ces termes désigne un biais dans le traitement de l'information sur soi ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Effet de référence à autrui</div>
+                <div class="option" onclick="toggleSelection(this)">B. Effet de référence à soi</div>
+                <div class="option" onclick="toggleSelection(this)">C. Effet de neutralité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(40, ['B'])">Valider</button>
+            <div class="explanation" id="explanation40">
+                <div class="result">Bonne réponse : B</div>
+                <p>C'est un avantage mnésique pour les informations liées au concept de soi.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            // Pour un QCU, on désélectionne les autres options du même bloc
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.remove("selected"));
+            element.classList.add("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.style.pointerEvents = "none"; // Empêche de rechanger
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

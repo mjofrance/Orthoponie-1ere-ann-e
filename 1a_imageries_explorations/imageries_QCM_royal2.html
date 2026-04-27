@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imageries et explorations - QCM Royal 2</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Imageries et explorations - QCM Royal 2</h1>
+
+        <div class="section-title">
+            <h2>Exercice 1 :</h2>
+        </div>
+
+        <div class="question">
+            <h3>1. Donnez les propositions vraies :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'IRM est basée sur les rayons X</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'IRM est basée sur les ultra-sons</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'IRM est basée sur l'utilisation d'un aimant et d'une stimulation de protons</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'IRM est basée sur une utilisation d'un traceur radio-actif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C. L'IRM est basée sur l'utilisation d'un aimant et d'une stimulation de protons</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Donnez les propositions vraies concernant les contre-indications à l'IRM :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. pace maker</div>
+                <div class="option" onclick="toggleSelection(this)">B. éclat métallique</div>
+                <div class="option" onclick="toggleSelection(this)">C. grossesse</div>
+                <div class="option" onclick="toggleSelection(this)">D. prothèses ne comportant ni métal ni ferromagnétisme</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A et B (Le pacemaker et les éclats métalliques sont des contre-indications majeures).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Quelles sont les propositions fausses :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'IRM mesure la densité</div>
+                <div class="option" onclick="toggleSelection(this)">B. le scanner mesure le signal</div>
+                <div class="option" onclick="toggleSelection(this)">C. la prise de contraste se fait toujours à la barrière hémato-encéphalique</div>
+                <div class="option" onclick="toggleSelection(this)">D. l'IRM utilise des produits de contraste iodés</div>
+                <div class="option" onclick="toggleSelection(this)">E. le scanner utilise des produits de contraste iodés</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses (propositions fausses) : A, B, C et D. Le scanner utilise des produits iodés (E est vrai).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Quelles sont les propositions vraies :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il y a deux types d'AVC: ischémique et hémorragique</div>
+                <div class="option" onclick="toggleSelection(this)">B. en IRM de diffusion, on peut voir précocement l'AVC ischémique</div>
+                <div class="option" onclick="toggleSelection(this)">C. pour un AVC hémorragique récent, le sang apparaît dense en scanner</div>
+                <div class="option" onclick="toggleSelection(this)">D. la prise en charge de l'AVC est une urgence</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, B, C et D. Toutes les propositions sont vraies.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. En cas de troubles phasiques brutaux :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la première hypothèse à éliminer est l'AVC ischémique ou hémorragique</div>
+                <div class="option" onclick="toggleSelection(this)">B. le premier examen à effectuer est un scanner cérébral sans injection</div>
+                <div class="option" onclick="toggleSelection(this)">C. on peut effectuer un examen dans la journée, selon la disponibilité de la machine</div>
+                <div class="option" onclick="toggleSelection(this)">D. la meilleure séquence à effectuer est la séquence TOF</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A et B. L'AVC doit être éliminé en urgence par scanner sans injection.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Type d'image :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. il s'agit d'un scanner</div>
+                <div class="option" onclick="toggleSelection(this)">B. il s'agit d'une irm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : A. Il s'agit d'un scanner (coupe du rocher).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Concernant l'anatomie de l'oreille :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il y a deux systèmes auditifs : le système auditif central et le système auditif périphérique</div>
+                <div class="option" onclick="toggleSelection(this)">B. l'oreille externe comprend le pavillon et le conduit auditif externe et communique avec l'oreille interne directement par le tympan</div>
+                <div class="option" onclick="toggleSelection(this)">C. chaque caisse du tympan comprend trois osselets</div>
+                <div class="option" onclick="toggleSelection(this)">D. le tegmen tympani est la paroi supérieure du tympan qui sépare la caisse des méninges</div>
+                <div class="option" onclick="toggleSelection(this)">E. le mur de l'attique est la paroi latérale de la caisse du tympan</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A, C, D et E.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. Concernant l'oropharynx :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sa limite supérieure correspond à la jonction de la voûte palatine (palais dur) et du palais mou</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sa limite supérieure correspond au fond des vallécules</div>
+                <div class="option" onclick="toggleSelection(this)">C. Sa limite inférieure correspond au fond des sinus piriformes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sa limite postérieure correspond à la fascia pharyngo-basilaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : A.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16. Quel est le temps d'arrivée au pic de la réponse hémodynamique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 0.5 seconde</div>
+                <div class="option" onclick="toggleSelection(this)">B. 1 seconde</div>
+                <div class="option" onclick="toggleSelection(this)">C. 2 secondes</div>
+                <div class="option" onclick="toggleSelection(this)">D. 4 secondes</div>
+                <div class="option" onclick="toggleSelection(this)">E. 10 secondes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : D. 4 secondes (annoté sur le document).</div>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <h2>Exercice 2 : QROC (Réponses ouvertes)</h2>
+        </div>
+		
+        <div class="question">
+            <h3>1. Légender les coupes scannographiques  :</h3>
+			<img src="imageries_QCM_royal2_qroc.png" class="diagram-qcm">
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc1').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc1">
+                <div class="result">Réponses attendues :</div>
+                <p>(1) Tête marteau + manche enclume
+				<br>(2) Tegmen Tympani
+				<br>(3) Fenêtre ovale
+				<br>(4) Mur de l'attique
+				<br>(5) Epitympan ou attique
+				<br>(6) Mésotympan
+				<br>(7) Hypotympan.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Donner 3 risques d'une chirurgie des sinus :</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc2').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc2">
+                <div class="result">Réponses attendues :</div>
+                <p>Risque de brèche durale, risque orbitaire, risque hémorragique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Que signifie l'acronyme BOLD ?</h3>
+            <textarea rows="1"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc8').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc8">
+                <div class="result">Réponse attendue :</div>
+                <p>Blood Oxygen Level Dependent.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Quelles sont les principales aires cérébrales de l'expression et de la compréhension du langage ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc10').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc10">
+                <div class="result">Réponse attendue :</div>
+                <p>Aire de Broca et aire de Wernicke.</p>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <h2>Exercice 3 : Vrai / Faux</h2>
+        </div>
+
+        <div class="question">
+            <h3>1. En IRM, une pondération T1 peut être considérée comme "anatomique" car le cortex apparaît en hypersignal et la substance blanche en hyposignal.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanationV1">
+                <div class="result">Réponse : FAUX (C'est l'inverse).</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Les séquences dites de "susceptibilité magnétique" sont habituellement utilisées pour la recherche de saignements.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanationV2">
+                <div class="result">Réponse : VRAI.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. En tomodensitométrie, la présence d'air au sein de la boîte crânienne peut être affirmée par le fait de mesurer une densité autour de -1000 UH.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanationV10">
+                <div class="result">Réponse : VRAI.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>21. En TDM, un hématome extra-dural apparaît habituellement sous la forme d'une lentille hyperdense extra-axiale biconvexe.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
+            </div>
+            <div class="explanation" id="explanationV21">
+                <div class="result">Réponse : VRAI.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>23. La présence d'éclat métallique dans le corps est une contre-indication à la TDM.</h3>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
+                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            </div>
+            <div class="explanation" id="explanationV23">
+                <div class="result">Réponse : FAUX (C'est une contre-indication à l'IRM, mais pas au scanner/TDM).</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const options = element.parentElement.querySelectorAll('.option');
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                if ((correctAnswer === 'vrai' && option.textContent === 'Vrai') ||
+                    (correctAnswer === 'faux' && option.textContent === 'Faux')) {
+                    option.classList.add('correct');
+                } else if (option === element) {
+                    option.classList.add('incorrect');
+                }
+            });
+            // Récupération de l'ID de l'explication basé sur le parent
+            const explanationDiv = element.parentElement.nextElementSibling;
+            if (explanationDiv && explanationDiv.classList.contains('explanation')) {
+                explanationDiv.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Psychologie Sociale</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Stéréotypes, préjugés et discrimination</h1>
+        
+        <div class="question">
+            <h3>1- Les stéréotypes sont définis comme des :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Actions discriminatoires</div>
+                <div class="option" onclick="toggleSelection(this)">B. Croyances socialement partagées</div>
+                <div class="option" onclick="toggleSelection(this)">C. Attitudes hostiles systématiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lois juridiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B. Croyances socialement partagées</div>
+                <p>Les stéréotypes concernent les caractéristiques personnelles attribuées à un groupe ou à un membre de ce groupe.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quel processus aboutit à la division "Nous" (endogroupe) et "Eux" (exogroupe) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mémorisation</div>
+                <div class="option" onclick="toggleSelection(this)">B. La catégorisation sociale</div>
+                <div class="option" onclick="toggleSelection(this)">C. La sublimation</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'empathie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B. La catégorisation sociale</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Les préjugés sont avant tout considérés comme des :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Faits historiques</div>
+                <div class="option" onclick="toggleSelection(this)">B. Réflexes biologiques</div>
+                <div class="option" onclick="toggleSelection(this)">C. Attitudes adoptées envers un groupe spécifique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Connaissances scientifiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : C. Attitudes adoptées envers un groupe spécifique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Un stéréotype peut-il exercer une influence sans être conscient ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Oui</div>
+                <div class="option" onclick="toggleSelection(this)">B. Non</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : A. Oui</div>
+                <p>Même sans être conscient ou revendiqué, un stéréotype peut influencer nos jugements.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Quel est l'un des rôles majeurs de la catégorisation sociale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Augmenter la fatigue cognitive</div>
+                <div class="option" onclick="toggleSelection(this)">B. Réduire la complexité de l'environnement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Supprimer toute émotion</div>
+                <div class="option" onclick="toggleSelection(this)">D. Isoler les individus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B. Réduire la complexité de l'environnement</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Les stéréotypes et préjugés s'intègrent-ils nécessairement dans une dévalorisation des cibles ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Oui, systématiquement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Non, pas nécessairement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B. Non, pas nécessairement</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Dans la mise en situation du CM3, combien de rôles différents chaque étudiant doit-il jouer ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 1 rôle unique</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2 rôles</div>
+                <div class="option" onclick="toggleSelection(this)">C. 4 rôles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Aucun rôle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : C. 4 rôles</div>
+                <p>Tout le monde joue les 4 rôles : Elève, Prof, Sportif(ve) et Investigateur(trice).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La catégorisation sociale permet de donner quoi à l'environnement ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De l'imprévisibilité</div>
+                <div class="option" onclick="toggleSelection(this)">B. Du sens</div>
+                <div class="option" onclick="toggleSelection(this)">C. De l'hostilité</div>
+                <div class="option" onclick="toggleSelection(this)">D. De l'indifférence</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B. Du sens</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Les stéréotypes organisent notre façon de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dormir</div>
+                <div class="option" onclick="toggleSelection(this)">B. Percevoir le monde</div>
+                <div class="option" onclick="toggleSelection(this)">C. Digérer</div>
+                <div class="option" onclick="toggleSelection(this)">D. Marcher</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B. Percevoir le monde</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Le groupe auquel nous appartenons est appelé :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Exogroupe</div>
+                <div class="option" onclick="toggleSelection(this)">B. Endogroupe</div>
+                <div class="option" onclick="toggleSelection(this)">C. Groupe témoin</div>
+                <div class="option" onclick="toggleSelection(this)">D. Groupe externe</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. Endogroupe</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Lequel de ces rôles ne fait pas partie de la mise en situation du cours ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elève</div>
+                <div class="option" onclick="toggleSelection(this)">B. Avocat</div>
+                <div class="option" onclick="toggleSelection(this)">C. Sportif</div>
+                <div class="option" onclick="toggleSelection(this)">D. Investigateur</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. Avocat</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- "Citer une capitale" est un exemple utilisé dans le cours pour illustrer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une question de culture générale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un préjugé grave</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une loi de physique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une émotion primaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : A. Une question de culture générale</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Pauline Mauduy-Rasset est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Professeure d'anglais</div>
+                <div class="option" onclick="toggleSelection(this)">B. Maîtresse de conférences en Psychologie sociale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Étudiante en orthophonie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Directrice de l'Université</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Maîtresse de conférences en Psychologie sociale</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- La division intergroupe correspond à la séparation entre :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le passé et le futur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le nous et le eux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le vrai et le faux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le corps et l'esprit</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B. Le nous et le eux</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Les stéréotypes servent de biais pour :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Nos jugements et nos actions</div>
+                <div class="option" onclick="toggleSelection(this)">B. Notre vision nocturne</div>
+                <div class="option" onclick="toggleSelection(this)">C. Notre équilibre physique</div>
+                <div class="option" onclick="toggleSelection(this)">D. La régulation thermique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : A. Nos jugements et nos actions</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quelle université dispense ce cours ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Université de Paris</div>
+                <div class="option" onclick="toggleSelection(this)">B. Université de Lyon</div>
+                <div class="option" onclick="toggleSelection(this)">C. Université de Rennes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Université de Bordeaux</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : C. Université de Rennes</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Un préjugé est basé sur l'appartenance de la personne à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une famille unique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un groupe social spécifique</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une entreprise</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un club de sport uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B. Un groupe social spécifique</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La mise en situation se fait par groupes de combien ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Groupes de 2</div>
+                <div class="option" onclick="toggleSelection(this)">B. Groupes de 4</div>
+                <div class="option" onclick="toggleSelection(this)">C. Groupes de 10</div>
+                <div class="option" onclick="toggleSelection(this)">D. Individuellement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B. Groupes de 4</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- "Donner un ingrédient de la mayonnaise" est une question de culture générale proposée pour :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le rôle de l'élève</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le rôle du sportif</div>
+                <div class="option" onclick="toggleSelection(this)">C. Illustrer les tests</div>
+                <div class="option" onclick="toggleSelection(this)">D. Apprendre à cuisiner</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : C. Illustrer les tests</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- L'année universitaire mentionnée sur le document de mise en situation est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 2023-2024</div>
+                <div class="option" onclick="toggleSelection(this)">B. 2024-2025</div>
+                <div class="option" onclick="toggleSelection(this)">C. 2025-2026</div>
+                <div class="option" onclick="toggleSelection(this)">D. 2026-2027</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : C. 2025-2026</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            // Pour un QCU, on retire la sélection des autres options avant d'appliquer la nouvelle
+            const parent = element.parentElement;
+            parent.querySelectorAll('.option').forEach(opt => opt.classList.remove("selected"));
+            element.classList.add("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
