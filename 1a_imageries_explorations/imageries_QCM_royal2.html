@@ -87,14 +87,17 @@
         </div>
 
         <div class="question">
-            <h3>6. Type d'image :</h3>
+            <h3>6. Concernant l’anatomie de l’oreille :</h3>
             <div class="options">
-                <div class="option" onclick="toggleSelection(this)">A. il s'agit d'un scanner</div>
-                <div class="option" onclick="toggleSelection(this)">B. il s'agit d'une irm</div>
+                <div class="option" onclick="toggleSelection(this)">A. le marteau est articulé avec l’étrier</div>
+                <div class="option" onclick="toggleSelection(this)">B. la paroi interne limite l’oreille interne et l’oreille moyenne est creusée de deux fenêtres </div>
+				<div class="option" onclick="toggleSelection(this)">C. la fenêtre ovale est obturée par la platine de l’étrier </div>
+				<div class="option" onclick="toggleSelection(this)">D. le nerf vestibulaire fait son trajet dans la caisse pour rejoindre la parotide </div>
+				<div class="option" onclick="toggleSelection(this)">E. il n’y a pas de trajet vasculaire dans le rocher</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(6, ['A'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C',])">Valider</button>
             <div class="explanation" id="explanation6">
-                <div class="result">Bonne réponse : A. Il s'agit d'un scanner (coupe du rocher).</div>
+                <div class="result">Bonnes réponses : A, B et C.</div>
             </div>
         </div>
 
@@ -114,21 +117,21 @@
         </div>
 
         <div class="question">
-            <h3>14. Concernant l'oropharynx :</h3>
+            <h3>8. Concernant l'oropharynx :</h3>
             <div class="options">
                 <div class="option" onclick="toggleSelection(this)">A. Sa limite supérieure correspond à la jonction de la voûte palatine (palais dur) et du palais mou</div>
                 <div class="option" onclick="toggleSelection(this)">B. Sa limite supérieure correspond au fond des vallécules</div>
                 <div class="option" onclick="toggleSelection(this)">C. Sa limite inférieure correspond au fond des sinus piriformes</div>
                 <div class="option" onclick="toggleSelection(this)">D. Sa limite postérieure correspond à la fascia pharyngo-basilaire</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(14, ['A'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A'])">Valider</button>
             <div class="explanation" id="explanation14">
                 <div class="result">Bonne réponse : A.</div>
             </div>
         </div>
 
         <div class="question">
-            <h3>16. Quel est le temps d'arrivée au pic de la réponse hémodynamique ?</h3>
+            <h3>9. Quel est le temps d'arrivée au pic de la réponse hémodynamique ?</h3>
             <div class="options">
                 <div class="option" onclick="toggleSelection(this)">A. 0.5 seconde</div>
                 <div class="option" onclick="toggleSelection(this)">B. 1 seconde</div>
@@ -136,11 +139,58 @@
                 <div class="option" onclick="toggleSelection(this)">D. 4 secondes</div>
                 <div class="option" onclick="toggleSelection(this)">E. 10 secondes</div>
             </div>
-            <button type="button" onclick="validateMultipleAnswer(16, ['D'])">Valider</button>
+            <button type="button" onclick="validateMultipleAnswer(9, ['D'])">Valider</button>
             <div class="explanation" id="explanation16">
                 <div class="result">Bonne réponse : D. 4 secondes (annoté sur le document).</div>
             </div>
         </div>
+
+        <div class="question">
+            <h3>10. Concernant l’hypopharynx : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il est ouvert en avant sur le larynx </div>
+                <div class="option" onclick="toggleSelection(this)">B. Le larynx permet la phonation </div>
+                <div class="option" onclick="toggleSelection(this)">C. Le larynx est séparé en 3 étages par les sinus piriformes </div>
+                <div class="option" onclick="toggleSelection(this)">D. Les cartilages aryténoïdes font partie du larynx </div>
+                <div class="option" onclick="toggleSelection(this)">E. Des cordes vocales normales sont mobiles au cours de la phonation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'B', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A, B, D et E.</div>
+            </div>
+        </div>
+		
+		        <div class="question">
+            <h3>11. Concernant l'oreille interne : </h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le mastoïde présente des cavités aériques dans le rocher</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le labyrinthe membraneux se voit au scanner</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le labyrinthe membraneux se voit en irm</div>
+                <div class="option" onclick="toggleSelection(this)">D. L’oreille interne se compose de la cochlée, du vestibule et de 3 canaux semi-circulaires</div>
+                <div class="option" onclick="toggleSelection(this)">E. Chaque cochlée contient 2.5 tours de spire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : C, D et E.</div>
+            </div>
+        </div>
+		
+		        <div class="question">
+            <h3>12. Concernant les sinus :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L’ensemble des sinus de la face est pneumatisé à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le sinus sphénoïdal est composé de plusieurs cellules</div>
+                <div class="option" onclick="toggleSelection(this)">C. La racine cloisonnante du cornet moyen sépare les cellules ethmoïdales antérieure et postérieures</div>
+                <div class="option" onclick="toggleSelection(this)">D. La racine cloisonnante du cornet supérieur sépare un groupe post-sphénoïdal et un groupe pré-sphénoïdal</div>
+                <div class="option" onclick="toggleSelection(this)">E. Le complexe sinusien antérieur se draine dans les cellules du méat moyen </div>
+				<div class="option" onclick="toggleSelection(this)">F. En cas de comblement de l’ensemble du complexe antérieur, il faut rechercher une anomalie du drainage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['C', 'E', 'F'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : C, E et F.</div>
+            </div>
+        </div>
+
 
         <div class="section-title">
             <h2>Exercice 2 : QROC (Réponses ouvertes)</h2>
@@ -193,62 +243,114 @@
             </div>
         </div>
 
-        <div class="section-title">
-            <h2>Exercice 3 : Vrai / Faux</h2>
-        </div>
-
+<!-- Question 11 -->
         <div class="question">
-            <h3>1. En IRM, une pondération T1 peut être considérée comme "anatomique" car le cortex apparaît en hypersignal et la substance blanche en hyposignal.</h3>
-            <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
-            </div>
-            <div class="explanation" id="explanationV1">
-                <div class="result">Réponse : FAUX (C'est l'inverse).</div>
-            </div>
-        </div>
-
-        <div class="question">
-            <h3>2. Les séquences dites de "susceptibilité magnétique" sont habituellement utilisées pour la recherche de saignements.</h3>
-            <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
-            </div>
-            <div class="explanation" id="explanationV2">
-                <div class="result">Réponse : VRAI.</div>
+            <h3>11. Donner 3 risques obstructifs :</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc11').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc11">
+                <div class="result">Réponse attendue :</div>
+                <ul>
+                    <li>Concha bullosa</li>
+                    <li>Pneumatisation anormale</li>
+                    <li>Déviation cloison nasale</li>
+                </ul>
             </div>
         </div>
 
+        <!-- Question 12 -->
         <div class="question">
-            <h3>10. En tomodensitométrie, la présence d'air au sein de la boîte crânienne peut être affirmée par le fait de mesurer une densité autour de -1000 UH.</h3>
-            <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
-            </div>
-            <div class="explanation" id="explanationV10">
-                <div class="result">Réponse : VRAI.</div>
+            <h3>12. Comment se fait la pneumatisation avec l’âge ?</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc12').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc12">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Les cellules ethmoïdales :</strong> les seules pneumatisées à la naissance.<br>
+                <strong>Les sinus maxillaires :</strong> visibles vers 18 mois (parfois 6 mois), pneumatisation se termine vers 15 ans.<br>
+                <strong>Les sinus sphénoïdaux :</strong> apparaissent vers 3/4 ans, pneumatisation terminée vers 15 ans.<br>
+                <strong>Les sinus frontaux :</strong> apparaissent vers 3/7 ans, peuvent se développer jusqu’à l’âge de 20 ans.</p>
             </div>
         </div>
 
+        <!-- Question 13 -->
         <div class="question">
-            <h3>21. En TDM, un hématome extra-dural apparaît habituellement sous la forme d'une lentille hyperdense extra-axiale biconvexe.</h3>
-            <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'vrai')">Faux</div>
-            </div>
-            <div class="explanation" id="explanationV21">
-                <div class="result">Réponse : VRAI.</div>
+            <h3>13. Légender les étages pharyngés (nasopharynx, oropharynx, hypopharynx) et précisez leurs limites :</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc13').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc13">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Nasopharynx :</strong> haut (sa limite postérieure est le fascia pharyngo-basilaire).<br>
+                <strong>Oropharynx :</strong> milieu (paroi supérieure : limite palais mou/palais dur ; paroi inférieure : vallécules).<br>
+                <strong>Hypopharynx :</strong> bas (ouvert en avant sur le larynx).</p>
             </div>
         </div>
 
+        <!-- Question 14 -->
         <div class="question">
-            <h3>23. La présence d'éclat métallique dans le corps est une contre-indication à la TDM.</h3>
-            <div class="options">
-                <div class="option" onclick="checkAnswer(this, 'faux')">Vrai</div>
-                <div class="option" onclick="checkAnswer(this, 'faux')">Faux</div>
+            <h3>14. Qu’est ce qui modifie le signal BOLD ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc14').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc14">
+                <div class="result">Réponse attendue :</div>
+                <p>La consommation d’oxygène dans la zone activée par la tâche (passage de l’oxyHb à la carboxyHb). Il est possible de suivre la vasodilatation artériolaire qui correspond aux besoins en O2 de l’activité neuronale. La réponse est donc hémodynamique, il y a un couplage neuro-vasculaire.</p>
             </div>
-            <div class="explanation" id="explanationV23">
-                <div class="result">Réponse : FAUX (C'est une contre-indication à l'IRM, mais pas au scanner/TDM).</div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. Qu’est ce qu’un paradigme en IRM fonctionnelle ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc15').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc15">
+                <div class="result">Réponse attendue :</div>
+                <p>C'est une séquence d’action (tâches à faire par le patient) en bloc ou en événementiel. Un paradigme en bloc correspond à une alternance de périodes d’action et de repos.</p>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. Donner des exemples de paradigmes pour le langage :</h3>
+            <textarea rows="4"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc16').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc16">
+                <div class="result">Réponse attendue :</div>
+                <p>Complétion de phrase, écoute passive, nommage d’objet, génération de mots, fluence verbale, recherche de rime. <br>
+                Exemple en bloc : alternance entre répétition de stimuli (penser à des mots commençant par une lettre donnée) et repos. <br>
+                3 catégories : expression (Broca), compréhension (Wernicke), sémantique (latéralisation).</p>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. Pourquoi réaliser une IRM fonctionnelle de langage en pré-chirurgical ?</h3>
+            <textarea rows="3"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc17').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc17">
+                <div class="result">Réponse attendue :</div>
+                <p>La zone du langage n'est pas toujours au même endroit selon les patients. Il est nécessaire de la localiser précisément pour éviter de l’abîmer lors de la chirurgie (tumeurs, lésions focales). C'est un examen non invasif d'aide à la planification chirurgicale.</p>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. Quelle séquence utiliser pour réaliser une IRMf ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc18').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc18">
+                <div class="result">Réponse attendue :</div>
+                <p>Les séquences de perfusion (avec ou sans injection de produit de contraste) et la séquence BOLD (avec tâche pour l’activation ou sans tâche pour le "resting state").</p>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. Quel matériel d'imagerie utiliser pour les différentes parties de l'oreille ?</h3>
+            <textarea rows="2"></textarea>
+            <button type="button" onclick="document.getElementById('explanation_qroc19').style.display = 'block'">Valider</button>
+            <div class="explanation" id="explanation_qroc19">
+                <div class="result">Réponse attendue :</div>
+                <p><strong>Scanner :</strong> Oreille externe et Oreille moyenne.<br>
+                <strong>IRM :</strong> Oreille interne.</p>
             </div>
         </div>
 
