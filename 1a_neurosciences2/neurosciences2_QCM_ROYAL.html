@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurosciences 2: QCM Royal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>Neurosciences 2: QCM Royal</h1>
+
+        <h2 class="section-title">Exercice 1 : QCM 25 questions</h2>
+
+        <div class="question">
+            <h3>1. Chez l'enfant :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Avant 20SA, la commande motrice volontaire est organisée via le faisceau pyramidal direct et indirect de façon équitable</div>
+                <div class="option" onclick="toggleSelection(this)">B. à partir de la 24SA, la voie pyramidale directe est moins importante</div>
+                <div class="option" onclick="toggleSelection(this)">C. A 37 SA, toutes les structures cérébrales sont en place et il y a un stock de neurones pour la vie qui est constitué.</div>
+                <div class="option" onclick="toggleSelection(this)">D. le cerveau immature a plus de possibilités de plasticité mais est plus vulnérable et son atteinte peut impacter durablement les possibilités d'apprentissage.</div>
+                <div class="option" onclick="toggleSelection(this)">E. Durant toute l'enfance, l'arborisation des synapses se poursuit et de nouvelles synapses se créent dans la substance grise.</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Concernant la maturation du système nerveux central :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De la naissance à 3 ans, il y a une myélinisation progressive du SNC</div>
+                <div class="option" onclick="toggleSelection(this)">B. le gradient de myélinisation est asynchrone avec une priorisation des régions centrales</div>
+                <div class="option" onclick="toggleSelection(this)">C. la maturation des aires visuelles est plus rapide que celle des aires motrices</div>
+                <div class="option" onclick="toggleSelection(this)">D. la maturation relative aux fonctions supérieures se fait en 1er</div>
+                <div class="option" onclick="toggleSelection(this)">E. les périodes de vulnérabilité sont différentes selon les systèmes fonctionnels</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'E'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, B, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. Concernant la plasticité cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les mécanismes de la plasticité cérébrale peuvent se faire grâce à la création de nouvelles synapses</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les mécanismes de la plasticité cérébrale peuvent se faire grâce à la capacité d'une synapse à fonctionner avec peu de neurotransmetteurs et beaucoup de récepteurs.</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le stress précoce altère les capacités de la plasticité cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">D. La mauvaise qualité des interactions précoces parents/enfants n'altèrent pas les capacités de la plasticité cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">E. Les drogues psychoactives telles que les anxiolytiques altèrent les capacités de la plasticité cérébrale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A, B, C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. En cas d'atteinte précoce des zones du langage :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la réorganisation du langage se fait dans l'hémisphère droit non-atteint</div>
+                <div class="option" onclick="toggleSelection(this)">B. il n'y a jamais d'aphasies si les lésions cérébrales ont lieux avant 5-6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. les stimulations verbales facilitent la réorganisation du langage</div>
+                <div class="option" onclick="toggleSelection(this)">D. la réorganisation du langage du côté de l'hémisphère droit peut entraîner des difficultés visuo-constructives et spatiales</div>
+                <div class="option" onclick="toggleSelection(this)">E. les zones du langage sont situées à droite</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, C, D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Quelles sont les propositions vraies :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la plasticité cérébrale peut se faire chez le sujet sain et chez le sujet cérébro-lésé</div>
+                <div class="option" onclick="toggleSelection(this)">B. la plasticité cérébrale est un élément fondamental de l'apprentissage</div>
+                <div class="option" onclick="toggleSelection(this)">C. les règles de l'apprentissage optimisent les processus de plasticité cérébrale quel que soit le contexte chez le sujet sain/ sportif ou cérébro-lésé</div>
+                <div class="option" onclick="toggleSelection(this)">D. les zones cérébrales motrices s'activent uniquement lors de la réalisation de gestes par le sujet</div>
+                <div class="option" onclick="toggleSelection(this)">E. après l'AVC, les meilleures récupérations des fonctions motrices se font en cas de retour à une activation ipsilésionnelle</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A, B, C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Les zones cérébrales motrices de l'hémisphère droit peuvent être activées par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. l'observation de l'activité du membre supérieur gauche</div>
+                <div class="option" onclick="toggleSelection(this)">B. le mouvement passif du membre supérieur gauche</div>
+                <div class="option" onclick="toggleSelection(this)">C. l'imagerie mentale du membre supérieur gauche</div>
+                <div class="option" onclick="toggleSelection(this)">D. le mouvement passif du membre supérieur gauche (doublon)</div>
+                <div class="option" onclick="toggleSelection(this)">E. la stimulation sensitive du membre supérieur gauche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B, C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Après un AVC :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. En l'absence de stimulation cérébrale des zones motrices ipsi lésionnelles, il peut exister une plasticité maladaptive</div>
+                <div class="option" onclick="toggleSelection(this)">B. En l'absence de stimulations cérébrales des zones motrices ipsi lésionnelles, il ne pourra pas y avoir de relatéralisation ipsilésionnelle.</div>
+                <div class="option" onclick="toggleSelection(this)">C. la stimulation cérébrale des zones motrices du côté non-lésionnelle est optimale pour une récupération optimale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A, B</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Pour une récupération optimale, il faut proposer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une rééducation optimale</div>
+                <div class="option" onclick="toggleSelection(this)">B. La répétition des exercices</div>
+                <div class="option" onclick="toggleSelection(this)">C. Des exercices orientés vers la tâche</div>
+                <div class="option" onclick="toggleSelection(this)">D. Des exercices où l'engagement personnel est maximal</div>
+                <div class="option" onclick="toggleSelection(this)">E. Des exercices sans feedback</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, B, C, D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. Pour les AVC :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les AVC représentent l'ensemble des pathologies vasculaires cérébrales d'origine artérielle ou veineuse</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il y a environ 150 000 patients/an en France</div>
+                <div class="option" onclick="toggleSelection(this)">C. 75% des patients ont plus de 65 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un AVC correspond à une survenue progressive d'un déficit neurologique</div>
+                <div class="option" onclick="toggleSelection(this)">E. C'est une pathologie rare</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, B, C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Quels sont les facteurs de risque de l'athérome ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une HTA</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le tabac</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activité physique régulière</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le diabète</div>
+                <div class="option" onclick="toggleSelection(this)">E. L'hypercholestérolémie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'B', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : A, B, D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11. Avant d'arriver à la rétine, la lumière traverse l'ensemble des milieux dont la transparence est primordiale, il s'agit de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. la conjonctive</div>
+                <div class="option" onclick="toggleSelection(this)">B. la cornée</div>
+                <div class="option" onclick="toggleSelection(this)">C. l'humeur aqueuse</div>
+                <div class="option" onclick="toggleSelection(this)">D. le vitré</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : B, C, D (La conjonctive n'est pas un milieu réfringent traversé par l'axe optique principal)</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12. A propos des aires visuelles secondaires :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont organisées en voie ventrale, ou voie du WHAT</div>
+                <div class="option" onclick="toggleSelection(this)">B. En direction du cortex temporal sont spécialisées dans la reconnaissance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Sont organisées en voie dorsale, ou voie du WHERE</div>
+                <div class="option" onclick="toggleSelection(this)">D. En direction du cortex pariétal sont spécialisées dans la gestion de l'espace</div>
+                <div class="option" onclick="toggleSelection(this)">E. Toutes les réponses précédentes sont fausses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A, B, C, D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13. A propos de la plasticité du système visuel :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une déprivation visuelle induit des modifications anatomiques du cortex visuel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une déprivation visuelle entraîne une amblyopie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une amblyopie n'est curable que pendant une période critique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une amblyopie ne peut pas être rééduquée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : A, B, C</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14. A propos d'hémianopsie latérale homonyme gauche :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle est associée à des troubles attentionnels</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle gêne l'orientation des saccades</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle gêne la planification des saccades</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle est associée à une lexie hémianopsique</div>
+                <div class="option" onclick="toggleSelection(this)">E. Toutes les réponses précédentes sont fausses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B, C, D</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 2 : Vision</h2>
+
+        <div class="question">
+            <h3>Q1) A propos de l'anatomie des voies visuelles :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le relai des fibres visuelles se fait au niveau de l'hypothalamus</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il existe plusieurs aires visuelles secondaires</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'aire visuelle primaire est située dans le lobe pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les voies visuelles se terminent au niveau de la scissure calcarine</div>
+                <div class="option" onclick="toggleSelection(this)">E. Toutes les réponses présentes sont fausses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V1', ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanationV1">
+                <div class="result">Bonnes réponses : B, D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q2) A propos du champ visuel :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une hémianopsie binasale est liée à une atteinte du chiasma</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il existe une superposition totale du CV des 2 yeux</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une atteinte unilatérale se situe en avant du chiasma</div>
+                <div class="option" onclick="toggleSelection(this)">D. Toutes les réponses précédentes sont fausses</div>
+                <div class="option" onclick="toggleSelection(this)">E. Une hémianopsie latérale homonyme est liée à une atteinte des voies visuelles centrales controlatérales</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V2', ['C', 'E'])">Valider</button>
+            <div class="explanation" id="explanationV2">
+                <div class="result">Bonnes réponses : C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q3) A propos des aires visuelles secondaires :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont organisées en voie centrale ou voie du WHAT</div>
+                <div class="option" onclick="toggleSelection(this)">B. En direction du cortex temporal sont spécialisées dans la reconnaissance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Toutes les réponses précédentes sont fausses</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sont organisées en voie dorsale ou voie du WHERE</div>
+                <div class="option" onclick="toggleSelection(this)">E. En direction du cortex pariétal sont spécialisées dans la gestion de l'espace</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V3', ['B', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationV3">
+                <div class="result">Bonnes réponses : B, D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q4) A propos de la plasticité du système visuel :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est indépendante de l'expérience visuelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est terminée à l'âge adulte</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est maximale entre 2-6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est associée à l'immaturité du système visuel à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">E. Toute les réponses précédentes sont fausses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V4', ['D'])">Valider</button>
+            <div class="explanation" id="explanationV4">
+                <div class="result">Bonne réponse : D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q5) A propos de la plasticité du système visuel :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une déprivation visuelle entraîne une amblyopie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aucune réponse ne convient</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une déprivation visuelle induit des modifs anatomiques du cortex visuel</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une amblyopie n'est curable que pendant une période critique</div>
+                <div class="option" onclick="toggleSelection(this)">E. Une amblyopie ne peut pas être rééduquée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V5', ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanationV5">
+                <div class="result">Bonnes réponses : A, C, D</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q6) A propos d'hémianopsie latérale homonyme gauche :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Gêne l'orientation des saccades</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est associée à des troubles attentionnels</div>
+                <div class="option" onclick="toggleSelection(this)">C. Toutes les réponses précédentes sont fausses</div>
+                <div class="option" onclick="toggleSelection(this)">D. Gêne la planification des saccades</div>
+                <div class="option" onclick="toggleSelection(this)">E. Est associée à une lexie hémianopsique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V6', ['A', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationV6">
+                <div class="result">Bonnes réponses : A, D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q7) A propos des troubles visuels d'origine centrale : cécité corticale</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La cécité corticale est associée à une disparition des réflexes photo moteurs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aucune réponse ne convient</div>
+                <div class="option" onclick="toggleSelection(this)">C. En cas de cécité corticale persiste une vision inconsciente</div>
+                <div class="option" onclick="toggleSelection(this)">D. La cécité corticale est associée à une persistance du clignement réflexe à la menace</div>
+                <div class="option" onclick="toggleSelection(this)">E. La cécité corticale est associée à une anosognosie</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('V7', ['C', 'E'])">Valider</button>
+            <div class="explanation" id="explanationV7">
+                <div class="result">Bonnes réponses : C, E</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Exercice 3 : Motricité et Langage</h2>
+
+        <div class="question">
+            <h3>Q1) Cocher ce qui est vrai :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La plasticité cérébrale est un mécanisme qui existe chez le sujet cérébrolésé</div>
+                <div class="option" onclick="toggleSelection(this)">B. La plasticité musculaire est un mécanisme qui s'observe lors de séance de musculation</div>
+                <div class="option" onclick="toggleSelection(this)">C. La plasticité n'est pas un mécanisme réservé au cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">D. La plasticité cérébrale ne s'observe que chez l'enfant</div>
+                <div class="option" onclick="toggleSelection(this)">E. La plasticité osseuse est un mécanisme qui s'observe lors de la croissance de l'enfant</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M1', ['A', 'B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM1">
+                <div class="result">Bonnes réponses : A, B, C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q2) Cocher ce qui est vrai :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'Homunculus de Penfield représente la carte corticale de la commande motrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il existe une coopération interhémisphérique naturelle pour le contrôle moteur</div>
+                <div class="option" onclick="toggleSelection(this)">C. Chaque partie du corps est associé au territoire qui assure sa commande</div>
+                <div class="option" onclick="toggleSelection(this)">D. La taille de la représentation corticale est proportionnelle à la dextérité attendue</div>
+                <div class="option" onclick="toggleSelection(this)">E. Il y a des interactions très importantes entre l'aire motrice primaire et l'aire sensorielle primaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M2', ['A', 'B', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM2">
+                <div class="result">Toutes les réponses sont correctes.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q3) Cocher ce qui est vrai :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. En cas d'inactivité d'un membre (ex. plâtre), sa zone corticale ne se modifie pas</div>
+                <div class="option" onclick="toggleSelection(this)">B. La zone corticale dévolue à la main n'est pas susceptible de s'agrandir grâce à des exercices moteurs</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'entraînement modifie la carte corticale chez le sujet sain</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'entraînement ne peut pas modifier la carte corticale chez le sujet sain</div>
+                <div class="option" onclick="toggleSelection(this)">E. La zone corticale dévolue à la main est susceptible de s'agrandir grâce à des exercices moteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M3', ['C', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM3">
+                <div class="result">Bonnes réponses : C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q4) Plusieurs mécanismes de compensation après une lésion cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Utilisation de zones prémotrices et aire motrice supplémentaire ipsilésionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilisation du réseau moteur descendant accessoire rubo ou réticulospinal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Utilisation aire sensitive ipsilésionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Utilisation aires motrices controlésionnelles</div>
+                <div class="option" onclick="toggleSelection(this)">E. Utilisation des zones adjacentes à la lésion</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M4', ['A', 'B', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM4">
+                <div class="result">Bonnes réponses : A, B, D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q5) Principes pour favoriser la plasticité cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Utiliser les neurones miroirs</div>
+                <div class="option" onclick="toggleSelection(this)">B. Faire de la rééducation motrice intensive avec des exercices répétitifs</div>
+                <div class="option" onclick="toggleSelection(this)">C. Stimuler l'engagement et la motivation du patient</div>
+                <div class="option" onclick="toggleSelection(this)">D. Faire des exercices orientés vers la tâche</div>
+                <div class="option" onclick="toggleSelection(this)">E. Lutter contre la sous-utilisation acquise en mobilisant le membre atteint</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M5', ['A', 'B', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM5">
+                <div class="result">Toutes les options favorisent la plasticité.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q6) Comment lutter contre la sous-utilisation acquise ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Eviter de mobiliser le membre paralysé</div>
+                <div class="option" onclick="toggleSelection(this)">B. Favoriser le mouvement du membre atteint en faisant de la mobilisation passive</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il est possible lorsque la récupération du membre atteint est suffisante d'immobiliser</div>
+                <div class="option" onclick="toggleSelection(this)">D. Favoriser le mouvement du membre atteint en faisant de la mobilisation active</div>
+                <div class="option" onclick="toggleSelection(this)">E. La thérapie par la contrainte consiste à immobiliser le membre sain</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M6', ['D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM6">
+                <div class="result">Bonnes réponses : D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q7) Pour favoriser la plasticité cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il est possible d'inhiber l'hémisphère sain par de la stimulation magnétique (rTMS)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il est possible de stimuler l'H lésé par rTMS</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il est possible d'inhiber l'H sain par de la stimulation électrique transcranienne (tDCS)</div>
+                <div class="option" onclick="toggleSelection(this)">D. La stimulation de l'hémisphère lésé expose au risque de crise d'épilepsie</div>
+                <div class="option" onclick="toggleSelection(this)">E. Il est possible de stimuler l'hémisphère lésé par de la stimulation électrique transcranienne</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M7', ['A', 'B', 'C', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM7">
+                <div class="result">Bonnes réponses : A, B, C, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q8) Les neurones miroirs :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Leur activité est supposée favoriser la plasticité cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ne sont pas activés lors de l'observation de l'action faite par un sujet en face</div>
+                <div class="option" onclick="toggleSelection(this)">C. Sont susceptibles d'être activés lors de l'observation de l'action dans un miroir</div>
+                <div class="option" onclick="toggleSelection(this)">D. Chez l'enfant, ils sont très actifs (mécanisme d'apprentissage)</div>
+                <div class="option" onclick="toggleSelection(this)">E. La thérapie par le miroir active probablement les neurones miroirs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M8', ['A', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM8">
+                <div class="result">Bonnes réponses : A, C, D, E</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q9) Le neurofeedback :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le plus ancien a été fait grâce à l'enregistrement EEG</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le patient doit être participant pour comprendre la consigne</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'enjeu est d'apprendre au patient à stimuler les zones propices</div>
+                <div class="option" onclick="toggleSelection(this)">D. Technique de rééducation visant à contrôler sa propre activité cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">E. L'IRMf peut être utilisée pour apprendre au patient à contrôler son activité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M9', ['A', 'B', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM9">
+                <div class="result">Toutes les propositions sont correctes.</div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Q10) La plasticité cérébrale maladaptative :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Si on ne stimule pas le patient, les circuits de compensation risquent de ne pas être activés</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sans stimulation, les zones épargnées risquent de se mettre au repos</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il est possible de faire récupérer un patient à distance en levant cette plasticité</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'hémisphère controlatéral peut exercer une inhibition sur l'H lésé</div>
+                <div class="option" onclick="toggleSelection(this)">E. La meilleure récupération est obtenue quand les zones périlésionnelles suppléent la lésion</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer('M10', ['A', 'B', 'C', 'D', 'E'])">Valider</button>
+            <div class="explanation" id="explanationM10">
+                <div class="result">Toutes les propositions sont correctes.</div>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            // "questionNumber" peut être un nombre ou un ID texte (ex: 'V1')
+            const btn = event.target;
+            const questionDiv = btn.closest('.question');
+            const options = questionDiv.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const letter = option.textContent.trim().charAt(0).toUpperCase();
+                if (correctAnswers.includes(letter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+
+            const explanationDiv = questionDiv.querySelector('.explanation');
+            if (explanationDiv) explanationDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité Cérébrale et Récupération - Pr Bonan</title>
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité Cérébrale et Récupération après AVC</h1>
+
+        <div class="section-title">Module : Neurologie et Plasticité</div>
+
+        <div class="question">
+            <h3>1- Quelle est l'incidence approximative de l'AVC en France par an ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 50 000 patients</div>
+                <div class="option" onclick="toggleSelection(this)">B. 100 000 patients</div>
+                <div class="option" onclick="toggleSelection(this)">C. 150 000 patients</div>
+                <div class="option" onclick="toggleSelection(this)">D. 300 000 patients</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : C. 150 000 patients</div>
+                <p>L'incidence est d'environ 150 000 patients par an, dont environ un quart sont des récidives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Concernant l'étiologie des AVC, quelle est la proportion des AVC ischémiques ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 15 à 20 %</div>
+                <div class="option" onclick="toggleSelection(this)">B. 50 %</div>
+                <div class="option" onclick="toggleSelection(this)">C. 80 à 85 %</div>
+                <div class="option" onclick="toggleSelection(this)">D. 95 %</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : C. 80 à 85 %</div>
+                <p>Les AVC ischémiques représentent la grande majorité (80-85%), contre 15-20% pour les AVC hémorragiques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Quels sont les signes cliniques typiques d'un AVC de l'artère cérébrale moyenne (ACM) totale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Hémiplégie proportionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Hémianesthésie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Hémianopsie latérale homonyme (HLH)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ataxie cérébelleuse</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>L'AVC de l'ACM totale se manifeste par une hémiplégie, une hémianesthésie et une HLH. L'ataxie est typique des atteintes cérébelleuses ou vertébro-basilaires.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Une lésion de l'hémisphère dominant (gauche chez le droitier) entraîne préférentiellement :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une négligence spatiale unilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une aphasie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une apraxie gestuelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un syndrome de Charles Bonnet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'hémisphère gauche est dominant pour le langage (aphasie) et la programmation des gestes (apraxie).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- La récupération intrinsèque (ou neurologique) correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La réalisation d'une tâche de manière différente</div>
+                <div class="option" onclick="toggleSelection(this)">B. La reprise de fonction par les tissus nerveux survivants</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'utilisation d'une aide technique (canne)</div>
+                <div class="option" onclick="toggleSelection(this)">D. La réduction de la pénombre ischémique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Elle se distingue de la compensation (faire différemment) et implique des processus biologiques de réparation nerveuse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Concernant la récupération motrice, quand observe-t-on le maximum de récupération spontanée ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans les 3 premières semaines</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entre 1 et 3 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. Après 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement au-delà d'un an</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B. Entre 1 et 3 mois</div>
+                <p>La récupération est la plus rapide durant les trois premiers mois, puis elle ralentit pour atteindre un plateau vers 6 mois (phase chronique).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Quelles sont les deux composantes du score "SAFE" utilisé pour prédire la récupération du membre supérieur ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Flexion du coude</div>
+                <div class="option" onclick="toggleSelection(this)">B. Abduction de l'épaule</div>
+                <div class="option" onclick="toggleSelection(this)">C. Extension des doigts</div>
+                <div class="option" onclick="toggleSelection(this)">D. Préhension palmaire</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>SAFE signifie "Shoulder Abduction" et "Finger Extension". Ce score à 72h est un excellent prédicteur de la fonction à 6 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Dans l'algorithme PREP2, si un patient a un score SAFE ≥ 5, sa récupération est classée comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Limitée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Notable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Excellente</div>
+                <div class="option" onclick="toggleSelection(this)">D. Pauvre</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['C'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : C. Excellente</div>
+                <p>Un score SAFE ≥ 5 à 72h est prédictif d'une récupération "Excellente" de la fonctionnalité du membre supérieur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Quel est le principal facteur prédictif de la récupération dans l'aphasie ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'âge du patient</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le sexe</div>
+                <div class="option" onclick="toggleSelection(this)">C. La sévérité initiale de l'aphasie</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le niveau d'études</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : C. La sévérité initiale de l'aphasie</div>
+                <p>Bien que d'autres facteurs jouent un rôle minoritaire, la sévérité initiale reste le prédicteur le plus robuste pour le langage.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La négligence spatiale unilatérale (NSU) est plus fréquente et durable après une lésion :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De l'hémisphère gauche</div>
+                <div class="option" onclick="toggleSelection(this)">B. De l'hémisphère droit</div>
+                <div class="option" onclick="toggleSelection(this)">C. Bilatérale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Du cervelet</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. De l'hémisphère droit</div>
+                <p>La négligence gauche (par lésion droite) est cliniquement plus sévère et plus fréquente que la négligence droite.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Qu'est-ce que le phénomène de diaschisis ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mort des neurones dans la zone de nécrose</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une inhibition fonctionnelle à distance de la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">C. La repousse axonale vers la cible</div>
+                <div class="option" onclick="toggleSelection(this)">D. La création de nouveaux neurones</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : B. Une inhibition fonctionnelle à distance de la lésion</div>
+                <p>Le diaschisis correspond à un dysfonctionnement de zones cérébrales saines mais connectées à la zone lésée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- La plasticité cérébrale chez l'adulte peut impliquer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La synaptogénèse (nouvelles synapses)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le démasquage de synapses latentes</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réorganisation des cartes somatotopiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une neurogenèse limitée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : Toutes les propositions</div>
+                <p>Le cerveau adulte conserve des capacités de réorganisation par divers mécanismes structurels et fonctionnels.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Le principe de "Vicariation" dans la récupération signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Que la zone lésée se régénère à l'identique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Qu'une autre zone cérébrale supplée la zone lésée</div>
+                <div class="option" onclick="toggleSelection(this)">C. Que le patient utilise son autre bras</div>
+                <div class="option" onclick="toggleSelection(this)">D. Qu'il n'y a aucune récupération possible</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : B. Qu'une autre zone cérébrale supplée la zone lésée</div>
+                <p>La vicariation est un mécanisme de plasticité où des régions intactes (adjacentes ou homologues) reprennent la fonction perdue.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Quel est l'impact de l'âge sur la plasticité cérébrale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La plasticité disparaît totalement après 60 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. La plasticité est maintenue mais moins efficace</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cerveau âgé ne peut plus apprendre</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'âge n'a aucune influence sur la plasticité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B. La plasticité est maintenue mais moins efficace</div>
+                <p>Le cerveau reste plastique tout au long de la vie, même si les processus sont plus lents et les capacités de réserve moindres chez le sujet âgé.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Selon la CIF (OMS), une difficulté à discuter avec ses proches après un AVC est une :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Déficience</div>
+                <div class="option" onclick="toggleSelection(this)">B. Limitation d'activité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Restriction de participation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Facteur environnemental</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : C. Restriction de participation</div>
+                <p>La participation désigne l'implication dans des situations de vie réelle (sociale, familiale, professionnelle).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La récupération fonctionnelle peut s'améliorer grâce à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'amélioration des déficiences</div>
+                <div class="option" onclick="toggleSelection(this)">B. La compensation (faire la tâche différemment)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La modification de l'environnement</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'appareillage</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : Toutes les propositions</div>
+                <p>Le progrès fonctionnel résulte d'une combinaison de récupération biologique, de stratégies compensatrices et d'adaptations externes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Quelle technique est utilisée pour forcer l'utilisation du bras parétique (lésé) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La rééducation par contrainte (Constraint-induced movement therapy)</div>
+                <div class="option" onclick="toggleSelection(this)">B. La relaxation</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'immobilisation du bras parétique</div>
+                <div class="option" onclick="toggleSelection(this)">D. La stimulation nerveuse transcutanée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : A. La rééducation par contrainte</div>
+                <p>On empêche l'utilisation du bras sain pour lutter contre le phénomène de "non-utilisation apprise" du bras lésé.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La zone de pénombre ischémique est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une zone définitivement morte</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une zone de tissu souffrant mais potentiellement sauvable</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une zone saine sans aucun risque</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le ventricule cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B. Une zone de tissu souffrant mais potentiellement sauvable</div>
+                <p>C'est la cible des traitements d'urgence (thrombolyse, thrombectomie) pour limiter l'étendue définitive de la lésion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Qu'est-ce que l'élagage synaptique (pruning) ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La création massive de synapses</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'élimination des synapses inutiles ou redondantes</div>
+                <div class="option" onclick="toggleSelection(this)">C. La rupture d'un axone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une tumeur cérébrale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B. L'élimination des synapses inutiles ou redondantes</div>
+                <p>C'est un processus normal de maturation et de plasticité qui permet d'optimiser l'efficacité des réseaux neuronaux.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- En phase chronique (> 6 mois), la récupération est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toujours impossible</div>
+                <div class="option" onclick="toggleSelection(this)">B. Possible mais plus lente et repose souvent sur la compensation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Plus rapide qu'en phase aiguë</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement dépendante des médicaments</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : B. Possible mais plus lente et repose souvent sur la compensation</div>
+                <p>Même si la pente de récupération diminue, la plasticité persiste et permet des progrès fonctionnels tardifs.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

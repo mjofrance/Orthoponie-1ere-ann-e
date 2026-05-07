@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité Cérébrale et Motricité - Pr Bonan</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité Cérébrale et Motricité</h1>
+        
+        <div class="question">
+            <h3>1- La plasticité cérébrale se définit comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une capacité figée à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. La capacité des neurones à se modifier tout au long de la vie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un mécanisme uniquement présent chez le sujet sain</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un processus de remodelage lié aux expériences vécues</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La plasticité est l'ensemble des manifestations traduisant la capacité des neurones à se modifier tout au long de la vie, en fonction des expériences affectives, cognitives ou physiques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Concernant la carte corticale motrice :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La taille de la représentation est proportionnelle à la taille du membre</div>
+                <div class="option" onclick="toggleSelection(this)">B. La taille est proportionnelle à la dextérité attendue</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle est immuable chez l'adulte</div>
+                <div class="option" onclick="toggleSelection(this)">D. Chaque partie du corps est associée à un territoire spécifique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La taille de la représentation (Homunculus de Penfield) dépend de la dextérité (ex: main très large) et non de la taille réelle du membre.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- L'expérience d'entraînement des doigts chez le singe montre que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'exercice réduit la zone corticale pour économiser de l'énergie</div>
+                <div class="option" onclick="toggleSelection(this)">B. La zone des doigts sollicités s'étend après 3 mois d'exercices</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il n'y a aucun changement visible en IRMf</div>
+                <div class="option" onclick="toggleSelection(this)">D. La carte motrice est modulable par l'utilisation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>L'entraînement intensif des doigts 2, 3 et 4 chez le singe provoque une extension de leur représentation dans le cortex cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- En cas d'amputation suivie d'une greffe de main :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La zone corticale de la main disparaît définitivement après l'amputation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les zones du coude et de l'épaule s'élargissent après l'amputation</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une re-colonisation de la zone "main" est possible après la greffe</div>
+                <div class="option" onclick="toggleSelection(this)">D. La plasticité ne concerne que les enfants</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Après amputation, les zones voisines colonisent l'espace vacant. Après une greffe, on observe une re-colonisation progressive de la zone initiale de la main.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Après un AVC, quelle est la récupération la plus favorable ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un retour à une activation cérébrale ipsilésionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une activation exclusive du cortex controlatéral</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'utilisation de zones périlésionnelles</div>
+                <div class="option" onclick="toggleSelection(this)">D. La migration des neurones vers l'autre hémisphère</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Les meilleures récupérations sont observées en cas de retour à une activation ipsilésionnelle (du côté de la lésion) et périlésionnelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Quels sont les mécanismes de réparation à l'échelle des neurones ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La synaptogenèse (nouvelles connexions)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le sprouting (bourgeonnement)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réduction systématique du nombre de dendrites</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le remodelage des connexions synaptiques</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>La réparation neuronale passe par la création de synapses, le bourgeonnement axonal et le remodelage des réseaux existants.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Le pronostic de récupération motrice est plus favorable si :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le faisceau corticospinal est intègre (MEP positif)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le faisceau corticospinal est totalement sectionné</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'AVC touche uniquement le cervelet</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le patient présente un potentiel évoqué moteur (MEP)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A et D</div>
+                <p>La plasticité est bien plus favorable si le faisceau corticospinal est préservé, ce qui est testé par la présence de MEP (Potentiels Évoqués Moteurs).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La plasticité maladaptative correspond à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une récupération optimale du membre</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un syndrome de sous-utilisation acquise</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une réduction de la carte motrice du membre lésé par manque de stimulation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une coopération parfaite entre les deux hémisphères</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Si on ne stimule pas le côté lésé, le cerveau "désapprend" à l'utiliser, ce qui réduit sa carte motrice : c'est la plasticité maladaptative.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Pour lutter contre la sous-utilisation acquise, on peut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Utiliser la thérapie par la contrainte</div>
+                <div class="option" onclick="toggleSelection(this)">B. Immobiliser le membre atteint</div>
+                <div class="option" onclick="toggleSelection(this)">C. Favoriser la mobilisation active du membre supérieur lésé</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ne travailler que le côté sain</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Il faut forcer l'utilisation du membre atteint (contrainte du côté sain) et mobiliser activement pour garder la carte motrice ipsilésionnelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- Quelles techniques activent les zones motrices sans mouvement volontaire ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'observation d'une action</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le sommeil profond</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'imagerie mentale motrice</div>
+                <div class="option" onclick="toggleSelection(this)">D. La mobilisation passive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>L'observation, l'imagerie mentale et le mouvement passif permettent de stimuler les aires motrices même si le patient ne peut pas bouger volontairement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Les neurones miroirs s'activent lorsque :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. On regarde une action exécutée par autrui</div>
+                <div class="option" onclick="toggleSelection(this)">B. On exécute soi-même l'action</div>
+                <div class="option" onclick="toggleSelection(this)">C. On ferme les yeux sans réfléchir</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'action est mimée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Les neurones miroirs déchargent aussi bien lors de l'exécution que lors de l'observation d'une action (réelle ou mimée).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- La thérapie par le miroir :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est une technique de psychologie pure</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilise le reflet du membre sain pour tromper le cerveau</div>
+                <div class="option" onclick="toggleSelection(this)">C. Active l'hémisphère lésé via des stimuli visuels</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ne fonctionne pas sur les patients AVC</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>En regardant le reflet de sa main saine dans un miroir, le cerveau a l'illusion que la main lésée bouge, ce qui active le cortex moteur correspondant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Quelles sont les règles d'or de l'apprentissage pour la plasticité ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La répétition des exercices</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'entraînement de faible intensité</div>
+                <div class="option" onclick="toggleSelection(this)">C. La motivation et l'engagement du patient</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un feedback (visuel, auditif ou haptique)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>L'apprentissage efficace nécessite : intensité, répétition, engagement/motivation, feedback et une tâche signifiante.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Le neurofeedback permet au patient :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De voir son activité cérébrale en temps réel</div>
+                <div class="option" onclick="toggleSelection(this)">B. D'apprendre à auto-réguler ses rythmes cérébraux</div>
+                <div class="option" onclick="toggleSelection(this)">C. De stimuler des zones cibles comme le SMA ou M1</div>
+                <div class="option" onclick="toggleSelection(this)">D. De guérir sans faire d'efforts</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le neurofeedback est une boucle d'auto-régulation où le patient apprend à activer des zones spécifiques (ex: Aire Motrice Supplémentaire) grâce à un affichage visuel de son activité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- L'interaction sensorimotrice signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La motricité et la sensibilité sont totalement indépendantes</div>
+                <div class="option" onclick="toggleSelection(this)">B. Entraîner les zones sensorielles peut améliorer la motricité</div>
+                <div class="option" onclick="toggleSelection(this)">C. La stimulation sensitive a une action sur la motricité</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le thalamus ne joue aucun rôle dans le mouvement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Il existe des interactions fortes entre aires motrices et sensorielles. La stimulation sensitive est un levier pour la rééducation motrice.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Dans la rééducation post-AVC, on cherche à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Freiner l'hémisphère sain s'il devient trop dominant</div>
+                <div class="option" onclick="toggleSelection(this)">B. Stimuler l'hémisphère lésé par rTMS ou TDCS</div>
+                <div class="option" onclick="toggleSelection(this)">C. Éviter toute fatigue cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Rétablir l'équilibre inter-hémisphérique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>On utilise des stimulations cérébrales pour exciter le côté lésé et/ou inhiber le côté sain afin de restaurer la balance entre les deux hémisphères.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- La période chronique après un AVC se situe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Dans les 2 premiers jours</div>
+                <div class="option" onclick="toggleSelection(this)">B. Après 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">C. Entre 6 semaines et 6 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. Uniquement si le patient a plus de 80 ans</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B</div>
+                <p>Le cours définit la période chronique à partir de 6 mois après l'accident vasculaire.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Un entraînement "orienté vers la tâche" signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Faire des mouvements répétitifs sans but</div>
+                <div class="option" onclick="toggleSelection(this)">B. Pratiquer une activité signifiante (ex: éplucher une pomme)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Utiliser des outils de la vie quotidienne</div>
+                <div class="option" onclick="toggleSelection(this)">D. Travailler uniquement sur robot</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'apprentissage est plus efficace quand la tâche a un sens pour le patient (fonctionnelle et écologique).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'imagerie mentale motrice :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ne fonctionne que chez les sportifs de haut niveau</div>
+                <div class="option" onclick="toggleSelection(this)">B. Active des réseaux cérébraux similaires au mouvement réel</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est plus efficace chez les "bons imageurs"</div>
+                <div class="option" onclick="toggleSelection(this)">D. Remplace totalement la rééducation physique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>S'imaginer faire le mouvement active le cortex moteur, surtout chez les sujets capables de générer des images mentales nettes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- En résumé, la rééducation moderne repose sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La passivité du patient</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'utilisation stratégique de la plasticité cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">C. La stimulation de l'hémisphère lésé par divers leviers</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'attente d'une cicatrisation naturelle sans intervention</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La rééducation est active et vise à moduler l'activation des zones motrices et la carte corticale en utilisant les principes de l'apprentissage.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            // On récupère le conteneur de la question via le bouton cliqué
+            const questionElement = event.target.closest('.question');
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                // On extrait la lettre (A, B, C ou D) au début du texte
+                const optionLetter = option.textContent.trim().charAt(0);
+                
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            
+            // Affichage de l'explication
+            const explanation = document.getElementById(`explanation${questionNumber}`);
+            if (explanation) {
+                explanation.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

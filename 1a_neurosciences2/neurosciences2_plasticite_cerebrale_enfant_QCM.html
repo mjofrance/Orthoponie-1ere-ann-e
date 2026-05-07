@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité cérébrale de l'enfant</title>
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité cérébrale de l'enfant</h1>
+
+        
+        <div class="question">
+            <h3>1- Un enfant âgé de 6 à 9 mois est normalement capable de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Tenir sa tête seule</div>
+                <div class="option" onclick="toggleSelection(this)">B. Rester assis sans support</div>
+                <div class="option" onclick="toggleSelection(this)">C. Passer un objet d'une main à l'autre</div>
+                <div class="option" onclick="toggleSelection(this)">D. Marcher sans appui</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>À 6-9 mois, l'enfant tient sa tête (acquis vers 3 mois), s'assoit sans support et manipule les objets en les passant d'une main à l'autre. La marche sans appui arrive plus tard (12-18 mois).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- La substance grise du cerveau est composée de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Axones et connexions neuronales</div>
+                <div class="option" onclick="toggleSelection(this)">B. Corps cellulaires des neurones (20%)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Cellules gliales (80%)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Liquide céphalo-rachidien</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La substance grise comprend les corps cellulaires et les cellules gliales (soutien logistique). Les axones constituent la substance blanche.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Le rôle principal du cervelet est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La gestion de la respiration et du rythme cardiaque</div>
+                <div class="option" onclick="toggleSelection(this)">B. La coordination des fonctions motrices</div>
+                <div class="option" onclick="toggleSelection(this)">C. La perception visuelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'équilibre</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>Le cervelet coordonne les mouvements et gère l'équilibre. Les fonctions vitales automatiques (respiration) dépendent du tronc cérébral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Quel lobe est principalement responsable de la vision et de la perception des couleurs ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Lobe frontal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Lobe pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Lobe occipital</div>
+                <div class="option" onclick="toggleSelection(this)">D. Lobe temporal</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le lobe occipital est dédié au traitement des informations visuelles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Concernant le neurone, la gaine de myéline sert à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Protéger le noyau</div>
+                <div class="option" onclick="toggleSelection(this)">B. Ralentir l'influx nerveux pour plus de précision</div>
+                <div class="option" onclick="toggleSelection(this)">C. Accélérer la transmission des impulsions électriques</div>
+                <div class="option" onclick="toggleSelection(this)">D. Libérer des neurotransmetteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : C</div>
+                <p>La myéline agit comme un isolant permettant une conduction beaucoup plus rapide de l'influx nerveux le long de l'axone.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Le développement cérébral "In utero" se caractérise par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La différenciation du tube neural dès 3 semaines d'aménorrhée (SA)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un stock de neurones quasi constitué à la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une migration neuronale débutant vers 8 SA</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un réseau fonctionnel qui mature plus vite que le réseau structurel</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le réseau structurel mature en réalité plus vite que le réseau fonctionnel. Le stock de neurones pour la vie est déjà constitué à la naissance.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Qu'appelle-t-on "élagage synaptique" ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La création massive de nouvelles synapses à l'âge adulte</div>
+                <div class="option" onclick="toggleSelection(this)">B. La sélection des neurones et synapses les plus efficients</div>
+                <div class="option" onclick="toggleSelection(this)">C. La suppression des voies inutilisées selon l'environnement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un processus pathologique lié au stress</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'élagage est un processus naturel où le cerveau "nettoie" les connexions inutiles pour optimiser le fonctionnement des réseaux stimulés par l'environnement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- La plasticité cérébrale adaptative (post-lésionnelle) dépend de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La taille de la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">B. La zone fonctionnelle concernée</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'âge de survenue de la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">D. La présence de neurotransmetteurs uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>La capacité de récupération dépend de la localisation, de l'étendue des dégâts et de la maturité du cerveau au moment de l'atteinte.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Quels facteurs favorisent la plasticité naturelle ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le sommeil</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un milieu enrichi (stimulations complexes)</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activité physique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le stress précoce</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le sommeil consolide les synapses, tandis que le milieu enrichi et l'activité physique stimulent la neuroplasticité. Le stress précoce est au contraire délétère.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La paralysie cérébrale se définit comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une maladie neurodégénérative progressive</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un trouble permanent du mouvement et de la posture</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une atteinte survenant sur un cerveau mature</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une atteinte non progressive sur un cerveau immature</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La paralysie cérébrale est liée à des lésions stables (non progressives) survenant sur un cerveau en plein développement.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- La phase de récupération fonctionnelle précoce (< 1 mois post-lésion) est due à :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La plasticité cérébrale proprement dite</div>
+                <div class="option" onclick="toggleSelection(this)">B. La diminution de l'œdème</div>
+                <div class="option" onclick="toggleSelection(this)">C. La guérison de la zone de pénombre péri-lésionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">D. La création de nouveaux neurones</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La récupération immédiate n'est pas de la plasticité, mais la remise en route de neurones "sidérés" par l'inflammation et l'œdème autour de la lésion.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- La plasticité intramodale par "sprouting" consiste en :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un déplacement de la fonction dans l'autre hémisphère</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un bourgeonnement des neurones autour de la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le démasquage de réseaux parallèles de secours</div>
+                <div class="option" onclick="toggleSelection(this)">D. La transformation de neurones visuels en neurones moteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Dans la plasticité intramodale, les neurones adjacents à la lésion créent de nouvelles connexions ou activent des réseaux dormants pour compenser la perte.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Les "mouvements miroirs" ou syncinésies sont souvent le signe de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une excellente récupération motrice</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une réorganisation ipsilatérale (cortex sain gérant les deux côtés)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une perte de l'inhibition interhémisphérique</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une lésion très tardive chez l'adulte</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Ils surviennent quand le côté sain prend en charge la motricité du côté parétique, entraînant des mouvements involontaires symétriques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Concernant la zone du langage, une lésion précoce à gauche peut entraîner :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une aphasie définitive chez l'enfant de 2 ans</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un déplacement de la fonction vers l'hémisphère droit</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un "crowding reflex" impactant les fonctions visuospatiales</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une absence totale de plasticité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le langage peut se réorganiser à droite jusqu'à 5-6 ans, mais cela peut "prendre la place" d'autres fonctions (visuospatiales), c'est l'effet d'encombrement (crowding).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Le principe "Use it or lose it" en rééducation signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Qu'il faut attendre la fin de la croissance pour rééduquer</div>
+                <div class="option" onclick="toggleSelection(this)">B. Que l'absence de stimulation entraîne une perte de neurones sains</div>
+                <div class="option" onclick="toggleSelection(this)">C. Que la stimulation permet le bourgeonnement de réseaux dormants</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que l'exercice physique est inutile pour le cerveau</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Si un réseau n'est pas sollicité, il s'atrophie. La rééducation précoce est cruciale pour "forcer" le cerveau à utiliser ses capacités plastiques.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quelles thérapies sont considérées comme efficaces pour stimuler la plasticité ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La thérapie miroir (neurones miroirs)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les thérapies intensives bimanuelles</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le mouvement passif à but orthopédique uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'enrichissement de l'environnement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'intensité, la répétition et l'engagement du patient (via les neurones miroirs ou le jeu) sont les clés de la plasticité post-lésionnelle.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Un facteur essentiel à la préservation de la fonction motrice est l'intégrité du :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Corps calleux</div>
+                <div class="option" onclick="toggleSelection(this)">B. Faisceau pyramidal</div>
+                <div class="option" onclick="toggleSelection(this)">C. LCR</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cortex occipital</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : B</div>
+                <p>L'intégrité du faisceau pyramidal détermine en grande partie la qualité de la récupération de la dextérité motrice.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La plasticité "mal-adaptative" inclut :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'épilepsie post-lésionnelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'atrophie de zones connectées à la lésion</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une meilleure audition après une perte de vue</div>
+                <div class="option" onclick="toggleSelection(this)">D. La dérégulation de la balance interhémisphérique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>La plasticité peut parfois être négative : l'hyperexcitabilité de nouveaux réseaux peut générer de l'épilepsie, ou la lésion peut affaiblir des zones saines distantes.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- À quel âge la densité synaptique est-elle maximale chez l'enfant ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. À la naissance</div>
+                <div class="option" onclick="toggleSelection(this)">B. À 3 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. À 6 ans</div>
+                <div class="option" onclick="toggleSelection(this)">D. À l'adolescence</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : C</div>
+                <p>La densité maximale est atteinte vers 6 ans, avant que l'élagage synaptique ne stabilise l'organisation vers un modèle adulte.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- "Take-home message" : Le cerveau de l'enfant est plus plastique que l'adulte, mais :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il est aussi beaucoup plus vulnérable</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il ne peut pas se réorganiser si la lésion est trop étendue</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il récupère toujours à 100% sans séquelles</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les fonctions cognitives ont souvent une meilleure plasticité que la motricité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Il ne faut pas surévaluer le cerveau de l'enfant : l'immaturité signifie aussi fragilité, et une lésion précoce peut impacter les capacités d'apprentissage à très long terme.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = event.target.parentElement;
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité du Système Visuel</title>
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité du Système Visuel</h1>
+
+        <h2>Exercice : Questionnaire à choix multiples</h2>
+
+        <div class="question">
+            <h3>1- Le spectre des radiations visibles par l'œil humain s'étend environ de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 100 à 400 nm</div>
+                <div class="option" onclick="toggleSelection(this)">B. 400 à 700 nm</div>
+                <div class="option" onclick="toggleSelection(this)">C. 700 à 1000 nm</div>
+                <div class="option" onclick="toggleSelection(this)">D. 0,4 à 0,7 µm</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>Le spectre visible se situe entre 400 et 700 nanomètres (ce qui équivaut à 0,4-0,7 micromètres).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Parmi les structures suivantes, lesquelles sont considérées comme des milieux transparents de l'œil ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La choroïde</div>
+                <div class="option" onclick="toggleSelection(this)">B. La cornée</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cristallin</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le corps vitré</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonne réponse : B, C et D.</div>
+                <p>La cornée, le cristallin et le vitré doivent être transparents pour laisser passer la lumière jusqu'à la rétine. La choroïde est une couche vasculaire opaque.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Les bâtonnets sont des photorécepteurs caractérisés par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Leur présence exclusive dans la fovéa</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une très grande sensibilité à la lumière (vision scotopique)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Leur rôle principal dans la vision des couleurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une population d'environ 100 millions de cellules</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>Les bâtonnets assurent la vision crépusculaire (scotopique) et sont absents de la fovéa centrale. On en dénombre environ 100 millions.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- La vision fovéale (centrale) se distingue par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une résolution spatiale très élevée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une relation de 1 photorécepteur pour 1 cellule ganglionnaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une forte densité de bâtonnets</div>
+                <div class="option" onclick="toggleSelection(this)">D. La perception des détails fins</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonne réponse : A, B et D.</div>
+                <p>En fovéa, il n'y a pas de bâtonnets. La relation directe 1:1 entre les cônes et les cellules ganglionnaires permet une acuité visuelle maximale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Lors de la transduction visuelle, quel pigment est isomérisé par la lumière dans les bâtonnets ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La mélanopsine</div>
+                <div class="option" onclick="toggleSelection(this)">B. La rhodopsine</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'opsine S</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le 11-cis rétinal</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>La rhodopsine contient du 11-cis rétinal qui s'isomérise en tout-trans-rétinal sous l'effet des photons.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- Au niveau du chiasma optique :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toutes les fibres du nerf optique croisent la ligne médiane</div>
+                <div class="option" onclick="toggleSelection(this)">B. Seules les fibres provenant de la rétine nasale croisent (décussent)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fibres de la rétine temporale restent du même côté (ipsilatérales)</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'information du champ visuel droit est envoyée vers l'hémisphère gauche</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonne réponse : B, C et D.</div>
+                <p>Le croisement partiel au chiasma permet à chaque hémisphère de traiter la moitié controlatérale du champ visuel total.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- La magnification corticale désigne le fait que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La périphérie rétinienne occupe la plus grande partie du cortex V1</div>
+                <div class="option" onclick="toggleSelection(this)">B. La fovéa est sur-représentée dans le cortex visuel primaire</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les objets paraissent plus grands qu'ils ne le sont réellement</div>
+                <div class="option" onclick="toggleSelection(this)">D. La surface corticale allouée dépend de la densité des récepteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>Une petite zone centrale de la rétine (la fovéa) mobilise une immense partie du cortex visuel pour garantir la précision de l'analyse.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- L'aire visuelle V4 est principalement spécialisée dans le traitement de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le mouvement</div>
+                <div class="option" onclick="toggleSelection(this)">B. La couleur</div>
+                <div class="option" onclick="toggleSelection(this)">C. La profondeur (relief)</div>
+                <div class="option" onclick="toggleSelection(this)">D. La reconnaissance des formes complexes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>V4 appartient à la voie ventrale, traitant les couleurs et les caractéristiques des objets.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Une lésion de l'aire V5 (ou MT) peut provoquer :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une achromatopsie (perte de vision des couleurs)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une akinétopsie (perte de perception du mouvement)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une vision "saccadée" comme sous un stroboscope</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une cécité totale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonne réponse : B et C.</div>
+                <p>V5 est l'aire majeure du mouvement. Sa lésion empêche la perception fluide des déplacements.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- La "Voie Ventrale" (What) relie le lobe occipital au lobe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Pariétal</div>
+                <div class="option" onclick="toggleSelection(this)">B. Temporal</div>
+                <div class="option" onclick="toggleSelection(this)">C. Frontal</div>
+                <div class="option" onclick="toggleSelection(this)">D. Occipital uniquement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : B. Lobe temporal.</div>
+                <p>C'est la voie de la reconnaissance des objets ("Qu'est-ce que c'est ?") qui se termine dans le cortex temporal inférieur.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- La "Voie Dorsale" (Where/How) est impliquée dans :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La localisation spatiale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le guidage visuel des mouvements (action)</div>
+                <div class="option" onclick="toggleSelection(this)">C. La lecture et l'identification des lettres</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le traitement du mouvement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonne réponse : A, B et D.</div>
+                <p>La voie dorsale vers le pariétal analyse l'espace et permet d'ajuster nos gestes en fonction de ce que nous voyons.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- L'amblyopie est une pathologie qui :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est due à un défaut organique de l'œil uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">B. Résulte d'une compétition binoculaire anormale durant l'enfance</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est réversible toute la vie par simple port de lunettes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Doit être traitée durant la "période critique" (avant 6-10 ans)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>L'amblyopie est un défaut de développement cortical. La plasticité permettant de la soigner décroît fortement après l'âge de 6 ans.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- Le syndrome de Balint se compose de la triade symptomatique suivante :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Ataxie optique (trouble de la préhension)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Prosopagnosie (trouble des visages)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Simultagnosie (incapacité à voir une scène globale)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Apraxie du regard (incapacité à orienter volontairement les yeux)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonne réponse : A, C et D.</div>
+                <p>Ce syndrome résulte d'une lésion pariétale bilatérale touchant la voie du "Where".</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Une agnosie visuelle aperceptive se définit par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Un trouble de la reconnaissance dû à une mauvaise bibliothèque visuelle</div>
+                <div class="option" onclick="toggleSelection(this)">B. Un trouble précoce de la construction de la forme (percept)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une capacité préservée à dessiner de mémoire mais pas à copier</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une acuité visuelle normale mais un objet n'est pas "formé" mentalement</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonne réponse : B et D.</div>
+                <p>Dans l'agnosie aperceptive, le patient n'arrive même pas à construire la forme globale de l'objet.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- L'exploration par OCT (Tomographie en Cohérence Optique) permet d'analyser :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'épaisseur des couches de la rétine</div>
+                <div class="option" onclick="toggleSelection(this)">B. La vascularisation par injection de colorant</div>
+                <div class="option" onclick="toggleSelection(this)">C. La structure de la macula en haute définition</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'état des fibres du nerf optique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonne réponse : A, C et D.</div>
+                <p>L'OCT est une imagerie structurelle (coupes). L'angiographie est celle qui utilise des colorants.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Quelle aire est surnommée la "boîte aux lettres cérébrale" pour la lecture ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'aire V1 occipitale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le gyrus fusiforme (temporal gauche)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le cortex pariétal supérieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'aire de Broca</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : B. Le gyrus fusiforme.</div>
+                <p>C'est la zone spécialisée dans la reconnaissance visuelle des mots, activée quel que soit l'âge d'apprentissage.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Le vieillissement visuel normal s'accompagne de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une presbytie (perte d'accommodation)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une diminution de la sensibilité aux contrastes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Un allongement du temps d'adaptation à l'obscurité</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une augmentation du nombre de photorécepteurs</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonne réponse : A, B et C.</div>
+                <p>Avec l'âge, le nombre de photorécepteurs diminue et le cristallin se densifie.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Une Hémianopsie Latérale Homonyme (HLH) droite signifie :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Que le patient est aveugle de l'œil droit</div>
+                <div class="option" onclick="toggleSelection(this)">B. Que la moitié droite du champ visuel de chaque œil est perdue</div>
+                <div class="option" onclick="toggleSelection(this)">C. Que la lésion se situe probablement dans l'hémisphère gauche</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que le patient ne voit plus rien du tout</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonne réponse : B et C.</div>
+                <p>Une HLH touche le même côté de l'espace pour les deux yeux, suite à une lésion cérébrale opposée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- Les cellules ganglionnaires à centre "ON" :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Sont excitées par un faisceau lumineux au centre de leur champ récepteur</div>
+                <div class="option" onclick="toggleSelection(this)">B. Sont excitées par l'obscurité au centre</div>
+                <div class="option" onclick="toggleSelection(this)">C. Codent le signal sous forme de potentiels d'action</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ne se trouvent que dans la fovéa</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : A et C.</div>
+                <p>Le codage par centres ON/OFF permet d'accentuer les contrastes et les bords des objets.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Le phénomène de "Blindsight" (ou vision inconsciente) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Permet d'éviter des obstacles malgré une cécité corticale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilise des voies sous-corticales (colliculus supérieur, pulvinar)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Est une vision très nette mais sans couleurs</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est lié à la persistance de réflexes d'orientation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonne réponse : A, B et D.</div>
+                <p>Même sans cortex visuel fonctionnel (vision consciente), certaines informations spatiales et de mouvement sont traitées par des structures archaïques.</p>
+            </div>
+        </div>
+
+	<a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

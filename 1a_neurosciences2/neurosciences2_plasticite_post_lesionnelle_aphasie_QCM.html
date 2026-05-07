@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité post-lésionnelle d'une aphasie</title>
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité post-lésionnelle d'une aphasie</h1>
+
+        <div class="question">
+            <h3>1- La plasticité du système nerveux humain peut permettre, après une lésion cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. De compenser l'aphasie</div>
+                <div class="option" onclick="toggleSelection(this)">B. De récupérer totalement de l'aphasie dans tous les cas</div>
+                <div class="option" onclick="toggleSelection(this)">C. De s'adapter à l'agression en créant de nouvelles connexions synaptiques</div>
+                <div class="option" onclick="toggleSelection(this)">D. De supprimer définitivement le risque de récidive d'AVC</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La plasticité est la capacité du cerveau à s'adapter et à compenser une déficience en créant de nouveaux réseaux ou connexions.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quels facteurs favorisent la récupération du langage via la plasticité ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'adaptation spontanée des réseaux activés</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'absence totale de rééducation pour laisser le cerveau "au repos"</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réactivation du réseau touché par la rééducation</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le recrutement d'un nouveau réseau de suppléance</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>La plasticité contribue à la récupération si les réseaux activés sont adaptés, ou si la thérapie permet de réactiver le réseau initial ou d'en recruter un nouveau.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Concernant les principes de Santiago Ramon y Cajal (1906) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Il a formulé le concept de plasticité neuronale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il pensait que le cerveau était un réseau de fibres ininterrompu</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il a théorisé que les neurones sont des entités séparées par des espaces</div>
+                <div class="option" onclick="toggleSelection(this)">D. Il a affirmé que l'apprentissage multiplie les synapses</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>Cajal est le "neuroniste" qui a réfuté la théorie réticulaire au profit de la théorie neuronale (synapses).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Au niveau cellulaire, on dénombre dans le SNC :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Environ 70 milliards de neurones</div>
+                <div class="option" onclick="toggleSelection(this)">B. Environ 120 milliards de cellules gliales</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une seule connexion par neurone</div>
+                <div class="option" onclick="toggleSelection(this)">D. Jusqu'à 500 000 connexions par cellule</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Le SNC compte environ 200 milliards de cellules, dont une majorité de cellules gliales participant activement à la plasticité.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- L'étude de Maguire (2000) sur les chauffeurs de taxi londoniens a montré :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une augmentation de la taille de l'hippocampe chez ceux ayant réussi l'examen</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aucune différence structurelle avec les sujets sains</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'effet de l'entraînement intensif sur la structure cérébrale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que l'apprentissage géographique n'utilise pas la plasticité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Cette étude est une preuve majeure de la plasticité structurelle induite par l'apprentissage chez l'adulte sain.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- L'étude de Draganski (2004) sur les jongleurs souligne que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les modifications de la substance grise sont définitives</div>
+                <div class="option" onclick="toggleSelection(this)">B. Il existe une augmentation bilatérale des régions temporales moyennes</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les modifications diminuent 3 mois après l'arrêt de l'entraînement</div>
+                <div class="option" onclick="toggleSelection(this)">D. Seule la substance blanche est modifiée</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'étude montre que la plasticité est dynamique : elle se crée avec l'entraînement mais peut s'estomper en cas de non-utilisation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Concernant la réserve cognitive (Stern, 2006) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle dépend uniquement du volume cérébral brut</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle est déterminée par le niveau d'étude et la profession</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle inclut la notion de compensation neurale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle est identique chez tous les individus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La réserve cognitive est l'utilisation fonctionnelle optimisée des structures, influencée par le style de vie et l'éducation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Dans les premières minutes/heures après un AVC, on observe :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une excitotoxicité au glutamate</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une neurogénèse immédiate et massive</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une inflammation et une apoptose</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une dépression métabolique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['A', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : A, C et D</div>
+                <p>La phase aiguë est dominée par des mécanismes de dommages (excitotoxicité, apoptose) avant que les mécanismes de réparation ne s'installent.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- Selon l'étude de Pedersen (1995), quelle proportion de patients récupère en 6 mois ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 5%</div>
+                <div class="option" onclick="toggleSelection(this)">B. 32%</div>
+                <div class="option" onclick="toggleSelection(this)">C. 95%</div>
+                <div class="option" onclick="toggleSelection(this)">D. Environ un tiers des patients</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>L'étude montre une récupération spontanée pour 32% des patients dans les 6 premiers mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- À quels patients faut-il prescrire une rééducation orthophonique ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Uniquement aux aphasies légères</div>
+                <div class="option" onclick="toggleSelection(this)">B. Aux aphasies sévères</div>
+                <div class="option" onclick="toggleSelection(this)">C. Aux aphasies globales</div>
+                <div class="option" onclick="toggleSelection(this)">D. À tous les patients aphasiques, quelle que soit la sévérité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonne réponse : D (qui englobe B et C)</div>
+                <p>La conférence Sofmer (1996) précise que tous les aphasiques peuvent bénéficier d'une rééducation.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- Concernant le moment idéal pour débuter la rééducation :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle doit être précoce pour prévenir l'exclusion de la communication</div>
+                <div class="option" onclick="toggleSelection(this)">B. Commencer tardivement (après 6 mois) n'offre aucune chance de progrès</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il n'y a pas de "perte de chance" à reprendre tardivement selon la HAS</div>
+                <div class="option" onclick="toggleSelection(this)">D. La phase aiguë est la seule fenêtre de plasticité</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La HAS (2008) préconise un début précoce mais souligne que des progrès restent possibles même en phase chronique.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Les recommandations de la HAS (2022) sur l'intensité indiquent :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une rééducation à forte intensité et longue durée (Grade A)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Que l'acupuncture est très efficace pour le langage</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'intérêt de l'entraînement du partenaire de communication (Grade A)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Que la musicothérapie a des preuves d'efficacité suffisantes</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La rééducation intensive et l'implication de l'aidant sont fortement recommandées avec un haut niveau de preuve.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- La méta-analyse RELEASE (2021) montre qu'une amélioration de la COMPRÉHENSION nécessite :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une séance par mois</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une fréquence supérieure à 4 fois par semaine</div>
+                <div class="option" onclick="toggleSelection(this)">C. Plus de 20 heures de rééducation au total</div>
+                <div class="option" onclick="toggleSelection(this)">D. Moins de 3 fois par semaine</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>En dessous de 3 fois/semaine ou 20h au total, aucune amélioration n'est observée sur la compréhension.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Selon le consortium CATS, pour les patients en âge de travailler :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'intensité doit être basse (1h/sem)</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'intensité doit être moyenne à haute</div>
+                <div class="option" onclick="toggleSelection(this)">C. Il faut viser > 9h/semaine pour la compréhension</div>
+                <div class="option" onclick="toggleSelection(this)">D. 3-4h/semaine suffisent pour la communication globale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Les patients plus jeunes tolèrent et bénéficient d'une intensité plus élevée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- Concernant la rTMS (Stimulation Magnétique Transcrânienne) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle est efficace en phase subaiguë et chronique</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle nécessite obligatoirement d'être associée à l'orthophonie</div>
+                <div class="option" onclick="toggleSelection(this)">C. Elle peut améliorer la dénomination et la répétition</div>
+                <div class="option" onclick="toggleSelection(this)">D. Ses effets ne durent jamais plus de 24 heures</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>La rTMS montre une efficacité même seule, avec des effets maintenus jusqu'à 3 mois.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- La tDCS (Stimulation Électrique Transcrânienne) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est efficace uniquement si associée à la rééducation</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est recommandée en phase chronique (Grade B)</div>
+                <div class="option" onclick="toggleSelection(this)">C. N'a aucun effet sur la dénomination d'images</div>
+                <div class="option" onclick="toggleSelection(this)">D. Est plus efficace en phase subaiguë qu'en phase chronique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Contrairement à la rTMS, la tDCS doit être couplée à la thérapie ("mode on-line") pour être efficace.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- La Thérapie Mélodique et Rythmée (MIT/TMR) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est la seule méthode efficace pour toutes les aphasies</div>
+                <div class="option" onclick="toggleSelection(this)">B. Semble agir particulièrement sur l'apraxie de la parole</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le rythme serait le facteur critique pour Stahl (2013)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Sollicite préférentiellement l'hémisphère droit selon toutes les études</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'action sur l'hémisphère droit est discutée (résultats contradictoires) et le rythme est prépondérant.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- Lesquels de ces facteurs sont de MAUVAIS pronostic de récupération ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une grande taille de lésion</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une atteinte du Gyrus Temporal Supérieur (STG)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une aphasie globale initiale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un AVC de type hémorragique</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>L'AVC hémorragique a généralement un meilleur pronostic que l'ischémique. La taille et le siège (STG) sont déterminants.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- L'étude de Glize et al. (2017) souligne qu'un facteur prédit bien le score ASRS à 3 mois :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La couleur des yeux du patient</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le score initial de répétition de mots isolés</div>
+                <div class="option" onclick="toggleSelection(this)">C. La présence d'une hémiplégie droite</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le sexe du patient</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonne réponse : B</div>
+                <p>La répétition de mots isolés à la phase initiale est un prédicteur robuste de l'évolution du langage.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- En conclusion, la plasticité cérébrale est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Possible à tout âge</div>
+                <div class="option" onclick="toggleSelection(this)">B. Impossible après 80 ans</div>
+                <div class="option" onclick="toggleSelection(this)">C. Favorisée par les spécialistes du langage (orthophonistes)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un processus figé dès la première semaine post-AVC</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Le cerveau reste plastique toute la vie et la rééducation est le levier majeur pour stimuler ce processus.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            
+            options.forEach(option => {
+                const optionText = option.textContent.charAt(0);
+                option.classList.remove("correct", "incorrect");
+                
+                if (correctAnswers.includes(optionText)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>

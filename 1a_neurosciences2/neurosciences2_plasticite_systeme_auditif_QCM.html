@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM : Plasticité du Système Auditif</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+        <h1>QCM : Plasticité du Système Auditif et Rééducation</h1>
+
+        <div class="question">
+            <h3>1- La plasticité du système auditif central se définit comme :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La capacité de la cochlée à se régénérer après un traumatisme sonore</div>
+                <div class="option" onclick="toggleSelection(this)">B. La capacité à organiser les informations sensorielles selon l'expérience</div>
+                <div class="option" onclick="toggleSelection(this)">C. La réorganisation du cortex cérébral suite à une modification des afférences</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une propriété uniquement présente chez le nouveau-né</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(1, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation1">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La plasticité est la capacité du système central à s'organiser (intégrer/discriminer) et la capacité du cortex à se réorganiser face aux modifications sensorielles.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2- Quels mécanismes physiologiques participent à la plasticité cérébrale ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La création de nouvelles synapses</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le recrutement de nouveaux neurones</div>
+                <div class="option" onclick="toggleSelection(this)">C. La modification de la taille des zones corticales affectées</div>
+                <div class="option" onclick="toggleSelection(this)">D. La réafférentiation (plasticité cross-modale)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(2, ['A', 'B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation2">
+                <div class="result">Bonnes réponses : A, B, C et D</div>
+                <p>Toutes ces options sont des modes de fonctionnement de la plasticité décrits dans le cours.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3- Dans le tronc cérébral, quels sont les relais de la voie auditive ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Le noyau cochléaire</div>
+                <div class="option" onclick="toggleSelection(this)">B. L'olive supérieure</div>
+                <div class="option" onclick="toggleSelection(this)">C. Le colliculus inférieur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Le corps genouillé médian</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(3, ['A', 'B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation3">
+                <div class="result">Bonnes réponses : A, B et C</div>
+                <p>Le noyau cochléaire, l'olive supérieure, le lemnisque latéral et le colliculus inférieur sont dans le tronc cérébral. Le corps genouillé médian appartient au thalamus.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4- Le thalamus (corps genouillé médian) a pour rôle de :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Capter le message nerveux au niveau de la cochlée</div>
+                <div class="option" onclick="toggleSelection(this)">B. Trier les informations sensorielles et sensitives</div>
+                <div class="option" onclick="toggleSelection(this)">C. Traiter l'information avant le cortex</div>
+                <div class="option" onclick="toggleSelection(this)">D. Commander la motricité des osselets</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(4, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation4">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le thalamus sert de noyau central de tri et de traitement de l'information.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5- Concernant la stimulation controlatérale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. 50% des informations d'une oreille vont vers le cerveau opposé</div>
+                <div class="option" onclick="toggleSelection(this)">B. 95% des informations traitées d'un côté concernent l'oreille opposée</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activation d'une oreille stimule majoritairement le cortex opposé</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les informations ne se croisent jamais avant le cortex</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(5, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation5">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>95% des informations sont traitées par le côté controlatéral, contre seulement 5% pour le côté ipsilatéral.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6- L'organisation tonotopique dans la cochlée signifie que :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Toutes les fréquences sont traitées au même endroit</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les sons graves sont traités à l'apex</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les sons aigus sont traités à la base</div>
+                <div class="option" onclick="toggleSelection(this)">D. Cette organisation disparaît dès l'entrée dans le nerf auditif</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(6, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation6">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'organisation tonotopique (Graves = Apex / Aigus = Base) se retrouve dans toutes les structures des voies auditives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7- Dans le cortex auditif, la répartition des fréquences est la suivante :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Fréquences aiguës en position médiale</div>
+                <div class="option" onclick="toggleSelection(this)">B. Fréquences aiguës en position latérale</div>
+                <div class="option" onclick="toggleSelection(this)">C. Fréquences graves en position latérale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Fréquences graves en position médiale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(7, ['A', 'C'])">Valider</button>
+            <div class="explanation" id="explanation7">
+                <div class="result">Bonnes réponses : A et C</div>
+                <p>Au niveau cortical : Aiguës = Médiales / Graves = Latérales.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8- Quelles sont les méthodes dites "directes" pour étudier la plasticité ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'IRM fonctionnelle (IRMf)</div>
+                <div class="option" onclick="toggleSelection(this)">B. Les potentiels évoqués auditifs (PEA)</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'électroencéphalographie (EEG)</div>
+                <div class="option" onclick="toggleSelection(this)">D. La magnétoencéphalographie (MEG)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(8, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation8">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Les méthodes directes mesurent l'activité électrique ou magnétique. L'IRMf est une méthode indirecte (débit sanguin).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9- La TEP (Tomographie en émission de positrons) mesure :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'activité électrique des neurones en temps réel</div>
+                <div class="option" onclick="toggleSelection(this)">B. Le débit sanguin cérébral</div>
+                <div class="option" onclick="toggleSelection(this)">C. La consommation neuronale de glucose</div>
+                <div class="option" onclick="toggleSelection(this)">D. La résistance magnétique des tissus</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(9, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation9">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La TEP est une méthode indirecte basée sur la consommation d'oxygène (débit) ou de glucose.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10- L'IRM fonctionnelle (IRMf) repose sur :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. L'injection d'un traceur radioactif gamma</div>
+                <div class="option" onclick="toggleSelection(this)">B. La différence de propriétés magnétiques entre oxyhémoglobine et déoxyhémoglobine</div>
+                <div class="option" onclick="toggleSelection(this)">C. La mesure du signal BOLD liée à la consommation d'oxygène</div>
+                <div class="option" onclick="toggleSelection(this)">D. L'utilisation de la lumière infrarouge</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(10, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation10">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>L'IRMf suit la consommation d'oxygène en comparant l'hémoglobine oxygénée et non oxygénée.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>11- En cas de surdité unilatérale, on observe au niveau du cortex :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une baisse de l'excitabilité du cortex controlatéral à l'oreille saine</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une sur-excitabilité du cortex controlatéral à l'oreille lésée</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une baisse des seuils de stimulation pour l'oreille saine</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une absence totale de réorganisation après 5 semaines</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(11, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation11">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le cortex normalement dédié à l'oreille sourde devient plus sensible à l'oreille saine (réorganisation dès 5 semaines).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>12- Lors d'une lésion partielle de la cochlée :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Les neurones de la zone lésée meurent immédiatement</div>
+                <div class="option" onclick="toggleSelection(this)">B. La carte tonotopique se réorganise (entre 2 et 11 mois)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les fréquences bordantes "recouvrent" la zone du scotome</div>
+                <div class="option" onclick="toggleSelection(this)">D. Les courbes d'accord des neurones s'élargissent</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(12, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation12">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Les neurones se réorganisent pour répondre aux fréquences voisines, assurant le maintien de l'activité cérébrale.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>13- La plasticité "cross-modale" dans la surdité bilatérale complète désigne :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. La capacité de l'oreille interne à s'auto-réparer</div>
+                <div class="option" onclick="toggleSelection(this)">B. La réafférentiation du cortex auditif par des informations visuelles</div>
+                <div class="option" onclick="toggleSelection(this)">C. L'activation du cortex auditif par le langage des signes</div>
+                <div class="option" onclick="toggleSelection(this)">D. Une amélioration de la vision pour compenser la perte auditive</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(13, ['B', 'C', 'D'])">Valider</button>
+            <div class="explanation" id="explanation13">
+                <div class="result">Bonnes réponses : B, C et D</div>
+                <p>Les zones auditives inutilisées sont réaffectées à d'autres sens, notamment la vision et le langage signé.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>14- Quels sont les effets d'une implantation cochléaire sur le cortex ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Réapparition de la tonotopie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Amélioration des connexions synaptiques</div>
+                <div class="option" onclick="toggleSelection(this)">C. Diminution de l'amplitude des potentiels corticaux</div>
+                <div class="option" onclick="toggleSelection(this)">D. Développement de réponses de latences tardives (mémoire)</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(14, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation14">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>L'implant augmente l'amplitude des potentiels (et non l'inverse) et permet de restaurer les fonctions auditives et associatives.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>15- La période "critique" de plasticité cérébrale :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Se situe durant les premières années de vie</div>
+                <div class="option" onclick="toggleSelection(this)">B. Est la période où la plasticité est maximale</div>
+                <div class="option" onclick="toggleSelection(this)">C. N'existe pas chez l'être humain</div>
+                <div class="option" onclick="toggleSelection(this)">D. Conditionne la réussite de l'implantation chez l'enfant</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(15, ['A', 'B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation15">
+                <div class="result">Bonnes réponses : A, B et D</div>
+                <p>Cette période est cruciale pour le développement des voies auditives centrales (pic vers 2 ans).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>16- Chez les sourds congénitaux implantés, l'activation cérébrale est :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Identique à celle d'un normo-entendant</div>
+                <div class="option" onclick="toggleSelection(this)">B. Très spécifique à la zone temporale uniquement</div>
+                <div class="option" onclick="toggleSelection(this)">C. Plus large et disparate (aires de Broca, motrices...)</div>
+                <div class="option" onclick="toggleSelection(this)">D. Limitée au tronc cérébral</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(16, ['C'])">Valider</button>
+            <div class="explanation" id="explanation16">
+                <div class="result">Bonne réponse : C</div>
+                <p>Le cerveau "pioche" dans différentes zones (Broca, gyrus cingulaire, aires motrices) pour traiter l'information.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>17- Pourquoi une forte plasticité cross-modale peut-elle être un frein à l'implant ?</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Parce que le cortex visuel "occupe" la zone auditive</div>
+                <div class="option" onclick="toggleSelection(this)">B. Parce que cela gêne la réactivation du cortex par les sons</div>
+                <div class="option" onclick="toggleSelection(this)">C. Parce que l'implant devient alors toxique pour les neurones</div>
+                <div class="option" onclick="toggleSelection(this)">D. Parce que le patient préférera toujours la lecture labiale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(17, ['A', 'B'])">Valider</button>
+            <div class="explanation" id="explanation17">
+                <div class="result">Bonnes réponses : A et B</div>
+                <p>Plus la zone corticale a été "colonisée" par la vision/langage signé, moins elle est disponible pour redevenir auditive.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>18- La technique NIRS (spectrométrie infrarouge) :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Est plus coûteuse que l'IRM</div>
+                <div class="option" onclick="toggleSelection(this)">B. Utilise la transparence des tissus à la lumière infrarouge</div>
+                <div class="option" onclick="toggleSelection(this)">C. Permet d'enregistrer tout le cerveau en profondeur</div>
+                <div class="option" onclick="toggleSelection(this)">D. Mesure la différence d'absorption entre O2Hb et CO2Hb</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(18, ['B', 'D'])">Valider</button>
+            <div class="explanation" id="explanation18">
+                <div class="result">Bonnes réponses : B et D</div>
+                <p>La NIRS est moins chère mais ne mesure que la zone où sont placés les récepteurs (superficiel).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>19- La surdité pré-linguale se définit par :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Une survenue après l'acquisition de la parole</div>
+                <div class="option" onclick="toggleSelection(this)">B. Une survenue avant la construction des voies auditives (2 ans)</div>
+                <div class="option" onclick="toggleSelection(this)">C. Une absence totale de tonotopie corticale</div>
+                <div class="option" onclick="toggleSelection(this)">D. Un meilleur pronostic d'implantation tardive que la post-linguale</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(19, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation19">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>La surdité pré-linguale survient avant 2 ans et entraîne une perte de tonotopie si elle n'est pas traitée tôt.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>20- Concernant l'amélioration des performances après implantation :</h3>
+            <div class="options">
+                <div class="option" onclick="toggleSelection(this)">A. Elle est instantanée dès l'allumage de l'implant</div>
+                <div class="option" onclick="toggleSelection(this)">B. Elle se poursuit plusieurs années grâce à la plasticité</div>
+                <div class="option" onclick="toggleSelection(this)">C. Les progrès sont les plus marqués entre 9 et 12 mois</div>
+                <div class="option" onclick="toggleSelection(this)">D. Elle ne dépend pas du délai entre surdité et implantation</div>
+            </div>
+            <button type="button" onclick="validateMultipleAnswer(20, ['B', 'C'])">Valider</button>
+            <div class="explanation" id="explanation20">
+                <div class="result">Bonnes réponses : B et C</div>
+                <p>Le délai est crucial (plus on attend, moins bons sont les résultats) et la plasticité permet une progression sur le long terme.</p>
+            </div>
+        </div>
+
+        <a href="https://mjofrance.github.io/Orthoponie-1ere-ann-e/" class="home-link">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle("selected");
+        }
+
+        function validateMultipleAnswer(questionNumber, correctAnswers) {
+            const questionElement = document.querySelectorAll('.question')[questionNumber - 1];
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(option => {
+                const optionLetter = option.textContent.charAt(0);
+                if (correctAnswers.includes(optionLetter)) {
+                    option.classList.add("correct");
+                } else if (option.classList.contains("selected")) {
+                    option.classList.add("incorrect");
+                }
+                option.classList.remove("selected");
+            });
+            document.getElementById(`explanation${questionNumber}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
